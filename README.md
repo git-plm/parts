@@ -9,7 +9,8 @@ Maintaining eCAD parts libraries is a lot of work. Are you:
 - duplicating a lot of work in each design and occasionally make mistakes like
   specifying the wrong MPN?
 - afraid of of the complexity of setting up a database for KiCad libraries?
-- having trouble tracking changes made in a parts database?
+- having trouble tracking who made what changes made in a parts database?
+- struggling to find a CAD library process that will scale to large teams?
 
 The GitPLM Parts project is a collection of best practices that allows you to:
 
@@ -20,7 +21,8 @@ The GitPLM Parts project is a collection of best practices that allows you to:
 - not duplicate part parameters.
 - leverage the standard KiCad symbol library for most common parts.
 - easy add variants with just a line in the DB.
-- tracks all database changes.
+- track all database changes.
+- scale to multiple designers.
 
 ## Using the GitPLM Parts Database in KiCad
 
@@ -67,15 +69,35 @@ environment.
 This repo contains a parts database designed to work with
 [KiCad Database Libraries feature](https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries).
 
+The IPN (Internal Part Number) format used is specified in
+[this document](https://github.com/git-plm/gitplm/blob/main/partnumbers.md).
+
+IPN format: CCC-NNN-VVVV
+
+- CCC: one to three letters or numbers to identify major category (RES, CAP,
+  DIO, E (electrical), M (mechanical), etc).
+- NNN: incrementing sequential number for each part. This gives this format
+  flexibility.
+- VVVV: use to code variations of similar parts typically with the same
+  datasheet or family (resistance, capacitance, regulator voltage, IC package,
+  screw type, etc.). VVVV is also used to encode version and variations for
+  manufactured parts or assemblies.
+
 The workflow is designed to be _Git Friendly_:
 
 - everything can be checked into Git
 - changes can be easily diff'd
 - there is no central database that requires network connections, VPNs, etc.
+- all changes to the parts database are tracked in Git.
 
 CSV files are a convenient way to store tabular data in Git. Tools like Gitea
-are good at
+and Github are good at
+[viewing](https://github.com/git-plm/parts/blob/main/cap.csv) and
 [diffing CSV files](https://community.tmpdir.org/uploads/default/original/2X/2/22193b11a07063ab7759edd6b3cd57a25521073f.png).
+This allows anyone to edit the database. Complex database permissions are not
+required as workflow is managed through standard Git mechanisms like PRs. As an
+example, changes from new users may be reviewed before merging to the main
+branch.
 
 So we use the following flow:
 
