@@ -20,7 +20,7 @@ The GitPLM Parts project is a collection of best practices that allows you to:
 - easily specify part parameters in table format.
 - not duplicate part parameters.
 - leverage the standard KiCad symbol library for most common parts.
-- easy add variants with just a line in the DB.
+- easy add variants with just a line in a CSV file.
 - track all database changes.
 - scale to multiple designers.
 
@@ -158,3 +158,6 @@ This is all in the experimental stage. If anyone has better ideas, please let us
 know. Issues, PRs, and Discussions are open on this repo. The
 [KiCad Forum](https://forum.kicad.info/) or the
 [TMPDIR community](https://community.tmpdir.org/) are good places as well.
+
+See [Issues](https://github.com/git-plm/parts/issues) for open issues and future
+ideas.
