@@ -1,0 +1,3 @@
+"IPN","MPN","Manufacturer","Description","Symbol","Footprint","Capacitance","Voltage","Material","Tolerance","Datasheet"
+"CAP-000-0104","CC0603KRX7R9BB104","Yageo","0603 50V X7R 100nF","Device:C","Capacitor_SMD:C_0603_1608Metric","100nF","50V","X7R",10%,"https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+"CAP-001-0105","CL10A105KB8NNNC","Samsung","0603 50V X5R 1uF","Device:C","Capacitor_SMD:C_0603_1608Metric","1uF","50V","X5R",10%,"https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf"

@@ -1,0 +1,7 @@
+{
+	"useTabs": true,
+	"semi": false,
+	"arrowParens": "always",
+	"trailingComma": "es5",
+	"proseWrap": "always"
+}

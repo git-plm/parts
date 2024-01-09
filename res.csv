@@ -1,0 +1,3 @@
+IPN,MPN,Manufacturer,Description,Symbol,Footprint,Resistance,Voltage,Power,Tolerance,Datasheet
+RES-000-1001,0603WAF1001T5E,Uniroyal,0603 100mW 1% 1K,Device:R_US,Resistor_SMD:R_0603_1608Metric,1K,,100mW,1%,https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf
+RES-000-1002,0603WAF1002T5E,Uniroyal,0603 100mW 1% 10K,Device:R_US,Resistor_SMD:R_0603_1608Metric,10K,,100mW,1%,https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf
