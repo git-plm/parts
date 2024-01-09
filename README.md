@@ -161,3 +161,9 @@ know. Issues, PRs, and Discussions are open on this repo. The
 
 See [Issues](https://github.com/git-plm/parts/issues) for open issues and future
 ideas.
+
+## Reference
+
+- https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries
+- https://forum.kicad.info/t/kicad-the-case-for-database-driven-design/34621
+- https://wiki.archlinux.org/title/Open_Database_Connectivity
