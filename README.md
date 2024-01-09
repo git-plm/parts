@@ -41,6 +41,9 @@ Then when you open the symbol chooser, you will see something like:
 
 ![image-20240109104709184](./assets/image-20240109104709184.png)
 
+Right-clicking on the column headings in the chooser allows you to specify which
+parameters are displayed.
+
 ## Update/Generate the database
 
 The following is tested on Linux but should work in any Linux-like command-line
@@ -51,7 +54,7 @@ environment.
   `envsetup.sh` to add to the list of imports.
 - `. envsetup.sh` (notice the leading `.` -- this is equivalent to the `source`
   command)
-- `parts_db_create`
+- run the `parts_db_create` command
   - this deletes `parts.sqlite` and regenerates it
 - `sqlitebrowser` can be used to view/verify the database. Don't edit the
   database as it is overwritten on each import.
