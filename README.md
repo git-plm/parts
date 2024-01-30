@@ -35,7 +35,8 @@ Give it a try -- it will only take a few minutes.
   file in this repo. (If anyone knows how to make this path relative, let me
   know.)
 - In KiCad Preferences->Manage Symbol Libraries, add the `parts.kicad_dbl` and
-  give it a unique Nickname so it is easy to search for.
+  give it a unique Nickname so it is easy to search for. If you prefix the nickname with '#',
+  it will show up at the top of the list.
 
 (above tested on Arch Linux, procedure may vary slightly on other platforms)
 
