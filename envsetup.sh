@@ -8,3 +8,7 @@ parts_db_create() {
 		sqlite3 --csv ./parts.sqlite ".import ${lib}.csv ${lib}" || return 1
 	done
 }
+
+parts_db_edit() {
+	sqlitebrowser parts.sqlite
+}
