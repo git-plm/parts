@@ -1,2 +1,3 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Pins,Datasheet
 CON-000-0260,2309409-2,TE,DIMM Connectors DDR4 SODIMM 260P 5.2H STD,#gplm-con:sodimm-2309409-2,#gplm-con:sodimm-23094092,260,https://www.mouser.com/datasheet/2/418/7/ENG_CD_2309409_5-2032555.pdf
+CON-001-0002,22285024,Molex,"0.1” jumper, 2pos, gold plating",Jumper:Jumper_2_Open,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,2,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
