@@ -1,2 +1,2 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
-REG-000-0005,TPS5430DDAR,TI,Switching Voltage Regulators 5.5 to 36V Input 3A Step Dwn Converter,#gplm-reg:tps5430,Package_SO:TI_SO-PowerPAD-8,https://www.ti.com/lit/ds/symlink/tps5430.pdf
+REG-000-0005,TPS5430DDAR,TI,Switching Voltage Regulators 5.5 to 36V Input 3A Step Dwn Converter,#g-reg:tps5430,Package_SO:TI_SO-PowerPAD-8,https://www.ti.com/lit/ds/symlink/tps5430.pdf

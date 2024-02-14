@@ -1,3 +1,16 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Pins,Datasheet
-CON-000-0260,2309409-2,TE,DIMM Connectors DDR4 SODIMM 260P 5.2H STD,#gplm-con:sodimm-2309409-2,#gplm-con:sodimm-23094092,260,https://www.mouser.com/datasheet/2/418/7/ENG_CD_2309409_5-2032555.pdf
-CON-001-0002,22285024,Molex,"0.1” jumper, 2pos, gold plating",Jumper:Jumper_2_Open,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,2,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-000-0260,2309409-2,TE,DIMM Connectors DDR4 SODIMM 260P 5.2H STD,#g-con:sodimm-2309409-2,#g-con:sodimm-23094092,260,https://www.mouser.com/datasheet/2/418/7/ENG_CD_2309409_5-2032555.pdf
+CON-001-0002,22-28-5024,Molex,"0.1” jumper, 2pos, gold plating",Jumper:Jumper_2_Open,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,2,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0003,22-28-4034,Molex,"0.1” header, 3pos",Connector_Generic:Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,3,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0004,22-28-4044,Molex,"0.1” header, 4pos",Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,4,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0005,22-28-4054,Molex,"0.1” header, 5pos",Connector_Generic:Conn_01x05,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,5,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0006,22-28-4064,Molex,"0.1” header, 6pos",Connector_Generic:Conn_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,6,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0007,22-28-4074,Molex,"0.1” header, 7pos",Connector_Generic:Conn_01x07,Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical,7,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0008,22-28-4084,Molex,"0.1” header, 8pos",Connector_Generic:Conn_01x08,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,8,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0009,22-28-4094,Molex,"0.1” header, 9pos",Connector_Generic:Conn_01x09,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,9,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0010,22-28-4104,Molex,"0.1” header, 10pos",Connector_Generic:Conn_01x10,Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical,10,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0011,22-28-4114,Molex,"0.1” header, 11pos",Connector_Generic:Conn_01x11,Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical,11,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-001-0012,22-28-4124,Molex,"0.1” header, 12pos",Connector_Generic:Conn_01x12,Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical,12,https://www.molex.com/pdm_docs/ps/PS-10-07-001.pdf
+CON-002-0001,217182-0001,Molex,USB-C Vertical,#g-con:USB_C_Receptacle_2.0_Vert,#g-con:usbc-vert-217182-0001,,https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/217/217182/2171820001_sd.pdf
+CON-003-0010,NPPN101BFLC-RC,Sullins,2mm socket SMD,Connector_Generic:Conn_01x10,#g-con:CONN10X1_NPPN101BFLC-RC_SUL,10,https://drawings-pdf.s3.amazonaws.com/10489.pdf
+CON-004-0001,JXD3-0Z02NL,Pulse Elec,RJ45 Vertical Magnetics LEDs ,#g-con:RJ45-1000-mag,#g-con:rj-45-vert-mag,,https://www.mouser.com/datasheet/2/447/datasheet_j50x_a_06_2022__jxd3_0z02nl__new__167347-3006847.pdf
