@@ -2,3 +2,5 @@ IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
 ICS-001-0001,SN65HVD01DRCR,TI,RS-485 Interface with Lo voltage IO supply,#g_ics:SN65HVD01,Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm,https://www.ti.com/lit/ds/symlink/sn65hvd01.pdf
 ICS-002-0001,SN74LVC1G04DCKR,TI,Inverters Single 1.65-V to 5.5-V,74xGxx:74LVC1GU04DRL,#g-ics:DCK0005A_L,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf
 ICS-003-0001,MCP2558FD-H/SN,Microchip,CAN Interface IC,#g_ics:MCP2558FD,Package_SO:SO-8_3.9x4.9mm_P1.27mm,https://www.mouser.com/datasheet/2/268/20005533A-1067161.pdf
+ICS-004-0001,DS2484R+T,Analog Devices,1-Wire Master,#g_ics:DS2484R,Package_TO_SOT_SMD:TSOT-23-6,https://www.analog.com/media/en/technical-documentation/data-sheets/DS2484.pdf
+ICS-005-0001,TLV9001IDCKR,TI,"Single Op-amp, 1.8V to 5.5V rail-to-rail",Amplifier_Operational:TLV9001IDCK,Package_TO_SOT_SMD:SOT-353_SC-70-5,https://www.ti.com/lit/ds/symlink/tlv9004.pdf

@@ -1,2 +1,4 @@
-IPN,MPN,Manufacturer,Description,Symbol,Footprint,Current,Datasheet
-DIO-000-0001,B340A-13-F,Diodes Incorporated,Schottky 40V 3A,Device:D_Schottky,Diode_SMD:D_SMA,3A,https://www.diodes.com/assets/Datasheets/ds30891.pdf
+IPN,MPN,Manufacturer,Description,Symbol,Footprint,Current,Voltage,Datasheet
+DIO-000-0001,B340A-13-F,Diodes Incorporated,Schottky 40V 3A,Device:D_Schottky,Diode_SMD:D_SMA,3A,,https://www.diodes.com/assets/Datasheets/ds30891.pdf
+DIO-001-04V7,MM3Z4V7C,On Semi,Zener 4.7V,Device:D_Zener,Diode_SMD:D_SOD-323F,,4.7V,https://www.mouser.com/datasheet/2/308/1/MM3Z9V1C_D-2315854.pdf
+DIO-001-05V6,MM3Z5V6C,On Semi,Zener 5.6V,Device:D_Zener,Diode_SMD:D_SOD-323F,,5.6V,https://www.mouser.com/datasheet/2/308/1/MM3Z9V1C_D-2315854.pdf
