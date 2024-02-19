@@ -18,3 +18,5 @@ CON-005-0003,31224103,Metz Connect,"Term Block Header, 3.5mm, plugable, x3",Conn
 CON-005-0004,31224104,Metz Connect,"Term Block Header, 3.5mm, plugable, x4",Connector:Screw_Terminal_01x04,#g-con:RP023-04,4,https://media.metz-connect.com/files/171/Data_sheet_312241.PDF
 CON-006-0003,31166103,Metz Connect,"Term Block, 3.5mm, plugable, x3",Connector:Screw_Terminal_01x03,,3,https://media.metz-connect.com/files/171/Data_sheet_311661.PDF
 CON-006-0004,31166104,Metz Connect,"Term Block, 3.5mm, plugable, x4",Connector:Screw_Terminal_01x04,,4,https://media.metz-connect.com/files/171/Data_sheet_311661.PDF
+CON-007-0003,31017103,Metz Connect,"Term Block Header, 5mm, plugable, x3",Connector:Screw_Terminal_01x03,#g-con:RP025-03,3,https://media.metz-connect.com/files/171/Data_sheet_310171.PDF
+CON-008-0003,31007103,Metz Connect,"Term Block, 5mm, plugable, x3",Connector:Screw_Terminal_01x03,,3,https://media.metz-connect.com/files/171/Data_sheet_310071.PDF

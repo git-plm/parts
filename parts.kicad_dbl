@@ -14,8 +14,8 @@
     },
     "libraries": [
         {
-            "name": "res",
-            "table": "res",
+            "name": "ana",
+            "table": "ana",
             "key": "IPN",
             "symbols": "Symbol",
             "footprints": "Footprint",
@@ -44,7 +44,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -52,27 +52,6 @@
                     "column": "Description",
                     "name": "Description",
                     "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "Resistance",
-                    "name": "Resistance",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "Power",
-                    "name": "Power",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "Tolerance",
-                    "name": "Tolerance",
-                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -85,7 +64,7 @@
                 }
             ]
         },
-        {
+                {
             "name": "cap",
             "table": "cap",
             "key": "IPN",
@@ -223,6 +202,115 @@
             ]
         },
         {
+            "name": "ind",
+            "table": "ind",
+            "key": "IPN",
+            "symbols": "Symbol",
+            "footprints": "Footprint",
+            "fields": [
+                {
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "IPN",
+                    "name": "Value",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+                },
+                {
+                    "column": "Manufacturer",
+                    "name": "Manufacturer",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "MPN",
+                    "name": "MPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Description",
+                    "name": "Description",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Inductance",
+                    "name": "Inductance",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Datasheet",
+                    "name": "Datasheet",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                }
+            ]
+        },
+        {
+            "name": "ics",
+            "table": "ics",
+            "key": "IPN",
+            "symbols": "Symbol",
+            "footprints": "Footprint",
+            "fields": [
+                {
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "IPN",
+                    "name": "Value",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+                },
+                {
+                    "column": "Manufacturer",
+                    "name": "Manufacturer",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "MPN",
+                    "name": "MPN",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Description",
+                    "name": "Description",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Datasheet",
+                    "name": "Datasheet",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                }
+            ]
+        },
+        {
             "name": "mpu",
             "table": "mpu",
             "key": "IPN",
@@ -305,7 +393,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -326,8 +414,8 @@
             ]
         },
         {
-            "name": "ind",
-            "table": "ind",
+            "name": "res",
+            "table": "res",
             "key": "IPN",
             "symbols": "Symbol",
             "footprints": "Footprint",
@@ -368,8 +456,22 @@
                     "show_name": false
                 },
                 {
-                    "column": "Inductance",
-                    "name": "Inductance",
+                    "column": "Resistance",
+                    "name": "Resistance",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Power",
+                    "name": "Power",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Tolerance",
+                    "name": "Tolerance",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
@@ -479,7 +581,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -553,57 +655,6 @@
         {
             "name": "cpd",
             "table": "cpd",
-            "key": "IPN",
-            "symbols": "Symbol",
-            "footprints": "Footprint",
-            "fields": [
-                {
-                    "column": "IPN",
-                    "name": "IPN",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "IPN",
-                    "name": "Value",
-                    "visible_on_add": false,
-                    "visible_in_chooser": false,
-                    "show_name": false
-                },
-                {
-                    "column": "Manufacturer",
-                    "name": "Manufacturer",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "MPN",
-                    "name": "MPN",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "Description",
-                    "name": "Description",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                },
-                {
-                    "column": "Datasheet",
-                    "name": "Datasheet",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-                }
-            ]
-        },
-        {
-            "name": "ics",
-            "table": "ics",
             "key": "IPN",
             "symbols": "Symbol",
             "footprints": "Footprint",
