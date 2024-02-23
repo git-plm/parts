@@ -72,4 +72,9 @@
     (solder_mask_margin 0.05) (tstamp 332cbb71-5659-42c8-a424-15cb032a82a1))
   (pad "16" thru_hole circle (at -7.9248 3.8862) (size 2.4 2.4) (drill 1.7) (layers "*.Cu" "*.Mask")
     (solder_mask_margin 0.05) (tstamp 0cddd079-ee66-4266-add2-9f571b511cd5))
+  (model "${GITPLM_3DMODELS}/JXD3-0002NL_3D.STEP"
+    (offset (xyz 275.756 250.5 16))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )
