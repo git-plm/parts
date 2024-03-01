@@ -27,4 +27,9 @@
   (pad "" np_thru_hole circle (at 41.5 24) (size 1 1) (drill 3) (layers "*.Mask") (tstamp 6c5c2559-f854-485c-a08c-e611922f7f76))
   (pad "1" thru_hole circle (at 54 10.5) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp ccd8d3f4-47e6-4eb3-95e1-e61aed938455))
   (pad "2" thru_hole circle (at 54 20.5) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp d73bdf33-8469-4f2d-9f20-374016e2df14))
+  (model "${GITPLM_3DMODELS}/SCCX50B227SSBLE.step"
+    (offset (xyz 50 -14 19.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 90 0))
+  )
 )

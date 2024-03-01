@@ -358,7 +358,7 @@
   (pad "S3" thru_hole circle (at -5.6 0) (size 5.3 5.3) (drill 3.05) (layers "*.Cu" "*.Mask") (tstamp 175e6613-f0bf-4d21-a08a-1f636a7e8ca7))
   (pad "S4" thru_hole circle (at 74.4 0) (size 5.3 5.3) (drill 3.05) (layers "*.Cu" "*.Mask") (tstamp 40a367d0-a1b3-4586-aaca-120df412a7f0))
   (model "${GITPLM_3DMODELS}/c-2309409-2-1-3d.stp"
-    (offset (xyz 34.45 20.98 3.02))
+    (offset (xyz 34.45 20.9 3.02))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 180))
   )
@@ -368,7 +368,7 @@
     (rotate (xyz 0 0 0))
   )
   (model "${GITPLM_3DMODELS}/verdin-heat-sink.stp"
-    (offset (xyz 0 35 7))
+    (offset (xyz -0.3 35 7))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -180 -180))
   )
