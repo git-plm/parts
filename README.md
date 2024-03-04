@@ -1,6 +1,6 @@
 # GitPLM Parts Project
 
-Maintaining eCAD parts libraries is a lot of work. Are you:
+**Maintaining eCAD parts libraries is a lot of work. Are you:**
 
 - tired of the tedious work of maintaining tradition KiCad libraries or manually
   adding MFG information to each part in a design?
@@ -12,37 +12,49 @@ Maintaining eCAD parts libraries is a lot of work. Are you:
 - having trouble tracking who made what changes made in a parts database?
 - struggling to find a CAD library process that will scale to large teams?
 
-The GitPLM Parts project is a collection of best practices that allows you to:
+**The GitPLM Parts project is a collection of best practices that allows you
+to:**
 
-- easily set to a database driven parts libraries without a central database and
-  connection (Git friendly).
-- leverage a common library of parts across multiple designs.
-- easily specify part parameters in table format.
-- not duplicate part parameters.
-- leverage the standard KiCad symbol library for most common parts.
-- easy add variants with just a line in a CSV file.
-- track all database changes.
-- scale to multiple designers.
+1. easily set to a database driven parts libraries without a central database
+   and connection (Git friendly).
+2. leverage a common library of parts across multiple designs.
+3. easily specify part parameters in table format.
+4. not duplicate part parameters.
+5. leverage the standard KiCad symbol library for most common parts.
+6. easy add variants with just a line in a CSV file.
+7. track all database changes.
+8. scale to multiple designers.
 
 ## Using the GitPLM Parts Database in KiCad
 
 Give it a try -- it will only take a few minutes.
 
+- clone this repo: `git clone https://github.com/git-plm/parts.git`
+- clone the 3d models repo: `git clone https://github.com/git-plm/3d-models.git`
+- In KiCad Preferences->Configure Paths:
+  - set `GITPLM_PARTS` to the location of the parts repo
+  - set `'GITPLM_3DMODELS` to the location of the 3d-models repo
 - install the following packages: `sqlite3 unixodbc libsqliteodbc sqlitebrowser`
 - make sure `/etc/odbcinst.ini` contains a
   [SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite)
-- Edit the `parts.kicad_dbl` `connection_string` field to point to the database
+- Edit the `#gplm.kicad_dbl` `connection_string` field to point to the database
   file in this repo. (If anyone knows how to make this path relative, let me
   know.)
-- In KiCad Preferences->Manage Symbol Libraries, add the `parts.kicad_dbl` and
-  give it a unique Nickname so it is easy to search for. If you prefix the nickname with '#',
-  it will show up at the top of the list.
+- In KiCad Preferences->Manage Symbol Libraries:
+  - add the `#gplm.kicad_dbl`. This filename is prefixed with `#` so that it
+    shows up at the top of the list in the schematic symbol chooser.
+  - add all `g-*.kicad_sym` libraries
+- In KiCad Preferences->Manage Footprint Libraries:
+  - add all `g-*.pretty` directories
 
-(above tested on Arch Linux, procedure may vary slightly on other platforms)
+(above tested on Arch Linux, so the bits about SQLite3 libs may vary slightly on
+other platforms)
 
 Then when you open the symbol chooser, you will see something like:
 
-![image-20240109104709184](./assets/image-20240109104709184.png)
+![image-20240304103012907](./assets/image-20240304103012907.png)
+
+Notes, the #gplm entries are at the top where they are quick to get to.
 
 Right-clicking on the column headings in the chooser allows you to specify which
 parameters are displayed.
@@ -61,9 +73,27 @@ environment.
   - this deletes `parts.sqlite` and regenerates it
 - `sqlitebrowser` can be used to view/verify the database. Don't edit the
   database as it is overwritten on each import.
-- restart KiCad (yes the entire application). This seems to be the only way to
-  get KiCad to reload the database changes. (if anyone knows of a better way,
+- **restart KiCad** (yes the entire application). This seems to be the only way
+  to get KiCad to reload the database changes. (if anyone knows of a better way,
   please let us know!)
+
+## Adding New Parts
+
+If the symbol and footprint already, adding a new part is as simple as:
+
+1. adding a line to one of the `csv` files
+2. run `parts_db_create`
+3. restart KiCad
+
+If you need to add a symbol or footprint, add to the matching `g-XXX.kicad_sym`,
+or `g-XXX.pretty` libraries. Standards in the
+[KiCad KLC](https://klc.kicad.org/) should be followed as much as possible.
+Specific requirements:
+
+1. set symbol outline to 10mil
+2. fill symbol with background color (light yellow)
+3. active low pins should be designated using a bar. This is done with the
+   following pin name syntax: `~{PIN_NAME}`
 
 ## Implementation details
 
