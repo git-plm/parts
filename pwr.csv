@@ -1,5 +1,5 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
-PWR-000-0001,AOZ1353DI-01,Alpha and Omega,5V/3.5A USB Power Switch,#g-pwr:AOZ1353DI,#g-pwr:AOZ1353DI,https://aosmd.com/sites/default/files/res/datasheets/AOZ1353DI-01.pdf
-PWR-001-0001,TUSB321RWBR,TI,USB-C Logic/Port Control,#g-pwr:TUSB321RWBR,#g-pwr:RWB0012A,https://www.ti.com/lit/ds/symlink/tusb321.pdf
-PWR-002-0005,G2RL-1-DC5,Omron,Relay SPDT 5VDC,Relay:G2RL-1,#g-pwr:Relay_SPDT_Omron_G2RL-1,https://www.mouser.com/datasheet/2/307/en_g2rl-472571.pdf
-PWR-003-0001,LTC3225EDDB#TRMPBF,Analog Devices,"Supercap Charger, 150mA",#g-pwr:LTC3225,Package_DFN_QFN:DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm,https://www.analog.com/media/en/technical-documentation/data-sheets/3225fb.pdf
+PWR-000-0001,AOZ1353DI-01,Alpha and Omega,5V/3.5A USB Power Switch,g-pwr:AOZ1353DI,g-pwr:AOZ1353DI,https://aosmd.com/sites/default/files/res/datasheets/AOZ1353DI-01.pdf
+PWR-001-0001,TUSB321RWBR,TI,USB-C Logic/Port Control,g-pwr:TUSB321RWBR,g-pwr:RWB0012A,https://www.ti.com/lit/ds/symlink/tusb321.pdf
+PWR-002-0005,G2RL-1-DC5,Omron,Relay SPDT 5VDC,Relay:G2RL-1,g-pwr:Relay_SPDT_Omron_G2RL-1,https://www.mouser.com/datasheet/2/307/en_g2rl-472571.pdf
+PWR-003-0001,LTC3225EDDB#TRMPBF,Analog Devices,"Supercap Charger, 150mA",g-pwr:LTC3225,Package_DFN_QFN:DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm,https://www.analog.com/media/en/technical-documentation/data-sheets/3225fb.pdf

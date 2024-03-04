@@ -1,2 +1,3 @@
 .~lock*.csv#
 *.bak
+parts.sqlite

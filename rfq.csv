@@ -1,2 +1,2 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
-RFQ-000-0001,NL-SW-LTE-TG1WWG,Airgain,Cat-M modem,#g-rfq:NL-SW-LTE-TG1WWG,#g-rfq:NL-SW-LTE-TG1WWG,https://www.airgain.com/products/4g-lte-m-global-telit/
+RFQ-000-0001,NL-SW-LTE-TG1WWG,Airgain,Cat-M modem,g-rfq:NL-SW-LTE-TG1WWG,g-rfq:NL-SW-LTE-TG1WWG,https://www.airgain.com/products/4g-lte-m-global-telit/
