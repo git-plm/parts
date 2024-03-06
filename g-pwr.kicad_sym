@@ -449,7 +449,7 @@
 			(pin input line
 				(at -12.7 -10.16 0)
 				(length 3.81)
-				(name "SHDNn"
+				(name "~{SHDN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -772,24 +772,6 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -10.16 0)
-				(length 5.08)
-				(name "VCONN_FAULT_N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
 				(at -24.13 -20.32 0)
 				(length 5.08)
 				(name "OUT1"
@@ -854,6 +836,24 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(pin open_collector line
+				(at -24.13 -10.16 0)
+				(length 5.08)
+				(name "~{VCONN_FAULT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
