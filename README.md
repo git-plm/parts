@@ -95,9 +95,9 @@ Specific requirements:
 3. active low pins should be designated using a bar. This is done with the
    following pin name syntax: `~{PIN_NAME}`
 4. symbol pin lengths
-   - < 10 pins: 100mil
+   - \< 10 pins: 100mil
    - 10 - 99 pins: 150mil
-   - > 100 pins: 200mil
+   - \> 100 pins: 200mil
 
 ## Implementation details
 
