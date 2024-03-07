@@ -1,5 +1,5 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
-REG-000-0005,TPS5430DDAR,TI,Switching Voltage Regulators 5.5 to 36V Input 3A Step Dwn Converter,g-reg:tps5430,Package_SO:TI_SO-PowerPAD-8,https://www.ti.com/lit/ds/symlink/tps5430.pdf
-REG-001-0000,TLV709A01DBVR,TI,"Linear Reg, Adjustable 150mA",g-reg:TLV709ADJ,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/tlv709.pdf
-REG-002-01V8,ADP7142AUJZ-1.8-R7,Analog Devices,"Linear Reg, 1.8V, 200mA, Adjustable",g-reg:ADP7142,Package_TO_SOT_SMD:SOT-23-5,https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf
-REG-003-0001,LM2623AMM/NOPB,TI,"Boost switching reg, 2A, 14V",g-reg:LM2623,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,https://www.ti.com/lit/ds/symlink/lm2623.pdf
+REG-0000-0005,TPS5430DDAR,TI,Switching Voltage Regulators 5.5 to 36V Input 3A Step Dwn Converter,g-reg:tps5430,Package_SO:TI_SO-PowerPAD-8,https://www.ti.com/lit/ds/symlink/tps5430.pdf
+REG-0001-0000,TLV709A01DBVR,TI,"Linear Reg, Adjustable 150mA",g-reg:TLV709ADJ,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/tlv709.pdf
+REG-0002-01V8,ADP7142AUJZ-1.8-R7,Analog Devices,"Linear Reg, 1.8V, 200mA, Adjustable",g-reg:ADP7142,Package_TO_SOT_SMD:SOT-23-5,https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf
+REG-0003-0001,LM2623AMM/NOPB,TI,"Boost switching reg, 2A, 14V",g-reg:LM2623,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,https://www.ti.com/lit/ds/symlink/lm2623.pdf

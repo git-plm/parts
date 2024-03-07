@@ -1,11 +1,11 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Capacitance,Voltage,Material,Tolerance,Datasheet
-CAP-000-0102,CC0603KRX7R9BB102,Yageo,0603 50V X7R 1nF,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
-CAP-000-0103,CC0603KRX7R9BB103,Yageo,0603 50V X7R 10nF,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
-CAP-000-0104,CC0603KRX7R9BB104,Yageo,0603 50V X7R 100nF,Device:C,Capacitor_SMD:C_0603_1608Metric,100nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
-CAP-001-0105,CL10A105KB8NNNC,Samsung,0603 50V X5R 1uF,Device:C,Capacitor_SMD:C_0603_1608Metric,1uF,50V,X5R,10%,https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf
-CAP-002-0475,C1206C475K5PACTU,Kemet,1206 50V X5R 4.7uF,Device:C,Capacitor_SMD:C_1206_3216Metric,4.7uF,50V,X5R,10%,https://media.digikey.com/pdf/Data%20Sheets/Kemet%20PDFs/C1206C475K5PAC.pdf
-CAP-003-220M,10TPB220M,Panasonic,Tant 10V 220uF,Device:C_Polarized_US,Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D,220uF,10V,Tant,20%,https://www.mouser.com/datasheet/2/315/AAA8000C65-1150039.pdf
-CAP-004-0107,LMK325BJ107MM-T,Taiyo Yuden,1210 10V X5R 100uF,Device:C,Capacitor_SMD:C_1210_3225Metric,100uF,10V,X5R,20%,https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf
-CAP-005-0407,SCCY68B407SSBLE,AVX,400F Supercap,Device:C_Polarized_US,g-cap:CY68B407,400F,2.7V,Elec,30%,https://www.mouser.com/datasheet/2/40/AVX_SCC_LE-3084833.pdf
-CAP-005-0227,SCCY68B407SSBLE,AVX,220F Supercap,Device:C_Polarized_US,g-cap:CX50B227,220F,2.7V,Elec,30%,https://www.mouser.com/datasheet/2/40/AVX_SCC_LE-3084833.pdf
-CAP-006-04R7,6035A4R7KAT2A,AVX,0603 50V COG 4.7pF,Device:C,Capacitor_SMD:C_0603_1608Metric,4.7pF,50V,COG,10%,https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-2952720.pdf
+CAP-0000-0102,CC0603KRX7R9BB102,Yageo,0603 50V X7R 1nF,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0103,CC0603KRX7R9BB103,Yageo,0603 50V X7R 10nF,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0104,CC0603KRX7R9BB104,Yageo,0603 50V X7R 100nF,Device:C,Capacitor_SMD:C_0603_1608Metric,100nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0001-0105,CL10A105KB8NNNC,Samsung,0603 50V X5R 1uF,Device:C,Capacitor_SMD:C_0603_1608Metric,1uF,50V,X5R,10%,https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf
+CAP-0002-0475,C1206C475K5PACTU,Kemet,1206 50V X5R 4.7uF,Device:C,Capacitor_SMD:C_1206_3216Metric,4.7uF,50V,X5R,10%,https://media.digikey.com/pdf/Data%20Sheets/Kemet%20PDFs/C1206C475K5PAC.pdf
+CAP-0003-220M,10TPB220M,Panasonic,Tant 10V 220uF,Device:C_Polarized_US,Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D,220uF,10V,Tant,20%,https://www.mouser.com/datasheet/2/315/AAA8000C65-1150039.pdf
+CAP-0004-0107,LMK325BJ107MM-T,Taiyo Yuden,1210 10V X5R 100uF,Device:C,Capacitor_SMD:C_1210_3225Metric,100uF,10V,X5R,20%,https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf
+CAP-0005-0407,SCCY68B407SSBLE,AVX,400F Supercap,Device:C_Polarized_US,g-cap:CY68B407,400F,2.7V,Elec,30%,https://www.mouser.com/datasheet/2/40/AVX_SCC_LE-3084833.pdf
+CAP-0005-0227,SCCY68B407SSBLE,AVX,220F Supercap,Device:C_Polarized_US,g-cap:CX50B227,220F,2.7V,Elec,30%,https://www.mouser.com/datasheet/2/40/AVX_SCC_LE-3084833.pdf
+CAP-0006-04R7,6035A4R7KAT2A,AVX,0603 50V COG 4.7pF,Device:C,Capacitor_SMD:C_0603_1608Metric,4.7pF,50V,COG,10%,https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-2952720.pdf
