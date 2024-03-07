@@ -28,7 +28,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -79,7 +79,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "Capacitance",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -158,7 +158,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "Pins",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -216,7 +216,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "Inductance",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -274,7 +274,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -325,7 +325,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -377,7 +377,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -428,7 +428,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -479,7 +479,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "Resistance",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -551,7 +551,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -616,7 +616,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -667,7 +667,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
@@ -718,7 +718,7 @@
                     "show_name": false
                 },
                 {
-                    "column": "IPN",
+                    "column": "MPN",
                     "name": "Value",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
