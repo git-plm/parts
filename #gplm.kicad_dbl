@@ -10,7 +10,7 @@
         "username": "",
         "password": "",
         "timeout_seconds": 10,
-        "connection_string": ";DATABASE=file:///scratch/bec/parts/parts.sqlite;DRIVER=SQLite3;"
+        "connection_string": "DRIVER={SQLite3};DATABASE=${CWD}/parts.sqlite"
     },
     "libraries": [
         {
