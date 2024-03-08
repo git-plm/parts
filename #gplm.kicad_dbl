@@ -251,6 +251,13 @@
                     "show_name": false
                 },
                 {
+                    "column": "Current",
+                    "name": "Current",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
                     "column": "Datasheet",
                     "name": "Datasheet",
                     "visible_on_add": false,
@@ -363,8 +370,8 @@
             ]
         },
         {
-            "name": "rfq",
-            "table": "rfq",
+            "name": "rfm",
+            "table": "rfm",
             "key": "IPN",
             "symbols": "Symbol",
             "footprints": "Footprint",
@@ -444,6 +451,20 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Voltage",
+                    "name": "Voltage",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Current",
+                    "name": "Current",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
@@ -653,8 +674,8 @@
             ]
         },
         {
-            "name": "tra",
-            "table": "tra",
+            "name": "xtr",
+            "table": "xtr",
             "key": "IPN",
             "symbols": "Symbol",
             "footprints": "Footprint",

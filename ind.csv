@@ -1,4 +1,4 @@
-IPN,MPN,Manufacturer,Description,Symbol,Footprint,Inductance,Datasheet
-IND-0000-0104,ETQP5M220YFM,Panasonic,3A 22uH SMD,Device:L,g-ind:ETQP5M_YFM,22uH,https://datasheet.lcsc.com/lcsc/1912111437_PANASONIC-ETQP5M220YFM_C409635.pdf
-IND-0000-04R7,ETQP5M4R7YFM,Panasonic,6.3A 4.7uH SMD,Device:L,g-ind:ETQP5M_YFM,4.7uH,https://datasheet.lcsc.com/lcsc/1912111437_PANASONIC-ETQP5M220YFM_C409635.pdf
-IND-0001-0001,EXC-14CH120U,Panasonic,"Common mode choke, 12ohm @ 100MHz",Device:L_Ferrite_Coupled_Small_1423,g-ind:FIL_EXC-14CH120U,,
+IPN,MPN,Manufacturer,Description,Symbol,Footprint,Inductance,Current,Datasheet
+IND-0000-0104,ETQP5M220YFM,Panasonic,3A 22uH SMD,Device:L,g-ind:ETQP5M_YFM,22uH,3.7A,https://datasheet.lcsc.com/lcsc/1912111437_PANASONIC-ETQP5M220YFM_C409635.pdf
+IND-0000-04R7,ETQP5M4R7YFM,Panasonic,6.3A 4.7uH SMD,Device:L,g-ind:ETQP5M_YFM,4.7uH,8.0A,https://datasheet.lcsc.com/lcsc/1912111437_PANASONIC-ETQP5M220YFM_C409635.pdf
+IND-0001-0001,EXC-14CH120U,Panasonic,"Common mode choke, 12ohm @ 100MHz",Device:L_Ferrite_Coupled_Small_1423,g-ind:FIL_EXC-14CH120U,,100mA,https://industrial.panasonic.com/cdbs/www-data/pdf/AWE0000/AWE0000C264.pdf
