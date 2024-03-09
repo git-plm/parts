@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -5.08 12.7 0)
+			(at 6.35 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.27 -7.62 0)
+			(at 10.16 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -1.27 -7.62 0)
+			(at 10.16 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at -1.27 -7.62 0)
+			(at 10.16 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 11.43 10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,8 +51,8 @@
 		)
 		(symbol "AOZ1353DI_1_1"
 			(rectangle
-				(start -8.89 11.43)
-				(end 7.62 -11.43)
+				(start 2.54 21.59)
+				(end 17.78 -1.27)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -62,7 +62,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 10.16 180)
+				(at 20.32 20.32 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
@@ -80,7 +80,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 5.08 0)
+				(at 0 15.24 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -98,7 +98,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 7.62 0)
+				(at 0 17.78 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -116,7 +116,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 10.16 0)
+				(at 0 20.32 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -134,7 +134,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -10.16 180)
+				(at 20.32 0 180)
 				(length 2.54)
 				(name "EXP"
 					(effects
@@ -152,7 +152,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 7.62 180)
+				(at 20.32 17.78 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
@@ -170,7 +170,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 5.08 180)
+				(at 20.32 15.24 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
@@ -188,7 +188,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -5.08 0)
+				(at 0 5.08 0)
 				(length 2.54)
 				(name "FLTB"
 					(effects
@@ -206,7 +206,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 1.27 180)
+				(at 20.32 10.16 180)
 				(length 2.54)
 				(name "SS"
 					(effects
@@ -224,7 +224,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -1.27 180)
+				(at 20.32 7.62 180)
 				(length 2.54)
 				(name "NC"
 					(effects
@@ -242,7 +242,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -7.62 180)
+				(at 20.32 2.54 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -260,7 +260,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -10.16 0)
+				(at 0 0 0)
 				(length 2.54)
 				(name "ILIM"
 					(effects
@@ -278,7 +278,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -7.62 0)
+				(at 0 2.54 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -302,7 +302,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -3.81 15.24 0)
+			(at 8.89 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -310,7 +310,7 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.27 2.54 0)
+			(at 11.43 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -318,7 +318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -1.27 2.54 0)
+			(at 11.43 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -327,7 +327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at -1.27 2.54 0)
+			(at 11.43 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -336,7 +336,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 1.27 0)
+			(at 12.7 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -346,8 +346,8 @@
 		)
 		(symbol "LTC3225_1_1"
 			(rectangle
-				(start -8.89 13.97)
-				(end 8.89 -13.97)
+				(start 3.81 26.67)
+				(end 21.59 -1.27)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -357,7 +357,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 7.62 0)
+				(at 0 20.32 0)
 				(length 3.81)
 				(name "C+"
 					(effects
@@ -375,7 +375,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 12.7 180)
+				(at 25.4 25.4 180)
 				(length 3.81)
 				(name "Cout"
 					(effects
@@ -393,7 +393,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -12.7 180)
+				(at 25.4 0 180)
 				(length 3.81)
 				(name "GND"
 					(effects
@@ -411,7 +411,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at 0 7.62 0)
 				(length 3.81)
 				(name "C-"
 					(effects
@@ -429,7 +429,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 2.54 180)
+				(at 25.4 15.24 180)
 				(length 3.81)
 				(name "CX"
 					(effects
@@ -447,7 +447,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -10.16 0)
+				(at 0 2.54 0)
 				(length 3.81)
 				(name "~{SHDN}"
 					(effects
@@ -465,7 +465,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -7.62 0)
+				(at 0 5.08 0)
 				(length 3.81)
 				(name "PGOOD"
 					(effects
@@ -483,7 +483,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 10.16 0)
+				(at 0 22.86 0)
 				(length 3.81)
 				(name "Vsel"
 					(effects
@@ -501,7 +501,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -12.7 0)
+				(at 0 0 0)
 				(length 3.81)
 				(name "PROG"
 					(effects
@@ -519,7 +519,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -10.16 180)
+				(at 25.4 2.54 180)
 				(length 3.81)
 				(name "GND"
 					(effects
@@ -537,7 +537,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 12.7 0)
+				(at 0 25.4 0)
 				(length 3.81)
 				(name "Vin"
 					(effects
@@ -564,7 +564,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -12.7 25.4 0)
+			(at 11.43 48.26 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -572,7 +572,7 @@
 			)
 		)
 		(property "Value" "TUSB321RWBR"
-			(at 1.27 -27.94 0)
+			(at 25.4 -5.08 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -580,7 +580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 1.27 -30.48 0)
+			(at 25.4 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -590,7 +590,7 @@
 			)
 		)
 		(property "Datasheet" "TUSB321RWBR"
-			(at 1.27 -33.02 0)
+			(at 25.4 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -600,7 +600,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 24.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -628,7 +628,7 @@
 		)
 		(symbol "TUSB321RWBR_0_1"
 			(pin bidirectional line
-				(at 26.67 -1.27 180)
+				(at 50.8 22.86 180)
 				(length 5.08)
 				(name "CC1"
 					(effects
@@ -646,7 +646,7 @@
 				)
 			)
 			(pin power_in line
-				(at -24.13 7.62 0)
+				(at 0 30.48 0)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -664,7 +664,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -22.86 0)
+				(at 0 0 0)
 				(length 5.08)
 				(name "DIR"
 					(effects
@@ -682,7 +682,7 @@
 				)
 			)
 			(pin power_in line
-				(at -24.13 21.59 0)
+				(at 0 43.18 0)
 				(length 5.08)
 				(name "VDD"
 					(effects
@@ -700,7 +700,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 26.67 -3.81 180)
+				(at 50.8 20.32 180)
 				(length 5.08)
 				(name "CC2"
 					(effects
@@ -718,7 +718,7 @@
 				)
 			)
 			(pin input line
-				(at -24.13 -3.81 0)
+				(at 0 20.32 0)
 				(length 5.08)
 				(name "CURRENT_MODE"
 					(effects
@@ -736,7 +736,7 @@
 				)
 			)
 			(pin input line
-				(at -24.13 2.54 0)
+				(at 0 25.4 0)
 				(length 5.08)
 				(name "PORT"
 					(effects
@@ -754,7 +754,7 @@
 				)
 			)
 			(pin input line
-				(at 26.67 21.59 180)
+				(at 50.8 43.18 180)
 				(length 5.08)
 				(name "VBUS_DET"
 					(effects
@@ -772,7 +772,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -20.32 0)
+				(at 0 2.54 0)
 				(length 5.08)
 				(name "OUT1"
 					(effects
@@ -790,7 +790,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -17.78 0)
+				(at 0 5.08 0)
 				(length 5.08)
 				(name "OUT2"
 					(effects
@@ -808,7 +808,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -12.7 0)
+				(at 0 10.16 0)
 				(length 5.08)
 				(name "ID"
 					(effects
@@ -828,8 +828,8 @@
 		)
 		(symbol "TUSB321RWBR_1_1"
 			(rectangle
-				(start -19.05 24.13)
-				(end 21.59 -25.4)
+				(start 5.08 45.72)
+				(end 45.72 -3.81)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -839,7 +839,7 @@
 				)
 			)
 			(pin open_collector line
-				(at -24.13 -10.16 0)
+				(at 0 12.7 0)
 				(length 5.08)
 				(name "~{VCONN_FAULT}"
 					(effects
