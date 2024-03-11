@@ -48,7 +48,8 @@ Give it a try -- it will only take a few minutes.
   - add all `g-*.pretty` directories
 
 (above tested on Arch Linux, so the bits about SQLite3 libs may vary slightly on
-other platforms)
+other platforms).  Also tested on Ubuntu 23.04, use the same instructions as
+for Arch Linux (apt install sqlite3 unixodbc etc...)
 
 Then when you open the symbol chooser, you will see something like:
 
@@ -79,7 +80,7 @@ environment.
 
 ## Adding New Parts
 
-If the symbol and footprint already, adding a new part is as simple as:
+If the symbol and footprint already exist, adding a new part is as simple as:
 
 1. adding a line to one of the `csv` files
 2. run `parts_db_create`
@@ -99,6 +100,19 @@ Specific requirements:
    - 10 - 99 pins: 150mil
    - \> 100 pins: 200mil
 
+NOTE: To aid in the accurate connection of wires in EESCHEMA symbol pins,
+regardless of their pin lengths, should fall on a 100mil/2.54mm grid.  Move
+the symbol so its origin falls on the lower leftmost pin of the symbol.
+Having consistent symbol origins facilitates moving and updating or replacing
+symbols during the editing process and makes ERC checking easier.
+
+For footprints the symbol origin for surface mounted parts should be placed in
+the dead center of the part to aid in programming automated assembly machines.
+For through hole parts that are not automatically placed usually pin 1 serves
+as the origin to simplify dimensioning since components such as connectors
+often have placement restrictions necessitated by other features such as
+openings in enclosures, mating PCB's, and so on.
+  
 ## Implementation details
 
 This repo contains a parts database designed to work with
@@ -111,7 +125,7 @@ IPN format: CCC-NNN-VVVV
 
 - CCC: one to three letters or numbers to identify major category (RES, CAP,
   DIO, E (electrical), M (mechanical), etc).
-- NNN: incrementing sequential number for each part. This gives this format
+- NNNN: incrementing sequential number for each part. This gives this format
   flexibility.
 - VVVV: use to code variations of similar parts typically with the same
   datasheet or family (resistance, capacitance, regulator voltage, IC package,
