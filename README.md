@@ -78,6 +78,15 @@ environment.
   to get KiCad to reload the database changes. (if anyone knows of a better way,
   please let us know!)
 
+## Debugging broken \*.kicad_dbl files
+
+Sometimes when you modify the `#gplm.kicad_dbl` file, there is a typo and KiCad
+will no longer load it and does not give you any helpful debugging messages. You
+can use the [jq](https://github.com/jqlang/jq) command line utility to quickly
+find errors in the file, since the `kicad_dbl` format appears to be JSON.
+
+`jq . \#gplm.kicad_dbl`
+
 ## Adding New Parts
 
 If the symbol and footprint already exist, adding a new part is as simple as:
