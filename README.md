@@ -195,20 +195,14 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 ### What to do with the Value field
 
-The `Value` field appears to be special in KiCad and used to identify the part.
-Therefore it is suggested to populate the Value field with the `IPN` (Internal
-Part Number) so it is unique. The following in the `kicad_dbl` file populates
-the Value field in the symbol with the IPN and then hides it.
+The library linkage to the database uses the key which is IPN, so the Value
+field in the Symbol is just another field. It is suggested to populate with the
+following
 
-```
-                {
-                    "column": "IPN",
-                    "name": "Value",
-                    "visible_on_add": false,
-                    "visible_in_chooser": false,
-                    "show_name": false
-                },
-```
+- Resistors: resistance
+- Capacitors: capacitance
+- Inductors: inductance
+- All others: model number of part
 
 ## Status
 
