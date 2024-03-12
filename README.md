@@ -48,8 +48,8 @@ Give it a try -- it will only take a few minutes.
   - add all `g-*.pretty` directories
 
 (above tested on Arch Linux, so the bits about SQLite3 libs may vary slightly on
-other platforms).  Also tested on Ubuntu 23.04, use the same instructions as
-for Arch Linux (apt install sqlite3 unixodbc etc...)
+other platforms). Also tested on Ubuntu 23.04, use the same instructions as for
+Arch Linux (apt install sqlite3 unixodbc etc...)
 
 Then when you open the symbol chooser, you will see something like:
 
@@ -78,6 +78,15 @@ environment.
   to get KiCad to reload the database changes. (if anyone knows of a better way,
   please let us know!)
 
+## Debugging broken \*.kicad_dbl files
+
+Sometimes when you modify the `#gplm.kicad_dbl` file, there is a typo and KiCad
+will no longer load it and does not give you any helpful debugging messages. You
+can use the [jq](https://github.com/jqlang/jq) command line utility to quickly
+find errors in the file, since the `kicad_dbl` format appears to be JSON.
+
+`jq . \#gplm.kicad_dbl`
+
 ## Adding New Parts
 
 If the symbol and footprint already exist, adding a new part is as simple as:
@@ -101,18 +110,18 @@ Specific requirements:
    - \> 100 pins: 200mil
 
 NOTE: To aid in the accurate connection of wires in EESCHEMA symbol pins,
-regardless of their pin lengths, should fall on a 100mil/2.54mm grid.  Move
-the symbol so its origin falls on the lower leftmost pin of the symbol.
-Having consistent symbol origins facilitates moving and updating or replacing
-symbols during the editing process and makes ERC checking easier.
+regardless of their pin lengths, should fall on a 100mil/2.54mm grid. Move the
+symbol so its origin falls on the lower leftmost pin of the symbol. Having
+consistent symbol origins facilitates moving and updating or replacing symbols
+during the editing process and makes ERC checking easier.
 
 For footprints the symbol origin for surface mounted parts should be placed in
 the dead center of the part to aid in programming automated assembly machines.
-For through hole parts that are not automatically placed usually pin 1 serves
-as the origin to simplify dimensioning since components such as connectors
-often have placement restrictions necessitated by other features such as
-openings in enclosures, mating PCB's, and so on.
-  
+For through hole parts that are not automatically placed usually pin 1 serves as
+the origin to simplify dimensioning since components such as connectors often
+have placement restrictions necessitated by other features such as openings in
+enclosures, mating PCB's, and so on.
+
 ## Implementation details
 
 This repo contains a parts database designed to work with
@@ -186,20 +195,14 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 ### What to do with the Value field
 
-The `Value` field appears to be special in KiCad and used to identify the part.
-Therefore it is suggested to populate the Value field with the `IPN` (Internal
-Part Number) so it is unique. The following in the `kicad_dbl` file populates
-the Value field in the symbol with the IPN and then hides it.
+The library linkage to the database uses the key which is IPN, so the Value
+field in the Symbol is just another field. It is suggested to populate with the
+following
 
-```
-                {
-                    "column": "IPN",
-                    "name": "Value",
-                    "visible_on_add": false,
-                    "visible_in_chooser": false,
-                    "show_name": false
-                },
-```
+- Resistors: resistance
+- Capacitors: capacitance
+- Inductors: inductance
+- All others: model number of part
 
 ## Status
 
