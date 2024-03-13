@@ -1,3 +1,8 @@
+Note, that the development of this library has moved to a Gitea repo which has much
+better support for diff'ing CSV files. If you would like access, please contact us.
+
+Below is for historical purposes only.
+
 # GitPLM Parts Project
 
 **Maintaining eCAD parts libraries is a lot of work. Are you:**
