@@ -1,5 +1,5 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Capacitance,Voltage,Material,Tolerance,Datasheet
-CAP-0000-0102,CC0603KRX7R9BB102,Yageo,0.001uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0102,CC0603KRX7R9BB102,Yageo,1000pF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
 CAP-0000-0103,CC0603KRX7R9BB103,Yageo,0.01uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
 CAP-0000-0104,CC0603KRX7R9BB104,Yageo,0.1uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,100nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
 CAP-0000-0104,GCM188R71H104KA57D,Murata Electronics North America,0.1uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric;Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,0.1uF,50V,X7R,10%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf
