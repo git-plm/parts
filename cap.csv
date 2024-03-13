@@ -1,7 +1,7 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Capacitance,Voltage,Material,Tolerance,Datasheet
-CAP-0000-0102,CC0603KRX7R9BB102,Yageo,0.001uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
-CAP-0000-0103,CC0603KRX7R9BB103,Yageo,0.01uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
-CAP-0000-0104,CC0603KRX7R9BB104,Yageo,0.1uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,100nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0102,CC0603KRX7R9BB102,Yageo,0.001uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,0.001uF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0103,CC0603KRX7R9BB103,Yageo,0.01uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,0.01uF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
+CAP-0000-0104,CC0603KRX7R9BB104,Yageo,0.1uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,0.1uF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf
 CAP-0000-0104,GCM188R71H104KA57D,Murata Electronics North America,0.1uF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric;Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,0.1uF,50V,X7R,10%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf
 CAP-0001-0105,CL10A105KB8NNNC,Samsung,1uF 50V 0603 X5R,Device:C,Capacitor_SMD:C_0603_1608Metric,1uF,50V,X5R,10%,https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf
 CAP-0002-0475,C1206C475K5PACTU,Kemet,4.7uF 50V 1206 X5R,Device:C,Capacitor_SMD:C_1206_3216Metric,4.7uF,50V,X5R,10%,https://media.digikey.com/pdf/Data%20Sheets/Kemet%20PDFs/C1206C475K5PAC.pdf
