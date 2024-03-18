@@ -1,2 +1,14 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
 XTR-0001-0001,RUM001L02T2CL,Rohm,Mosfet 1.2V N-Chan,Device:Q_NMOS_GSD,Package_TO_SOT_SMD:SOT-723,https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rum001l02t2cl-e.pdf
+XTR-0002-0001,MMBT4401-7-F,Diodes Inc.,BJT NPN 40V 600mA,Device:Q_NPN_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.diodes.com/assets/Datasheets/MMBT4401.pdf
+XTR-0003-0001,MMBT4403LT1G,Onsemi,BJT PNP 40V 600mA,Device:Q_PNP_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.onsemi.com/pdf/datasheet/mmbt4403lt1-d.pdf
+XTR-0004-0001,2N7002,Onsemi,Mosfet 60V N-CH 5ohm,Device:Q_NMOS_GSD,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/download/data-sheet/pdf/nds7002a-d.pdf
+XTR-0005-0001,MMBT3904,Diotec Semiconductor,BJT NPN 40V 200mA,Device:Q_NPN_BEC,Package_TO_SOT_SMD:SOT-23-3,https://diotec.com/request/datasheet/mmbt3904.pdf
+XTR-0006-0001,PSMN075-100MSEX,Nexperia USA Inc.,Mosfet 100V N-CH 18A,g-xtr:N_CH_G3S1D,Package_TO_SOT_SMD:LFPAK33,https://assets.nexperia.com/documents/data-sheet/PSMN075-100MSE.pdf
+XTR-0006-0002,PSMN040-100MSEX,Nexperia USA Inc.,Mosfet 100V N-CH 30A,g-xtr:N_CH_G3S1D,Package_TO_SOT_SMD:LFPAK33,https://assets.nexperia.com/documents/data-sheet/PSMN040-100MSE.pdf
+XTR-0007-0001,FMMT723QTA,Diodes Incorporated,BJT PNP 100V 1A,Device:Q_PNP_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.diodes.com/assets/Datasheets/FMMT723.pdf
+XTR-0008-0001,BSC190N12NS3GATMA1,Infineon Technologies,Mosfet 120V N=CH 8.6A,g-xtr:N_CH_G3S1D,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/BSC190N12NS3+Rev2.5.pdf?folderId=db3a304313b8b5a60113cee8763b02d7&fileId=db3a30432239cccd0122a7bb1e767d49
+XTR-0008-0002,BSC123N08NS3GATMA1,Infineon Technologies,Mosfet 80V N-CH 11A,g-xtr:N_CH_G3S1D,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/BSC123N08NS3G_rev2.5.pdf?folderId=db3a304313b8b5a60113cee8763b02d7&fileId=db3a30431add1d95011ae80eb8555625
+XTR-0009-0001,FDMC2523P,Onsemi,Mosfet 150V P-CH 3A,g-xtr:P_CH_G3S1D,g-xtr:FDMC_2523P_ONS;FDMC_2523P_ONS-M;FDMC_2523P_ONS-L,https://www.onsemi.com/pdf/datasheet/fdmc2523p-d.pdf
+XTR-0010-0001,FMMT624TA,Diodes Incorporated,BJT NPN 125V 1A,Device:Q_NPN_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.diodes.com/assets/Datasheets/FMMT624.pdf
+XTR-0011-0001,IPG20N04S4L08ATMA1,Infineon Technologies,Dual Mosfet 40V N-CH 20A,Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/Infineon-IPG20N04S4L_08-DS-v01_00-en.pdf?fileId=db3a30432ba3fa6f012bbf634e6f6c0f
