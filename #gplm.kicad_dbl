@@ -812,21 +812,21 @@
                 },
     		{
                     "column": "Frequency",
-                    "name": "Description",
+                    "name": "Frequency",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
                 {
                     "column": "Stability",
-                    "name": "Description",
+                    "name": "Stability",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
                 {
                     "column": "Load",
-                    "name": "Description",
+                    "name": "Load",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
@@ -884,28 +884,28 @@
                 },
     		{
                     "column": "Color",
-                    "name": "Description",
+                    "name": "Color",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
                 {
                     "column": "I-forward-max",
-                    "name": "Description",
+                    "name": "I-forward-max",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
                 {
                     "column": "V-forward",
-                    "name": "Description",
+                    "name": "V-forward",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
                 {
                     "column": "Wavelength",
-                    "name": "Description",
+                    "name": "Wavelength",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
