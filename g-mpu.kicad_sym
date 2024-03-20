@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -6.35 27.94 0)
+			(at -3.81 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,7 +16,7 @@
 			)
 		)
 		(property "Value" "toradex-verdin"
-			(at -7.62 25.4 0)
+			(at -10.16 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35,7 +35,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 12.7 -7.62 0)
+			(at 13.97 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45,7 +45,7 @@
 			)
 		)
 		(property "Description" "TE Connectivity DDR4 SODIMM 260P 5.2H STD"
-			(at -0.254 -28.702 0)
+			(at -39.624 -4.572 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -822,24 +822,6 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 -7.62 180)
-				(length 5.08)
-				(name "189"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "189"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 12.7 -10.16 180)
 				(length 5.08)
 				(name "190"
@@ -860,24 +842,6 @@
 			(pin passive line
 				(at 12.7 -12.7 180)
 				(length 5.08)
-				(name "191"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "191"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -15.24 180)
-				(length 5.08)
 				(name "192"
 					(effects
 						(font
@@ -886,366 +850,6 @@
 					)
 				)
 				(number "192"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -17.78 180)
-				(length 5.08)
-				(name "193"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "193"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -27.94 180)
-				(length 5.08)
-				(name "197"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "197"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -33.02 180)
-				(length 5.08)
-				(name "199"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "199"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -38.1 180)
-				(length 5.08)
-				(name "201"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "201"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -43.18 180)
-				(length 5.08)
-				(name "203"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "203"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -48.26 180)
-				(length 5.08)
-				(name "205"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "205"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -53.34 180)
-				(length 5.08)
-				(name "207"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "207"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -63.5 180)
-				(length 5.08)
-				(name "211"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "211"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -68.58 180)
-				(length 5.08)
-				(name "213"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "213"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -73.66 180)
-				(length 5.08)
-				(name "215"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "215"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -78.74 180)
-				(length 5.08)
-				(name "217"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "217"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -83.82 180)
-				(length 5.08)
-				(name "219"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "219"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -88.9 180)
-				(length 5.08)
-				(name "221"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "221"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -101.6 180)
-				(length 5.08)
-				(name "226"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "226"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -106.68 180)
-				(length 5.08)
-				(name "228"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "228"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -116.84 180)
-				(length 5.08)
-				(name "232"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "232"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -121.92 180)
-				(length 5.08)
-				(name "234"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "234"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -132.08 180)
-				(length 5.08)
-				(name "238"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "238"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -137.16 180)
-				(length 5.08)
-				(name "240"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "240"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 12.7 -147.32 180)
-				(length 5.08)
-				(name "244"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "244"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1282,150 +886,6 @@
 					)
 				)
 				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 7.62 0)
-				(length 5.08)
-				(name "52"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "52"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 2.54 0)
-				(length 5.08)
-				(name "54"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "54"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -2.54 0)
-				(length 5.08)
-				(name "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -7.62 0)
-				(length 5.08)
-				(name "58"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "58"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -12.7 0)
-				(length 5.08)
-				(name "60"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "60"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -17.78 0)
-				(length 5.08)
-				(name "62"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "62"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -22.86 0)
-				(length 5.08)
-				(name "64"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "64"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -27.94 0)
-				(length 5.08)
-				(name "66"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "66"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5198,6 +4658,609 @@
 					)
 				)
 				(number "99"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "toradex-verdin_13_1"
+			(rectangle
+				(start -12.7 12.7)
+				(end 8.89 -12.7)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "PCIE"
+				(at -0.762 -14.224 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 5.08 180)
+				(length 5.08)
+				(name "PCIE_1_CLK_N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "226"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 2.54 180)
+				(length 5.08)
+				(name "PCIE_1_CLK_P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "228"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -1.27 180)
+				(length 5.08)
+				(name "PCIE_1_L0_RX_N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "232"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -3.81 180)
+				(length 5.08)
+				(name "PCIE_1_L0_RX_P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "234"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -7.62 180)
+				(length 5.08)
+				(name "PCIE_1_L0_TX_N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "238"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -10.16 180)
+				(length 5.08)
+				(name "PCIE_1_L0_TX_P"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "240"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 8.89 180)
+				(length 5.08)
+				(name "~{PCIE_1_RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "244"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "toradex-verdin_14_1"
+			(rectangle
+				(start -13.97 20.32)
+				(end 12.7 -22.86)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "ETH2 RGMII"
+				(at 0.508 -24.892 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -20.32 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_INT#"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "189"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -17.78 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_MDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "191"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -15.24 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_MDC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "193"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 7.62 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RXC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "197"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 5.08 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RX_CTL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "199"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 17.78 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RXD_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "201"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 15.24 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RXD_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "203"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 12.7 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RXD_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "205"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 10.16 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_RXD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "207"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -11.43 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TX_CTL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "211"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -8.89 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TXC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "213"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 1.27 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TXD_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "215"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -1.27 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TXD_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "217"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -3.81 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TXD_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "219"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -6.35 180)
+				(length 5.08)
+				(name "ETH_2_RGMII_TXD_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "221"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "toradex-verdin_15_1"
+			(rectangle
+				(start -12.7 10.16)
+				(end 7.62 -12.7)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "QSPI"
+				(at -1.016 -14.478 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 5.08)
+				(name "QSPI_1_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 5.08)
+				(name "~{QSPI_1_CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 5.08)
+				(name "QSPI_1_IO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name "QSPI_1_IO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 5.08)
+				(name "QSPI_1_IO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "60"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -5.08 180)
+				(length 5.08)
+				(name "QSPI_1_IO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "62"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -7.62 180)
+				(length 5.08)
+				(name "~{QSPI_1_CS2}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 5.08)
+				(name "QSPI_1_DQS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "66"
 					(effects
 						(font
 							(size 1.27 1.27)
