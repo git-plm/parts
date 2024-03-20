@@ -1,2 +1,3 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
 MPU-0000-0001,2309409-2,TE,Toradex Verdin,g-mpu:toradex-verdin,g-con:toradex-verdin,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
+MPU-0001-0001,2309413-1 ,TE Connectivity AMP Connectors,SODIMM connector for Jetson Nano/NX modules,g-mpu:JETSON_NANO,g-con:Jetson_Nano_260_SODIMM,https://www.te.com/usa-en/product-2309413-1.datasheet.pdf
