@@ -12,4 +12,3 @@ DIO-0008-0013,MMSZ5243BT1G,onsemi,Zener 13V 500mW,Device:D_Zener,Diode_SMD:D_SOD
 DIO-0008-07V5,MMSZ5236B-7-F,Diodes Incorporated,Zener 7.5V 500mW,Device:D_Zener,Diode_SMD:D_SOD-123; D_SOD-123F,0.5W,7.5V,https://www.diodes.com/assets/Datasheets/ds18010.pdf
 DIO-0009-0001,1N4148W,SMC Diode Solutions,150mA 75V general purpose ,Device:D,Diode_SMD:D_SOD-123; D_SOD-123F,150mA,75V,https://www.smc-diodes.com/propdf/1N4148W%20N0571%20REV.E.pdf
 DIO-0010-0001,"PMEG3050BEP,115",Nexperia USA Inc.,Schottky 30V 5A,Device:D_Schottky,Diode_SMD:D_SOD-128,5A,30V,https://assets.nexperia.com/documents/data-sheet/PMEG3050BEP.pdf
-DIO-0011-0001,5973301507F,Dialight,LED Green ,Device:LED,g-dio:DIALIGHT_597-3XXX,20mA,2.2V,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/560/LED_SMD_Selector_Guide_Jun2020.pdf
