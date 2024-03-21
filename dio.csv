@@ -9,6 +9,7 @@ DIO-0005-0001,BAT54WS,Diotec Semiconductor,Schottky 30V 100mA,Device:D_Schottky,
 DIO-0006-0001,CMMSH1-40L TR PBFREE,Central Semiconductor Corp,Schottky 40V 1A,Device:D_Schottky,Diode_SMD:D_SOD-123; D_SOD-123F,1A,40V,https://my.centralsemi.com/datasheets/CMMSH1-40L.PDF
 DIO-0007-0001,CMMSH1-100G TR PBFREE,Central Semiconductor Corp,Schottky 100V 1A,Device:D_Schottky,Diode_SMD:D_SOD-123; D_SOD-123F,1A,100V,https://my.centralsemi.com/datasheets/CMMSH1-40.PDF
 DIO-0008-0013,MMSZ5243BT1G,onsemi,Zener 13V 500mW,Device:D_Zener,Diode_SMD:D_SOD-123; D_SOD-123F,0.5W,13V,https://www.onsemi.com/pdf/datasheet/mmsz5221bt1-d.pdf
+DIO-0008-0015,MMSZ5245BT1G,onsemi,Zener 15V 500mW,Device:D_Zener,Diode_SMD:D_SOD-123; D_SOD-123F,0.5W,15V,https://www.onsemi.com/pdf/datasheet/mmsz5221bt1-d.pdf
 DIO-0008-07V5,MMSZ5236B-7-F,Diodes Incorporated,Zener 7.5V 500mW,Device:D_Zener,Diode_SMD:D_SOD-123; D_SOD-123F,0.5W,7.5V,https://www.diodes.com/assets/Datasheets/ds18010.pdf
 DIO-0009-0001,1N4148W,SMC Diode Solutions,150mA 75V general purpose ,Device:D,Diode_SMD:D_SOD-123; D_SOD-123F,150mA,75V,https://www.smc-diodes.com/propdf/1N4148W%20N0571%20REV.E.pdf
 DIO-0010-0001,"PMEG3050BEP,115",Nexperia USA Inc.,Schottky 30V 5A,Device:D_Schottky,Diode_SMD:D_SOD-128,5A,30V,https://assets.nexperia.com/documents/data-sheet/PMEG3050BEP.pdf
