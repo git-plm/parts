@@ -1,0 +1,4 @@
+IPN,MPN,Manufacturer,Description,Symbol,Footprint,Color,I-forward-max,V-forward,Wavelength,Datasheet
+OPT-0000-0001,LTV-217-G,Lite-On Inc.,Optoisolator Transistor Output 3750Vrms 1 Channel 4-SSOP,g-opt:OPTOISOLATOR_LTV_217_G,Package_SO:SO-4_4.4x2.3mm_P1.27mm,,,,,https://optoelectronics.liteon.com/upload/download/DS70-2009-0016/LTV-2X7%20sereis%20201610.pdf
+OPT-0001-0001,MOC207M,onsemi,Optoisolator Transistor with Base Output 2500Vrms 1 Channel 8-SOIC,g-opt:OPTOISO_MOC207M,g-opt:SOIC8_751DZ_ONS_OSI;SOIC8_751DZ_ONS_OSI-M;SOIC8_751DZ_ONS_OSI-L,,,,,https://rocelec.widen.net/view/pdf/rwpt0t28ku/ONSM-S-A0003167371-1.pdf?t.download=true&u=5oefqw
+OPT-0002-0001,5973301507F,Dialight,Green 573nm LED Indication - Discrete 2.2V 1208 (3020 Metric),Device:LED,g-dio:DIALIGHT_597-3XXX,GREEN,20mA,2.2V,573nm,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/560/LED_SMD_Selector_Guide_Jun2020.pdf

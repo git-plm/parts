@@ -1,5 +1,5 @@
 # define all of your libs here -- should be a CSV file for each lib
-GPLMLIBS="ana cap con cpd dio ics ind mpu pwr rfm res reg xtr"
+GPLMLIBS="ana cap con cpd dio ics ind mpu pwr rfm res reg xtr osc opt"
 
 parts_db_create() {
 	rm parts.sqlite

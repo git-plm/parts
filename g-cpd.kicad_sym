@@ -159,4 +159,1311 @@
 			)
 		)
 	)
+	(symbol "IC_USB_ESD_CLAMP2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TVS"
+			(at -3.81 19.05 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Openity:SLP1616P6_SEM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC ESD CLAMP USB 2.0 PLUS VCHARGE CLAMP ON VBUS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "(PartNumber)" "108-00003.A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Part Name" "IC_USB_ESD_CLAMP2"
+			(at 1.27 19.05 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.58mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "RoHS" "Y"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A" "Semtech"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A P/N 1" "RClamp3654P.TCT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Desc" "IC ESD CLAMP USB 2.0 PLUS VCHARGE CLAMP ON VBUS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SLP1616P6_SEM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "IC_USB_ESD_CLAMP2_1_0"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy 5.08 5.08) (xy 5.08 17.78) (xy -5.08 17.78) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "DM"
+				(at 3.81 15.24 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify right)
+				)
+			)
+			(text "DP"
+				(at 3.81 10.16 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify right)
+				)
+			)
+			(text "GND"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify bottom)
+				)
+			)
+			(text "ID"
+				(at -3.81 10.16 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "VBUS"
+				(at -3.81 15.24 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at 10.16 15.24 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 10.16 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 10.16 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 15.24 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TVS_P0640SALRP"
+		(pin_numbers hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TVS"
+			(at 5.08 8.89 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "P0640SALRP"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/sidactors/littelfuse_sidactor_do_214_datasheet.pdf.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "58V Off-State 150 A Ipp TVS Thyristor DO-214AA, SMB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "(PartNumber)" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Part Name" "TVS_P0640SALRP"
+			(at 5.08 6.35 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.65mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "RoHS" "Y"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A" "Littelfuse Inc."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A P/N 1" "P0640SALRP"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr B" "DigiKey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr B P/N 1" "P0640SALRPTR-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr C P/N 1" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr C" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Desc" "THYRISTOR 58V 150A DO214AA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Volt" "58V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "clamp, esd, transient"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "0603{space}(CAPC1608X95N)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TVS_P0640SALRP_1_0"
+			(polyline
+				(pts
+					(xy -1.905 2.54) (xy 1.905 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 3.81) (xy 1.905 3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 5.08) (xy 1.905 5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy -1.905 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 5.08) (xy 0 3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TVS_TPD4E02B04QDQARQ1"
+		(pin_names
+			(offset 0.254) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPD4E02B04QDQARQ1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Openity_new_parts:DQA0010A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd4e02b04"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8.8V (Typ) Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount 10-USON (2.5x1)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Desc" "TVS DIODE 3.6VWM 8.8VC 10USON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.5mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Name" "TVS_TPD4E02B04QDQARQ1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "(PartNumber)" "new"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr A" "Texas Instruments"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr A P/N 1" "TPD4E02B04DQAR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr B" "DigiKey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr B P/N 1" "296-43875-2-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TPD4E02B04QDQARQ1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DQA0010A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TVS_TPD4E02B04QDQARQ1_0_1"
+			(rectangle
+				(start -3.048 13.208)
+				(end 3.048 4.572)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 7.112) (xy -1.016 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 7.62) (xy -1.778 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 10.16) (xy -1.778 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 12.192) (xy -1.016 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 5.08) (xy -1.778 5.588)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 5.08) (xy 1.778 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 7.62) (xy -1.778 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 10.16) (xy -1.778 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 10.16) (xy -1.778 10.668)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 12.7) (xy -1.778 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 12.7) (xy 1.778 12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.254 9.652) (xy -0.762 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.254 9.652) (xy 0.254 9.652)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 7.62) (xy 0 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 7.62) (xy 0 8.128)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 10.16) (xy 0 9.652)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 10.16) (xy 0 12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 9.652) (xy 0.762 9.144)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 7.112) (xy 2.54 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 12.192) (xy 2.54 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 5.08) (xy 1.778 5.588)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 7.62) (xy 1.778 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 10.16) (xy 1.778 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 10.16) (xy 1.778 10.668)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 12.7) (xy 1.778 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 7.62) (xy 1.778 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 10.16) (xy 1.778 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 7.112) (xy -2.54 5.588) (xy -1.016 5.588) (xy -1.778 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 12.192) (xy -2.54 10.668) (xy -1.016 10.668) (xy -1.778 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 9.652) (xy -0.762 8.128) (xy 0.762 8.128) (xy 0 9.652)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 7.112) (xy 1.016 5.588) (xy 2.54 5.588) (xy 1.778 7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 12.192) (xy 1.016 10.668) (xy 2.54 10.668) (xy 1.778 12.192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TVS_TPD4E02B04QDQARQ1_1_1"
+			(pin passive line
+				(at -7.62 10.16 0)
+				(length 5.08)
+				(name "D1+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 7.62 0)
+				(length 5.08)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 10.16 180)
+				(length 5.08)
+				(name "D1-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 0 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 7.62 180)
+				(length 5.08)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TVS_TPD4E02B04QDQARQ1_2_1"
+			(pin passive line
+				(at 7.62 10.16 180)
+				(length 5.08)
+				(name "D1-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 10.16 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 7.62 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 7.62 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 0 90)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 )

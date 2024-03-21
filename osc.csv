@@ -1,0 +1,4 @@
+IPN,MPN,Manufacturer,Description,Symbol,Footprint,Frequency,Stability,Load,Datasheet
+OSC-0001-0256,8Y-25.000MAAJ-T,TXC CORPORATION,CRYSTAL 25.0000MHZ 18PF SMD,Device:Crystal_GND24,Crystal:Crystal_SMD_SeikoEpson_FA128-4Pin_2.0x1.6mm,25MHz,30ppm,18pF,http://www.txccrystal.com/images/pdf/8y.pdf
+OSC-0002-0126,ABM3C-12.000MHZ-D4Y-T,Abracon LLC,CRYSTAL 12.0000MHZ 18PF SMD,Device:Crystal_GND24,Crystal:Crystal_SMD_Abracon_ABM3C-4Pin_5.0x3.2mm,12MHz,50ppm,18pF,https://abracon.com/Resonators/ABM3C.pdf
+OSC-0003-0506,H130B-50.000-16-F-1010-TR,Raltron Electronics,CRYSTAL 50.0000MHZ 16PF SMD,Device:Crystal_GND24,Crystal:Crystal_SMD_Abracon_ABM3C-4Pin_5.0x3.2mm,50MHz,10ppm,16pF,https://www.raltron.com/webproducts/specs/CRYSTAL/H130B-50.000-16-F-1010-TR.pdf
