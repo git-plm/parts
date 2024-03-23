@@ -1,0 +1,2 @@
+IPN,Description,Symbol,Footprint,Comments
+ART-0000-0001,SMT Test Point 1.5mm round,g-art:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,"Artwork part only, does not appear in BOM"
