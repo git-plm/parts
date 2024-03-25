@@ -25,6 +25,12 @@ to:**
 7. track all database changes.
 8. scale to multiple designers.
 
+## Demo
+
+See a demonstration of this library in use at:
+
+- [![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
+
 ## Using the GitPLM Parts Database in KiCad
 
 Give it a try -- it will only take a few minutes.
@@ -48,8 +54,8 @@ Give it a try -- it will only take a few minutes.
   - add all `g-*.pretty` directories
 
 (above tested on Arch Linux, so the bits about SQLite3 libs may vary slightly on
-other platforms).  Also tested on Ubuntu 23.04, use the same instructions as
-for Arch Linux (apt install sqlite3 unixodbc etc...)
+other platforms). Also tested on Ubuntu 23.04, use the same instructions as for
+Arch Linux (apt install sqlite3 unixodbc etc...)
 
 Then when you open the symbol chooser, you will see something like:
 
@@ -101,27 +107,33 @@ Specific requirements:
    - \> 100 pins: 200mil
 
 NOTE: To aid in the accurate connection of wires in EESCHEMA symbol pins,
-regardless of their pin lengths, should fall on a 100mil/2.54mm grid.  Move
-the symbol so its origin falls on the lower leftmost pin of the symbol.
-Having consistent symbol origins facilitates moving and updating or replacing
-symbols during the editing process and makes ERC checking easier.
+regardless of their pin lengths, should fall on a 100mil/2.54mm grid. Move the
+symbol so its origin falls on the lower leftmost pin of the symbol. Having
+consistent symbol origins facilitates moving and updating or replacing symbols
+during the editing process and makes ERC checking easier.
 
 For footprints the symbol origin for surface mounted parts should be placed in
 the dead center of the part to aid in programming automated assembly machines.
-For through hole parts that are not automatically placed usually pin 1 serves
-as the origin to simplify dimensioning since components such as connectors
-often have placement restrictions necessitated by other features such as
-openings in enclosures, mating PCB's, and so on.
-  
+For through hole parts that are not automatically placed usually pin 1 serves as
+the origin to simplify dimensioning since components such as connectors often
+have placement restrictions necessitated by other features such as openings in
+enclosures, mating PCB's, and so on.
+
+The KiCad symbol `Value` field is populated with:
+
+- resistance, capacitance, and inductance for passives. Spice simulations use
+  the value field, so it is good to have it populated.
+- MPN for most other parts
+
 ## Implementation details
 
 This repo contains a parts database designed to work with
 [KiCad Database Libraries feature](https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries).
 
 The IPN (Internal Part Number) format used is specified in
-[this document](https://github.com/git-plm/gitplm/blob/main/partnumbers.md).
+[this document](partnumbers.md).
 
-IPN format: CCC-NNN-VVVV
+IPN format: CCC-NNNN-VVVV
 
 - CCC: one to three letters or numbers to identify major category (RES, CAP,
   DIO, E (electrical), M (mechanical), etc).
@@ -184,35 +196,20 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 (this may not be work out so the approach may change)
 
-### What to do with the Value field
+## Status/Support
 
-The `Value` field appears to be special in KiCad and used to identify the part.
-Therefore it is suggested to populate the Value field with the `IPN` (Internal
-Part Number) so it is unique. The following in the `kicad_dbl` file populates
-the Value field in the symbol with the IPN and then hides it.
+This library is currently being used successfully in several projects. We
+currently do most work in an Internal Gitea repo as the CSV diff functionality
+is so much better than Github, but occasionally push updates to this mirror.
 
-```
-                {
-                    "column": "IPN",
-                    "name": "Value",
-                    "visible_on_add": false,
-                    "visible_in_chooser": false,
-                    "show_name": false
-                },
-```
+For commercial support, training, or design assistance, please contact us at:
 
-## Status
-
-This is all in the experimental stage. If anyone has better ideas, please let us
-know. Issues, PRs, and Discussions are open on this repo. The
-[KiCad Forum](https://forum.kicad.info/) or the
-[TMPDIR community](https://community.tmpdir.org/) are good places as well.
-
-See [Issues](https://github.com/git-plm/parts/issues) for open issues and future
-ideas.
+- [TMPDIR community](https://community.tmpdir.org/)
+- [BEC Systems](https://bec-systems.com/)
 
 ## Reference
 
+- https://forum.kicad.info/t/gitplm-parts-kicad-database-ideas/47358
 - https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries
 - https://forum.kicad.info/t/kicad-the-case-for-database-driven-design/34621
 - https://wiki.archlinux.org/title/Open_Database_Connectivity
