@@ -125,9 +125,9 @@ This repo contains a parts database designed to work with
 [KiCad Database Libraries feature](https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries).
 
 The IPN (Internal Part Number) format used is specified in
-[this document](https://github.com/git-plm/gitplm/blob/main/partnumbers.md).
+[this document](partnumbers.md).
 
-IPN format: CCC-NNN-VVVV
+IPN format: CCC-NNNN-VVVV
 
 - CCC: one to three letters or numbers to identify major category (RES, CAP,
   DIO, E (electrical), M (mechanical), etc).
