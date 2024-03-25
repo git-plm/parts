@@ -1,2 +1,3 @@
 IPN,Description,Symbol,Footprint,Comments
 ART-0000-0001,SMT Test Point 1.5mm round,g-art:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,"Artwork part only, does not appear in BOM"
+ART-0001-0006,TagConnect TC-2030 for PIC,g-con:Conn_PIC_TagConnect_TC2030,Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical,Cable to use with PIC: TC2030-MCP-NL
