@@ -119,6 +119,12 @@ the origin to simplify dimensioning since components such as connectors often
 have placement restrictions necessitated by other features such as openings in
 enclosures, mating PCB's, and so on.
 
+The KiCad symbol `Value` field is populated with:
+
+- resistance, capacitance, and inductance for passives. Spice simulations use
+  the value field, so it is good to have it populated.
+- MPN for most other parts
+
 ## Implementation details
 
 This repo contains a parts database designed to work with
@@ -190,28 +196,11 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 (this may not be work out so the approach may change)
 
-### What to do with the Value field
-
-The `Value` field appears to be special in KiCad and used to identify the part.
-Therefore it is suggested to populate the Value field with the `IPN` (Internal
-Part Number) so it is unique. The following in the `kicad_dbl` file populates
-the Value field in the symbol with the IPN and then hides it.
-
-```
-                {
-                    "column": "IPN",
-                    "name": "Value",
-                    "visible_on_add": false,
-                    "visible_in_chooser": false,
-                    "show_name": false
-                },
-```
-
-## Status
+## Status/Support
 
 This library is currently being used successfully in several projects. We
 currently do most work in an Internal Gitea repo as the CSV diff functionality
-is so much better than Github, but occasionally push are changes to this mirror.
+is so much better than Github, but occasionally push updates to this mirror.
 
 For commercial support, training, or design assistance, please contact us at:
 
