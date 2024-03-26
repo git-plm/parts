@@ -7,8 +7,9 @@ XTR-0005-0001,MMBT3904,Diotec Semiconductor,BJT NPN 40V 200mA,Device:Q_NPN_BEC,P
 XTR-0006-0001,PSMN075-100MSEX,Nexperia USA Inc.,Mosfet 100V N-CH 18A,g-xtr:N_CH_G3S1D,Package_TO_SOT_SMD:LFPAK33,https://assets.nexperia.com/documents/data-sheet/PSMN075-100MSE.pdf
 XTR-0006-0002,PSMN040-100MSEX,Nexperia USA Inc.,Mosfet 100V N-CH 30A,g-xtr:N_CH_G3S1D,Package_TO_SOT_SMD:LFPAK33,https://assets.nexperia.com/documents/data-sheet/PSMN040-100MSE.pdf
 XTR-0007-0001,FMMT723QTA,Diodes Incorporated,BJT PNP 100V 1A,Device:Q_PNP_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.diodes.com/assets/Datasheets/FMMT723.pdf
-XTR-0008-0001,BSC190N12NS3GATMA1,Infineon Technologies,Mosfet 120V N=CH 8.6A,g-xtr:N_CH_G3S1D,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/BSC190N12NS3+Rev2.5.pdf?folderId=db3a304313b8b5a60113cee8763b02d7&fileId=db3a30432239cccd0122a7bb1e767d49
+XTR-0008-0001,BSC190N12NS3GATMA1,Infineon Technologies,Mosfet 120V N-CH 8.6A,g-xtr:N_CH_G3S1D,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/BSC190N12NS3+Rev2.5.pdf?folderId=db3a304313b8b5a60113cee8763b02d7&fileId=db3a30432239cccd0122a7bb1e767d49
 XTR-0008-0002,BSC123N08NS3GATMA1,Infineon Technologies,Mosfet 80V N-CH 11A,g-xtr:N_CH_G3S1D,Package_SON:Infineon_PG-TDSON-8_6.15x5.15mm,https://www.infineon.com/dgdl/BSC123N08NS3G_rev2.5.pdf?folderId=db3a304313b8b5a60113cee8763b02d7&fileId=db3a30431add1d95011ae80eb8555625
 XTR-0009-0001,FDMC2523P,Onsemi,Mosfet 150V P-CH 3A,g-xtr:P_CH_G3S1D,g-xtr:FDMC_2523P_ONS;FDMC_2523P_ONS-M;FDMC_2523P_ONS-L,https://www.onsemi.com/pdf/datasheet/fdmc2523p-d.pdf
 XTR-0010-0001,FMMT624TA,Diodes Incorporated,BJT NPN 125V 1A,Device:Q_NPN_BEC,Package_TO_SOT_SMD:SOT-23-3,https://www.diodes.com/assets/Datasheets/FMMT624.pdf
 XTR-0011-0001,IPG20N04S4L08ATMA1,Infineon Technologies,Dual Mosfet 40V N-CH 20A,g-xtr:Q_Dual_NMOS_S1G1S2G2D2D1,g-xtr:Infineon_PG-TDSON-8-4,https://www.infineon.com/dgdl/Infineon-IPG20N04S4L_08-DS-v01_00-en.pdf?fileId=db3a30432ba3fa6f012bbf634e6f6c0f
+XTR-0012-0001,NVF3055L108T1G,Onsemi,Mosfet 60V N-CH 3A,Device:Q_NMOS_GDSD,Package_TO_SOT_SMD:SOT-223,https://www.onsemi.com/pdf/datasheet/ntf3055l108-d.pdf

@@ -946,6 +946,36 @@
                     "show_name": false
                 }
             ]
+        },
+        {
+            "name": "art",
+            "table": "art",
+            "key": "IPN",
+            "symbols": "Symbol",
+            "footprints": "Footprint",
+            "fields": [
+                {
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Description",
+                    "name": "Description",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                },
+                {
+                    "column": "Comments",
+                    "name": "Comments",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+                }
+            ]
         }
     ]
 }
