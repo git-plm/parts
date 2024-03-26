@@ -1074,7 +1074,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 3.81 -19.05 0)
+			(at 16.51 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1082,7 +1082,7 @@
 			)
 		)
 		(property "Value" "LM74704"
-			(at 5.334 -16.764 0)
+			(at 18.034 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1136,8 +1136,8 @@
 		)
 		(symbol "LM74704_0_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -15.24)
+				(start 2.54 21.59)
+				(end 22.86 -1.27)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1149,7 +1149,7 @@
 		)
 		(symbol "LM74704_1_1"
 			(pin input line
-				(at -12.7 0 0)
+				(at 0 13.97 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -1167,7 +1167,7 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -17.78 90)
+				(at 11.43 -3.81 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1185,7 +1185,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -8.89 180)
+				(at 25.4 5.08 180)
 				(length 2.54)
 				(name "FETGOOD"
 					(effects
@@ -1203,7 +1203,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -13.97 0)
+				(at 0 0 0)
 				(length 2.54)
 				(name "VCAP+"
 					(effects
@@ -1221,7 +1221,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -3.81 0)
+				(at 0 10.16 0)
 				(length 2.54)
 				(name "VCAP-"
 					(effects
@@ -1239,7 +1239,7 @@
 				)
 			)
 			(pin power_in line
-				(at -7.62 10.16 270)
+				(at 5.08 24.13 270)
 				(length 2.54)
 				(name "ANODE"
 					(effects
@@ -1257,7 +1257,7 @@
 				)
 			)
 			(pin output line
-				(at 0 10.16 270)
+				(at 12.7 24.13 270)
 				(length 2.54)
 				(name "GATE"
 					(effects
@@ -1275,7 +1275,7 @@
 				)
 			)
 			(pin input line
-				(at 7.62 10.16 270)
+				(at 20.32 24.13 270)
 				(length 2.54)
 				(name "CATHODE"
 					(effects
