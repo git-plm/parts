@@ -61,6 +61,34 @@
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
+                },
+                {
+                    "column": "Sim_Library",
+                    "name": "Sim.Library",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+                },
+                {
+                    "column": "Sim_Name",
+                    "name": "Sim.Name",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+                },
+                {
+                    "column": "Sim_Device",
+                    "name": "Sim.Device",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+                },
+                {
+                    "column": "Sim_Pins",
+                    "name": "Sim.Pins",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
                 }
             ]
         },

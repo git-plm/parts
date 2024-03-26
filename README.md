@@ -1,3 +1,8 @@
+**Note, the development of this library has moved to a Gitea repo which has much
+better support for diff'ing CSV files. If you would like access, please contact us.**
+
+Below is for historical purposes only.
+
 # GitPLM Parts Project
 
 **Maintaining eCAD parts libraries is a lot of work. Are you:**
@@ -83,6 +88,15 @@ environment.
 - **restart KiCad** (yes the entire application). This seems to be the only way
   to get KiCad to reload the database changes. (if anyone knows of a better way,
   please let us know!)
+
+## Debugging broken \*.kicad_dbl files
+
+Sometimes when you modify the `#gplm.kicad_dbl` file, there is a typo and KiCad
+will no longer load it and does not give you any helpful debugging messages. You
+can use the [jq](https://github.com/jqlang/jq) command line utility to quickly
+find errors in the file, since the `kicad_dbl` format appears to be JSON.
+
+`jq . \#gplm.kicad_dbl`
 
 ## Adding New Parts
 
