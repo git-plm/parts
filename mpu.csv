@@ -1,4 +1,4 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
-MPU-0000-0001,2309409-2,TE,Toradex Verdin,g-mpu:toradex-verdin,g-con:toradex-verdin,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
-MPU-0001-0001,2309413-1 ,TE Connectivity AMP Connectors,SODIMM connector for Jetson Nano/NX modules,g-mpu:JETSON_NANO,g-con:Jetson_Nano_260_SODIMM,https://www.te.com/usa-en/product-2309413-1.datasheet.pdf
-MPU-0002-0001,PIC16F18444T-I/GZ,Microchip Technology,PIC PIC® XLP™ 16F Microcontroller IC 8-Bit 32MHz 7KB (4K x 14) FLASH 20-UQFN (4x4),g-mpu:PIC16F18444,Package_DFN_QFN:UQFN-20-1EP_4x4mm_P0.5mm_EP2.8x2.8mm,https://ww1.microchip.com/downloads/en/DeviceDoc/40001894B.pdf
+MPU-0000-0001,2309409-2,TE,SODIMM connector for Toradex Verdin 5.2mm ht,g-mpu:toradex-verdin,g-con:toradex-verdin,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
+MPU-0000-0002,2309411-1,TE,SODIMM connector for Toradex Verdin 8mm ht,g-mpu:toradex-verdin,g-con:toradex-verdin-8,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
+MPU-0001-0001,2309413-1 ,TE Connectivity AMP Connectors,SODIMM connector for Jetson Nano/NX modules 9.2mm ht,g-mpu:JETSON_NANO,g-con:Jetson_Nano_260_SODIMM,https://www.te.com/usa-en/product-2309413-1.datasheet.pdf
