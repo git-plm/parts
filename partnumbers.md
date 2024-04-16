@@ -144,25 +144,26 @@ difficulty of assigning new part numbers.
 
 The following CCC groups are suggested for electrical parts:
 
-| Code | Description                             |
-| ---- | --------------------------------------- |
-| ANA  | op-amps, comparators, A/D, D/A          |
-| CAP  | capacitors                              |
-| CON  | connectors                              |
-| CPD  | Circuit protection devices              |
-| DIO  | diodes                                  |
-| IND  | inductors, transformers                 |
-| ICS  | integrated circuits                     |
-| MPU  | SOC, SOM, SBC, etc.                     |
-| MCU  | Microcontrolleres, modules, etc.        |
-| OSC  | oscillators, Crystals                   |
-| PWR  | relays, etc                             |
-| RFM  | RF modules, ICs, and related components |
-| REG  | regulators                              |
-| RES  | resistors                               |
-| SEN  | sensors                                 |
-| SWI  | switch                                  |
-| XTR  | transistors, FETs                       |
+| Code | Description                              |
+| ---- | ---------------------------------------- |
+| ANA  | op-amps, comparators, A/D, D/A           |
+| CAP  | capacitors                               |
+| CON  | connectors                               |
+| CPD  | Circuit protection devices               |
+| DIO  | diodes                                   |
+| IND  | inductors, transformers                  |
+| ICS  | integrated circuits                      |
+| MPU  | SOC, SOM, SBC, etc.                      |
+| MCU  | Microcontrolleres, modules, etc.         |
+| OPT  | Optical, couplers, phototransistor, etc. |
+| OSC  | oscillators, Crystals                    |
+| PWR  | relays, etc                              |
+| RFM  | RF modules, ICs, and related components  |
+| REG  | regulators                               |
+| RES  | resistors                                |
+| SEN  | sensors                                  |
+| SWI  | switch                                   |
+| XTR  | transistors, FETs                        |
 
 Each group of CCC parts is placed in its own schematic symbol library with the
 same name. Keeping the CCC and CAD library names the same introduces
