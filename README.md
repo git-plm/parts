@@ -1,3 +1,9 @@
+**Note, the development of this library has moved to a Gitea repo which has much
+better support for diff'ing CSV files. If you would like access, please contact
+us.**
+
+This repo is a mirror that is occasionally updated, but may not be current.
+
 # GitPLM Parts Project
 
 **Maintaining eCAD parts libraries is a lot of work. Are you:**
@@ -43,9 +49,6 @@ Give it a try -- it will only take a few minutes.
 - install the following packages: `sqlite3 unixodbc libsqliteodbc sqlitebrowser`
 - make sure `/etc/odbcinst.ini` contains a
   [SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite)
-- Edit the `#gplm.kicad_dbl` `connection_string` field to point to the database
-  file in this repo. (If anyone knows how to make this path relative, let me
-  know.)
 - In KiCad Preferences->Manage Symbol Libraries:
   - add the `#gplm.kicad_dbl`. This filename is prefixed with `#` so that it
     shows up at the top of the list in the schematic symbol chooser.
@@ -83,6 +86,15 @@ environment.
 - **restart KiCad** (yes the entire application). This seems to be the only way
   to get KiCad to reload the database changes. (if anyone knows of a better way,
   please let us know!)
+
+## Debugging broken \*.kicad_dbl files
+
+Sometimes when you modify the `#gplm.kicad_dbl` file, there is a typo and KiCad
+will no longer load it and does not give you any helpful debugging messages. You
+can use the [jq](https://github.com/jqlang/jq) command line utility to quickly
+find errors in the file, since the `kicad_dbl` format appears to be JSON.
+
+`jq . \#gplm.kicad_dbl`
 
 ## Adding New Parts
 
