@@ -2,3 +2,4 @@ IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
 MPU-0000-0001,2309409-2,TE,SODIMM connector for Toradex Verdin 5.2mm ht,g-mpu:toradex-verdin,g-con:toradex-verdin,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
 MPU-0000-0002,2309411-1,TE,SODIMM connector for Toradex Verdin 8mm ht,g-mpu:toradex-verdin,g-con:toradex-verdin-8,https://docs.toradex.com/108140-verdin-carrier-board-design-guide.pdf
 MPU-0001-0001,2309413-1 ,TE Connectivity AMP Connectors,SODIMM connector for Jetson Nano/NX modules 9.2mm ht,g-mpu:JETSON_NANO,g-con:Jetson_Nano_260_SODIMM,https://www.te.com/usa-en/product-2309413-1.datasheet.pdf
+MPU-0002-0001,2034560003,Molex,"699 Position Connector Self Mating, Non-Gendered, Hermaphroditic Surface Mount Gold",g-mpu:JETSON_ORIN_AGX,g-con:MirrMez699_mirrored,https://www.molex.com/en-us/products/part-detail/2034560003?display=pdf
