@@ -4883,8 +4883,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at -7.62 -22.86 0)
+		(property "Footprint" "g-con:MirrMez699_mirrored"
+			(at 19.304 -4.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4937,24 +4937,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(pin power_in line
-				(at 43.18 71.12 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "261"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -14861,24 +14843,6 @@
 				)
 			)
 			(pin passive inverted
-				(at 58.42 55.88 180)
-				(length 7.62)
-				(name "~{PEX_L3_RST}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "J9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive inverted
 				(at 58.42 43.18 180)
 				(length 7.62)
 				(name "~{PEX_L4_RST}"
@@ -15123,6 +15087,24 @@
 					)
 				)
 				(number "K52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive inverted
+				(at 58.42 55.88 180)
+				(length 7.62)
+				(name "~{PEX_L3_RST}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15532,6 +15514,24 @@
 					)
 				)
 				(number "A35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive inverted
+				(at 0 12.7 0)
+				(length 7.62)
+				(name "~{PEX_C8_CLKREQ}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A38"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -16522,24 +16522,6 @@
 					)
 				)
 				(number "E48"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive inverted
-				(at 0 12.7 0)
-				(length 7.62)
-				(name "~{PEX_C8_CLKREQ}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "E8"
 					(effects
 						(font
 							(size 1.27 1.27)
