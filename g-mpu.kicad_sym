@@ -13834,7 +13834,7 @@
 					)
 				)
 			)
-			(pin passive inverted
+			(pin passive inverted_clock
 				(at 0 231.14 0)
 				(length 7.62)
 				(name "~{UPHY_REFCLK1}"
@@ -14068,7 +14068,7 @@
 					)
 				)
 			)
-			(pin passive inverted
+			(pin passive inverted_clock
 				(at 0 226.06 0)
 				(length 7.62)
 				(name "~{UPHY_REFCLK2}"
@@ -14482,10 +14482,10 @@
 					)
 				)
 			)
-			(pin passive inverted
-				(at 58.42 215.9 180)
+			(pin passive line
+				(at 58.42 213.36 180)
 				(length 7.62)
-				(name "~{UPHY_TX3}"
+				(name "UPHY_TX3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14500,10 +14500,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 58.42 213.36 180)
+			(pin passive inverted
+				(at 58.42 215.9 180)
 				(length 7.62)
-				(name "UPHY_TX3"
+				(name "~{UPHY_TX3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14950,10 +14950,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 58.42 218.44 180)
+			(pin passive inverted
+				(at 58.42 220.98 180)
 				(length 7.62)
-				(name "UPHY_TX2"
+				(name "~{UPHY_TX2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14968,10 +14968,10 @@
 					)
 				)
 			)
-			(pin passive inverted
-				(at 58.42 220.98 180)
+			(pin passive line
+				(at 58.42 218.44 180)
 				(length 7.62)
-				(name "~{UPHY_TX2}"
+				(name "UPHY_TX2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15259,7 +15259,7 @@
 			(pin passive line
 				(at 0 27.94 0)
 				(length 7.62)
-				(name "SYS_VIN_5V"
+				(name "SYS_VIN_SV"
 					(effects
 						(font
 							(size 1.27 1.27)
