@@ -2,6 +2,2746 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
+	(symbol "CONN_M2_B_6MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 6.096 97.028 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 -5.588 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at -0.254 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "67 Position Female Connector M.2 (NGFF) B KEYMini Card Gold 0.020\" (0.50mm) Black"
+			(at 22.606 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "CONN_M2_FEMALE{space}(M-SLOT_6.6MM_CLEARANCE)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_M2_B_6MM_0_1"
+			(polyline
+				(pts
+					(xy 5.08 76.2) (xy 43.18 76.2)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CONN_M2_B_6MM_1_0"
+			(polyline
+				(pts
+					(xy 5.08 78.74) (xy 43.18 78.74)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.08 96.52)
+				(end 43.18 -2.54)
+				(stroke
+					(width 0.256)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "KEY B"
+				(at 24.13 77.47 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 93.98 0)
+				(length 5.08)
+				(name "CONFIG_3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 81.28 180)
+				(length 5.08)
+				(name "GPIO_9/DAS/DSS"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 81.28 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 91.44 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 73.66 180)
+				(length 5.08)
+				(name "GPIO_5"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 71.12 0)
+				(length 5.08)
+				(name "CONFIG_0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 0)
+				(length 5.08)
+				(name "PERn1/USB_RXN/SSIC-RXN"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 71.12 180)
+				(length 5.08)
+				(name "GPIO_6"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 68.58 0)
+				(length 5.08)
+				(name "GPIO_11"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 68.58 180)
+				(length 5.08)
+				(name "GPIO_7"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 66.04 0)
+				(length 5.08)
+				(name "DPR"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 66.04 180)
+				(length 5.08)
+				(name "GPIO_10"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 63.5 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 63.5 180)
+				(length 5.08)
+				(name "GPIO_8"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 91.44 0)
+				(length 5.08)
+				(name "GMD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 60.96 180)
+				(length 5.08)
+				(name "UIM-RESET"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 58.42 0)
+				(length 5.08)
+				(name "PERp1/USB_RXP/SSIC-RXP"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 58.42 180)
+				(length 5.08)
+				(name "UIM_CLK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 55.88 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 55.88 180)
+				(length 5.08)
+				(name "UIM-DATA"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 53.34 0)
+				(length 5.08)
+				(name "PETn1/USB_TXN/SSIC-TXN"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 53.34 180)
+				(length 5.08)
+				(name "UIM-PWR"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 50.8 0)
+				(length 5.08)
+				(name "PETp1/UST_TXP/SSIC-TXP"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 50.8 180)
+				(length 5.08)
+				(name "DEVSLP"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 48.26 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 88.9 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 48.26 180)
+				(length 5.08)
+				(name "GPIO_0/SMB_CLK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 45.72 0)
+				(length 5.08)
+				(name "SATA-Bp/PERn0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 45.72 180)
+				(length 5.08)
+				(name "GPIO_1/SMB_DATA"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 43.18 0)
+				(length 5.08)
+				(name "SATA-Bn/PERp0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 43.18 180)
+				(length 5.08)
+				(name "GPIO_2/~{ALERT}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 40.64 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 40.64 180)
+				(length 5.08)
+				(name "GPIO_3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 38.1 0)
+				(length 5.08)
+				(name "SATA-An/PETn0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 38.1 180)
+				(length 5.08)
+				(name "GPIO_4"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 35.56 0)
+				(length 5.08)
+				(name "SATA-Ap/PETp0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 88.9 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 35.56 180)
+				(length 5.08)
+				(name "~{PERST}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 33.02 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 33.02 180)
+				(length 5.08)
+				(name "~{CLKREQ}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 30.48 0)
+				(length 5.08)
+				(name "REFCLKn"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 30.48 180)
+				(length 5.08)
+				(name "~{PEWAKE}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 27.94 0)
+				(length 5.08)
+				(name "REFCLKp"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "55"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 27.94 180)
+				(length 5.08)
+				(name "MFG1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 25.4 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 25.4 180)
+				(length 5.08)
+				(name "MFG2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 0)
+				(length 5.08)
+				(name "ANTCTL0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 86.36 180)
+				(length 5.08)
+				(name "~{FULL_CARD_PWR_OFF}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 22.86 180)
+				(length 5.08)
+				(name "COEX3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "60"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 20.32 0)
+				(length 5.08)
+				(name "ANTCTL1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 20.32 180)
+				(length 5.08)
+				(name "COEX_TXD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "62"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 17.78 0)
+				(length 5.08)
+				(name "ANTCTL2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 17.78 180)
+				(length 5.08)
+				(name "COEX_RXD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 15.24 0)
+				(length 5.08)
+				(name "ANTCTL3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "65"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 15.24 180)
+				(length 5.08)
+				(name "SIM_DETECT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 12.7 0)
+				(length 5.08)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 12.7 180)
+				(length 5.08)
+				(name "(3.3V)__SUSCLK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "68"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 10.16 0)
+				(length 5.08)
+				(name "CONFIG_1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "69"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 86.36 0)
+				(length 5.08)
+				(name "USB_DP"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 10.16 180)
+				(length 5.08)
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "70"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "71"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 7.62 180)
+				(length 5.08)
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "72"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 5.08 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 5.08 180)
+				(length 5.08)
+				(name "3.3V/VBAT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "74"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 2.54 0)
+				(length 5.08)
+				(name "CONFIG_2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 83.82 180)
+				(length 5.08)
+				(name "~{W_DISABLE}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 0 83.82 0)
+				(length 5.08)
+				(name "USB_DM"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 2.54 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 0 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 0 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "CONN_M2_E_6MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 6.096 97.028 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" ""
+			(at 0 -5.588 0)
+			(effects
+				(font
+					(size 1.0922 1.0922)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at -0.254 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "67 Position Female Connector M.2 (NGFF) B KEYMini Card Gold 0.020\" (0.50mm) Black"
+			(at 22.606 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "CONN_M2_FEMALE{space}(M-SLOT_6.6MM_CLEARANCE)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_M2_E_6MM_0_1"
+			(polyline
+				(pts
+					(xy 5.08 60.96) (xy 43.18 60.96)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CONN_M2_E_6MM_1_0"
+			(polyline
+				(pts
+					(xy 5.08 63.5) (xy 43.18 63.5)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.08 96.52)
+				(end 43.18 -2.54)
+				(stroke
+					(width 0.256)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "KEY E"
+				(at 24.13 62.23 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 93.98 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 81.28 180)
+				(length 5.08)
+				(name "PCM_SYNC/I2S_WS"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 81.28 0)
+				(length 5.08)
+				(name "SDIO_CMD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 78.74 180)
+				(length 5.08)
+				(name "PCM_IN/i2S_IN"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 78.74 0)
+				(length 5.08)
+				(name "SDIO_DATA0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 76.2 180)
+				(length 5.08)
+				(name "PCM_OUT/I2S_SD_OUT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 76.2 0)
+				(length 5.08)
+				(name "SDIO_DATA1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 73.66 180)
+				(length 5.08)
+				(name "~{LED2}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 73.66 0)
+				(length 5.08)
+				(name "SDIO_DATA2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 71.12 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 71.12 0)
+				(length 5.08)
+				(name "SDIO_DATA3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 91.44 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 68.58 180)
+				(length 5.08)
+				(name "~{UART_WAKE}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 68.58 0)
+				(length 5.08)
+				(name "~{SDIO_WAKE}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 66.04 180)
+				(length 5.08)
+				(name "UART_RXD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 66.04 0)
+				(length 5.08)
+				(name "~{SDIO_RESET}/TX_BLANKING"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 91.44 0)
+				(length 5.08)
+				(name "USB_DP"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 58.42 180)
+				(length 5.08)
+				(name "UART_TXD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 55.88 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 55.88 180)
+				(length 5.08)
+				(name "UART_CTS"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 53.34 0)
+				(length 5.08)
+				(name "PETp0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 53.34 180)
+				(length 5.08)
+				(name "UART_RTS"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 50.8 0)
+				(length 5.08)
+				(name "PETn0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 50.8 180)
+				(length 5.08)
+				(name "(reserved)"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 48.26 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 88.9 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 48.26 180)
+				(length 5.08)
+				(name "(reserved)"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 45.72 0)
+				(length 5.08)
+				(name "PERp0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 45.72 180)
+				(length 5.08)
+				(name "(reserved)"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 43.18 0)
+				(length 5.08)
+				(name "PERn0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 43.18 180)
+				(length 5.08)
+				(name "COEX3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 40.64 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 40.64 180)
+				(length 5.08)
+				(name "COEX_RXD"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 38.1 0)
+				(length 5.08)
+				(name "REFCLKP0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 38.1 180)
+				(length 5.08)
+				(name "COEX_TXT"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 35.56 0)
+				(length 5.08)
+				(name "REFCLKN0"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 88.9 0)
+				(length 5.08)
+				(name "USB_DM"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 35.56 180)
+				(length 5.08)
+				(name "SUSCLK_32KHZ"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 33.02 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 33.02 180)
+				(length 5.08)
+				(name "~{PERST0}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 30.48 0)
+				(length 5.08)
+				(name "~{CLKREQ0}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 30.48 180)
+				(length 5.08)
+				(name "~{W_DISABLE2}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 27.94 0)
+				(length 5.08)
+				(name "~{PEWAKE0}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "55"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 27.94 180)
+				(length 5.08)
+				(name "~{W_DISABLE1}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 25.4 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 25.4 180)
+				(length 5.08)
+				(name "I2C_DATA"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 0)
+				(length 5.08)
+				(name "(RES)/PETp1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 86.36 180)
+				(length 5.08)
+				(name "~{LED1}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 22.86 180)
+				(length 5.08)
+				(name "I2C_CLK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "60"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 20.32 0)
+				(length 5.08)
+				(name "(RES)/PETn1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 20.32 180)
+				(length 5.08)
+				(name "~{ALERT}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "62"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 17.78 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 17.78 180)
+				(length 5.08)
+				(name "(RES)"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 15.24 0)
+				(length 5.08)
+				(name "(RES)/PERp1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "65"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 15.24 180)
+				(length 5.08)
+				(name "UIM_SWP/~{PERST1}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "66"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 12.7 0)
+				(length 5.08)
+				(name "(RES)/PERn1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "67"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 12.7 180)
+				(length 5.08)
+				(name "UIM_POWER_SNK/~{CLKREQ1}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "68"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 10.16 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "69"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 86.36 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 10.16 180)
+				(length 5.08)
+				(name "UIM_POWER_SRC/~{PEWAKE1}"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "70"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 0)
+				(length 5.08)
+				(name "(RES)/REFCLKp1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "71"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 7.62 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "72"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 0)
+				(length 5.08)
+				(name "(RES)/REFCLKn1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 5.08 180)
+				(length 5.08)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "74"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 2.54 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 48.26 83.82 180)
+				(length 5.08)
+				(name "PCM_CLK/I2S_SCK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 83.82 0)
+				(length 5.08)
+				(name "SDIO_CLK/SYSCLK"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 2.54 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 0 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 48.26 0 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "S3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "CONN_M2_M_6MM"
 		(exclude_from_sim no)
 		(in_bom yes)
