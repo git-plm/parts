@@ -100,7 +100,9 @@ find errors in the file, since the `kicad_dbl` format appears to be JSON.
 
 If the symbol and footprint already exist, adding a new part is as simple as:
 
-1. adding a line to one of the `csv` files
+1. add a line to one of the `csv` files. The `csv` files should be sorted by
+   `IPN`. This ensures the `IPN` is unique (which is the lib/db key), and merge
+   operations are simpler if the file is always sorted.
 2. run `parts_db_create`
 3. restart KiCad
 
