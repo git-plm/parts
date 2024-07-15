@@ -365,7 +365,7 @@
 			(pin power_in line
 				(at 0 91.44 0)
 				(length 5.08)
-				(name "GMD"
+				(name "GND"
 					(effects
 						(font
 							(size 1.2065 1.2065)
@@ -509,7 +509,7 @@
 			(pin passive line
 				(at 0 50.8 0)
 				(length 5.08)
-				(name "PETp1/UST_TXP/SSIC-TXP"
+				(name "PETp1/USB_TXP/SSIC-TXP"
 					(effects
 						(font
 							(size 1.2065 1.2065)
@@ -4825,6 +4825,648 @@
 			)
 			(pin power_in line
 				(at 0 81.28 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "CONN_MICRO_SD_FLIP_UP"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 5.08 41.91 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "ST1W008S4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "M80_revB:CONN_MICRO_SD_HINGED (JAE_ST1W008S4)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector: uSD flip top style JAE series ST1W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "(PartNumber)" "111-00054.A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Part Name" "CONN_MICRO_SD_FLIP_UP"
+			(at 3.048 -4.826 0)
+			(effects
+				(font
+					(size 1.2065 1.0922)
+					(thickness 0.1524)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.55mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "RoHS" "Y"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A" "Japan Aviation Electronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr A P/N 1" "ST1W008S4TR2000"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr B" "DigiKey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mfr B P/N 1" "670-2673-2-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.6087 2.032)
+					(thickness 0.0254)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "CONN_MICRO_SD_HINGED{space}(JAE_ST1W008S4)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_MICRO_SD_FLIP_UP_1_0"
+			(polyline
+				(pts
+					(xy 5.08 15.24) (xy 10.16 15.24)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 7.62) (xy 5.08 7.62)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 12.7) (xy 10.16 7.62)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 12.7) (xy 17.78 12.7)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 15.24) (xy 11.43 19.05)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 12.7) (xy 17.78 15.24)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 15.24) (xy 15.24 15.24)
+				)
+				(stroke
+					(width 0.508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -2.54) (xy 22.86 -2.54) (xy 22.86 40.64) (xy 5.08 40.64) (xy 5.08 -2.54)
+				)
+				(stroke
+					(width 0.256)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "CLK"
+				(at 6.35 27.94 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "CMD"
+				(at 6.35 33.02 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "DAT0"
+				(at 6.35 22.86 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "DAT1"
+				(at 6.35 20.32 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "DATA2"
+				(at 6.35 38.1 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "FGND"
+				(at 6.35 0 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "FGND"
+				(at 6.35 2.54 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "FGND"
+				(at 6.35 5.08 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "FGND"
+				(at 11.43 7.62 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "GND"
+				(at 6.35 25.4 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "micro"
+				(at 13.97 29.21 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "SD"
+				(at 15.24 26.67 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left bottom)
+				)
+			)
+			(text "SW1"
+				(at 6.35 16.51 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "SW2"
+				(at 16.51 16.51 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "VDD"
+				(at 6.35 30.48 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(text "~{CD}/DAT3"
+				(at 6.35 35.56 0)
+				(effects
+					(font
+						(size 1.2065 1.0922)
+						(thickness 0.1524)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at 0 38.1 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 7.62 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 2.54 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 35.56 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 33.02 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 30.48 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 27.94 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 25.4 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 22.86 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 20.32 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 15.24 0)
 				(length 5.08)
 				(name ""
 					(effects
