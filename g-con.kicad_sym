@@ -219,24 +219,6 @@
 				)
 			)
 			(pin passive line
-				(at 0 60.96 0)
-				(length 5.08)
-				(name "PERn1/USB_RXN/SSIC-RXN"
-					(effects
-						(font
-							(size 1.2065 1.2065)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.2065 1.2065)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 48.26 71.12 180)
 				(length 5.08)
 				(name "GPIO_6"
@@ -355,6 +337,24 @@
 					)
 				)
 				(number "28"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 60.96 0)
+				(length 5.08)
+				(name "PERn1/USB_RXN/SSIC-RXN"
+					(effects
+						(font
+							(size 1.2065 1.2065)
+						)
+					)
+				)
+				(number "29"
 					(effects
 						(font
 							(size 1.2065 1.2065)
