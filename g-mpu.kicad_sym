@@ -13009,7 +13009,7 @@
 			(pin passive inverted
 				(at 58.42 20.32 180)
 				(length 7.62)
-				(name "~{PEX_WAIT}"
+				(name "~{PEX_WAKE}"
 					(effects
 						(font
 							(size 1.27 1.27)
