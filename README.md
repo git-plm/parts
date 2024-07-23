@@ -176,7 +176,8 @@ This might seem overly complex, but it is actually pretty easy as Sqlite3 can
 import `csv` files, so no additional tooling is required. See the
 [`envsetup.sh`](envsetup.sh) file for how this is done.
 
-`csv` files can be easily edited in [Libreoffice](https://www.libreoffice.org/).
+`csv` files can be easily edited in [Libreoffice](https://www.libreoffice.org/)
+or [VisiData](https://www.visidata.org/).
 
 A separate `csv` file is used for each
 [part category](https://github.com/git-plm/gitplm/blob/main/partnumbers.md#three-letter-category-code)
