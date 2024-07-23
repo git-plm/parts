@@ -2,9 +2,8 @@
 GPLMLIBS="ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art"
 
 parts_db_create() {
-	rm parts.sqlite
-
 	for lib in ${GPLMLIBS}; do
+		sqlite3 ./parts.sqlite "DROP TABLE IF EXISTS ${lib}" || return 1
 		sqlite3 --csv ./parts.sqlite ".import ${lib}.csv ${lib}" || return 1
 	done
 }
