@@ -179,6 +179,13 @@ import `csv` files, so no additional tooling is required. See the
 `csv` files can be easily edited in [Libreoffice](https://www.libreoffice.org/)
 or [VisiData](https://www.visidata.org/).
 
+If you use VisiData on Linux, please set the following option in `~/.visidatarc`
+to make the CSV line endings compatible with LibreOffice Calc:
+
+```
+options.csv_lineterminator = "\x0a"
+```
+
 A separate `csv` file is used for each
 [part category](https://github.com/git-plm/gitplm/blob/main/partnumbers.md#three-letter-category-code)
 (ex: IND, RES, CAP, etc). There are several reasons for this:
