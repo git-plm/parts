@@ -12,8 +12,8 @@ parts_db_watch() {
 	echo "watching csv files for changes ..."
 	while true; do
 		FILE=$(inotifywait -q -e modify -e close_write --format '%w%f' ./*.csv)
-		# debounce a bit as things might be moving around when libreofice is saving a file
 		echo "csv file changed: $FILE"
+		# debounce a bit as things might be moving around when libreofice is saving a file
 		sleep 1
 		LIB=$(basename "${FILE%.*}")
 		echo "updating db: $LIB ..."
