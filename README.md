@@ -40,7 +40,9 @@ Give it a try -- it will only take a few minutes.
 - In KiCad Preferences->Configure Paths:
   - set `GITPLM_PARTS` to the location of the parts repo
   - set `'GITPLM_3DMODELS` to the location of the 3d-models repo
-- install the following packages: `sqlite3 unixodbc libsqliteodbc sqlitebrowser`
+- install the following packages: `sqlite3 unixodbc libsqliteodbc`
+- optionally install the following packages:
+  `sqlitebrowser visidata inotify-tools`
 - make sure `/etc/odbcinst.ini` contains a
   [SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite)
 - In KiCad Preferences->Manage Symbol Libraries:
