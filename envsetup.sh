@@ -1,5 +1,5 @@
 # define all of your libs here -- should be a CSV file for each lib
-GPLMLIBS="ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art"
+GPLMLIBS="ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art swi"
 
 parts_db_create() {
 	for lib in ${GPLMLIBS}; do
