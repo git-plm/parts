@@ -12122,7 +12122,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 0 12.7 0)
 				(length 5.08)
 				(name "VCCIO"
@@ -22565,7 +22565,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 27.94 40.64 180)
 				(length 5.08)
 				(name "C_VDDR"
