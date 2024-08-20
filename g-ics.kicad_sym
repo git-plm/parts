@@ -1331,7 +1331,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 53.34 180)
+				(at 40.64 50.8 180)
 				(length 5.08)
 				(name "~{I2C1_IRQ}"
 					(effects
@@ -1529,7 +1529,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 50.8 180)
+				(at 40.64 48.26 180)
 				(length 5.08)
 				(name "I2C1_CLK"
 					(effects
@@ -1539,24 +1539,6 @@
 					)
 				)
 				(number "A4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 40.64 43.18 180)
-				(length 5.08)
-				(name "NOMPWR_EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2447,7 +2429,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 48.26 180)
+				(at 40.64 45.72 180)
 				(length 5.08)
 				(name "I2C1_DATA"
 					(effects
@@ -3334,6 +3316,24 @@
 					)
 				)
 				(number "A23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 27.94 101.6 180)
+				(length 5.08)
+				(name "NOMPWR_EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A5"
 					(effects
 						(font
 							(size 1.27 1.27)
