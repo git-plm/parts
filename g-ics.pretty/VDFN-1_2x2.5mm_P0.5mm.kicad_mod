@@ -124,14 +124,14 @@
 		(uuid "5d19c978-0c7e-4e03-b1db-412237cbb7ec")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at 0.02 0 90)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "35fa7522-8463-40d5-b94a-978987c0139d")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.7 0.7)
+				(thickness 0.1)
 			)
 		)
 	)
