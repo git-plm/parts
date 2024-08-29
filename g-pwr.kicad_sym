@@ -3233,6 +3233,7 @@
 		)
 		(property "Value" "VCC3.3V"
 			(at 0 1.778 0)
+			(do_not_autoplace)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3578,6 +3579,7 @@
 		)
 		(property "Value" "VDD_1V8"
 			(at 0 2.032 0)
+			(do_not_autoplace)
 			(effects
 				(font
 					(size 1.27 1.27)

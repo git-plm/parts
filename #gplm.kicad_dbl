@@ -202,7 +202,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -376,7 +376,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },
@@ -428,7 +428,7 @@
                 {
                     "column": "MPN",
                     "name": "MPN",
-                    "visible_on_add": false,
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
                     "show_name": false
                 },

@@ -34,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -46,6 +47,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +60,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -180,6 +183,18 @@
 		)
 		(layer "F.Fab")
 		(uuid "1067916d-5ff2-4ced-ae66-886f13b8301f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.03 -2.38 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "551087b5-9d15-47fd-87f3-96f12ca5c7b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(pad "1" thru_hole circle
 		(at 3.5 -1)

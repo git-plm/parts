@@ -131,14 +131,6 @@
 			)
 		)
 	)
-	(pad "65" smd circle
-		(at -4.6 3.22)
-		(size 0.304 0.304)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin -0.025)
-		(solder_paste_margin -0.025)
-		(uuid "fff41407-a4ae-42b4-ae92-68d0ccdcb15c")
-	)
 	(pad "A1" smd circle
 		(at -5.06 -5.06)
 		(size 0.304 0.304)
@@ -1129,14 +1121,6 @@
 		(solder_paste_margin -0.025)
 		(uuid "14514bbc-a317-4605-b37e-b53af33cd425")
 	)
-	(pad "E12" smd circle
-		(at 3.9 -3.25)
-		(size 0.304 0.304)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin -0.025)
-		(solder_paste_margin -0.025)
-		(uuid "e43e4b2e-f6c9-4687-93ef-9b23f008d61c")
-	)
 	(pad "E13" smd circle
 		(at 0.65 -3.25)
 		(size 0.304 0.304)
@@ -1176,6 +1160,14 @@
 		(solder_mask_margin -0.025)
 		(solder_paste_margin -0.025)
 		(uuid "dde3c037-74cf-42e9-a659-adb0fb75540b")
+	)
+	(pad "E20" smd circle
+		(at 3.9 -3.25)
+		(size 0.304 0.304)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "e43e4b2e-f6c9-4687-93ef-9b23f008d61c")
 	)
 	(pad "E22" smd circle
 		(at 4.6 -3.22)
@@ -2417,6 +2409,14 @@
 		(solder_paste_margin -0.025)
 		(uuid "7fd6d096-1cb3-4515-968a-3038a69f7e4a")
 	)
+	(pad "V2" smd circle
+		(at -4.6 2.76)
+		(size 0.304 0.304)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "08f7789d-990c-4d7a-86ed-e9d36a5383fe")
+	)
 	(pad "V4" smd circle
 		(at -3.9 2.6)
 		(size 0.304 0.304)
@@ -2546,12 +2546,12 @@
 		(uuid "2734398d-1cc8-43ff-8fc9-57f1d3b5b283")
 	)
 	(pad "W2" smd circle
-		(at -4.6 2.76)
+		(at -4.6 3.22)
 		(size 0.304 0.304)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin -0.025)
 		(solder_paste_margin -0.025)
-		(uuid "08f7789d-990c-4d7a-86ed-e9d36a5383fe")
+		(uuid "fff41407-a4ae-42b4-ae92-68d0ccdcb15c")
 	)
 	(pad "W4" smd circle
 		(at -3.9 3.25)

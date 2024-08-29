@@ -1,10 +1,10 @@
-(footprint "C_0201_EIT_Custom_0.254x0.330"
+(footprint "C_0201_EIT_Custom_0.254x0.330_with_voiding"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0.01 -0.54 0)
+		(at 0.02 -0.56 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "193bc51d-2c64-4c99-876b-0da34dffd107")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "C_0201_EIT_Custom_0.254x0.330"
+	(property "Value" "C_0201_EIT_Custom_0.254x0.330_with_voiding"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -68,10 +68,10 @@
 	)
 	(attr smd)
 	(fp_rect
-		(start -0.45 -0.2)
-		(end 0.45 0.2)
+		(start -0.48 -0.26)
+		(end 0.48 0.26)
 		(stroke
-			(width 0.05)
+			(width 0.005)
 			(type default)
 		)
 		(fill none)
@@ -90,7 +90,7 @@
 		(uuid "d7304273-a71e-40cc-a442-dd0b1ef8b279")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0.48 0)
+		(at 0.05 0.54 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "fdd5cefc-d09b-4568-a106-5c0a2d85b2bb")
@@ -117,5 +117,39 @@
 		(roundrect_rratio 0.15)
 		(thermal_bridge_angle 45)
 		(uuid "71852b8f-cdfd-4dca-8fb5-412f2da53072")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu"
+			"In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
+			"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu"
+			"In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu"
+			"In30.Cu" "F.SilkS"
+		)
+		(uuid "5c3c1127-9c4c-40b2-b592-6bdf7a9a2b57")
+		(name "Voiding")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -0.48 -0.26) (xy 0.48 -0.26) (xy 0.48 0.26) (xy -0.48 0.26)
+			)
+		)
 	)
 )
