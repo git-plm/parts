@@ -15,3 +15,4 @@ XTR-0011-0001,IPG20N04S4L08ATMA1,Infineon Technologies,Dual Mosfet 40V N-CH 20A,
 XTR-0012-0001,NVF3055L108T1G,Onsemi,Mosfet 60V N-CH 3A,Device:Q_NMOS_GDSD,Package_TO_SOT_SMD:SOT-223,https://www.onsemi.com/pdf/datasheet/ntf3055l108-d.pdf
 XTR-0013-0001,SI7149ADP-T1-GE3,Vishay Siliconix,MOSFET P-CH 30V 50A PPAK SO-8,g-xtr:P_CH_G3S1D,Package_SO:PowerPAK_SO-8_Single,https://www.vishay.com/docs/62839/si7149adp.pdf
 XTR-0014-0001,"PMPB13XNE,115",Nexperia USA Inc.,"N-Channel 30 V 8A (Ta) 1.7W (Ta), 12.5W (Tc) Surface Mount DFN2020MD-6",g-xtr:NXP_PMPB13XNE,g-xtr:Nexperia_UDFN2020MD-6_SOT1220,https://assets.nexperia.com/documents/data-sheet/PMPB13XNE.pdf
+XTR-0015-0001,CSD87501L,Texas Instruments,N-CH Mosfet Array 2.5W Surface Mount 10-Picostar (3.37x1.47),g-xtr:CSD87501L,g-xtr:Texas_PicoStar_BGA-10_1.47x3.37mm_Layout2x5_P0.65mm,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd87501l
