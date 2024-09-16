@@ -4,7 +4,7 @@
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -4.4 2.5 0)
+		(at -34.6 10 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "5aa91635-ffe4-489f-a107-fa178f2f5937")
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "MirrMez699_mirrored"
-		(at 3.8 4.3 0)
+		(at -26.4 11.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "2f9f2f72-a28f-42d1-b49a-ed1aa3cd5588")
@@ -28,7 +28,7 @@
 		)
 	)
 	(property "Footprint" ""
-		(at 0 0 0)
+		(at -30.2 7.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -41,7 +41,7 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at -30.2 7.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -54,7 +54,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at -30.2 7.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -68,8 +68,8 @@
 	)
 	(attr smd)
 	(fp_rect
-		(start -2.3 -19)
-		(end 63 3.6)
+		(start -32.5 -11.5)
+		(end 32.8 11.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -79,8 +79,8 @@
 		(uuid "08eef6c9-c648-4557-8227-b56e9e41d713")
 	)
 	(fp_rect
-		(start -7.05 -23.7)
-		(end 67.65 8.3)
+		(start -32.85 -12.1)
+		(end 33.25 11.8)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -90,8 +90,8 @@
 		(uuid "39d7ce75-4dfc-42c8-af6b-3b43a7232e55")
 	)
 	(fp_line
-		(start 0 -16.8)
-		(end 0 -15.4)
+		(start -30.2 -9.3)
+		(end -30.2 -7.9)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -100,8 +100,8 @@
 		(uuid "0761ec8d-ff0e-4d21-b490-c6f90e317f5b")
 	)
 	(fp_line
-		(start 0 -16.8)
-		(end 60.6 -16.8)
+		(start -30.2 -9.3)
+		(end 30.4 -9.3)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -110,8 +110,8 @@
 		(uuid "09eb134a-b0bc-4a3b-9342-2bddb988b4be")
 	)
 	(fp_line
-		(start 0 -15.4)
-		(end 0.8 -15.4)
+		(start -30.2 -7.9)
+		(end -29.4 -7.9)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -120,8 +120,8 @@
 		(uuid "16d7f45a-ebf8-46ca-b2ea-3b32e6724b2c")
 	)
 	(fp_line
-		(start 0.8 -15.4)
-		(end 0.8 -13.9)
+		(start -29.4 -7.9)
+		(end -29.4 -6.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -130,8 +130,8 @@
 		(uuid "ee28f373-99ce-4cac-a5ec-24a282dff370")
 	)
 	(fp_line
-		(start 0.8 -13.9)
-		(end -2 -13.9)
+		(start -29.4 -6.4)
+		(end -32.2 -6.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -140,8 +140,28 @@
 		(uuid "5de735e2-0f4f-44c3-9a3b-1396bd51e703")
 	)
 	(fp_line
-		(start 59.8 -15.4)
-		(end 59.8 -13.9)
+		(start -1 0)
+		(end 1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "62d3c73f-b872-4ce1-8ae7-70e179a03c06")
+	)
+	(fp_line
+		(start 0 -1.5)
+		(end 0 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "60e61c5d-c879-4cc0-805b-6d715d5a6168")
+	)
+	(fp_line
+		(start 29.6 -7.9)
+		(end 29.6 -6.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -150,8 +170,8 @@
 		(uuid "1beab39d-c07a-4307-ad44-5883328f9cc4")
 	)
 	(fp_line
-		(start 59.8 -13.9)
-		(end 62.6 -13.9)
+		(start 29.6 -6.4)
+		(end 32.4 -6.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -160,8 +180,8 @@
 		(uuid "4adfdd37-09fa-4ceb-ade7-955791ad5535")
 	)
 	(fp_line
-		(start 60.6 -16.8)
-		(end 60.6 -15.4)
+		(start 30.4 -9.3)
+		(end 30.4 -7.9)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -170,8 +190,8 @@
 		(uuid "1738768b-0066-41a7-a108-b2bee5f29923")
 	)
 	(fp_line
-		(start 60.6 -15.4)
-		(end 59.8 -15.4)
+		(start 30.4 -7.9)
+		(end 29.6 -7.9)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -180,8 +200,8 @@
 		(uuid "e483d079-6c4c-479f-aacd-ea6d9c127371")
 	)
 	(fp_rect
-		(start -2.05 -18.7)
-		(end 62.65 3.3)
+		(start -32.25 -11.2)
+		(end 32.45 10.8)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -190,8 +210,39 @@
 		(layer "F.Fab")
 		(uuid "0878816a-c394-4098-90e2-b629de490ef0")
 	)
+	(fp_poly
+		(pts
+			(arc
+				(start -43.5 73.6)
+				(mid -42.914214 75.014214)
+				(end -41.5 75.6)
+			)
+			(arc
+				(start 41.5 75.6)
+				(mid 42.914214 75.014214)
+				(end 43.5 73.6)
+			)
+			(arc
+				(start 43.5 -22.5)
+				(mid 42.914214 -23.914214)
+				(end 41.5 -24.5)
+			)
+			(arc
+				(start -41.5 -24.5)
+				(mid -42.914214 -23.914214)
+				(end -43.5 -22.5)
+			)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "668bc7ff-d7bb-464c-a466-a1e4406cdbde")
+	)
 	(fp_text user "A3"
-		(at 0.5 5.3 0)
+		(at -29.7 12.8 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "0b59719f-87db-4074-8964-dad520f67ab7")
@@ -204,7 +255,7 @@
 		)
 	)
 	(fp_text user "A"
-		(at -3.7 0.8 0)
+		(at -33.9 8.3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "751499f4-d8bd-4a72-8e0f-db7eaa1ca10f")
@@ -217,7 +268,7 @@
 		)
 	)
 	(fp_text user "J"
-		(at -3.7 -11.3 0)
+		(at -33.9 -3.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "10b00e50-7108-4fd4-8a6a-b9f9a22a9906")
@@ -230,7 +281,7 @@
 		)
 	)
 	(fp_text user "A"
-		(at -3.1 0.8 0)
+		(at -33.3 8.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "157b36da-6da9-4423-a924-639d0bb63179")
@@ -243,7 +294,7 @@
 		)
 	)
 	(fp_text user "D"
-		(at -3.7 -3.7 0)
+		(at -33.9 3.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "1f7206e9-21a9-4a47-ad34-6111856cefba")
@@ -256,7 +307,7 @@
 		)
 	)
 	(fp_text user "L"
-		(at -3.7 -14.4 0)
+		(at -33.9 -6.9 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "2eef961e-7f78-4f85-b4da-725f83a43bbf")
@@ -269,7 +320,7 @@
 		)
 	)
 	(fp_text user "B"
-		(at -3.7 -0.7 0)
+		(at -33.9 6.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "33213fb1-2f75-423d-9443-1758c7c6fc47")
@@ -282,7 +333,7 @@
 		)
 	)
 	(fp_text user "E"
-		(at -3.7 -5.2 0)
+		(at -33.9 2.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "63dfc3d2-a888-447c-9308-73e4c187bf6b")
@@ -295,7 +346,7 @@
 		)
 	)
 	(fp_text user "H"
-		(at -3.8 -9.8 0)
+		(at -34 -2.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "69ba556a-7252-487a-9a9e-6597692b3c12")
@@ -308,7 +359,7 @@
 		)
 	)
 	(fp_text user "F"
-		(at -3.7 -6.7 0)
+		(at -33.9 0.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7f60af56-4a87-4980-b477-b780e094afd9")
@@ -321,7 +372,7 @@
 		)
 	)
 	(fp_text user "C"
-		(at -3.7 -2.2 0)
+		(at -33.9 5.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "8c8d945d-87bd-44e5-93ff-f96a505ad99a")
@@ -334,7 +385,7 @@
 		)
 	)
 	(fp_text user "K"
-		(at -3.8 -12.8 0)
+		(at -34 -5.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "9d8b43ad-81c0-48e4-ae74-7a24eeec0c00")
@@ -347,7 +398,7 @@
 		)
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0.5 6.1 0)
+		(at -29.7 13.6 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "aa48c351-0383-4cb6-a165-8c3f477b1aff")
@@ -359,7 +410,7 @@
 		)
 	)
 	(fp_text user "G"
-		(at -3.8 -8.2 0)
+		(at -34 -0.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "f72f548b-66ef-4d68-9900-65dda3eef459")
@@ -371,8 +422,44 @@
 			(justify left bottom)
 		)
 	)
+	(pad "" np_thru_hole circle
+		(at -39.5 -20.44)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "3df06ac2-273f-493f-aca6-580df9fc9cb9")
+	)
+	(pad "" np_thru_hole circle
+		(at -39.5 71.56)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "6a9cc34d-9146-4636-bfde-f4507c128c76")
+	)
+	(pad "" np_thru_hole circle
+		(at 39.5 -20.44)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "b6d08202-18ff-4563-ad36-6a1d843b1bfc")
+	)
+	(pad "" np_thru_hole circle
+		(at 39.5 71.56)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin -0.025)
+		(solder_paste_margin -0.025)
+		(uuid "275e8a57-aaa7-4788-9d6b-b16c58baa1b5")
+	)
 	(pad "A3" smd circle
-		(at 1.8 0)
+		(at -28.4 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -389,7 +476,7 @@
 		(uuid "dd3ba27b-90a3-44bb-a00b-99f916de4e08")
 	)
 	(pad "A4" smd circle
-		(at 2.7 0)
+		(at -27.5 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -406,7 +493,7 @@
 		(uuid "bb499987-f02f-4677-b121-d0908705f873")
 	)
 	(pad "A5" smd circle
-		(at 3.6 0)
+		(at -26.6 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -423,7 +510,7 @@
 		(uuid "3de2821e-2923-4568-82f7-989322cb1e82")
 	)
 	(pad "A6" smd circle
-		(at 4.5 0)
+		(at -25.7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -440,7 +527,7 @@
 		(uuid "1adca061-0ff8-420c-9015-f686721be42f")
 	)
 	(pad "A7" smd circle
-		(at 5.4 0)
+		(at -24.8 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -457,7 +544,7 @@
 		(uuid "fad1b8e5-9bc8-4405-a879-a3ac88fc7149")
 	)
 	(pad "A8" smd circle
-		(at 6.3 0)
+		(at -23.9 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -474,7 +561,7 @@
 		(uuid "4e723fb3-c204-4d6a-88bd-8d9fbc2d7b54")
 	)
 	(pad "A9" smd circle
-		(at 7.2 0)
+		(at -23 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -491,7 +578,7 @@
 		(uuid "ac37c3dc-e396-4d60-92b7-58045ad320e3")
 	)
 	(pad "A10" smd circle
-		(at 8.1 0)
+		(at -22.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -508,7 +595,7 @@
 		(uuid "a184edbf-7e12-4599-8384-5fbe6dee2794")
 	)
 	(pad "A11" smd circle
-		(at 9 0)
+		(at -21.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -525,24 +612,7 @@
 		(uuid "36b003dc-8d02-41ad-b333-a981f90bfbb0")
 	)
 	(pad "A12" smd circle
-		(at 9.9 -3)
-		(size 0.5 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(teardrops
-			(best_length_ratio 0.5)
-			(max_length 1)
-			(best_width_ratio 1)
-			(max_width 2)
-			(curve_points 0)
-			(filter_ratio 0.9)
-			(enabled yes)
-			(allow_two_segments yes)
-			(prefer_zone_connections yes)
-		)
-		(uuid "6bacd6fd-f44c-4201-b30a-986a75769eb0")
-	)
-	(pad "A12" smd circle
-		(at 9.9 0)
+		(at -20.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -559,7 +629,7 @@
 		(uuid "8ada1f1c-1dc3-471b-9a4e-4309f193c6c3")
 	)
 	(pad "A13" smd circle
-		(at 11.2 0)
+		(at -19 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -576,7 +646,7 @@
 		(uuid "07d6fd4b-fda4-4482-81b7-11895eded77f")
 	)
 	(pad "A14" smd circle
-		(at 12.1 0)
+		(at -18.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -593,7 +663,7 @@
 		(uuid "800db062-8f1b-49fc-ad02-21c5592c5705")
 	)
 	(pad "A15" smd circle
-		(at 13 0)
+		(at -17.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -610,7 +680,7 @@
 		(uuid "d248706b-7cbe-4e62-81d1-9997a1e6d596")
 	)
 	(pad "A16" smd circle
-		(at 13.9 0)
+		(at -16.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -627,7 +697,7 @@
 		(uuid "4f6a735d-a2b9-43f8-a482-5d36dde84f00")
 	)
 	(pad "A17" smd circle
-		(at 15.2 0)
+		(at -15 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -644,7 +714,7 @@
 		(uuid "aeba38a1-29ff-43d1-b3e6-5473da73d95e")
 	)
 	(pad "A18" smd circle
-		(at 16.1 0)
+		(at -14.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -661,7 +731,7 @@
 		(uuid "02fdb4ad-9499-4ba5-8051-f68045e21b10")
 	)
 	(pad "A19" smd circle
-		(at 17 0)
+		(at -13.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -678,7 +748,7 @@
 		(uuid "fa550dad-4506-415c-9f15-b202a7fdb062")
 	)
 	(pad "A20" smd circle
-		(at 17.9 0)
+		(at -12.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -695,7 +765,7 @@
 		(uuid "b711b44b-cc84-471b-a481-601d73669e1a")
 	)
 	(pad "A21" smd circle
-		(at 19.2 0)
+		(at -11 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -712,7 +782,7 @@
 		(uuid "df2dcddc-01ce-4dbf-b6dc-588a0430859b")
 	)
 	(pad "A22" smd circle
-		(at 20.1 0)
+		(at -10.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -729,7 +799,7 @@
 		(uuid "b10c17ce-bd08-4d9f-a641-3c387e688697")
 	)
 	(pad "A23" smd circle
-		(at 21 0)
+		(at -9.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -746,7 +816,7 @@
 		(uuid "395f0bc9-703a-4212-9865-21ec39fe49b3")
 	)
 	(pad "A24" smd circle
-		(at 21.9 0)
+		(at -8.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -763,7 +833,7 @@
 		(uuid "cd02bdb7-1b15-4a2d-8330-3071908dc8f0")
 	)
 	(pad "A25" smd circle
-		(at 23.2 0)
+		(at -7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -780,7 +850,7 @@
 		(uuid "251f59d4-cd7e-4b1e-82c9-286c998c1993")
 	)
 	(pad "A26" smd circle
-		(at 24.1 0)
+		(at -6.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -797,7 +867,7 @@
 		(uuid "f8f1ea28-eb93-46bf-8073-cea9b16aa9f5")
 	)
 	(pad "A27" smd circle
-		(at 25 0)
+		(at -5.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -814,7 +884,7 @@
 		(uuid "04ddfd61-8377-4868-8f6a-5950cd12a94c")
 	)
 	(pad "A28" smd circle
-		(at 25.9 0)
+		(at -4.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -831,7 +901,7 @@
 		(uuid "dd9a8108-f707-463a-85d0-5ba8f6851b85")
 	)
 	(pad "A29" smd circle
-		(at 27.2 0)
+		(at -3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -848,7 +918,7 @@
 		(uuid "1697b55c-5b74-4fad-a212-ef6e3280ce65")
 	)
 	(pad "A30" smd circle
-		(at 28.1 0)
+		(at -2.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -865,7 +935,7 @@
 		(uuid "46b6b2ef-6153-48f4-a4d9-eaf7fe5aae61")
 	)
 	(pad "A31" smd circle
-		(at 29 0)
+		(at -1.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -882,7 +952,7 @@
 		(uuid "cb628b1f-e60f-4718-9f43-a4cfd65f79d7")
 	)
 	(pad "A32" smd circle
-		(at 29.9 0)
+		(at -0.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -899,7 +969,7 @@
 		(uuid "99449b39-d9d3-48e4-91de-846a5928f9bf")
 	)
 	(pad "A33" smd circle
-		(at 31.2 0)
+		(at 1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -916,7 +986,7 @@
 		(uuid "c2e765d6-d971-464a-b04a-b4ed386b228c")
 	)
 	(pad "A34" smd circle
-		(at 32.1 0)
+		(at 1.9 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -933,7 +1003,7 @@
 		(uuid "101000ce-84e9-4854-a860-fdba7b419644")
 	)
 	(pad "A35" smd circle
-		(at 33 0)
+		(at 2.8 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -950,7 +1020,7 @@
 		(uuid "d23167de-33a3-48c5-b102-9d8c04ddf0fc")
 	)
 	(pad "A36" smd circle
-		(at 33.9 0)
+		(at 3.7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -967,7 +1037,7 @@
 		(uuid "1eb00a86-8a2c-4900-858b-86045abf01ed")
 	)
 	(pad "A37" smd circle
-		(at 35.2 0)
+		(at 5 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -984,7 +1054,7 @@
 		(uuid "0054713c-6350-49ce-be6d-ab02179a7606")
 	)
 	(pad "A38" smd circle
-		(at 36.1 0)
+		(at 5.9 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1001,7 +1071,7 @@
 		(uuid "2a1795a3-7204-45c6-9441-429cf11a8d8e")
 	)
 	(pad "A39" smd circle
-		(at 37 0)
+		(at 6.8 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1018,7 +1088,7 @@
 		(uuid "be938a8c-4a83-4337-a07d-88a1222792ca")
 	)
 	(pad "A40" smd circle
-		(at 37.9 0)
+		(at 7.7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1035,7 +1105,7 @@
 		(uuid "4637401a-1eaf-4e73-ac39-bf85e05c5a66")
 	)
 	(pad "A41" smd circle
-		(at 38.8 0)
+		(at 8.6 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1052,7 +1122,7 @@
 		(uuid "0921c8ff-a585-457d-8eeb-e4084429e2eb")
 	)
 	(pad "A42" smd circle
-		(at 39.7 0)
+		(at 9.5 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1069,7 +1139,7 @@
 		(uuid "691e2ec2-8c44-43bf-a16f-8f0b32048438")
 	)
 	(pad "A43" smd circle
-		(at 40.6 0)
+		(at 10.4 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1086,7 +1156,7 @@
 		(uuid "3e17b02f-06f8-482b-847b-10232233fa3f")
 	)
 	(pad "A44" smd circle
-		(at 41.5 0)
+		(at 11.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1103,7 +1173,7 @@
 		(uuid "44692916-78c1-40ea-a406-ebe673fd74a0")
 	)
 	(pad "A45" smd circle
-		(at 42.4 0)
+		(at 12.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1120,7 +1190,7 @@
 		(uuid "943d4fe9-0ac2-4165-94eb-635c7cd071c1")
 	)
 	(pad "A46" smd circle
-		(at 43.3 0)
+		(at 13.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1137,7 +1207,7 @@
 		(uuid "b8b7ab7a-0b22-4daa-803d-b74069d957ba")
 	)
 	(pad "A47" smd circle
-		(at 44.2 0)
+		(at 14 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1154,7 +1224,7 @@
 		(uuid "7c23d418-b5bd-4403-8c7e-aed34fdd3b5f")
 	)
 	(pad "A48" smd circle
-		(at 45.1 0)
+		(at 14.9 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1171,7 +1241,7 @@
 		(uuid "29ca3af8-a1e7-40f8-9563-63e3c9c6f450")
 	)
 	(pad "A49" smd circle
-		(at 46 0)
+		(at 15.8 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1188,7 +1258,7 @@
 		(uuid "198ac19d-cdb2-4938-9382-63c708576a1c")
 	)
 	(pad "A50" smd circle
-		(at 46.9 0)
+		(at 16.7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1205,7 +1275,7 @@
 		(uuid "58eb5beb-a847-4ad7-9a1e-9daf103aeca7")
 	)
 	(pad "A51" smd circle
-		(at 47.8 0)
+		(at 17.6 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1222,7 +1292,7 @@
 		(uuid "604486cb-85a5-4c2e-84f1-0c59504a6cdb")
 	)
 	(pad "A52" smd circle
-		(at 48.7 0)
+		(at 18.5 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1239,7 +1309,7 @@
 		(uuid "53787707-b088-4f35-8f0d-d5b128448886")
 	)
 	(pad "A53" smd circle
-		(at 49.6 0)
+		(at 19.4 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1256,7 +1326,7 @@
 		(uuid "99d4aa06-1b21-4e0e-9618-ea25e9c965bb")
 	)
 	(pad "A54" smd circle
-		(at 50.5 0)
+		(at 20.3 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1273,7 +1343,7 @@
 		(uuid "292c1eb0-de46-482a-a894-f5dd4c738091")
 	)
 	(pad "A55" smd circle
-		(at 51.4 0)
+		(at 21.2 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1290,7 +1360,7 @@
 		(uuid "65babd46-4f22-4da6-a476-31c614e7208b")
 	)
 	(pad "A56" smd circle
-		(at 52.3 0)
+		(at 22.1 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1307,7 +1377,7 @@
 		(uuid "2ed35ba1-e398-4517-af3c-3d7da43dfea1")
 	)
 	(pad "A57" smd circle
-		(at 53.2 0)
+		(at 23 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1324,7 +1394,7 @@
 		(uuid "ff929c3e-3a9d-4e8a-a8d0-f35871c84a59")
 	)
 	(pad "A58" smd circle
-		(at 54.1 0)
+		(at 23.9 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1341,7 +1411,7 @@
 		(uuid "2106db95-9aba-424a-aee3-866f297f7305")
 	)
 	(pad "A59" smd circle
-		(at 55 0)
+		(at 24.8 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1358,7 +1428,7 @@
 		(uuid "85112471-27ab-4021-ad7c-62c6aba149b1")
 	)
 	(pad "A60" smd circle
-		(at 55.9 0)
+		(at 25.7 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1375,7 +1445,7 @@
 		(uuid "a633ca3d-47eb-4c4b-9702-b79c9b1da536")
 	)
 	(pad "A61" smd circle
-		(at 56.8 0)
+		(at 26.6 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1392,7 +1462,7 @@
 		(uuid "386abf16-759a-471c-9595-2b719980c940")
 	)
 	(pad "A62" smd circle
-		(at 57.7 0)
+		(at 27.5 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1409,7 +1479,7 @@
 		(uuid "c1ee82be-e5c1-4c90-b631-aa705ed4b1a9")
 	)
 	(pad "A63" smd circle
-		(at 58.6 0)
+		(at 28.4 7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1426,7 +1496,7 @@
 		(uuid "fc329b54-b67c-4393-95eb-bca915234511")
 	)
 	(pad "B3" smd circle
-		(at 2 -1.5)
+		(at -28.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1443,7 +1513,7 @@
 		(uuid "122d153b-c9c6-4c9c-b638-4fe07eade331")
 	)
 	(pad "B4" smd circle
-		(at 2.9 -1.5)
+		(at -27.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1460,7 +1530,7 @@
 		(uuid "adfc2154-eb4f-4dcd-ba81-882f4ffac63e")
 	)
 	(pad "B5" smd circle
-		(at 3.8 -1.5)
+		(at -26.4 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1477,7 +1547,7 @@
 		(uuid "3da57900-2e17-4804-924e-7a2460f15be8")
 	)
 	(pad "B6" smd circle
-		(at 4.7 -1.5)
+		(at -25.5 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1494,7 +1564,7 @@
 		(uuid "012324a2-01b8-4b55-8dd2-c94498e3001f")
 	)
 	(pad "B7" smd circle
-		(at 5.6 -1.5)
+		(at -24.6 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1511,7 +1581,7 @@
 		(uuid "2bc19e90-d479-417a-8bde-a01e41491023")
 	)
 	(pad "B8" smd circle
-		(at 6.5 -1.5)
+		(at -23.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1528,7 +1598,7 @@
 		(uuid "14984622-e5c4-4936-bd95-520dfe57bd18")
 	)
 	(pad "B9" smd circle
-		(at 7.4 -1.5)
+		(at -22.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1545,7 +1615,7 @@
 		(uuid "f4d651ad-9d4b-43d2-9bd3-f45f85a72975")
 	)
 	(pad "B10" smd circle
-		(at 8.3 -1.5)
+		(at -21.9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1562,7 +1632,7 @@
 		(uuid "13f1627a-88ce-4d58-80e5-5143e382eba0")
 	)
 	(pad "B11" smd circle
-		(at 9.2 -1.5)
+		(at -21 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1579,7 +1649,7 @@
 		(uuid "cda08176-f377-4bde-bc78-d69121ece678")
 	)
 	(pad "B12" smd circle
-		(at 10.1 -1.5)
+		(at -20.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1596,7 +1666,7 @@
 		(uuid "49a131f6-5308-4c1f-8367-cdc5b658e4d4")
 	)
 	(pad "B13" smd circle
-		(at 11 -1.5)
+		(at -19.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1613,7 +1683,7 @@
 		(uuid "7410435f-c1fd-442f-b093-a3bbee435665")
 	)
 	(pad "B14" smd circle
-		(at 11.9 -1.5)
+		(at -18.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1630,7 +1700,7 @@
 		(uuid "574faae5-36af-4cac-a895-bf001cf9ef5e")
 	)
 	(pad "B15" smd circle
-		(at 13.2 -1.5)
+		(at -17 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1647,7 +1717,7 @@
 		(uuid "13bf93ea-f331-4fa8-9db8-967cccf4d8b4")
 	)
 	(pad "B16" smd circle
-		(at 14.1 -1.5)
+		(at -16.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1664,7 +1734,7 @@
 		(uuid "a6fe067e-5073-4476-9499-cb37db36ba2e")
 	)
 	(pad "B17" smd circle
-		(at 15 -1.5)
+		(at -15.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1681,7 +1751,7 @@
 		(uuid "d1676cde-0cb2-47d4-81f6-1640f337c713")
 	)
 	(pad "B18" smd circle
-		(at 15.9 -1.5)
+		(at -14.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1698,7 +1768,7 @@
 		(uuid "1d59e6ec-a55a-4c90-9a5e-9a17b7a271e1")
 	)
 	(pad "B19" smd circle
-		(at 17.2 -1.5)
+		(at -13 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1715,7 +1785,7 @@
 		(uuid "5c94488c-0d43-441a-a9a8-fe4d0a89f720")
 	)
 	(pad "B20" smd circle
-		(at 18.1 -1.5)
+		(at -12.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1732,7 +1802,7 @@
 		(uuid "c6b7cd61-3e45-48a4-a9f9-937c0a0b7665")
 	)
 	(pad "B21" smd circle
-		(at 19 -1.5)
+		(at -11.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1749,7 +1819,7 @@
 		(uuid "56847607-39b4-4f9a-8517-85a45d3991a5")
 	)
 	(pad "B22" smd circle
-		(at 19.9 -1.5)
+		(at -10.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1766,7 +1836,7 @@
 		(uuid "a863c578-142c-449b-94b7-ac964b999dc0")
 	)
 	(pad "B23" smd circle
-		(at 21.2 -1.5)
+		(at -9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1783,7 +1853,7 @@
 		(uuid "5b96c7fe-433e-4500-bef9-0f5d13739630")
 	)
 	(pad "B24" smd circle
-		(at 22.1 -1.5)
+		(at -8.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1800,7 +1870,7 @@
 		(uuid "16804466-7a58-45e7-b026-758a4303f6af")
 	)
 	(pad "B25" smd circle
-		(at 23 -1.5)
+		(at -7.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1817,7 +1887,7 @@
 		(uuid "744e525b-a130-49e1-9005-381f95857116")
 	)
 	(pad "B26" smd circle
-		(at 23.9 -1.5)
+		(at -6.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1834,7 +1904,7 @@
 		(uuid "22dc2a42-373e-4119-893f-6170d3016196")
 	)
 	(pad "B27" smd circle
-		(at 25.2 -1.5)
+		(at -5 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1851,7 +1921,7 @@
 		(uuid "fe01a82b-a097-4421-8db2-dadad1205749")
 	)
 	(pad "B28" smd circle
-		(at 26.1 -1.5)
+		(at -4.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1868,7 +1938,7 @@
 		(uuid "cb19008b-05e9-4bd8-b45c-9dfaa6db3211")
 	)
 	(pad "B29" smd circle
-		(at 27 -1.5)
+		(at -3.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1885,7 +1955,7 @@
 		(uuid "6a5e20d1-c6b0-4df7-b4c0-9de44f42fa72")
 	)
 	(pad "B30" smd circle
-		(at 27.9 -1.5)
+		(at -2.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1902,7 +1972,7 @@
 		(uuid "99b208c7-01cf-4a7c-a729-cd44f587dc00")
 	)
 	(pad "B31" smd circle
-		(at 29.2 -1.5)
+		(at -1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1919,7 +1989,7 @@
 		(uuid "413d5deb-a0c8-43e9-a394-e562bf7c115e")
 	)
 	(pad "B32" smd circle
-		(at 30.1 -1.5)
+		(at -0.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1936,7 +2006,7 @@
 		(uuid "38eecccf-917e-4f35-b752-4c8ddee261dd")
 	)
 	(pad "B33" smd circle
-		(at 31 -1.5)
+		(at 0.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1953,7 +2023,7 @@
 		(uuid "379dd693-76d5-4ae5-b87e-baaf1f64d494")
 	)
 	(pad "B34" smd circle
-		(at 31.9 -1.5)
+		(at 1.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1970,7 +2040,7 @@
 		(uuid "9969a6cb-9223-4849-8a6b-a1c53f7d7cc4")
 	)
 	(pad "B35" smd circle
-		(at 33.2 -1.5)
+		(at 3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -1987,7 +2057,7 @@
 		(uuid "92e7c38d-0151-4242-8cee-71408c6c6318")
 	)
 	(pad "B36" smd circle
-		(at 34.1 -1.5)
+		(at 3.9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2004,7 +2074,7 @@
 		(uuid "b8a15bd0-1fdf-4200-8e80-74956e11bb9b")
 	)
 	(pad "B37" smd circle
-		(at 35 -1.5)
+		(at 4.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2021,7 +2091,7 @@
 		(uuid "62451c70-aae4-420e-90f6-3b1eaa468339")
 	)
 	(pad "B38" smd circle
-		(at 35.9 -1.5)
+		(at 5.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2038,7 +2108,7 @@
 		(uuid "a4d2a698-c6ba-4c5e-a134-73eca4af4713")
 	)
 	(pad "B39" smd circle
-		(at 37.2 -1.5)
+		(at 7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2055,7 +2125,7 @@
 		(uuid "23e24954-993a-4260-a4c4-80ef93ef6025")
 	)
 	(pad "B40" smd circle
-		(at 38.1 -1.5)
+		(at 7.9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2072,7 +2142,7 @@
 		(uuid "db3d1df0-acd4-4d18-8900-a20c13ffc66b")
 	)
 	(pad "B41" smd circle
-		(at 39 -1.5)
+		(at 8.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2089,7 +2159,7 @@
 		(uuid "ba408ddc-9cdb-4dec-b248-8072d403cd55")
 	)
 	(pad "B42" smd circle
-		(at 39.9 -1.5)
+		(at 9.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2106,7 +2176,7 @@
 		(uuid "1a8ba066-cdf6-420f-b1dc-7aa0dcfb23dc")
 	)
 	(pad "B43" smd circle
-		(at 40.8 -1.5)
+		(at 10.6 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2123,7 +2193,7 @@
 		(uuid "5634dfff-0280-470d-9d37-0a0acf6c9fc2")
 	)
 	(pad "B44" smd circle
-		(at 41.7 -1.5)
+		(at 11.5 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2140,7 +2210,7 @@
 		(uuid "71b14a38-fc3e-4495-86d5-2d9707912380")
 	)
 	(pad "B45" smd circle
-		(at 42.6 -1.5)
+		(at 12.4 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2157,7 +2227,7 @@
 		(uuid "dba311a4-b989-436c-bb42-cc45bbaa23ce")
 	)
 	(pad "B46" smd circle
-		(at 43.5 -1.5)
+		(at 13.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2174,7 +2244,7 @@
 		(uuid "28afc734-6568-4018-95b3-a7256ed692ea")
 	)
 	(pad "B47" smd circle
-		(at 44.4 -1.5)
+		(at 14.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2191,7 +2261,7 @@
 		(uuid "b7fce5dd-3472-4bef-bdbc-4a597a9a0bb0")
 	)
 	(pad "B48" smd circle
-		(at 45.3 -1.5)
+		(at 15.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2208,7 +2278,7 @@
 		(uuid "611b9dcc-4784-4a68-9d6b-1a04eda3c607")
 	)
 	(pad "B49" smd circle
-		(at 46.2 -1.5)
+		(at 16 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2225,7 +2295,7 @@
 		(uuid "7899d46c-d5a7-452a-9265-5bb7d2eb6e8b")
 	)
 	(pad "B50" smd circle
-		(at 47.1 -1.5)
+		(at 16.9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2242,7 +2312,7 @@
 		(uuid "75ef68fc-f8cb-4eff-b068-510c2e7fe1ea")
 	)
 	(pad "B51" smd circle
-		(at 48 -1.5)
+		(at 17.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2259,7 +2329,7 @@
 		(uuid "a07450c0-08a2-4abf-9aad-67bd2b4e243e")
 	)
 	(pad "B52" smd circle
-		(at 48.9 -1.5)
+		(at 18.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2276,7 +2346,7 @@
 		(uuid "8eb95a4c-e8c1-4344-acf6-27de12f83758")
 	)
 	(pad "B53" smd circle
-		(at 49.8 -1.5)
+		(at 19.6 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2293,7 +2363,7 @@
 		(uuid "983439d6-c285-4eee-a045-74bd49a4f182")
 	)
 	(pad "B54" smd circle
-		(at 50.7 -1.5)
+		(at 20.5 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2310,7 +2380,7 @@
 		(uuid "eb43e034-550a-4fc5-a331-50a9b533d016")
 	)
 	(pad "B55" smd circle
-		(at 51.6 -1.5)
+		(at 21.4 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2327,7 +2397,7 @@
 		(uuid "7a57dfbc-8d57-4d66-9dd4-e696d9bce425")
 	)
 	(pad "B56" smd circle
-		(at 52.5 -1.5)
+		(at 22.3 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2344,7 +2414,7 @@
 		(uuid "a651b099-4073-41e8-bfb9-a90ab4eec92b")
 	)
 	(pad "B57" smd circle
-		(at 53.4 -1.5)
+		(at 23.2 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2361,7 +2431,7 @@
 		(uuid "0681fffd-36e6-4198-8e58-dc6edc9a4365")
 	)
 	(pad "B58" smd circle
-		(at 54.3 -1.5)
+		(at 24.1 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2378,7 +2448,7 @@
 		(uuid "e5f2884b-5d4f-4100-8f43-6a445030e98e")
 	)
 	(pad "B59" smd circle
-		(at 55.2 -1.5)
+		(at 25 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2395,7 +2465,7 @@
 		(uuid "9baab12e-3d96-44ef-b4ab-b0920b6113d9")
 	)
 	(pad "B60" smd circle
-		(at 56.1 -1.5)
+		(at 25.9 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2412,7 +2482,7 @@
 		(uuid "e92eb0fa-f557-46cb-bb7d-15cb38e36194")
 	)
 	(pad "B61" smd circle
-		(at 57 -1.5)
+		(at 26.8 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2429,7 +2499,7 @@
 		(uuid "f4b0dcdf-d7a1-4a06-9eac-2512155c34fa")
 	)
 	(pad "B62" smd circle
-		(at 57.9 -1.5)
+		(at 27.7 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2446,7 +2516,7 @@
 		(uuid "c4798284-0a16-4558-8da8-855fa4ffd8f9")
 	)
 	(pad "B63" smd circle
-		(at 58.8 -1.5)
+		(at 28.6 6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2463,7 +2533,7 @@
 		(uuid "4cfb049c-cffe-4f73-8090-6c1a500dc2e4")
 	)
 	(pad "C1" smd circle
-		(at 0 -3)
+		(at -30.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2480,7 +2550,7 @@
 		(uuid "6682ebc2-b23a-4534-b32c-f4af2b8d6eb3")
 	)
 	(pad "C2" smd circle
-		(at 0.9 -3)
+		(at -29.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2497,7 +2567,7 @@
 		(uuid "cc9463dc-9ae5-4127-81bb-a15dc8f89fbe")
 	)
 	(pad "C3" smd circle
-		(at 1.8 -3)
+		(at -28.4 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2514,7 +2584,7 @@
 		(uuid "e7390670-5d34-43e1-b4c7-c3e900b287f4")
 	)
 	(pad "C4" smd circle
-		(at 2.7 -3)
+		(at -27.5 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2531,7 +2601,7 @@
 		(uuid "971da628-e218-444f-9a1f-6edc732a9a13")
 	)
 	(pad "C5" smd circle
-		(at 3.6 -3)
+		(at -26.6 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2548,7 +2618,7 @@
 		(uuid "a9dd16c8-5746-4966-80a3-8b99c39e40ff")
 	)
 	(pad "C6" smd circle
-		(at 4.5 -3)
+		(at -25.7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2565,7 +2635,7 @@
 		(uuid "273ff954-3331-4134-adcd-0d36c1131e7d")
 	)
 	(pad "C7" smd circle
-		(at 5.4 -3)
+		(at -24.8 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2582,7 +2652,7 @@
 		(uuid "e9199730-1b26-4baf-aad1-054cd3293ee2")
 	)
 	(pad "C8" smd circle
-		(at 6.3 -3)
+		(at -23.9 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2599,7 +2669,7 @@
 		(uuid "9a4dd734-d888-47ee-8028-1d9b8f4ced29")
 	)
 	(pad "C9" smd circle
-		(at 7.2 -3)
+		(at -23 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2616,7 +2686,7 @@
 		(uuid "dee6cbea-08d9-414b-b4a3-14fdc21fcce4")
 	)
 	(pad "C10" smd circle
-		(at 8.1 -3)
+		(at -22.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2633,7 +2703,7 @@
 		(uuid "610dc83d-4ae2-49b6-92d5-ed13a094cb33")
 	)
 	(pad "C11" smd circle
-		(at 9 -3)
+		(at -21.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2649,8 +2719,25 @@
 		)
 		(uuid "11ed5c4d-d503-4ffb-9d70-c730e5a1d878")
 	)
+	(pad "C12" smd circle
+		(at -20.3 4.5)
+		(size 0.5 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curve_points 0)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "6bacd6fd-f44c-4201-b30a-986a75769eb0")
+	)
 	(pad "C13" smd circle
-		(at 11.2 -3)
+		(at -19 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2667,7 +2754,7 @@
 		(uuid "a6291368-6daa-4527-8c42-0a1bcc8cec90")
 	)
 	(pad "C14" smd circle
-		(at 12.1 -3)
+		(at -18.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2684,7 +2771,7 @@
 		(uuid "36b79675-3bc3-4a4a-a011-dd82e58acd7f")
 	)
 	(pad "C15" smd circle
-		(at 13 -3)
+		(at -17.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2701,7 +2788,7 @@
 		(uuid "06ef5ab9-4826-46a4-b7e6-65fa6d078b3f")
 	)
 	(pad "C16" smd circle
-		(at 13.9 -3)
+		(at -16.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2718,7 +2805,7 @@
 		(uuid "481b9dce-f073-4908-93e1-f8118f64d7f2")
 	)
 	(pad "C17" smd circle
-		(at 15.2 -3)
+		(at -15 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2735,7 +2822,7 @@
 		(uuid "18f03e9b-4f25-4239-8f0c-76d176a4a8c7")
 	)
 	(pad "C18" smd circle
-		(at 16.1 -3)
+		(at -14.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2752,7 +2839,7 @@
 		(uuid "e332d7ad-bdae-45ea-8005-829b5e8e0ed3")
 	)
 	(pad "C19" smd circle
-		(at 17 -3)
+		(at -13.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2769,7 +2856,7 @@
 		(uuid "2d97050f-40d0-43b5-898f-9b0bd1013fae")
 	)
 	(pad "C20" smd circle
-		(at 17.9 -3)
+		(at -12.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2786,7 +2873,7 @@
 		(uuid "3e42ed96-6eae-4148-9fff-c6d9b941a729")
 	)
 	(pad "C21" smd circle
-		(at 19.2 -3)
+		(at -11 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2803,7 +2890,7 @@
 		(uuid "b3980c3b-82f9-43d3-89a6-866abf801a69")
 	)
 	(pad "C22" smd circle
-		(at 20.1 -3)
+		(at -10.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2820,7 +2907,7 @@
 		(uuid "c3d17596-da46-4f13-b088-f3ce1b0c8c67")
 	)
 	(pad "C23" smd circle
-		(at 21 -3)
+		(at -9.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2837,7 +2924,7 @@
 		(uuid "ddd58513-9aec-477a-ad4d-7e6c4116b7f5")
 	)
 	(pad "C24" smd circle
-		(at 21.9 -3)
+		(at -8.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2854,7 +2941,7 @@
 		(uuid "56d236f4-21d8-4525-aa00-1926372f7764")
 	)
 	(pad "C25" smd circle
-		(at 23.2 -3)
+		(at -7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2871,7 +2958,7 @@
 		(uuid "5d5642d6-0595-44ec-890e-b68be2b19cee")
 	)
 	(pad "C26" smd circle
-		(at 24.1 -3)
+		(at -6.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2888,7 +2975,7 @@
 		(uuid "c8b29b0d-b74f-4576-9ab4-bfe50714fcaa")
 	)
 	(pad "C27" smd circle
-		(at 25 -3)
+		(at -5.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2905,7 +2992,7 @@
 		(uuid "0a627177-36c0-4004-9f17-d5f8ab2f5192")
 	)
 	(pad "C28" smd circle
-		(at 25.9 -3)
+		(at -4.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2922,7 +3009,7 @@
 		(uuid "0a6d4c34-5ef8-4f69-85eb-957706733b48")
 	)
 	(pad "C29" smd circle
-		(at 27.2 -3)
+		(at -3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2939,7 +3026,7 @@
 		(uuid "7e90ed18-2bc6-442d-b79e-bf39941ba631")
 	)
 	(pad "C30" smd circle
-		(at 28.1 -3)
+		(at -2.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2956,7 +3043,7 @@
 		(uuid "e8d9f42f-34bb-4ade-81de-a9d4ed3bd606")
 	)
 	(pad "C31" smd circle
-		(at 29 -3)
+		(at -1.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2973,7 +3060,7 @@
 		(uuid "8f87ee8c-4528-46d7-a549-3a44c109034d")
 	)
 	(pad "C32" smd circle
-		(at 29.9 -3)
+		(at -0.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -2990,7 +3077,7 @@
 		(uuid "7c7b76f7-b736-465f-b789-1622a426c193")
 	)
 	(pad "C33" smd circle
-		(at 31.2 -3)
+		(at 1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3007,7 +3094,7 @@
 		(uuid "71ceed07-8fb7-48ea-a2e6-fd949a0690d9")
 	)
 	(pad "C34" smd circle
-		(at 32.1 -3)
+		(at 1.9 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3024,7 +3111,7 @@
 		(uuid "fa0914cf-fc5f-4482-b21a-7bdaa3846d67")
 	)
 	(pad "C35" smd circle
-		(at 33 -3)
+		(at 2.8 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3041,7 +3128,7 @@
 		(uuid "c5ca8753-6d06-4df0-9094-5a6e101ec79a")
 	)
 	(pad "C36" smd circle
-		(at 33.9 -3)
+		(at 3.7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3058,7 +3145,7 @@
 		(uuid "cea47d55-82fd-4a84-b00e-f8d3bb5a2d38")
 	)
 	(pad "C37" smd circle
-		(at 35.2 -3)
+		(at 5 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3075,7 +3162,7 @@
 		(uuid "38a45e60-2a45-4f65-a70d-ce2bbb3e598e")
 	)
 	(pad "C38" smd circle
-		(at 36.1 -3)
+		(at 5.9 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3092,7 +3179,7 @@
 		(uuid "34c6efba-5620-46c3-bd18-a2962e24c517")
 	)
 	(pad "C39" smd circle
-		(at 37 -3)
+		(at 6.8 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3109,7 +3196,7 @@
 		(uuid "5df4359d-5f1f-4bef-b714-3371343ab43a")
 	)
 	(pad "C40" smd circle
-		(at 37.9 -3)
+		(at 7.7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3126,7 +3213,7 @@
 		(uuid "1a235a61-016f-4060-a48a-2a88305c8e1f")
 	)
 	(pad "C41" smd circle
-		(at 38.8 -3)
+		(at 8.6 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3143,7 +3230,7 @@
 		(uuid "4a38648b-c2cc-4cbd-a46a-81f2314cd5b2")
 	)
 	(pad "C42" smd circle
-		(at 39.7 -3)
+		(at 9.5 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3160,7 +3247,7 @@
 		(uuid "f6f6d616-9851-49eb-9004-e6820c9fa3c3")
 	)
 	(pad "C43" smd circle
-		(at 40.6 -3)
+		(at 10.4 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3177,7 +3264,7 @@
 		(uuid "51482dfb-19ab-40ce-a0de-db932bd17b6e")
 	)
 	(pad "C44" smd circle
-		(at 41.5 -3)
+		(at 11.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3194,7 +3281,7 @@
 		(uuid "ce6802e4-710c-40c5-8f1c-138db730e892")
 	)
 	(pad "C45" smd circle
-		(at 42.4 -3)
+		(at 12.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3211,7 +3298,7 @@
 		(uuid "b858c2b2-88a1-440f-baad-ab8af0bcece7")
 	)
 	(pad "C46" smd circle
-		(at 43.3 -3)
+		(at 13.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3228,7 +3315,7 @@
 		(uuid "bd39351e-b58f-409e-96b7-5d7e26ffe29a")
 	)
 	(pad "C47" smd circle
-		(at 44.2 -3)
+		(at 14 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3245,7 +3332,7 @@
 		(uuid "c0eb9169-9294-4590-977b-28000e81ab8b")
 	)
 	(pad "C48" smd circle
-		(at 45.1 -3)
+		(at 14.9 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3262,7 +3349,7 @@
 		(uuid "9312b40e-b4cd-41ad-b09a-5f35ecfa94f0")
 	)
 	(pad "C49" smd circle
-		(at 46 -3)
+		(at 15.8 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3279,7 +3366,7 @@
 		(uuid "2d94b65b-fe31-4c07-a34d-8b3e78425e4e")
 	)
 	(pad "C50" smd circle
-		(at 46.9 -3)
+		(at 16.7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3296,7 +3383,7 @@
 		(uuid "5c7969cd-4114-4375-bccb-5172e8a7b7fa")
 	)
 	(pad "C51" smd circle
-		(at 47.8 -3)
+		(at 17.6 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3313,7 +3400,7 @@
 		(uuid "2de61283-991d-4bb2-8000-209494cb145c")
 	)
 	(pad "C52" smd circle
-		(at 48.7 -3)
+		(at 18.5 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3330,7 +3417,7 @@
 		(uuid "55b8d61d-a35e-4064-8530-c7b4abf72fe4")
 	)
 	(pad "C53" smd circle
-		(at 49.6 -3)
+		(at 19.4 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3347,7 +3434,7 @@
 		(uuid "6bf25711-452f-42fc-b1dd-37b57a1552f7")
 	)
 	(pad "C54" smd circle
-		(at 50.5 -3)
+		(at 20.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3364,7 +3451,7 @@
 		(uuid "022a1ad7-6268-4223-8424-0c1819f6ffb8")
 	)
 	(pad "C55" smd circle
-		(at 51.4 -3)
+		(at 21.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3381,7 +3468,7 @@
 		(uuid "1ba44893-9b8e-4c1c-81b3-56afecd0743a")
 	)
 	(pad "C56" smd circle
-		(at 52.3 -3)
+		(at 22.1 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3398,7 +3485,7 @@
 		(uuid "fc221df0-071d-4b2e-a331-7266458be92c")
 	)
 	(pad "C57" smd circle
-		(at 53.2 -3)
+		(at 23 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3415,7 +3502,7 @@
 		(uuid "84cf83a9-77e5-4bce-8456-2f299cb935e0")
 	)
 	(pad "C58" smd circle
-		(at 54.1 -3)
+		(at 23.9 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3432,7 +3519,7 @@
 		(uuid "bb1699be-a26d-4ccb-8ccc-a307f41890ba")
 	)
 	(pad "C59" smd circle
-		(at 55 -3)
+		(at 24.8 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3449,7 +3536,7 @@
 		(uuid "0c20f3ff-013a-4cff-86a1-88b199d0aca7")
 	)
 	(pad "C60" smd circle
-		(at 55.9 -3)
+		(at 25.7 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3466,7 +3553,7 @@
 		(uuid "b7c73ac7-ce66-4160-86ae-679131d828a8")
 	)
 	(pad "C61" smd circle
-		(at 56.8 -3)
+		(at 26.6 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3483,7 +3570,7 @@
 		(uuid "e1d4cebb-a41d-4361-a29b-271d2d343483")
 	)
 	(pad "C62" smd circle
-		(at 57.7 -3)
+		(at 27.5 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3500,7 +3587,7 @@
 		(uuid "96af8326-576b-43d0-ae69-c388a2e357f7")
 	)
 	(pad "C63" smd circle
-		(at 58.6 -3)
+		(at 28.4 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3517,7 +3604,7 @@
 		(uuid "bcf2e71d-20f1-4116-a008-a19a3e6ac8e5")
 	)
 	(pad "C64" smd circle
-		(at 59.5 -3)
+		(at 29.3 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3534,7 +3621,7 @@
 		(uuid "b35539af-c241-4bea-a927-08564927a37c")
 	)
 	(pad "C65" smd circle
-		(at 60.4 -3)
+		(at 30.2 4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3551,7 +3638,7 @@
 		(uuid "0968a390-3ec2-4e76-ae48-447a1bf19f9e")
 	)
 	(pad "D1" smd circle
-		(at 0.2 -4.5)
+		(at -30 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3568,7 +3655,7 @@
 		(uuid "50f70ca4-5867-47ec-83b1-497a837d5300")
 	)
 	(pad "D2" smd circle
-		(at 1.1 -4.5)
+		(at -29.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3585,7 +3672,7 @@
 		(uuid "94b7aece-46b1-4cee-aa06-21210ebe34dc")
 	)
 	(pad "D3" smd circle
-		(at 2 -4.5)
+		(at -28.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3602,7 +3689,7 @@
 		(uuid "3fe19405-3a69-40d6-8b27-b72aee4c4251")
 	)
 	(pad "D4" smd circle
-		(at 2.9 -4.5)
+		(at -27.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3619,7 +3706,7 @@
 		(uuid "5ef8737c-4425-4243-bd9f-270d3b9b3a90")
 	)
 	(pad "D5" smd circle
-		(at 3.8 -4.5)
+		(at -26.4 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3636,7 +3723,7 @@
 		(uuid "618a5870-8d28-4860-b2e2-5352b3be86d1")
 	)
 	(pad "D6" smd circle
-		(at 4.7 -4.5)
+		(at -25.5 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3653,7 +3740,7 @@
 		(uuid "99bed6ed-a5af-463b-a3b4-b84019391926")
 	)
 	(pad "D7" smd circle
-		(at 5.6 -4.5)
+		(at -24.6 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3670,7 +3757,7 @@
 		(uuid "011671a8-c84a-449e-8f3a-19de85a9ef8e")
 	)
 	(pad "D8" smd circle
-		(at 6.5 -4.5)
+		(at -23.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3687,7 +3774,7 @@
 		(uuid "05f9b52e-5077-44fc-b1b9-d67571da09f9")
 	)
 	(pad "D9" smd circle
-		(at 7.4 -4.5)
+		(at -22.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3704,7 +3791,7 @@
 		(uuid "3bb610d4-f915-4454-8e01-7e22da007785")
 	)
 	(pad "D10" smd circle
-		(at 8.3 -4.5)
+		(at -21.9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3721,7 +3808,7 @@
 		(uuid "f9353448-0eef-40a0-a555-1ae9a388b0c0")
 	)
 	(pad "D11" smd circle
-		(at 9.2 -4.5)
+		(at -21 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3738,7 +3825,7 @@
 		(uuid "94819c7c-b5a8-4ee0-bdc8-affc64e006a9")
 	)
 	(pad "D12" smd circle
-		(at 10.1 -4.5)
+		(at -20.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3755,7 +3842,7 @@
 		(uuid "05264ee7-3571-48bf-bed6-ed8496435bf0")
 	)
 	(pad "D13" smd circle
-		(at 11 -4.5)
+		(at -19.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3772,7 +3859,7 @@
 		(uuid "10cc1b85-21fa-4f2e-83ab-e842d8d1eabe")
 	)
 	(pad "D14" smd circle
-		(at 11.9 -4.5)
+		(at -18.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3789,7 +3876,7 @@
 		(uuid "1ba9f042-a182-4b50-93e0-a70c14fa0ff3")
 	)
 	(pad "D15" smd circle
-		(at 13.2 -4.5)
+		(at -17 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3806,7 +3893,7 @@
 		(uuid "251d4730-3b6f-4401-bd58-614c93b009d6")
 	)
 	(pad "D16" smd circle
-		(at 14.1 -4.5)
+		(at -16.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3823,7 +3910,7 @@
 		(uuid "03e2bce7-4bce-4ccb-86e3-f4876eaa7de8")
 	)
 	(pad "D17" smd circle
-		(at 15 -4.5)
+		(at -15.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3840,7 +3927,7 @@
 		(uuid "08aa0579-6a60-4511-90e2-d5a04f47741a")
 	)
 	(pad "D18" smd circle
-		(at 15.9 -4.5)
+		(at -14.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3857,7 +3944,7 @@
 		(uuid "80e5c510-ff84-4af4-950c-bafe07622abb")
 	)
 	(pad "D19" smd circle
-		(at 17.2 -4.5)
+		(at -13 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3874,7 +3961,7 @@
 		(uuid "b01f23d8-9b76-4d27-a18a-8b24cf296ab3")
 	)
 	(pad "D20" smd circle
-		(at 18.1 -4.5)
+		(at -12.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3891,7 +3978,7 @@
 		(uuid "331cf5c5-2dea-44cf-a59f-c34639599c49")
 	)
 	(pad "D21" smd circle
-		(at 19 -4.5)
+		(at -11.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3908,7 +3995,7 @@
 		(uuid "b6fa02d9-b54a-47aa-b2ee-28c9500c14a3")
 	)
 	(pad "D22" smd circle
-		(at 19.9 -4.5)
+		(at -10.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3925,7 +4012,7 @@
 		(uuid "d7b22a4e-184d-499d-8deb-fbbbfa312790")
 	)
 	(pad "D23" smd circle
-		(at 21.2 -4.5)
+		(at -9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3942,7 +4029,7 @@
 		(uuid "13ab3872-520a-4509-96ef-5d7bdadeb552")
 	)
 	(pad "D24" smd circle
-		(at 22.1 -4.5)
+		(at -8.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3959,7 +4046,7 @@
 		(uuid "c3d60ad9-96a2-497f-a1ec-d6577b689638")
 	)
 	(pad "D25" smd circle
-		(at 23 -4.5)
+		(at -7.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3976,7 +4063,7 @@
 		(uuid "d097765c-3413-4d6b-99f9-331f74c10a7b")
 	)
 	(pad "D26" smd circle
-		(at 23.9 -4.5)
+		(at -6.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -3993,7 +4080,7 @@
 		(uuid "1abfb533-3993-4828-b5a7-49454d1d25c4")
 	)
 	(pad "D27" smd circle
-		(at 25.2 -4.5)
+		(at -5 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4010,7 +4097,7 @@
 		(uuid "2ce587c7-96c1-491f-a4b2-72aa927a89bc")
 	)
 	(pad "D28" smd circle
-		(at 26.1 -4.5)
+		(at -4.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4027,7 +4114,7 @@
 		(uuid "6f27c22f-bfaa-4fa3-a32c-f28213284e3a")
 	)
 	(pad "D29" smd circle
-		(at 27 -4.5)
+		(at -3.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4044,7 +4131,7 @@
 		(uuid "e6dd837f-879a-41b1-93b0-f3d3ab02bb2d")
 	)
 	(pad "D30" smd circle
-		(at 27.9 -4.5)
+		(at -2.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4061,7 +4148,7 @@
 		(uuid "a84a24c5-2fff-4824-8b38-a52aa66036b7")
 	)
 	(pad "D31" smd circle
-		(at 29.2 -4.5)
+		(at -1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4078,7 +4165,7 @@
 		(uuid "ef8296d6-19e4-492e-b34c-b4f40320d498")
 	)
 	(pad "D32" smd circle
-		(at 30.1 -4.5)
+		(at -0.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4095,7 +4182,7 @@
 		(uuid "78526139-13bb-4ec7-9cec-a29b911469e5")
 	)
 	(pad "D33" smd circle
-		(at 31 -4.5)
+		(at 0.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4112,7 +4199,7 @@
 		(uuid "64697d93-fbef-4cc9-b4c9-f7949f438528")
 	)
 	(pad "D34" smd circle
-		(at 31.9 -4.5)
+		(at 1.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4129,7 +4216,7 @@
 		(uuid "5e8232d8-31e6-40ba-b1b1-bbde09dd2edb")
 	)
 	(pad "D35" smd circle
-		(at 33.2 -4.5)
+		(at 3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4146,7 +4233,7 @@
 		(uuid "f699a349-e882-4dde-a578-3cbc818b9021")
 	)
 	(pad "D36" smd circle
-		(at 34.1 -4.5)
+		(at 3.9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4163,7 +4250,7 @@
 		(uuid "0208d285-2e7f-402e-ab4b-b89507bb655c")
 	)
 	(pad "D37" smd circle
-		(at 35 -4.5)
+		(at 4.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4180,7 +4267,7 @@
 		(uuid "9839ac52-039e-45e8-a581-5ba81c1e1ee2")
 	)
 	(pad "D38" smd circle
-		(at 35.9 -4.5)
+		(at 5.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4197,7 +4284,7 @@
 		(uuid "f5ec1d76-e179-4c77-8219-d3baacc24bcc")
 	)
 	(pad "D39" smd circle
-		(at 37.2 -4.5)
+		(at 7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4214,7 +4301,7 @@
 		(uuid "588e6e1e-6246-488d-86eb-d725879e860a")
 	)
 	(pad "D40" smd circle
-		(at 38.1 -4.5)
+		(at 7.9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4231,7 +4318,7 @@
 		(uuid "6b88330b-98ef-478e-86de-495ded4c3a47")
 	)
 	(pad "D41" smd circle
-		(at 39 -4.5)
+		(at 8.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4248,7 +4335,7 @@
 		(uuid "82ded9ae-88fa-4847-a6b9-3faa23454830")
 	)
 	(pad "D42" smd circle
-		(at 39.9 -4.5)
+		(at 9.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4265,7 +4352,7 @@
 		(uuid "b2ea8f96-c0ec-4204-a88f-054bf9209c4a")
 	)
 	(pad "D43" smd circle
-		(at 40.8 -4.5)
+		(at 10.6 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4282,7 +4369,7 @@
 		(uuid "002321a7-733e-4a45-bc13-f3508287b46d")
 	)
 	(pad "D44" smd circle
-		(at 41.7 -4.5)
+		(at 11.5 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4299,7 +4386,7 @@
 		(uuid "fbadf1e9-aeab-4867-a699-5a357d563158")
 	)
 	(pad "D45" smd circle
-		(at 42.6 -4.5)
+		(at 12.4 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4316,7 +4403,7 @@
 		(uuid "6243b9d9-ce34-4de1-9d54-b3cc25916c57")
 	)
 	(pad "D46" smd circle
-		(at 43.5 -4.5)
+		(at 13.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4333,7 +4420,7 @@
 		(uuid "7e1d58b9-6ae3-4634-8813-f7b4fbcb991a")
 	)
 	(pad "D47" smd circle
-		(at 44.4 -4.5)
+		(at 14.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4350,7 +4437,7 @@
 		(uuid "18f50bee-68e7-4753-88a0-b9c4fc3788a7")
 	)
 	(pad "D48" smd circle
-		(at 45.3 -4.5)
+		(at 15.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4367,7 +4454,7 @@
 		(uuid "4529eaa8-2242-49e6-9e23-2324c4c54799")
 	)
 	(pad "D49" smd circle
-		(at 46.2 -4.5)
+		(at 16 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4384,7 +4471,7 @@
 		(uuid "091a112c-4226-471d-9d63-25016c04fc8c")
 	)
 	(pad "D50" smd circle
-		(at 47.1 -4.5)
+		(at 16.9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4401,7 +4488,7 @@
 		(uuid "24d5c9fd-3930-4bb9-a8f3-6d1cc389628f")
 	)
 	(pad "D51" smd circle
-		(at 48 -4.5)
+		(at 17.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4418,7 +4505,7 @@
 		(uuid "bbf0bf09-7325-4e9d-bea3-3a040939a0f5")
 	)
 	(pad "D52" smd circle
-		(at 48.9 -4.5)
+		(at 18.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4435,7 +4522,7 @@
 		(uuid "e8c2677b-3bdf-428e-9f8f-615207340d3d")
 	)
 	(pad "D53" smd circle
-		(at 49.8 -4.5)
+		(at 19.6 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4452,7 +4539,7 @@
 		(uuid "6d61f32b-2892-414d-87e8-20aa90a1f15b")
 	)
 	(pad "D54" smd circle
-		(at 50.7 -4.5)
+		(at 20.5 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4469,7 +4556,7 @@
 		(uuid "6234b2e9-31b5-424b-8e7d-33164cc7fd63")
 	)
 	(pad "D55" smd circle
-		(at 51.6 -4.5)
+		(at 21.4 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4486,7 +4573,7 @@
 		(uuid "e8e34abc-97c6-473d-b898-678ad37aeff4")
 	)
 	(pad "D56" smd circle
-		(at 52.5 -4.5)
+		(at 22.3 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4503,7 +4590,7 @@
 		(uuid "c3ab3a0f-9681-4d95-9cf3-55e50fff4610")
 	)
 	(pad "D57" smd circle
-		(at 53.4 -4.5)
+		(at 23.2 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4520,7 +4607,7 @@
 		(uuid "f4ed28d9-a31f-4ec2-a438-4316856932a4")
 	)
 	(pad "D58" smd circle
-		(at 54.3 -4.5)
+		(at 24.1 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4537,7 +4624,7 @@
 		(uuid "d1e5eb07-37d7-4d57-8fb7-b569a537c46b")
 	)
 	(pad "D59" smd circle
-		(at 55.2 -4.5)
+		(at 25 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4554,7 +4641,7 @@
 		(uuid "682b62eb-0597-404f-8176-c8fd631e10bc")
 	)
 	(pad "D60" smd circle
-		(at 56.1 -4.5)
+		(at 25.9 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4571,7 +4658,7 @@
 		(uuid "3a9baaf7-b24f-48b6-a3cb-b7655b34c44e")
 	)
 	(pad "D61" smd circle
-		(at 57 -4.5)
+		(at 26.8 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4588,7 +4675,7 @@
 		(uuid "2dbc21e5-7d45-4a24-80cd-268bad517240")
 	)
 	(pad "D62" smd circle
-		(at 57.9 -4.5)
+		(at 27.7 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4605,7 +4692,7 @@
 		(uuid "a057bc13-6a9c-441a-bb79-b232d7633c8b")
 	)
 	(pad "D63" smd circle
-		(at 58.8 -4.5)
+		(at 28.6 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4622,7 +4709,7 @@
 		(uuid "ef56402f-e3a4-448f-836f-669b01d09ba2")
 	)
 	(pad "D64" smd circle
-		(at 59.7 -4.5)
+		(at 29.5 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4639,7 +4726,7 @@
 		(uuid "a56e653e-561e-4dc5-99bc-7eb0023516d8")
 	)
 	(pad "D65" smd circle
-		(at 60.6 -4.5)
+		(at 30.4 3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4656,7 +4743,7 @@
 		(uuid "44c0836a-34a4-4564-a15c-c4c48b06c69e")
 	)
 	(pad "E1" smd circle
-		(at 0 -6)
+		(at -30.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4673,7 +4760,7 @@
 		(uuid "fad94050-ed06-4784-92a4-6d836449bb2c")
 	)
 	(pad "E2" smd circle
-		(at 0.9 -6)
+		(at -29.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4690,7 +4777,7 @@
 		(uuid "2251ae26-3138-4302-a98d-d50c1c295862")
 	)
 	(pad "E3" smd circle
-		(at 1.8 -6)
+		(at -28.4 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4707,7 +4794,7 @@
 		(uuid "0a5391c3-aa73-42c0-9482-88ddf02b01da")
 	)
 	(pad "E4" smd circle
-		(at 2.7 -6)
+		(at -27.5 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4724,7 +4811,7 @@
 		(uuid "89dbcaaa-f81c-4774-8faf-1bf55869f5ae")
 	)
 	(pad "E5" smd circle
-		(at 3.6 -6)
+		(at -26.6 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4741,7 +4828,7 @@
 		(uuid "560b1ae0-fb2e-4698-95e1-8165ecf25c3b")
 	)
 	(pad "E6" smd circle
-		(at 4.5 -6)
+		(at -25.7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4758,7 +4845,7 @@
 		(uuid "95b3ab83-4907-492b-843c-9b510c5ff385")
 	)
 	(pad "E7" smd circle
-		(at 5.4 -6)
+		(at -24.8 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4775,7 +4862,7 @@
 		(uuid "4a1c27ca-53f1-4c6c-9dd5-43fb4d2eece3")
 	)
 	(pad "E8" smd circle
-		(at 6.3 -6)
+		(at -23.9 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4792,7 +4879,7 @@
 		(uuid "6b5e5787-5359-4c63-87cb-353aa65dd323")
 	)
 	(pad "E9" smd circle
-		(at 7.2 -6)
+		(at -23 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4809,7 +4896,7 @@
 		(uuid "6a720bbb-cd1f-4853-9348-186bfdf4999f")
 	)
 	(pad "E10" smd circle
-		(at 8.1 -6)
+		(at -22.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4826,7 +4913,7 @@
 		(uuid "d4950b97-fd63-42a4-b3c0-db5012b6c6d9")
 	)
 	(pad "E11" smd circle
-		(at 9 -6)
+		(at -21.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4843,7 +4930,7 @@
 		(uuid "67e1d653-5812-4319-a065-3fa3f61904f9")
 	)
 	(pad "E12" smd circle
-		(at 9.9 -6)
+		(at -20.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4860,7 +4947,7 @@
 		(uuid "c4d7b9e2-8237-4e63-b6a6-2702ea5632f6")
 	)
 	(pad "E13" smd circle
-		(at 11.2 -6)
+		(at -19 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4877,7 +4964,7 @@
 		(uuid "7199d3e8-27d2-4c8f-b8ac-6f303793867d")
 	)
 	(pad "E14" smd circle
-		(at 12.1 -6)
+		(at -18.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4894,7 +4981,7 @@
 		(uuid "7ef8244f-bc2d-403d-91d6-a156ffd5da31")
 	)
 	(pad "E15" smd circle
-		(at 13 -6)
+		(at -17.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4911,7 +4998,7 @@
 		(uuid "c2eda1be-b506-4059-8447-020dbf5bc52e")
 	)
 	(pad "E16" smd circle
-		(at 13.9 -6)
+		(at -16.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4928,7 +5015,7 @@
 		(uuid "38d6f57a-5133-4fb2-baa7-0e6913385413")
 	)
 	(pad "E17" smd circle
-		(at 15.2 -6)
+		(at -15 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4945,7 +5032,7 @@
 		(uuid "fdecdce1-08f9-4103-b3da-a3bdb7b6d70a")
 	)
 	(pad "E18" smd circle
-		(at 16.1 -6)
+		(at -14.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4962,7 +5049,7 @@
 		(uuid "af8e94a4-9128-40da-aebc-96a729a58eb1")
 	)
 	(pad "E19" smd circle
-		(at 17 -6)
+		(at -13.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4979,7 +5066,7 @@
 		(uuid "dbea5540-b8e1-4e99-ae52-9b01dcb0e7cd")
 	)
 	(pad "E20" smd circle
-		(at 17.9 -6)
+		(at -12.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -4996,7 +5083,7 @@
 		(uuid "feb93cf3-32de-401b-887a-48d2360fa255")
 	)
 	(pad "E21" smd circle
-		(at 19.2 -6)
+		(at -11 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5013,7 +5100,7 @@
 		(uuid "00a10a53-41c2-4bd7-878c-468459c7527a")
 	)
 	(pad "E22" smd circle
-		(at 20.1 -6)
+		(at -10.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5030,7 +5117,7 @@
 		(uuid "647fada1-7955-4747-9521-5c0072ff07db")
 	)
 	(pad "E23" smd circle
-		(at 21 -6)
+		(at -9.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5047,7 +5134,7 @@
 		(uuid "33da8a55-ebff-43f3-94ec-2ee1675a18bd")
 	)
 	(pad "E24" smd circle
-		(at 21.9 -6)
+		(at -8.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5064,7 +5151,7 @@
 		(uuid "d70c7405-0770-4beb-b1c7-f105d6f60c89")
 	)
 	(pad "E25" smd circle
-		(at 23.2 -6)
+		(at -7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5081,7 +5168,7 @@
 		(uuid "71a509c4-4572-42e9-962b-bf0ebb7224f0")
 	)
 	(pad "E26" smd circle
-		(at 24.1 -6)
+		(at -6.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5098,7 +5185,7 @@
 		(uuid "f6dfa390-7233-4d10-b23f-36b85139c9c0")
 	)
 	(pad "E27" smd circle
-		(at 25 -6)
+		(at -5.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5115,7 +5202,7 @@
 		(uuid "36e079fc-0acf-4693-8131-e3c83cd3b3e3")
 	)
 	(pad "E28" smd circle
-		(at 25.9 -6)
+		(at -4.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5132,7 +5219,7 @@
 		(uuid "3fad81f9-8c09-4543-9cf9-e1fae38faac5")
 	)
 	(pad "E29" smd circle
-		(at 27.2 -6)
+		(at -3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5149,7 +5236,7 @@
 		(uuid "a9d3d87c-680a-4e40-abc8-26c5985a8367")
 	)
 	(pad "E30" smd circle
-		(at 28.1 -6)
+		(at -2.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5166,7 +5253,7 @@
 		(uuid "0fb67b29-cdc2-4c85-81b0-ce1198a3a92e")
 	)
 	(pad "E31" smd circle
-		(at 29 -6)
+		(at -1.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5183,7 +5270,7 @@
 		(uuid "50127c19-4243-4e0d-af68-2c7111afa37f")
 	)
 	(pad "E32" smd circle
-		(at 29.9 -6)
+		(at -0.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5200,7 +5287,7 @@
 		(uuid "010fe885-6aac-491e-9abc-953df4dca2b4")
 	)
 	(pad "E33" smd circle
-		(at 31.2 -6)
+		(at 1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5217,7 +5304,7 @@
 		(uuid "eacd8d4d-5861-4b50-a4cf-7a61b5a02597")
 	)
 	(pad "E34" smd circle
-		(at 32.1 -6)
+		(at 1.9 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5234,7 +5321,7 @@
 		(uuid "beb983a3-b792-4fb5-958e-e94dae237c79")
 	)
 	(pad "E35" smd circle
-		(at 33 -6)
+		(at 2.8 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5251,7 +5338,7 @@
 		(uuid "f23313fc-7df0-4931-b78a-6ab3de94e51c")
 	)
 	(pad "E36" smd circle
-		(at 33.9 -6)
+		(at 3.7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5268,7 +5355,7 @@
 		(uuid "1cc9b676-822f-4c41-8045-fb6d95ad2ef3")
 	)
 	(pad "E37" smd circle
-		(at 35.2 -6)
+		(at 5 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5285,7 +5372,7 @@
 		(uuid "e1a6cb24-0fef-418e-85ee-c4a1e7bd0bb8")
 	)
 	(pad "E38" smd circle
-		(at 36.1 -6)
+		(at 5.9 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5302,7 +5389,7 @@
 		(uuid "24c6b1aa-5ba1-4162-aee6-7562b0f7c5d5")
 	)
 	(pad "E39" smd circle
-		(at 37 -6)
+		(at 6.8 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5319,7 +5406,7 @@
 		(uuid "984c2501-c48f-4961-812e-ce5f7690e579")
 	)
 	(pad "E40" smd circle
-		(at 37.9 -6)
+		(at 7.7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5336,7 +5423,7 @@
 		(uuid "421da360-d8c8-483b-8046-7cb39b9b5c96")
 	)
 	(pad "E41" smd circle
-		(at 38.8 -6)
+		(at 8.6 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5353,7 +5440,7 @@
 		(uuid "e1cc9a78-65a6-4f70-8890-07242ca15ed4")
 	)
 	(pad "E42" smd circle
-		(at 39.7 -6)
+		(at 9.5 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5370,7 +5457,7 @@
 		(uuid "e99799b5-2eba-4071-906b-f7bfed5c379c")
 	)
 	(pad "E43" smd circle
-		(at 40.6 -6)
+		(at 10.4 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5387,7 +5474,7 @@
 		(uuid "caa49bcb-cd74-4cd8-b81e-f0f616c00675")
 	)
 	(pad "E44" smd circle
-		(at 41.5 -6)
+		(at 11.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5404,7 +5491,7 @@
 		(uuid "476de50e-ec60-44e4-b628-197e9c92fdfc")
 	)
 	(pad "E45" smd circle
-		(at 42.4 -6)
+		(at 12.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5421,7 +5508,7 @@
 		(uuid "20a06ac3-cab8-47f9-a744-7b65e7663af7")
 	)
 	(pad "E46" smd circle
-		(at 43.3 -6)
+		(at 13.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5438,7 +5525,7 @@
 		(uuid "5f3d59d1-574f-4c3a-ae98-d69ff9b213d7")
 	)
 	(pad "E47" smd circle
-		(at 44.2 -6)
+		(at 14 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5455,7 +5542,7 @@
 		(uuid "87061e58-0a29-4373-9628-37b530e6bd50")
 	)
 	(pad "E48" smd circle
-		(at 45.1 -6)
+		(at 14.9 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5472,7 +5559,7 @@
 		(uuid "6d9d3a5a-d339-4ed9-bdb8-35e036193c31")
 	)
 	(pad "E49" smd circle
-		(at 46 -6)
+		(at 15.8 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5489,7 +5576,7 @@
 		(uuid "496df4a1-471f-4a6f-91af-e6542a0dc607")
 	)
 	(pad "E50" smd circle
-		(at 46.9 -6)
+		(at 16.7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5506,7 +5593,7 @@
 		(uuid "4db8abec-82bb-4728-b6f8-a8f4444a0fe1")
 	)
 	(pad "E51" smd circle
-		(at 47.8 -6)
+		(at 17.6 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5523,7 +5610,7 @@
 		(uuid "779bee90-5983-4bf2-af54-058f9193d2ff")
 	)
 	(pad "E52" smd circle
-		(at 48.7 -6)
+		(at 18.5 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5540,7 +5627,7 @@
 		(uuid "85ba6fc5-8a81-4699-9aa4-38b199d9e66e")
 	)
 	(pad "E53" smd circle
-		(at 49.6 -6)
+		(at 19.4 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5557,7 +5644,7 @@
 		(uuid "463c3afc-332f-40ea-82c4-2c6db4d6714c")
 	)
 	(pad "E54" smd circle
-		(at 50.5 -6)
+		(at 20.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5574,7 +5661,7 @@
 		(uuid "c0b70c74-e110-4f49-a41e-e60008856b0b")
 	)
 	(pad "E55" smd circle
-		(at 51.4 -6)
+		(at 21.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5591,7 +5678,7 @@
 		(uuid "931d607b-e8ef-4179-9ad3-2879aa1d4f08")
 	)
 	(pad "E56" smd circle
-		(at 52.3 -6)
+		(at 22.1 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5608,7 +5695,7 @@
 		(uuid "a0f358c0-d979-48fa-bda7-860557e8e16e")
 	)
 	(pad "E57" smd circle
-		(at 53.2 -6)
+		(at 23 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5625,7 +5712,7 @@
 		(uuid "c290b131-246d-4939-9dae-aaf74fb09d9e")
 	)
 	(pad "E58" smd circle
-		(at 54.1 -6)
+		(at 23.9 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5642,7 +5729,7 @@
 		(uuid "dc948968-5b55-448c-a725-7532f5e1308a")
 	)
 	(pad "E59" smd circle
-		(at 55 -6)
+		(at 24.8 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5659,7 +5746,7 @@
 		(uuid "6d4b8bba-7f98-4893-8b40-507eb34c7f92")
 	)
 	(pad "E60" smd circle
-		(at 55.9 -6)
+		(at 25.7 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5676,7 +5763,7 @@
 		(uuid "8b7a84a9-8662-4d15-b62b-9156f0876dc9")
 	)
 	(pad "E61" smd circle
-		(at 56.8 -6)
+		(at 26.6 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5693,7 +5780,7 @@
 		(uuid "5a64d635-a600-422e-8b6c-3a7d32937346")
 	)
 	(pad "E62" smd circle
-		(at 57.7 -6)
+		(at 27.5 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5710,7 +5797,7 @@
 		(uuid "b75bfda1-2368-4411-8995-620dbb81cf6e")
 	)
 	(pad "E63" smd circle
-		(at 58.6 -6)
+		(at 28.4 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5727,7 +5814,7 @@
 		(uuid "593ace06-9d54-4438-99f3-fcfc7b91ddcb")
 	)
 	(pad "E64" smd circle
-		(at 59.5 -6)
+		(at 29.3 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5744,7 +5831,7 @@
 		(uuid "8496ca11-2cb8-416b-b4f5-7c6d93bb6702")
 	)
 	(pad "E65" smd circle
-		(at 60.4 -6)
+		(at 30.2 1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5761,7 +5848,7 @@
 		(uuid "a7d5e72e-1b83-4634-8897-6033396fc0e8")
 	)
 	(pad "F1" smd circle
-		(at 0.2 -7.5)
+		(at -30 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5778,7 +5865,7 @@
 		(uuid "50c19d22-9615-4de2-a5f5-bf48d7ce29f4")
 	)
 	(pad "F2" smd circle
-		(at 1.1 -7.5)
+		(at -29.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5795,7 +5882,7 @@
 		(uuid "b9d868ae-2cb0-4b76-94cb-02f2c2224abe")
 	)
 	(pad "F3" smd circle
-		(at 2 -7.5)
+		(at -28.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5812,7 +5899,7 @@
 		(uuid "4430b509-5ca1-42ff-8ff2-8f17b3675978")
 	)
 	(pad "F4" smd circle
-		(at 2.9 -7.5)
+		(at -27.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5829,7 +5916,7 @@
 		(uuid "4e36d004-cd4f-40ea-b6a0-b0c4bd31f11b")
 	)
 	(pad "F5" smd circle
-		(at 3.8 -7.5)
+		(at -26.4 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5846,7 +5933,7 @@
 		(uuid "06350c86-d7eb-446e-b48d-55e40d9b3994")
 	)
 	(pad "F6" smd circle
-		(at 4.7 -7.5)
+		(at -25.5 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5863,7 +5950,7 @@
 		(uuid "e594be08-42e0-443c-a718-14c95439b81d")
 	)
 	(pad "F7" smd circle
-		(at 5.6 -7.5)
+		(at -24.6 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5880,7 +5967,7 @@
 		(uuid "4c84b1da-18d4-44b5-b312-b1c61fc8cc9e")
 	)
 	(pad "F8" smd circle
-		(at 6.5 -7.5)
+		(at -23.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5897,7 +5984,7 @@
 		(uuid "f6f106e7-a2ab-4940-833a-49ba556e9bf3")
 	)
 	(pad "F9" smd circle
-		(at 7.4 -7.5)
+		(at -22.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5914,7 +6001,7 @@
 		(uuid "45fddb05-eb12-49e1-ad87-0e2215e825b7")
 	)
 	(pad "F10" smd circle
-		(at 8.3 -7.5)
+		(at -21.9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5931,7 +6018,7 @@
 		(uuid "b8293444-0e46-456a-93e8-8c78423b72fc")
 	)
 	(pad "F11" smd circle
-		(at 9.2 -7.5)
+		(at -21 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5948,7 +6035,7 @@
 		(uuid "631d5fc0-88f6-4d79-8b9e-882ac19414a0")
 	)
 	(pad "F12" smd circle
-		(at 10.1 -7.5)
+		(at -20.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5965,7 +6052,7 @@
 		(uuid "5c0619ca-84fb-4fea-bf5f-748a115f3368")
 	)
 	(pad "F13" smd circle
-		(at 11 -7.5)
+		(at -19.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5982,7 +6069,7 @@
 		(uuid "f813dc6d-6def-4bc1-86aa-15808a81f5e2")
 	)
 	(pad "F14" smd circle
-		(at 11.9 -7.5)
+		(at -18.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -5999,7 +6086,7 @@
 		(uuid "24725fdd-1880-4125-b007-7cb7530221b6")
 	)
 	(pad "F15" smd circle
-		(at 13.2 -7.5)
+		(at -17 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6016,7 +6103,7 @@
 		(uuid "4246eb58-ead7-4fcb-93db-8e4d4936b8fd")
 	)
 	(pad "F16" smd circle
-		(at 14.1 -7.5)
+		(at -16.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6033,7 +6120,7 @@
 		(uuid "7efc029e-5144-4dc2-8871-cdf9e5bdd923")
 	)
 	(pad "F17" smd circle
-		(at 15 -7.5)
+		(at -15.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6050,7 +6137,7 @@
 		(uuid "0c62d169-1ba1-43f6-a02a-532aa1ae5c3d")
 	)
 	(pad "F18" smd circle
-		(at 15.9 -7.5)
+		(at -14.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6067,7 +6154,7 @@
 		(uuid "2cd5a15d-3f7c-4f49-aa5a-d37a92ca8312")
 	)
 	(pad "F19" smd circle
-		(at 17.2 -7.5)
+		(at -13 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6084,7 +6171,7 @@
 		(uuid "8740a778-f9b4-4a29-8826-3b00062cf917")
 	)
 	(pad "F20" smd circle
-		(at 18.1 -7.5)
+		(at -12.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6101,7 +6188,7 @@
 		(uuid "5b73f98b-ef04-4fa7-8a13-f99f8f3e1e85")
 	)
 	(pad "F21" smd circle
-		(at 19 -7.5)
+		(at -11.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6118,7 +6205,7 @@
 		(uuid "6325c83a-38fb-44e6-b455-9ab76dcd30ac")
 	)
 	(pad "F22" smd circle
-		(at 19.9 -7.5)
+		(at -10.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6135,7 +6222,7 @@
 		(uuid "97b5a8cf-f82f-41d9-a73e-b6c50c5f6ee2")
 	)
 	(pad "F23" smd circle
-		(at 21.2 -7.5)
+		(at -9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6152,7 +6239,7 @@
 		(uuid "f2b38c2f-5f4c-4b19-9d57-6ceedce675ac")
 	)
 	(pad "F24" smd circle
-		(at 22.1 -7.5)
+		(at -8.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6169,7 +6256,7 @@
 		(uuid "5272dbf0-4486-4ff6-be04-62a74734d984")
 	)
 	(pad "F25" smd circle
-		(at 23 -7.5)
+		(at -7.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6186,7 +6273,7 @@
 		(uuid "c81ef749-5f6d-4e57-b9da-1857536ca3b3")
 	)
 	(pad "F26" smd circle
-		(at 23.9 -7.5)
+		(at -6.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6203,7 +6290,7 @@
 		(uuid "3d82cc94-0544-402f-9193-d7372d54b99a")
 	)
 	(pad "F27" smd circle
-		(at 25.2 -7.5)
+		(at -5 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6220,7 +6307,7 @@
 		(uuid "772dec15-85d8-460b-85ca-2f3527d7d067")
 	)
 	(pad "F28" smd circle
-		(at 26.1 -7.5)
+		(at -4.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6237,7 +6324,7 @@
 		(uuid "e60ac04f-509b-4aae-99de-384dc07d67f1")
 	)
 	(pad "F29" smd circle
-		(at 27 -7.5)
+		(at -3.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6254,7 +6341,7 @@
 		(uuid "bdc3eb94-9779-4155-87e0-4f4f91eabe7f")
 	)
 	(pad "F30" smd circle
-		(at 27.9 -7.5)
+		(at -2.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6271,7 +6358,7 @@
 		(uuid "07b2f507-3484-40b7-8423-41c0b9e85a8d")
 	)
 	(pad "F31" smd circle
-		(at 29.2 -7.5)
+		(at -1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6288,7 +6375,7 @@
 		(uuid "137cf1c7-3532-4faf-b8f2-0cb513fd5448")
 	)
 	(pad "F32" smd circle
-		(at 30.1 -7.5)
+		(at -0.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6305,7 +6392,7 @@
 		(uuid "0a138cb1-7631-445b-b553-ec7d7f470299")
 	)
 	(pad "F33" smd circle
-		(at 31 -7.5)
+		(at 0.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6322,7 +6409,7 @@
 		(uuid "1071d469-2a9b-4a33-b418-162376e44266")
 	)
 	(pad "F34" smd circle
-		(at 31.9 -7.5)
+		(at 1.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6339,7 +6426,7 @@
 		(uuid "3bf6c64f-1dd5-4b3a-8bfe-ee8d905d3caf")
 	)
 	(pad "F35" smd circle
-		(at 33.2 -7.5)
+		(at 3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6356,7 +6443,7 @@
 		(uuid "af3cfafa-9e35-4253-b6be-39d6ad7a0c71")
 	)
 	(pad "F36" smd circle
-		(at 34.1 -7.5)
+		(at 3.9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6373,7 +6460,7 @@
 		(uuid "bbbc2822-c2f2-4c88-ac0c-a805eee6e3d1")
 	)
 	(pad "F37" smd circle
-		(at 35 -7.5)
+		(at 4.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6390,7 +6477,7 @@
 		(uuid "5c8a7034-0260-4f83-84e5-8e0043486bbc")
 	)
 	(pad "F38" smd circle
-		(at 35.9 -7.5)
+		(at 5.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6407,7 +6494,7 @@
 		(uuid "1cb6cf4e-37b7-4d65-8012-5dbc71c167bb")
 	)
 	(pad "F39" smd circle
-		(at 37.2 -7.5)
+		(at 7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6424,7 +6511,7 @@
 		(uuid "fae5d7b3-843b-4d87-93f3-864e368a8080")
 	)
 	(pad "F40" smd circle
-		(at 38.1 -7.5)
+		(at 7.9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6441,7 +6528,7 @@
 		(uuid "434aa1a3-da46-49e2-9895-04157b202c2f")
 	)
 	(pad "F41" smd circle
-		(at 39 -7.5)
+		(at 8.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6458,7 +6545,7 @@
 		(uuid "2201ad5d-3d33-4194-84e0-bb762f981c6a")
 	)
 	(pad "F42" smd circle
-		(at 39.9 -7.5)
+		(at 9.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6475,7 +6562,7 @@
 		(uuid "442e5c40-eda7-4044-9f71-56eb01d13ce0")
 	)
 	(pad "F43" smd circle
-		(at 40.8 -7.5)
+		(at 10.6 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6492,7 +6579,7 @@
 		(uuid "e3a607a2-591e-4e62-ba53-6c0f740985db")
 	)
 	(pad "F44" smd circle
-		(at 41.7 -7.5)
+		(at 11.5 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6509,7 +6596,7 @@
 		(uuid "6d351b0b-941e-4126-87f2-684facba0fd9")
 	)
 	(pad "F45" smd circle
-		(at 42.6 -7.5)
+		(at 12.4 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6526,7 +6613,7 @@
 		(uuid "5086a1f1-28fe-46ba-9be6-17446296b789")
 	)
 	(pad "F46" smd circle
-		(at 43.5 -7.5)
+		(at 13.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6543,7 +6630,7 @@
 		(uuid "5063c352-f190-4e53-ba1f-8ea406d974ea")
 	)
 	(pad "F47" smd circle
-		(at 44.4 -7.5)
+		(at 14.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6560,7 +6647,7 @@
 		(uuid "dd625370-3264-436c-972f-9a5969c64e18")
 	)
 	(pad "F48" smd circle
-		(at 45.3 -7.5)
+		(at 15.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6577,7 +6664,7 @@
 		(uuid "d1af57c5-f46d-4073-93a5-b773207fa384")
 	)
 	(pad "F49" smd circle
-		(at 46.2 -7.5)
+		(at 16 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6594,7 +6681,7 @@
 		(uuid "5231f583-d6d1-4fe5-b03d-50ba310fc4a5")
 	)
 	(pad "F50" smd circle
-		(at 47.1 -7.5)
+		(at 16.9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6611,7 +6698,7 @@
 		(uuid "f1073bf9-986a-4674-9812-c37ddd7a0ecb")
 	)
 	(pad "F51" smd circle
-		(at 48 -7.5)
+		(at 17.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6628,7 +6715,7 @@
 		(uuid "854538f4-9bc7-4483-86cf-26c6f0d82183")
 	)
 	(pad "F52" smd circle
-		(at 48.9 -7.5)
+		(at 18.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6645,7 +6732,7 @@
 		(uuid "32fb288f-a535-420e-bdf8-77619f3eef0c")
 	)
 	(pad "F53" smd circle
-		(at 49.8 -7.5)
+		(at 19.6 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6662,7 +6749,7 @@
 		(uuid "d0b32ad5-2eae-4092-9a3a-7d814afdef2a")
 	)
 	(pad "F54" smd circle
-		(at 50.7 -7.5)
+		(at 20.5 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6679,7 +6766,7 @@
 		(uuid "3c6743cf-5870-41eb-9c20-44a74673c2a1")
 	)
 	(pad "F55" smd circle
-		(at 51.6 -7.5)
+		(at 21.4 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6696,7 +6783,7 @@
 		(uuid "f1d4e2ca-baa7-40cb-8bbe-4c00a62e5786")
 	)
 	(pad "F56" smd circle
-		(at 52.5 -7.5)
+		(at 22.3 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6713,7 +6800,7 @@
 		(uuid "1d0e0531-1aa6-45dc-ab02-01e92e1ed06f")
 	)
 	(pad "F57" smd circle
-		(at 53.4 -7.5)
+		(at 23.2 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6730,7 +6817,7 @@
 		(uuid "54795b0c-ded0-451f-a4bf-ea0db48938e4")
 	)
 	(pad "F58" smd circle
-		(at 54.3 -7.5)
+		(at 24.1 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6747,7 +6834,7 @@
 		(uuid "30660b5e-e655-4132-a0f0-391722ebda75")
 	)
 	(pad "F59" smd circle
-		(at 55.2 -7.5)
+		(at 25 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6764,7 +6851,7 @@
 		(uuid "268b8c8e-a01a-4de4-a829-f6aab24c46b7")
 	)
 	(pad "F60" smd circle
-		(at 56.1 -7.5)
+		(at 25.9 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6781,7 +6868,7 @@
 		(uuid "31b510e5-f864-4cf4-8d4f-df049b15d352")
 	)
 	(pad "F61" smd circle
-		(at 57 -7.5)
+		(at 26.8 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6798,7 +6885,7 @@
 		(uuid "4ab982ff-f6aa-4cc9-aaa3-bd47e47fe1da")
 	)
 	(pad "F62" smd circle
-		(at 57.9 -7.5)
+		(at 27.7 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6815,7 +6902,7 @@
 		(uuid "8d399ed8-85d1-44b4-9296-b072b0ff4817")
 	)
 	(pad "F63" smd circle
-		(at 58.8 -7.5)
+		(at 28.6 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6832,7 +6919,7 @@
 		(uuid "ded78e52-ee45-4261-a981-1c107640df10")
 	)
 	(pad "F64" smd circle
-		(at 59.7 -7.5)
+		(at 29.5 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6849,7 +6936,7 @@
 		(uuid "afa68b81-aecb-4220-896d-34453cf62023")
 	)
 	(pad "F65" smd circle
-		(at 60.6 -7.5)
+		(at 30.4 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6866,7 +6953,7 @@
 		(uuid "786467f9-4036-4054-ab33-009bbf2d36fd")
 	)
 	(pad "G1" smd circle
-		(at 0 -9)
+		(at -30.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6883,7 +6970,7 @@
 		(uuid "efce658c-a89e-496f-aa62-176ce9be257a")
 	)
 	(pad "G2" smd circle
-		(at 0.9 -9)
+		(at -29.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6900,7 +6987,7 @@
 		(uuid "ce7df936-98dc-43d6-849b-ec16c431a9cb")
 	)
 	(pad "G3" smd circle
-		(at 1.8 -9)
+		(at -28.4 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6917,7 +7004,7 @@
 		(uuid "0d28378e-c99e-41bc-8e8e-5d7d80913ffa")
 	)
 	(pad "G4" smd circle
-		(at 2.7 -9)
+		(at -27.5 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6934,7 +7021,7 @@
 		(uuid "a528b489-5ff8-4190-bae8-568b921afb74")
 	)
 	(pad "G5" smd circle
-		(at 3.6 -9)
+		(at -26.6 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6951,7 +7038,7 @@
 		(uuid "321da522-9529-413e-b694-3ceab941087a")
 	)
 	(pad "G6" smd circle
-		(at 4.5 -9)
+		(at -25.7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6968,7 +7055,7 @@
 		(uuid "0206bbb7-e454-4594-bc2c-a3894590dbd8")
 	)
 	(pad "G7" smd circle
-		(at 5.4 -9)
+		(at -24.8 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -6985,7 +7072,7 @@
 		(uuid "ff34edb0-df55-4a28-862c-1ba3d52f3d84")
 	)
 	(pad "G8" smd circle
-		(at 6.3 -9)
+		(at -23.9 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7002,7 +7089,7 @@
 		(uuid "4c23ea6b-9802-4939-9e88-6c8e6a4227e3")
 	)
 	(pad "G9" smd circle
-		(at 7.2 -9)
+		(at -23 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7019,7 +7106,7 @@
 		(uuid "73d7fc2f-3ed3-4a44-8d78-24679277dbed")
 	)
 	(pad "G10" smd circle
-		(at 8.1 -9)
+		(at -22.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7036,7 +7123,7 @@
 		(uuid "eaa485df-7b51-4150-b934-2f30b5395196")
 	)
 	(pad "G11" smd circle
-		(at 9 -9)
+		(at -21.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7053,7 +7140,7 @@
 		(uuid "88aea374-9bdc-4272-b340-a16df0015cbe")
 	)
 	(pad "G12" smd circle
-		(at 9.9 -9)
+		(at -20.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7070,7 +7157,7 @@
 		(uuid "d69a5795-2c2c-4e90-9260-2612c26a95b2")
 	)
 	(pad "G13" smd circle
-		(at 11.2 -9)
+		(at -19 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7087,7 +7174,7 @@
 		(uuid "b5010e29-2334-40a0-91c6-a2e6ae70d5fe")
 	)
 	(pad "G14" smd circle
-		(at 12.1 -9)
+		(at -18.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7104,7 +7191,7 @@
 		(uuid "8208e0ec-7e87-47dd-9a18-07c72e303486")
 	)
 	(pad "G15" smd circle
-		(at 13 -9)
+		(at -17.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7121,7 +7208,7 @@
 		(uuid "3b5b9e8e-b9da-4f82-a90d-87c858aa0511")
 	)
 	(pad "G16" smd circle
-		(at 13.9 -9)
+		(at -16.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7138,7 +7225,7 @@
 		(uuid "ef0760c5-364c-4d76-a066-6128bd011d0c")
 	)
 	(pad "G17" smd circle
-		(at 15.2 -9)
+		(at -15 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7155,7 +7242,7 @@
 		(uuid "bf6f556a-0a3b-4dd2-b2c2-9dae1770735f")
 	)
 	(pad "G18" smd circle
-		(at 16.1 -9)
+		(at -14.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7172,7 +7259,7 @@
 		(uuid "31ea5aa2-4e1f-43f9-80a7-4637e07321b6")
 	)
 	(pad "G19" smd circle
-		(at 17 -9)
+		(at -13.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7189,7 +7276,7 @@
 		(uuid "879fa289-5164-4c12-9816-7f4c235a27fc")
 	)
 	(pad "G20" smd circle
-		(at 17.9 -9)
+		(at -12.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7206,7 +7293,7 @@
 		(uuid "3f02dea6-a740-419e-9fee-1271da9d645a")
 	)
 	(pad "G21" smd circle
-		(at 19.2 -9)
+		(at -11 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7223,7 +7310,7 @@
 		(uuid "eb1eb97a-15b2-4a34-8484-45e7d24239c4")
 	)
 	(pad "G22" smd circle
-		(at 20.1 -9)
+		(at -10.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7240,7 +7327,7 @@
 		(uuid "00b1fd4e-04c4-4789-89ad-dac111d6301c")
 	)
 	(pad "G23" smd circle
-		(at 21 -9)
+		(at -9.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7257,7 +7344,7 @@
 		(uuid "d4aab67d-6bf7-4cbb-875f-f1919845887b")
 	)
 	(pad "G24" smd circle
-		(at 21.9 -9)
+		(at -8.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7274,7 +7361,7 @@
 		(uuid "40ae5e79-eee6-44c1-b3e9-b1d97a0d457b")
 	)
 	(pad "G25" smd circle
-		(at 23.2 -9)
+		(at -7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7291,7 +7378,7 @@
 		(uuid "123535a2-68d8-43fe-ab92-7add1b03d949")
 	)
 	(pad "G26" smd circle
-		(at 24.1 -9)
+		(at -6.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7308,7 +7395,7 @@
 		(uuid "24701d97-8ce9-4d62-b203-06353d6aeefc")
 	)
 	(pad "G27" smd circle
-		(at 25 -9)
+		(at -5.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7325,7 +7412,7 @@
 		(uuid "ea9d3738-7acb-4cc1-82bb-b08101789696")
 	)
 	(pad "G28" smd circle
-		(at 25.9 -9)
+		(at -4.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7342,7 +7429,7 @@
 		(uuid "4ebc6a26-e650-49f2-93b8-659bcba6320f")
 	)
 	(pad "G29" smd circle
-		(at 27.2 -9)
+		(at -3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7359,7 +7446,7 @@
 		(uuid "6121ee19-3443-452a-9bcb-991f96477b9e")
 	)
 	(pad "G30" smd circle
-		(at 28.1 -9)
+		(at -2.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7376,7 +7463,7 @@
 		(uuid "87560cd1-1122-47bf-b26c-0ad4309d75d4")
 	)
 	(pad "G31" smd circle
-		(at 29 -9)
+		(at -1.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7393,7 +7480,7 @@
 		(uuid "e73bf387-ed9b-4d6b-9738-b7d8d8add607")
 	)
 	(pad "G32" smd circle
-		(at 29.9 -9)
+		(at -0.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7410,7 +7497,7 @@
 		(uuid "7233b430-d88c-4c63-a198-89b3c2b7b144")
 	)
 	(pad "G33" smd circle
-		(at 31.2 -9)
+		(at 1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7427,7 +7514,7 @@
 		(uuid "70f71e6b-6a7e-4ab9-89f0-950e18ead56e")
 	)
 	(pad "G34" smd circle
-		(at 32.1 -9)
+		(at 1.9 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7444,7 +7531,7 @@
 		(uuid "7cdcd54e-463a-4b80-b2d7-a04ffb1f9cf1")
 	)
 	(pad "G35" smd circle
-		(at 33 -9)
+		(at 2.8 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7461,7 +7548,7 @@
 		(uuid "ef89e282-28f8-40b8-a968-fd820d1fb2cd")
 	)
 	(pad "G36" smd circle
-		(at 33.9 -9)
+		(at 3.7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7478,7 +7565,7 @@
 		(uuid "90b04e2d-3c78-465f-b11c-63c90a7dfcba")
 	)
 	(pad "G37" smd circle
-		(at 35.2 -9)
+		(at 5 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7495,7 +7582,7 @@
 		(uuid "350f1d52-9d0b-4431-ac43-a0eb4e8a014f")
 	)
 	(pad "G38" smd circle
-		(at 36.1 -9)
+		(at 5.9 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7512,7 +7599,7 @@
 		(uuid "f5685410-7027-4e02-aa43-8bf3a545ca10")
 	)
 	(pad "G39" smd circle
-		(at 37 -9)
+		(at 6.8 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7529,7 +7616,7 @@
 		(uuid "a52c1bec-28f1-423e-b5cf-7bdb9c38f585")
 	)
 	(pad "G40" smd circle
-		(at 37.9 -9)
+		(at 7.7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7546,7 +7633,7 @@
 		(uuid "113edf89-106a-4540-862c-fd9936856988")
 	)
 	(pad "G41" smd circle
-		(at 38.8 -9)
+		(at 8.6 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7563,7 +7650,7 @@
 		(uuid "9a8afabd-d967-4202-a126-4b6d1429bd93")
 	)
 	(pad "G42" smd circle
-		(at 39.7 -9)
+		(at 9.5 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7580,7 +7667,7 @@
 		(uuid "18c56e67-26c7-488d-b750-361e9f329ced")
 	)
 	(pad "G43" smd circle
-		(at 40.6 -9)
+		(at 10.4 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7597,7 +7684,7 @@
 		(uuid "a27532c8-f813-4a72-80dd-507087f8ebbe")
 	)
 	(pad "G44" smd circle
-		(at 41.5 -9)
+		(at 11.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7614,7 +7701,7 @@
 		(uuid "d3b8ad4c-b173-4e92-9138-b9ab89e8d143")
 	)
 	(pad "G45" smd circle
-		(at 42.4 -9)
+		(at 12.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7631,7 +7718,7 @@
 		(uuid "2bc0ec9e-f95a-4716-a968-f4a0195d2c3c")
 	)
 	(pad "G46" smd circle
-		(at 43.3 -9)
+		(at 13.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7648,7 +7735,7 @@
 		(uuid "21e417e5-b5af-4371-9705-6f5015107e25")
 	)
 	(pad "G47" smd circle
-		(at 44.2 -9)
+		(at 14 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7665,7 +7752,7 @@
 		(uuid "b60a254b-5837-4784-86ea-aa96e2331d76")
 	)
 	(pad "G48" smd circle
-		(at 45.1 -9)
+		(at 14.9 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7682,7 +7769,7 @@
 		(uuid "b8f64cf5-7532-41f3-b945-3f70ef21a0f6")
 	)
 	(pad "G49" smd circle
-		(at 46 -9)
+		(at 15.8 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7699,7 +7786,7 @@
 		(uuid "aa08bd54-f254-4a31-9487-21fddfaa0227")
 	)
 	(pad "G50" smd circle
-		(at 46.9 -9)
+		(at 16.7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7716,7 +7803,7 @@
 		(uuid "30fac57c-0680-43c0-925f-cc349ab91502")
 	)
 	(pad "G51" smd circle
-		(at 47.8 -9)
+		(at 17.6 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7733,7 +7820,7 @@
 		(uuid "f1c46440-b068-4db2-b4df-7ae7eebe8978")
 	)
 	(pad "G52" smd circle
-		(at 48.7 -9)
+		(at 18.5 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7750,7 +7837,7 @@
 		(uuid "bc7b81cd-f43f-4e7f-b1af-eb508010cc7e")
 	)
 	(pad "G53" smd circle
-		(at 49.6 -9)
+		(at 19.4 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7767,7 +7854,7 @@
 		(uuid "66459891-d9aa-406a-be97-92f7556993cf")
 	)
 	(pad "G54" smd circle
-		(at 50.5 -9)
+		(at 20.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7784,7 +7871,7 @@
 		(uuid "bca51f4c-7efe-47ef-9ce0-b0855fb07c7f")
 	)
 	(pad "G55" smd circle
-		(at 51.4 -9)
+		(at 21.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7801,7 +7888,7 @@
 		(uuid "37a77293-2e64-4d57-bf29-6de181f2b4a2")
 	)
 	(pad "G56" smd circle
-		(at 52.3 -9)
+		(at 22.1 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7818,7 +7905,7 @@
 		(uuid "b4104da6-061a-42e1-bd40-b835333a5a60")
 	)
 	(pad "G57" smd circle
-		(at 53.2 -9)
+		(at 23 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7835,7 +7922,7 @@
 		(uuid "1a31dc34-2296-4e9c-8b84-d34a5de2116f")
 	)
 	(pad "G58" smd circle
-		(at 54.1 -9)
+		(at 23.9 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7852,7 +7939,7 @@
 		(uuid "24ef788c-bf50-44fe-af34-59988bc669c3")
 	)
 	(pad "G59" smd circle
-		(at 55 -9)
+		(at 24.8 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7869,7 +7956,7 @@
 		(uuid "625027b7-0f74-4040-a0ec-2d1e6deff3bc")
 	)
 	(pad "G60" smd circle
-		(at 55.9 -9)
+		(at 25.7 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7886,7 +7973,7 @@
 		(uuid "962a5caa-306c-47b1-b947-ab7c3c7caf70")
 	)
 	(pad "G61" smd circle
-		(at 56.8 -9)
+		(at 26.6 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7903,7 +7990,7 @@
 		(uuid "aa5fac95-3138-4566-b994-403e5f634f52")
 	)
 	(pad "G62" smd circle
-		(at 57.7 -9)
+		(at 27.5 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7920,7 +8007,7 @@
 		(uuid "efe55f37-0879-4d8e-9aac-52d5995396d3")
 	)
 	(pad "G63" smd circle
-		(at 58.6 -9)
+		(at 28.4 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7937,7 +8024,7 @@
 		(uuid "02ddac36-9da4-4298-bcfb-1db80c1946d1")
 	)
 	(pad "G64" smd circle
-		(at 59.5 -9)
+		(at 29.3 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7954,7 +8041,7 @@
 		(uuid "86d32c06-0db4-4a71-99de-d1699793fe6b")
 	)
 	(pad "G65" smd circle
-		(at 60.4 -9)
+		(at 30.2 -1.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7971,7 +8058,7 @@
 		(uuid "5935285d-6ea0-462a-a289-37accf3365ac")
 	)
 	(pad "H1" smd circle
-		(at 0.2 -10.5)
+		(at -30 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -7988,7 +8075,7 @@
 		(uuid "59da7ce7-b367-46c9-8579-a18d80ae25a3")
 	)
 	(pad "H2" smd circle
-		(at 1.1 -10.5)
+		(at -29.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8005,7 +8092,7 @@
 		(uuid "5df9c82e-e309-47a9-b037-4c7a88aa08a5")
 	)
 	(pad "H3" smd circle
-		(at 2 -10.5)
+		(at -28.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8022,7 +8109,7 @@
 		(uuid "57fbb23d-4683-4034-bd67-a3f65637fc02")
 	)
 	(pad "H4" smd circle
-		(at 2.9 -10.5)
+		(at -27.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8039,7 +8126,7 @@
 		(uuid "ccf98939-e295-4d3b-b76a-d31854a3ce1f")
 	)
 	(pad "H5" smd circle
-		(at 3.8 -10.5)
+		(at -26.4 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8056,7 +8143,7 @@
 		(uuid "430ed801-992d-4e67-9b25-51f45abf193c")
 	)
 	(pad "H6" smd circle
-		(at 4.7 -10.5)
+		(at -25.5 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8073,7 +8160,7 @@
 		(uuid "8f6c76eb-2bcd-413b-ba34-f6f64a314ed5")
 	)
 	(pad "H7" smd circle
-		(at 5.6 -10.5)
+		(at -24.6 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8090,7 +8177,7 @@
 		(uuid "cd9fe467-ea50-4d01-a5e5-0d6397bec849")
 	)
 	(pad "H8" smd circle
-		(at 6.5 -10.5)
+		(at -23.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8107,7 +8194,7 @@
 		(uuid "6452bc88-048c-45c1-85a4-8e20698b8ddb")
 	)
 	(pad "H9" smd circle
-		(at 7.4 -10.5)
+		(at -22.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8124,7 +8211,7 @@
 		(uuid "f8366b46-a3a2-492e-9ee3-76839e1f7a55")
 	)
 	(pad "H10" smd circle
-		(at 8.3 -10.5)
+		(at -21.9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8141,7 +8228,7 @@
 		(uuid "d5dbf9fe-048f-4d43-a0c6-eb3c358c3e6b")
 	)
 	(pad "H11" smd circle
-		(at 9.2 -10.5)
+		(at -21 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8158,7 +8245,7 @@
 		(uuid "04de5f83-2d67-4437-aa85-18ee2842b8af")
 	)
 	(pad "H12" smd circle
-		(at 10.1 -10.5)
+		(at -20.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8175,7 +8262,7 @@
 		(uuid "0fd5f46f-042f-4cef-a28c-efe133610d56")
 	)
 	(pad "H13" smd circle
-		(at 11 -10.5)
+		(at -19.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8192,7 +8279,7 @@
 		(uuid "71ed43d5-f00e-469f-ae0b-1abd9dd70a2a")
 	)
 	(pad "H14" smd circle
-		(at 11.9 -10.5)
+		(at -18.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8209,7 +8296,7 @@
 		(uuid "c897292d-76e8-4c99-82e1-54d51c8a591e")
 	)
 	(pad "H15" smd circle
-		(at 13.2 -10.5)
+		(at -17 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8226,7 +8313,7 @@
 		(uuid "596ce115-a454-4222-8418-94feda861002")
 	)
 	(pad "H16" smd circle
-		(at 14.1 -10.5)
+		(at -16.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8243,7 +8330,7 @@
 		(uuid "2ab058b7-f966-4ad4-b170-f4f91e27726c")
 	)
 	(pad "H17" smd circle
-		(at 15 -10.5)
+		(at -15.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8260,7 +8347,7 @@
 		(uuid "82ce0ae5-3954-4941-b33c-6bbaeb86ec83")
 	)
 	(pad "H18" smd circle
-		(at 15.9 -10.5)
+		(at -14.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8277,7 +8364,7 @@
 		(uuid "073363fd-e0b0-4a61-a05f-c1b32da168bf")
 	)
 	(pad "H19" smd circle
-		(at 17.2 -10.5)
+		(at -13 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8294,7 +8381,7 @@
 		(uuid "51d12281-0f7c-4a13-8ff2-f20a22b61efc")
 	)
 	(pad "H20" smd circle
-		(at 18.1 -10.5)
+		(at -12.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8311,7 +8398,7 @@
 		(uuid "78d4871d-852a-4b78-a5c0-1821e291f307")
 	)
 	(pad "H21" smd circle
-		(at 19 -10.5)
+		(at -11.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8328,7 +8415,7 @@
 		(uuid "ba8e144e-a58f-4482-b97a-7431392cf805")
 	)
 	(pad "H22" smd circle
-		(at 19.9 -10.5)
+		(at -10.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8345,7 +8432,7 @@
 		(uuid "12d01d34-6838-4d05-854d-3a02b10613a2")
 	)
 	(pad "H23" smd circle
-		(at 21.2 -10.5)
+		(at -9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8362,7 +8449,7 @@
 		(uuid "97b81a61-e3f0-4a7b-aa14-7466f7ca4ae3")
 	)
 	(pad "H24" smd circle
-		(at 22.1 -10.5)
+		(at -8.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8379,7 +8466,7 @@
 		(uuid "d06d266a-e80d-4208-b40f-162482149953")
 	)
 	(pad "H25" smd circle
-		(at 23 -10.5)
+		(at -7.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8396,7 +8483,7 @@
 		(uuid "74394bcd-4259-40d2-add8-8e122665d19a")
 	)
 	(pad "H26" smd circle
-		(at 23.9 -10.5)
+		(at -6.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8413,7 +8500,7 @@
 		(uuid "c6ae89b9-b57c-494d-97fd-30b7fcfc73c0")
 	)
 	(pad "H27" smd circle
-		(at 25.2 -10.5)
+		(at -5 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8430,7 +8517,7 @@
 		(uuid "0d3dc675-dda0-4ed2-b5df-14648b3faac4")
 	)
 	(pad "H28" smd circle
-		(at 26.1 -10.5)
+		(at -4.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8447,7 +8534,7 @@
 		(uuid "66d11b2d-90bb-4d5e-bb01-ba7d4f6f9a5f")
 	)
 	(pad "H29" smd circle
-		(at 27 -10.5)
+		(at -3.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8464,7 +8551,7 @@
 		(uuid "9546efa8-2d25-448e-bc46-ef63d8d200c4")
 	)
 	(pad "H30" smd circle
-		(at 27.9 -10.5)
+		(at -2.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8481,7 +8568,7 @@
 		(uuid "c7555457-7129-4725-a9eb-2a3c5323d868")
 	)
 	(pad "H31" smd circle
-		(at 29.2 -10.5)
+		(at -1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8498,7 +8585,7 @@
 		(uuid "6d7c05dd-c2b1-41a3-a7d2-0a999e004659")
 	)
 	(pad "H32" smd circle
-		(at 30.1 -10.5)
+		(at -0.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8515,7 +8602,7 @@
 		(uuid "50be08cd-1fd6-46d4-960c-d3ba9bcad93b")
 	)
 	(pad "H33" smd circle
-		(at 31 -10.5)
+		(at 0.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8532,7 +8619,7 @@
 		(uuid "0240c243-32b9-4df2-bf32-6ba4e928d6ba")
 	)
 	(pad "H34" smd circle
-		(at 31.9 -10.5)
+		(at 1.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8549,7 +8636,7 @@
 		(uuid "8c8c49fb-8928-4974-8f0c-bc7ee8f965dd")
 	)
 	(pad "H35" smd circle
-		(at 33.2 -10.5)
+		(at 3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8566,7 +8653,7 @@
 		(uuid "76a72afd-26a5-468b-856c-7340db0b70b8")
 	)
 	(pad "H36" smd circle
-		(at 34.1 -10.5)
+		(at 3.9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8583,7 +8670,7 @@
 		(uuid "4fbe0a52-92a5-4cee-b2d1-24cc5ee9ccae")
 	)
 	(pad "H37" smd circle
-		(at 35 -10.5)
+		(at 4.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8600,7 +8687,7 @@
 		(uuid "757531c6-837e-4610-8efe-41ce3be61c4d")
 	)
 	(pad "H38" smd circle
-		(at 35.9 -10.5)
+		(at 5.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8617,7 +8704,7 @@
 		(uuid "59b0f201-df3b-40da-b0bb-99aa36420db5")
 	)
 	(pad "H39" smd circle
-		(at 37.2 -10.5)
+		(at 7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8634,7 +8721,7 @@
 		(uuid "e579cf04-bd58-4e65-99ca-da952e752ad0")
 	)
 	(pad "H40" smd circle
-		(at 38.1 -10.5)
+		(at 7.9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8651,7 +8738,7 @@
 		(uuid "268a45a3-d017-40a3-97ff-eedddb1887b4")
 	)
 	(pad "H41" smd circle
-		(at 39 -10.5)
+		(at 8.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8668,7 +8755,7 @@
 		(uuid "c705e586-b60f-4260-8418-aabf004f3546")
 	)
 	(pad "H42" smd circle
-		(at 39.9 -10.5)
+		(at 9.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8685,7 +8772,7 @@
 		(uuid "932baac5-b8ba-44fd-8baa-b8eb473572c5")
 	)
 	(pad "H43" smd circle
-		(at 40.8 -10.5)
+		(at 10.6 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8702,7 +8789,7 @@
 		(uuid "16054eab-e546-49e3-a0f3-85e44678ec10")
 	)
 	(pad "H44" smd circle
-		(at 41.7 -10.5)
+		(at 11.5 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8719,7 +8806,7 @@
 		(uuid "9cf7b08b-e0f3-41f1-bf5f-06c6f914573d")
 	)
 	(pad "H45" smd circle
-		(at 42.6 -10.5)
+		(at 12.4 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8736,7 +8823,7 @@
 		(uuid "1895f98e-a3af-48c6-8616-ad7d61895320")
 	)
 	(pad "H46" smd circle
-		(at 43.5 -10.5)
+		(at 13.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8753,7 +8840,7 @@
 		(uuid "b11c959b-63e3-42a2-8613-be97806e785b")
 	)
 	(pad "H47" smd circle
-		(at 44.4 -10.5)
+		(at 14.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8770,7 +8857,7 @@
 		(uuid "508c449e-cf2a-4fb6-8b34-9c2ef3bb2bc0")
 	)
 	(pad "H48" smd circle
-		(at 45.3 -10.5)
+		(at 15.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8787,7 +8874,7 @@
 		(uuid "6c63f0bf-74b5-47e0-87c3-f663a5e31c83")
 	)
 	(pad "H49" smd circle
-		(at 46.2 -10.5)
+		(at 16 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8804,7 +8891,7 @@
 		(uuid "732ddc25-2d8d-4a34-b050-63a20c451ace")
 	)
 	(pad "H50" smd circle
-		(at 47.1 -10.5)
+		(at 16.9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8821,7 +8908,7 @@
 		(uuid "88ae0800-6a41-4ee0-8311-f18271e48fa2")
 	)
 	(pad "H51" smd circle
-		(at 48 -10.5)
+		(at 17.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8838,7 +8925,7 @@
 		(uuid "0a416f3c-1e89-4a1c-96d0-ce8579bbd2bc")
 	)
 	(pad "H52" smd circle
-		(at 48.9 -10.5)
+		(at 18.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8855,7 +8942,7 @@
 		(uuid "b327fae2-a9fd-48dd-bac9-62c42f911c23")
 	)
 	(pad "H53" smd circle
-		(at 49.8 -10.5)
+		(at 19.6 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8872,7 +8959,7 @@
 		(uuid "9590a2d1-22ef-4ffb-8f11-65e4939961c0")
 	)
 	(pad "H54" smd circle
-		(at 50.7 -10.5)
+		(at 20.5 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8889,7 +8976,7 @@
 		(uuid "7ea3c49d-dc06-460a-a992-b994f4ac3445")
 	)
 	(pad "H55" smd circle
-		(at 51.6 -10.5)
+		(at 21.4 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8906,7 +8993,7 @@
 		(uuid "59b054f3-1962-488a-938a-e2a665a6c0cb")
 	)
 	(pad "H56" smd circle
-		(at 52.5 -10.5)
+		(at 22.3 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8923,7 +9010,7 @@
 		(uuid "d232ab88-00bd-417f-9022-d73c1bbe9103")
 	)
 	(pad "H57" smd circle
-		(at 53.4 -10.5)
+		(at 23.2 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8940,7 +9027,7 @@
 		(uuid "c80fca75-9c68-44ca-a253-596dc6999db4")
 	)
 	(pad "H58" smd circle
-		(at 54.3 -10.5)
+		(at 24.1 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8957,7 +9044,7 @@
 		(uuid "79e1e9ad-e6d1-426f-8625-c429cbbe3fc5")
 	)
 	(pad "H59" smd circle
-		(at 55.2 -10.5)
+		(at 25 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8974,7 +9061,7 @@
 		(uuid "26c9a93c-f67c-49cd-b7e7-64b385fb2eb4")
 	)
 	(pad "H60" smd circle
-		(at 56.1 -10.5)
+		(at 25.9 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -8991,7 +9078,7 @@
 		(uuid "39f4574d-2421-40be-98a6-22daf951225e")
 	)
 	(pad "H61" smd circle
-		(at 57 -10.5)
+		(at 26.8 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9008,7 +9095,7 @@
 		(uuid "c8c510e9-7a3b-420c-ab58-a201a5dbdef5")
 	)
 	(pad "H62" smd circle
-		(at 57.9 -10.5)
+		(at 27.7 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9025,7 +9112,7 @@
 		(uuid "9108d213-22f2-49b4-8373-efcde69b1d0e")
 	)
 	(pad "H63" smd circle
-		(at 58.8 -10.5)
+		(at 28.6 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9042,7 +9129,7 @@
 		(uuid "13e5d6d2-48bb-4e16-b578-5bda432e6453")
 	)
 	(pad "H64" smd circle
-		(at 59.7 -10.5)
+		(at 29.5 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9059,7 +9146,7 @@
 		(uuid "92522567-dbcd-4780-961b-90fd7e37b89c")
 	)
 	(pad "H65" smd circle
-		(at 60.6 -10.5)
+		(at 30.4 -3)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9076,7 +9163,7 @@
 		(uuid "49304a23-454f-41d0-a406-06b7b61be37c")
 	)
 	(pad "J1" smd circle
-		(at 0 -12)
+		(at -30.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9093,7 +9180,7 @@
 		(uuid "a7d84528-a706-404a-8130-c915c25952bf")
 	)
 	(pad "J2" smd circle
-		(at 0.9 -12)
+		(at -29.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9110,7 +9197,7 @@
 		(uuid "65c68add-4f6a-40b7-813c-260a420a4ba9")
 	)
 	(pad "J3" smd circle
-		(at 1.8 -12)
+		(at -28.4 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9127,7 +9214,7 @@
 		(uuid "4add380b-c4ef-4ebd-b24c-6ab57485688d")
 	)
 	(pad "J4" smd circle
-		(at 2.7 -12)
+		(at -27.5 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9144,7 +9231,7 @@
 		(uuid "4b2fcbcd-7b0a-4006-9022-a0998afdc74f")
 	)
 	(pad "J5" smd circle
-		(at 3.6 -12)
+		(at -26.6 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9161,7 +9248,7 @@
 		(uuid "ace3e7f3-d178-4428-980e-037abd713676")
 	)
 	(pad "J6" smd circle
-		(at 4.5 -12)
+		(at -25.7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9178,7 +9265,7 @@
 		(uuid "b2e75f95-b1a2-46bf-948e-19442d3f4d6e")
 	)
 	(pad "J7" smd circle
-		(at 5.4 -12)
+		(at -24.8 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9195,7 +9282,7 @@
 		(uuid "891fa69d-f8da-4297-9cb0-7fd5c6f12cd5")
 	)
 	(pad "J8" smd circle
-		(at 6.3 -12)
+		(at -23.9 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9212,7 +9299,7 @@
 		(uuid "556bff2f-9751-480a-8ad1-e4aecf7ac38c")
 	)
 	(pad "J9" smd circle
-		(at 7.2 -12)
+		(at -23 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9229,7 +9316,7 @@
 		(uuid "aa64cd70-747a-4d5c-9eda-a099a1027f8d")
 	)
 	(pad "J10" smd circle
-		(at 8.1 -12)
+		(at -22.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9246,7 +9333,7 @@
 		(uuid "501ceb55-b85a-4b46-81d1-877ec1571039")
 	)
 	(pad "J11" smd circle
-		(at 9 -12)
+		(at -21.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9263,7 +9350,7 @@
 		(uuid "0b8a8f22-2a74-4be3-a4f2-2e91e3ccbad8")
 	)
 	(pad "J12" smd circle
-		(at 9.9 -12)
+		(at -20.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9280,7 +9367,7 @@
 		(uuid "94b43989-3f01-4541-a522-f336aab658a1")
 	)
 	(pad "J13" smd circle
-		(at 11.2 -12)
+		(at -19 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9297,7 +9384,7 @@
 		(uuid "75da0800-94ea-4d56-ab33-cfbe7bad7a23")
 	)
 	(pad "J14" smd circle
-		(at 12.1 -12)
+		(at -18.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9314,7 +9401,7 @@
 		(uuid "6cc4938d-4281-4fae-a29f-d377bf76bbc1")
 	)
 	(pad "J15" smd circle
-		(at 13 -12)
+		(at -17.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9331,7 +9418,7 @@
 		(uuid "7fa2c6a7-059d-434d-8d2b-43838a707811")
 	)
 	(pad "J16" smd circle
-		(at 13.9 -12)
+		(at -16.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9348,7 +9435,7 @@
 		(uuid "adaf2e47-448e-419b-a379-b7e14279cbc5")
 	)
 	(pad "J17" smd circle
-		(at 15.2 -12)
+		(at -15 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9365,7 +9452,7 @@
 		(uuid "dc0825eb-7e58-4296-9945-80bbefa1d946")
 	)
 	(pad "J18" smd circle
-		(at 16.1 -12)
+		(at -14.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9382,7 +9469,7 @@
 		(uuid "c5828c0b-e672-40c7-9972-c6ceb3e4f72c")
 	)
 	(pad "J19" smd circle
-		(at 17 -12)
+		(at -13.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9399,7 +9486,7 @@
 		(uuid "6050209b-8ea6-437b-bc57-2d21eaac2665")
 	)
 	(pad "J20" smd circle
-		(at 17.9 -12)
+		(at -12.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9416,7 +9503,7 @@
 		(uuid "80c48654-1618-48bb-9f09-eaaf4b441559")
 	)
 	(pad "J21" smd circle
-		(at 19.2 -12)
+		(at -11 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9433,7 +9520,7 @@
 		(uuid "7ae78777-9478-4290-93de-2be504ee460a")
 	)
 	(pad "J22" smd circle
-		(at 20.1 -12)
+		(at -10.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9450,7 +9537,7 @@
 		(uuid "8ff96fb9-e8e1-45f8-be92-875645be5ed5")
 	)
 	(pad "J23" smd circle
-		(at 21 -12)
+		(at -9.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9467,7 +9554,7 @@
 		(uuid "92a7024d-d973-4b8a-9e19-6e046f3b12da")
 	)
 	(pad "J24" smd circle
-		(at 21.9 -12)
+		(at -8.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9484,7 +9571,7 @@
 		(uuid "44733bdc-f9db-4938-af8e-16ea809d6508")
 	)
 	(pad "J25" smd circle
-		(at 23.2 -12)
+		(at -7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9501,7 +9588,7 @@
 		(uuid "134a243a-2b9e-4080-bf90-347616955e88")
 	)
 	(pad "J26" smd circle
-		(at 24.1 -12)
+		(at -6.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9518,7 +9605,7 @@
 		(uuid "1baebd2a-1b4e-4b38-abfa-bda24f2a7387")
 	)
 	(pad "J27" smd circle
-		(at 25 -12)
+		(at -5.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9535,7 +9622,7 @@
 		(uuid "d1c7a6a6-1e0a-4695-9cda-41f36d6ff4db")
 	)
 	(pad "J28" smd circle
-		(at 25.9 -12)
+		(at -4.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9552,7 +9639,7 @@
 		(uuid "f2899516-abe6-4eb2-a485-9fcdc7edd3a0")
 	)
 	(pad "J29" smd circle
-		(at 27.2 -12)
+		(at -3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9569,7 +9656,7 @@
 		(uuid "f580acea-9f1e-4f28-ac0c-4144c8e8a39b")
 	)
 	(pad "J30" smd circle
-		(at 28.1 -12)
+		(at -2.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9586,7 +9673,7 @@
 		(uuid "05c4aaf8-98a7-4224-a6f9-fcdd2fabb2b1")
 	)
 	(pad "J31" smd circle
-		(at 29 -12)
+		(at -1.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9603,7 +9690,7 @@
 		(uuid "d194a1aa-fccf-413e-ab00-700b5d39448c")
 	)
 	(pad "J32" smd circle
-		(at 29.9 -12)
+		(at -0.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9620,7 +9707,7 @@
 		(uuid "403bc659-ec84-48fa-99f1-929915a2828f")
 	)
 	(pad "J33" smd circle
-		(at 31.2 -12)
+		(at 1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9637,7 +9724,7 @@
 		(uuid "4a764a86-bcbd-4185-841f-7bb597e967df")
 	)
 	(pad "J34" smd circle
-		(at 32.1 -12)
+		(at 1.9 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9654,7 +9741,7 @@
 		(uuid "5a62ad25-78a4-44d1-bd1d-74dd7f67f013")
 	)
 	(pad "J35" smd circle
-		(at 33 -12)
+		(at 2.8 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9671,7 +9758,7 @@
 		(uuid "30f291d5-9b49-430c-9930-ecda002e88f6")
 	)
 	(pad "J36" smd circle
-		(at 33.9 -12)
+		(at 3.7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9688,7 +9775,7 @@
 		(uuid "b7773f2d-a4ea-4329-aa17-42ece75f4928")
 	)
 	(pad "J37" smd circle
-		(at 35.2 -12)
+		(at 5 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9705,7 +9792,7 @@
 		(uuid "2480aa48-de2f-4a9d-9598-aaa62537caf8")
 	)
 	(pad "J38" smd circle
-		(at 36.1 -12)
+		(at 5.9 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9722,7 +9809,7 @@
 		(uuid "23d6f7d6-199c-474c-bf8c-6143475ca829")
 	)
 	(pad "J39" smd circle
-		(at 37 -12)
+		(at 6.8 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9739,7 +9826,7 @@
 		(uuid "e6d77beb-d82b-489e-b1f6-03e44a360cd7")
 	)
 	(pad "J40" smd circle
-		(at 37.9 -12)
+		(at 7.7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9756,7 +9843,7 @@
 		(uuid "df13590c-06dc-4310-858f-91231613fdde")
 	)
 	(pad "J41" smd circle
-		(at 38.8 -12)
+		(at 8.6 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9773,7 +9860,7 @@
 		(uuid "9383f4f2-2f79-4e60-88ec-c25a8fe6150a")
 	)
 	(pad "J42" smd circle
-		(at 39.7 -12)
+		(at 9.5 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9790,7 +9877,7 @@
 		(uuid "4641caf3-33de-496c-9589-fd4e14023a63")
 	)
 	(pad "J43" smd circle
-		(at 40.6 -12)
+		(at 10.4 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9807,7 +9894,7 @@
 		(uuid "4adb3bc6-7fc8-41d8-94d8-dd20c2eb5b15")
 	)
 	(pad "J44" smd circle
-		(at 41.5 -12)
+		(at 11.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9824,7 +9911,7 @@
 		(uuid "9e2ae6e0-5aa5-4925-9aec-acce7890fcf0")
 	)
 	(pad "J45" smd circle
-		(at 42.4 -12)
+		(at 12.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9841,7 +9928,7 @@
 		(uuid "8632a28d-d3e9-422a-9bfe-fb19c2447919")
 	)
 	(pad "J46" smd circle
-		(at 43.3 -12)
+		(at 13.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9858,7 +9945,7 @@
 		(uuid "afd5aa7b-6113-4b65-b933-ea0a04a71199")
 	)
 	(pad "J47" smd circle
-		(at 44.2 -12)
+		(at 14 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9875,7 +9962,7 @@
 		(uuid "0f27afea-1b50-4c0d-8bea-64d4bd34b5b0")
 	)
 	(pad "J48" smd circle
-		(at 45.1 -12)
+		(at 14.9 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9892,7 +9979,7 @@
 		(uuid "21d073c8-b72e-46d8-a5f7-cae678a0d193")
 	)
 	(pad "J49" smd circle
-		(at 46 -12)
+		(at 15.8 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9909,7 +9996,7 @@
 		(uuid "00a9c860-bb12-4d7b-b13d-be16adb90822")
 	)
 	(pad "J50" smd circle
-		(at 46.9 -12)
+		(at 16.7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9926,7 +10013,7 @@
 		(uuid "f64105c9-d818-4df5-929b-d897e8a7ad02")
 	)
 	(pad "J51" smd circle
-		(at 47.8 -12)
+		(at 17.6 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9943,7 +10030,7 @@
 		(uuid "62d74748-1248-4fa0-8b28-f386be36c1d0")
 	)
 	(pad "J52" smd circle
-		(at 48.7 -12)
+		(at 18.5 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9960,7 +10047,7 @@
 		(uuid "f5b2a421-8631-44d9-8674-1b722e45611c")
 	)
 	(pad "J53" smd circle
-		(at 49.6 -12)
+		(at 19.4 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9977,7 +10064,7 @@
 		(uuid "b6e865ae-2a5a-412b-a660-838dc18290cd")
 	)
 	(pad "J54" smd circle
-		(at 50.5 -12)
+		(at 20.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -9994,7 +10081,7 @@
 		(uuid "a340e446-75a2-433e-9191-aa04cf34d7a8")
 	)
 	(pad "J55" smd circle
-		(at 51.4 -12)
+		(at 21.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10011,7 +10098,7 @@
 		(uuid "0fbbd684-503a-4fe3-b14d-c2d2867199ea")
 	)
 	(pad "J56" smd circle
-		(at 52.3 -12)
+		(at 22.1 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10028,7 +10115,7 @@
 		(uuid "c095e2ef-212d-421b-9330-4569e63f1273")
 	)
 	(pad "J57" smd circle
-		(at 53.2 -12)
+		(at 23 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10045,7 +10132,7 @@
 		(uuid "f16be825-61fc-4a21-bda4-875bb899cf5b")
 	)
 	(pad "J58" smd circle
-		(at 54.1 -12)
+		(at 23.9 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10062,7 +10149,7 @@
 		(uuid "9c03ed39-444a-4178-b8c2-3ff8540d02f9")
 	)
 	(pad "J59" smd circle
-		(at 55 -12)
+		(at 24.8 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10079,7 +10166,7 @@
 		(uuid "3fd955fb-0b1d-4a89-a3a1-36c3ef10ae2c")
 	)
 	(pad "J60" smd circle
-		(at 55.9 -12)
+		(at 25.7 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10096,7 +10183,7 @@
 		(uuid "942ee072-2ec3-4729-93d6-21c213ec48f6")
 	)
 	(pad "J61" smd circle
-		(at 56.8 -12)
+		(at 26.6 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10113,7 +10200,7 @@
 		(uuid "50d973f1-35fc-486c-97f6-de362f6c3ffc")
 	)
 	(pad "J62" smd circle
-		(at 57.7 -12)
+		(at 27.5 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10130,7 +10217,7 @@
 		(uuid "c86a0a0f-7abb-44cd-b773-d5c5391ecf80")
 	)
 	(pad "J63" smd circle
-		(at 58.6 -12)
+		(at 28.4 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10147,7 +10234,7 @@
 		(uuid "f64c05b0-aba2-4a17-89fe-c61c698aed8b")
 	)
 	(pad "J64" smd circle
-		(at 59.5 -12)
+		(at 29.3 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10164,7 +10251,7 @@
 		(uuid "74660d93-a624-47b2-b7bb-ecfffe94adac")
 	)
 	(pad "J65" smd circle
-		(at 60.4 -12)
+		(at 30.2 -4.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10181,7 +10268,7 @@
 		(uuid "fd650c72-a22d-48ee-8af7-bfe59e680080")
 	)
 	(pad "K3" smd circle
-		(at 2 -13.5)
+		(at -28.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10198,7 +10285,7 @@
 		(uuid "cff4e825-be0f-462e-885c-5ff0e3875f2f")
 	)
 	(pad "K4" smd circle
-		(at 2.9 -13.5)
+		(at -27.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10215,7 +10302,7 @@
 		(uuid "c87bb51b-7ea1-4afe-942f-7611bcc0f895")
 	)
 	(pad "K5" smd circle
-		(at 3.8 -13.5)
+		(at -26.4 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10232,7 +10319,7 @@
 		(uuid "a5097789-df72-4d29-bb1b-0f4a5ae4b51c")
 	)
 	(pad "K6" smd circle
-		(at 4.7 -13.5)
+		(at -25.5 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10249,7 +10336,7 @@
 		(uuid "cd1fe08e-fa89-44dc-98a8-f5eb24ff8b72")
 	)
 	(pad "K7" smd circle
-		(at 5.6 -13.5)
+		(at -24.6 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10266,7 +10353,7 @@
 		(uuid "de67873d-e233-424a-9858-cfc25517c22b")
 	)
 	(pad "K8" smd circle
-		(at 6.5 -13.5)
+		(at -23.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10283,7 +10370,7 @@
 		(uuid "d4d21adb-5401-4a33-9013-2264e9322868")
 	)
 	(pad "K9" smd circle
-		(at 7.4 -13.5)
+		(at -22.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10300,7 +10387,7 @@
 		(uuid "0688d4b4-ac14-48f5-85ca-8e7daa08eb62")
 	)
 	(pad "K10" smd circle
-		(at 8.3 -13.5)
+		(at -21.9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10317,7 +10404,7 @@
 		(uuid "3d2de9d1-eddc-45e8-8bff-16e793664d72")
 	)
 	(pad "K11" smd circle
-		(at 9.2 -13.5)
+		(at -21 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10334,7 +10421,7 @@
 		(uuid "c1a90b01-e5b1-48f1-a01c-76bfd75e60b0")
 	)
 	(pad "K12" smd circle
-		(at 10.1 -13.5)
+		(at -20.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10351,7 +10438,7 @@
 		(uuid "2524d14e-dbfa-40a0-ba64-54c3bab0a7f3")
 	)
 	(pad "K13" smd circle
-		(at 11 -13.5)
+		(at -19.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10368,7 +10455,7 @@
 		(uuid "bfd9ce24-f483-492f-a712-b96812cdcd29")
 	)
 	(pad "K14" smd circle
-		(at 11.9 -13.5)
+		(at -18.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10385,7 +10472,7 @@
 		(uuid "6e4717b2-064b-4072-9f9c-99ceef089f9a")
 	)
 	(pad "K15" smd circle
-		(at 13.2 -13.5)
+		(at -17 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10402,7 +10489,7 @@
 		(uuid "f408dbc1-d077-4449-9e40-9d69965d3823")
 	)
 	(pad "K16" smd circle
-		(at 14.1 -13.5)
+		(at -16.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10419,7 +10506,7 @@
 		(uuid "17f12737-fa63-412a-89b2-5436208827ef")
 	)
 	(pad "K17" smd circle
-		(at 15 -13.5)
+		(at -15.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10436,7 +10523,7 @@
 		(uuid "880f7dd3-1305-4cc8-94ab-30baac1a1f45")
 	)
 	(pad "K18" smd circle
-		(at 15.9 -13.5)
+		(at -14.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10453,7 +10540,7 @@
 		(uuid "d8d0ca84-b0f2-4818-928f-c8117823212a")
 	)
 	(pad "K19" smd circle
-		(at 17.2 -13.5)
+		(at -13 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10470,7 +10557,7 @@
 		(uuid "00f69352-c61c-4912-9427-b93543116bb5")
 	)
 	(pad "K20" smd circle
-		(at 18.1 -13.5)
+		(at -12.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10487,7 +10574,7 @@
 		(uuid "5718dc5c-11eb-40ca-aff5-0d749b738c85")
 	)
 	(pad "K21" smd circle
-		(at 19 -13.5)
+		(at -11.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10504,7 +10591,7 @@
 		(uuid "c50baf39-d5e7-4586-81f6-d93bc7c015c3")
 	)
 	(pad "K22" smd circle
-		(at 19.9 -13.5)
+		(at -10.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10521,7 +10608,7 @@
 		(uuid "0bac9d77-c4a3-476d-807f-6cfda681024b")
 	)
 	(pad "K23" smd circle
-		(at 21.2 -13.5)
+		(at -9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10538,7 +10625,7 @@
 		(uuid "16f7eb04-577c-4213-8ea1-e8019d8d2857")
 	)
 	(pad "K24" smd circle
-		(at 22.1 -13.5)
+		(at -8.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10555,7 +10642,7 @@
 		(uuid "79c8d7f6-109f-48e8-817c-097939cdc17f")
 	)
 	(pad "K25" smd circle
-		(at 23 -13.5)
+		(at -7.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10572,7 +10659,7 @@
 		(uuid "986d3190-c09a-4b67-9af1-cba852219d04")
 	)
 	(pad "K26" smd circle
-		(at 23.9 -13.5)
+		(at -6.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10589,7 +10676,7 @@
 		(uuid "ad86d944-f920-4852-99ad-6de1327fc15c")
 	)
 	(pad "K27" smd circle
-		(at 25.2 -13.5)
+		(at -5 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10606,7 +10693,7 @@
 		(uuid "94fa67a2-d316-4943-8b0d-6f7cf8c28bd1")
 	)
 	(pad "K28" smd circle
-		(at 26.1 -13.5)
+		(at -4.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10623,7 +10710,7 @@
 		(uuid "b6247a8b-7416-4dbd-aec1-3da7961c783f")
 	)
 	(pad "K29" smd circle
-		(at 27 -13.5)
+		(at -3.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10640,7 +10727,7 @@
 		(uuid "f8380df4-674a-4a22-876a-05954fa24ac6")
 	)
 	(pad "K30" smd circle
-		(at 27.9 -13.5)
+		(at -2.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10657,7 +10744,7 @@
 		(uuid "65138057-7bd6-4e17-a058-8527e1d24bb2")
 	)
 	(pad "K31" smd circle
-		(at 29.2 -13.5)
+		(at -1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10674,7 +10761,7 @@
 		(uuid "974ad1b7-cbb6-4982-b8af-d4b5280fe49f")
 	)
 	(pad "K32" smd circle
-		(at 30.1 -13.5)
+		(at -0.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10691,7 +10778,7 @@
 		(uuid "ef7629c7-4817-48f3-adcb-7439e8dee741")
 	)
 	(pad "K33" smd circle
-		(at 31 -13.5)
+		(at 0.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10708,7 +10795,7 @@
 		(uuid "6c77a1cf-3b26-4df6-ac12-05bcc5900f6a")
 	)
 	(pad "K34" smd circle
-		(at 31.9 -13.5)
+		(at 1.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10725,7 +10812,7 @@
 		(uuid "984264c1-b14d-41da-8c8b-5419274a9989")
 	)
 	(pad "K35" smd circle
-		(at 33.2 -13.5)
+		(at 3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10742,7 +10829,7 @@
 		(uuid "d1903e6f-f4b7-418c-9a41-b33b42a87176")
 	)
 	(pad "K36" smd circle
-		(at 34.1 -13.5)
+		(at 3.9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10759,7 +10846,7 @@
 		(uuid "9afabe25-d1d9-4fc0-899e-dd68d8a843f0")
 	)
 	(pad "K37" smd circle
-		(at 35 -13.5)
+		(at 4.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10776,7 +10863,7 @@
 		(uuid "57be0913-e2af-48ee-bca0-ff8a5eef151d")
 	)
 	(pad "K38" smd circle
-		(at 35.9 -13.5)
+		(at 5.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10793,7 +10880,7 @@
 		(uuid "e299fae3-d9ee-431e-9006-e07c98e628e7")
 	)
 	(pad "K39" smd circle
-		(at 37.2 -13.5)
+		(at 7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10810,7 +10897,7 @@
 		(uuid "1af877e5-c211-47d2-a64c-e70de6b6260c")
 	)
 	(pad "K40" smd circle
-		(at 38.1 -13.5)
+		(at 7.9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10827,7 +10914,7 @@
 		(uuid "e24cfa89-6948-4005-88c5-a37704494942")
 	)
 	(pad "K41" smd circle
-		(at 39 -13.5)
+		(at 8.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10844,7 +10931,7 @@
 		(uuid "b06e5fda-7daa-48d9-a3ce-82d6f558301a")
 	)
 	(pad "K42" smd circle
-		(at 39.9 -13.5)
+		(at 9.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10861,7 +10948,7 @@
 		(uuid "ce72d809-379d-4083-b296-c9723a4b1bf8")
 	)
 	(pad "K43" smd circle
-		(at 40.8 -13.5)
+		(at 10.6 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10878,7 +10965,7 @@
 		(uuid "46845b20-50fc-4c7f-93b5-b2d905b128c2")
 	)
 	(pad "K44" smd circle
-		(at 41.7 -13.5)
+		(at 11.5 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10895,7 +10982,7 @@
 		(uuid "251880c6-8adf-4bbc-8815-2f5363416fe9")
 	)
 	(pad "K45" smd circle
-		(at 42.6 -13.5)
+		(at 12.4 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10912,7 +10999,7 @@
 		(uuid "e6bdc8b3-623a-4c82-b28b-ee3f664c9333")
 	)
 	(pad "K46" smd circle
-		(at 43.5 -13.5)
+		(at 13.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10929,7 +11016,7 @@
 		(uuid "a2ddacdd-602d-469e-b560-56e53cafd36e")
 	)
 	(pad "K47" smd circle
-		(at 44.4 -13.5)
+		(at 14.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10946,7 +11033,7 @@
 		(uuid "bb92e38a-d1e7-43c7-8fb0-1397d4e62ead")
 	)
 	(pad "K48" smd circle
-		(at 45.3 -13.5)
+		(at 15.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10963,7 +11050,7 @@
 		(uuid "994cc249-180d-4525-ad79-46be45f30fab")
 	)
 	(pad "K49" smd circle
-		(at 46.2 -13.5)
+		(at 16 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10980,7 +11067,7 @@
 		(uuid "50f89262-faa3-4b31-bbd4-aff13ca09cdd")
 	)
 	(pad "K50" smd circle
-		(at 47.1 -13.5)
+		(at 16.9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -10997,7 +11084,7 @@
 		(uuid "d8c0bac1-6344-4368-916f-2ba35a46a14c")
 	)
 	(pad "K51" smd circle
-		(at 48 -13.5)
+		(at 17.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11014,7 +11101,7 @@
 		(uuid "58bf1dae-8738-49eb-af4b-48db25ffe941")
 	)
 	(pad "K52" smd circle
-		(at 48.9 -13.5)
+		(at 18.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11031,7 +11118,7 @@
 		(uuid "0d31f6d9-36b9-4f46-9c07-7893cb1ac397")
 	)
 	(pad "K53" smd circle
-		(at 49.8 -13.5)
+		(at 19.6 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11048,7 +11135,7 @@
 		(uuid "ed35e7b6-0e50-4d55-b6c0-c242fe32814e")
 	)
 	(pad "K54" smd circle
-		(at 50.7 -13.5)
+		(at 20.5 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11065,7 +11152,7 @@
 		(uuid "4c529137-bc5a-42a4-9746-cdc32607bf1f")
 	)
 	(pad "K55" smd circle
-		(at 51.6 -13.5)
+		(at 21.4 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11082,7 +11169,7 @@
 		(uuid "9f3e0a2c-bd65-49c0-ba10-94e17425ac08")
 	)
 	(pad "K56" smd circle
-		(at 52.5 -13.5)
+		(at 22.3 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11099,7 +11186,7 @@
 		(uuid "5a925c92-62c2-4b90-9ccf-160e0883d352")
 	)
 	(pad "K57" smd circle
-		(at 53.4 -13.5)
+		(at 23.2 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11116,7 +11203,7 @@
 		(uuid "6fc37596-301f-42ae-801d-6989655d1ba1")
 	)
 	(pad "K58" smd circle
-		(at 54.3 -13.5)
+		(at 24.1 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11133,7 +11220,7 @@
 		(uuid "48ee54f0-7229-44fc-b207-ae45eab90aba")
 	)
 	(pad "K59" smd circle
-		(at 55.2 -13.5)
+		(at 25 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11150,7 +11237,7 @@
 		(uuid "00b374c4-3787-49b4-84ba-dd7151273d68")
 	)
 	(pad "K60" smd circle
-		(at 56.1 -13.5)
+		(at 25.9 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11167,7 +11254,7 @@
 		(uuid "3fc306a9-fd7f-452c-b96a-0b7a9f42b285")
 	)
 	(pad "K61" smd circle
-		(at 57 -13.5)
+		(at 26.8 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11184,7 +11271,7 @@
 		(uuid "11bddcd0-be61-45fd-9280-46a9ea9dd803")
 	)
 	(pad "K62" smd circle
-		(at 57.9 -13.5)
+		(at 27.7 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11201,7 +11288,7 @@
 		(uuid "7877b6b2-b11b-457c-8fdf-0728dbed240a")
 	)
 	(pad "K63" smd circle
-		(at 58.8 -13.5)
+		(at 28.6 -6)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11218,7 +11305,7 @@
 		(uuid "29fb9956-58e2-4d8e-a34d-110decfd06f5")
 	)
 	(pad "L3" smd circle
-		(at 1.8 -15)
+		(at -28.4 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11235,7 +11322,7 @@
 		(uuid "3e80cd59-ecf1-4601-9b57-38b6813e041c")
 	)
 	(pad "L4" smd circle
-		(at 2.7 -15)
+		(at -27.5 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11252,7 +11339,7 @@
 		(uuid "69eff1f0-121e-403b-b956-64d3104635d6")
 	)
 	(pad "L5" smd circle
-		(at 3.6 -15)
+		(at -26.6 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11269,7 +11356,7 @@
 		(uuid "e990306e-6722-482a-9e76-f804fb29d04a")
 	)
 	(pad "L6" smd circle
-		(at 4.5 -15)
+		(at -25.7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11286,7 +11373,7 @@
 		(uuid "e19feb36-2de7-46ac-80a4-acd71dfad6eb")
 	)
 	(pad "L7" smd circle
-		(at 5.4 -15)
+		(at -24.8 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11303,7 +11390,7 @@
 		(uuid "aed34689-ee99-4e69-810b-fea98a1a97dc")
 	)
 	(pad "L8" smd circle
-		(at 6.3 -15)
+		(at -23.9 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11320,7 +11407,7 @@
 		(uuid "1fd1d8e3-5459-4e23-bda9-3653210df33b")
 	)
 	(pad "L9" smd circle
-		(at 7.2 -15)
+		(at -23 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11337,7 +11424,7 @@
 		(uuid "b68cf538-11d4-4502-9f57-c7b7affbe80f")
 	)
 	(pad "L10" smd circle
-		(at 8.1 -15)
+		(at -22.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11354,7 +11441,7 @@
 		(uuid "64e6f33e-5509-4716-82f7-508982560a43")
 	)
 	(pad "L11" smd circle
-		(at 9 -15)
+		(at -21.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11371,7 +11458,7 @@
 		(uuid "8498e13f-774e-46d9-8082-ba3555178cf8")
 	)
 	(pad "L12" smd circle
-		(at 9.9 -15)
+		(at -20.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11388,7 +11475,7 @@
 		(uuid "fe5039f3-f1a7-440a-86cc-fe7fd7ed177a")
 	)
 	(pad "L13" smd circle
-		(at 11.2 -15)
+		(at -19 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11405,7 +11492,7 @@
 		(uuid "6c44d53f-d085-4820-8544-69948ba2c041")
 	)
 	(pad "L14" smd circle
-		(at 12.1 -15)
+		(at -18.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11422,7 +11509,7 @@
 		(uuid "0a2b1305-ec0f-4c00-acaa-8ad7b89d5cc4")
 	)
 	(pad "L15" smd circle
-		(at 13 -15)
+		(at -17.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11439,7 +11526,7 @@
 		(uuid "670038a8-af59-405d-9357-74348272e78b")
 	)
 	(pad "L16" smd circle
-		(at 13.9 -15)
+		(at -16.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11456,7 +11543,7 @@
 		(uuid "a69ac0e5-6366-46f2-bbb1-5e4c3c3e3e77")
 	)
 	(pad "L17" smd circle
-		(at 15.2 -15)
+		(at -15 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11473,7 +11560,7 @@
 		(uuid "7d850a25-4eb0-41e1-bb0e-1104dd103588")
 	)
 	(pad "L18" smd circle
-		(at 16.1 -15)
+		(at -14.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11490,7 +11577,7 @@
 		(uuid "af6a6a8a-1582-4412-ad0e-9c2f16c68a6b")
 	)
 	(pad "L19" smd circle
-		(at 17 -15)
+		(at -13.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11507,7 +11594,7 @@
 		(uuid "97d12154-ee79-4596-ad99-977cdd3dca33")
 	)
 	(pad "L20" smd circle
-		(at 17.9 -15)
+		(at -12.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11524,7 +11611,7 @@
 		(uuid "fb227771-cafa-4a5f-aa35-4d382441a15f")
 	)
 	(pad "L21" smd circle
-		(at 19.2 -15)
+		(at -11 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11541,7 +11628,7 @@
 		(uuid "d2f90879-c86e-48b2-9a55-a4214ac88265")
 	)
 	(pad "L22" smd circle
-		(at 20.1 -15)
+		(at -10.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11558,7 +11645,7 @@
 		(uuid "e02c2011-a2b0-4ead-8540-188137afb181")
 	)
 	(pad "L23" smd circle
-		(at 21 -15)
+		(at -9.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11575,7 +11662,7 @@
 		(uuid "ec58a6e3-4b1a-4f62-a3ed-3f0580ae08aa")
 	)
 	(pad "L24" smd circle
-		(at 21.9 -15)
+		(at -8.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11592,7 +11679,7 @@
 		(uuid "90dac887-95c4-42b7-9247-d5fc02627d02")
 	)
 	(pad "L25" smd circle
-		(at 23.2 -15)
+		(at -7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11609,7 +11696,7 @@
 		(uuid "68a3e836-0bb1-461f-ae28-cd29aed741bf")
 	)
 	(pad "L26" smd circle
-		(at 24.1 -15)
+		(at -6.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11626,7 +11713,7 @@
 		(uuid "cffefa5e-e227-4425-93c9-e989493b002a")
 	)
 	(pad "L27" smd circle
-		(at 25 -15)
+		(at -5.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11643,7 +11730,7 @@
 		(uuid "c5c111b2-7949-4f97-85ba-41ae0006e44b")
 	)
 	(pad "L28" smd circle
-		(at 25.9 -15)
+		(at -4.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11660,7 +11747,7 @@
 		(uuid "ca7ecfef-29f2-4667-bc58-5c0ac5593b07")
 	)
 	(pad "L29" smd circle
-		(at 27.2 -15)
+		(at -3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11677,7 +11764,7 @@
 		(uuid "8c9901ea-28e1-4130-8a71-01b38bc123e4")
 	)
 	(pad "L30" smd circle
-		(at 28.1 -15)
+		(at -2.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11694,7 +11781,7 @@
 		(uuid "44054775-eed3-4c2d-97c6-92aebdcad3b9")
 	)
 	(pad "L31" smd circle
-		(at 29 -15)
+		(at -1.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11711,7 +11798,7 @@
 		(uuid "53c37d07-152b-47bb-9994-11f62454e7d4")
 	)
 	(pad "L32" smd circle
-		(at 29.9 -15)
+		(at -0.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11728,7 +11815,7 @@
 		(uuid "ffba2036-7159-4e5f-be8c-3f820b8f1299")
 	)
 	(pad "L33" smd circle
-		(at 31.2 -15)
+		(at 1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11745,7 +11832,7 @@
 		(uuid "e25d79eb-3a8e-4498-b9c0-8a45a6437a65")
 	)
 	(pad "L34" smd circle
-		(at 32.1 -15)
+		(at 1.9 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11762,7 +11849,7 @@
 		(uuid "8eb41696-7ff3-47cf-b11e-0e9453706d5c")
 	)
 	(pad "L35" smd circle
-		(at 33 -15)
+		(at 2.8 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11779,7 +11866,7 @@
 		(uuid "669f72d0-2a88-4138-97c3-cf891efd838d")
 	)
 	(pad "L36" smd circle
-		(at 33.9 -15)
+		(at 3.7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11796,7 +11883,7 @@
 		(uuid "4617f409-2bd6-4ce2-9ab9-feaa8fb49523")
 	)
 	(pad "L37" smd circle
-		(at 35.2 -15)
+		(at 5 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11813,7 +11900,7 @@
 		(uuid "5980c44c-90da-478b-af7c-f23317e0403b")
 	)
 	(pad "L38" smd circle
-		(at 36.1 -15)
+		(at 5.9 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11830,7 +11917,7 @@
 		(uuid "fe2c2064-ec77-4d61-a070-98cdb9564a13")
 	)
 	(pad "L39" smd circle
-		(at 37 -15)
+		(at 6.8 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11847,7 +11934,7 @@
 		(uuid "0245ef01-397e-41d8-a723-cd7af5a64f32")
 	)
 	(pad "L40" smd circle
-		(at 37.9 -15)
+		(at 7.7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11864,7 +11951,7 @@
 		(uuid "205ed038-29cd-4854-a1c0-427be2678f25")
 	)
 	(pad "L41" smd circle
-		(at 38.8 -15)
+		(at 8.6 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11881,7 +11968,7 @@
 		(uuid "bf934d33-a5a1-4bd5-b6c7-bb09b77c4381")
 	)
 	(pad "L42" smd circle
-		(at 39.7 -15)
+		(at 9.5 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11898,7 +11985,7 @@
 		(uuid "d3d0d10a-c895-4fac-bc8e-9dd2065eef02")
 	)
 	(pad "L43" smd circle
-		(at 40.6 -15)
+		(at 10.4 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11915,7 +12002,7 @@
 		(uuid "7eac1b40-2421-48ce-889b-1e0c31f0fde7")
 	)
 	(pad "L44" smd circle
-		(at 41.5 -15)
+		(at 11.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11932,7 +12019,7 @@
 		(uuid "ebfc5376-fe9c-463f-a689-4d70e5016090")
 	)
 	(pad "L45" smd circle
-		(at 42.4 -15)
+		(at 12.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11949,7 +12036,7 @@
 		(uuid "d03bde64-3d04-414e-865f-e20bd7148e68")
 	)
 	(pad "L46" smd circle
-		(at 43.3 -15)
+		(at 13.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11966,7 +12053,7 @@
 		(uuid "32144d93-34b1-4275-933c-e9050132be24")
 	)
 	(pad "L47" smd circle
-		(at 44.2 -15)
+		(at 14 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -11983,7 +12070,7 @@
 		(uuid "ef2fbead-3be0-420d-971a-87ec5e4122d5")
 	)
 	(pad "L48" smd circle
-		(at 45.1 -15)
+		(at 14.9 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12000,7 +12087,7 @@
 		(uuid "45b05885-ea58-49fa-b7d5-dd725b374644")
 	)
 	(pad "L49" smd circle
-		(at 46 -15)
+		(at 15.8 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12017,7 +12104,7 @@
 		(uuid "5306e350-d021-498c-a9ee-0ea89158a288")
 	)
 	(pad "L50" smd circle
-		(at 46.9 -15)
+		(at 16.7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12034,7 +12121,7 @@
 		(uuid "b200b612-214d-48f9-9d6e-3283d90a4da8")
 	)
 	(pad "L51" smd circle
-		(at 47.8 -15)
+		(at 17.6 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12051,7 +12138,7 @@
 		(uuid "bb48bf85-5c47-4f6a-8391-befb3f3b6df4")
 	)
 	(pad "L52" smd circle
-		(at 48.7 -15)
+		(at 18.5 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12068,7 +12155,7 @@
 		(uuid "a3bfd958-0705-408a-b056-5b2305d1cfef")
 	)
 	(pad "L53" smd circle
-		(at 49.6 -15)
+		(at 19.4 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12085,7 +12172,7 @@
 		(uuid "6982e7cc-6c77-4eb6-998a-501897f6ada2")
 	)
 	(pad "L54" smd circle
-		(at 50.5 -15)
+		(at 20.3 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12102,7 +12189,7 @@
 		(uuid "ab1d0a70-06d8-4904-bf2b-6876d971391c")
 	)
 	(pad "L55" smd circle
-		(at 51.4 -15)
+		(at 21.2 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12119,7 +12206,7 @@
 		(uuid "af3aa742-8023-4392-a56f-5251270923bb")
 	)
 	(pad "L56" smd circle
-		(at 52.3 -15)
+		(at 22.1 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12136,7 +12223,7 @@
 		(uuid "a9db7e91-d684-422c-bf86-08c8e915c14d")
 	)
 	(pad "L57" smd circle
-		(at 53.2 -15)
+		(at 23 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12153,7 +12240,7 @@
 		(uuid "657a056f-c09d-45e5-af20-f2bf7ab3d445")
 	)
 	(pad "L58" smd circle
-		(at 54.1 -15)
+		(at 23.9 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12170,7 +12257,7 @@
 		(uuid "c10c1081-7bf4-4c87-9be2-750bd5640c07")
 	)
 	(pad "L59" smd circle
-		(at 55 -15)
+		(at 24.8 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12187,7 +12274,7 @@
 		(uuid "48636ccd-1a9c-4ff1-ad52-ca1a239621f7")
 	)
 	(pad "L60" smd circle
-		(at 55.9 -15)
+		(at 25.7 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12204,7 +12291,7 @@
 		(uuid "8ccc522f-a5fa-4dc9-9e47-90677477f606")
 	)
 	(pad "L61" smd circle
-		(at 56.8 -15)
+		(at 26.6 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12221,7 +12308,7 @@
 		(uuid "50f42328-0335-4d8e-a314-60f56387d007")
 	)
 	(pad "L62" smd circle
-		(at 57.7 -15)
+		(at 27.5 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12238,7 +12325,7 @@
 		(uuid "a05fca43-5b32-4515-8ff6-85c9cd60d316")
 	)
 	(pad "L63" smd circle
-		(at 58.6 -15)
+		(at 28.4 -7.5)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(teardrops
@@ -12254,9 +12341,40 @@
 		)
 		(uuid "ad67145f-14d7-4e3c-80fe-3582c38ddba9")
 	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "User.1")
+		(uuid "9f091f51-f26e-444e-a585-5bf5aadaf55c")
+		(name "AGX_height")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 43.4 -1.3) (xy 43.497516 73.742865) (xy 41.5 75.6) (xy -41.5 75.6) (xy -43.5 73.6) (xy -43.456973 -22.925713)
+				(xy -41.5 -24.5) (xy 41.642865 -24.497516) (xy 43.497516 -22.642865) (xy 43.5 -13) (xy -33.3 -13)
+				(xy -33.3 11.8) (xy 33.4 11.8) (xy 33.4 -12.9) (xy 43.5 -12.9)
+			)
+		)
+	)
 	(model "/home/jeffs/Workspace/Cliff/3d-models/2034560003.stp"
 		(offset
-			(xyz 54.25 -38.75 25.2)
+			(xyz 24.05 -46.25 25.2)
 		)
 		(scale
 			(xyz 1 1 1)

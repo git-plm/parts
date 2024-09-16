@@ -1,4 +1,4 @@
-(footprint "MURATA_CHOKE (DLP11S)"
+(footprint "MURATA_CHOKE(DLP11S)"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -34,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -46,6 +47,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +60,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -202,6 +205,19 @@
 		)
 		(layer "F.Fab")
 		(uuid "e10c04a0-4727-4ca4-9ca1-bbfdd8489022")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.01 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3ed26489-2120-4603-b805-ce0558202e1e")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.07)
+				(bold yes)
+			)
+		)
 	)
 	(pad "1" smd roundrect
 		(at -0.625 0.275)

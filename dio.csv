@@ -13,3 +13,4 @@ DIO-0008-0015,MMSZ5245BT1G,onsemi,Zener 15V 500mW,Device:D_Zener,Diode_SMD:D_SOD
 DIO-0008-07V5,MMSZ5236B-7-F,Diodes Incorporated,Zener 7.5V 500mW,Device:D_Zener,Diode_SMD:D_SOD-123; D_SOD-123F,0.5W,7.5V,https://www.diodes.com/assets/Datasheets/ds18010.pdf
 DIO-0009-0001,1N4148W,SMC Diode Solutions,150mA 75V general purpose ,Device:D,Diode_SMD:D_SOD-123; D_SOD-123F,150mA,75V,https://www.smc-diodes.com/propdf/1N4148W%20N0571%20REV.E.pdf
 DIO-0010-0001,"PMEG3050BEP,115",Nexperia USA Inc.,Schottky 30V 5A,Device:D_Schottky,Diode_SMD:D_SOD-128,5A,30V,https://assets.nexperia.com/documents/data-sheet/PMEG3050BEP.pdf
+DIO-0011-0001,NSR20F30NXT5G,onsemi,DIODE SCHOTTKY 30V 2A 2DSN,Device:D_Schottky,Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm,2A,30V,https://www.onsemi.com/pdf/datasheet/nsr20f30-d.pdf
