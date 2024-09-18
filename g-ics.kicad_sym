@@ -28087,7 +28087,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 48.26 15.24 180)
 				(length 5.08)
 				(name "SVR_IND"
@@ -28105,7 +28105,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 48.26 12.7 180)
 				(length 5.08)
 				(name "SVR_IND"
@@ -28123,7 +28123,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 48.26 10.16 180)
 				(length 5.08)
 				(name "SVR_IND"
@@ -28231,7 +28231,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 48.26 7.62 180)
 				(length 5.08)
 				(name "SVR_IND"
