@@ -266,4 +266,15 @@
 		(solder_mask_margin 0.102)
 		(uuid "d4b15fe7-2027-4c33-aaf0-172f6998da24")
 	)
+	(model "${GITPLM_3DMODELS}/20021121-00010C4LF.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
