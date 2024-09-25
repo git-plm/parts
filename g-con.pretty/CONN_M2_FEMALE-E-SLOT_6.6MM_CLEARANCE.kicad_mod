@@ -888,4 +888,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "ccf73719-6b6b-4c9a-b35a-33c63a761538")
 	)
+	(model "${GITPLM_3DMODELS}/10128797.stp"
+		(offset
+			(xyz 0 1.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 90 0)
+		)
+	)
 )

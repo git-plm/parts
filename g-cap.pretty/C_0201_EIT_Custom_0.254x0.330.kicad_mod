@@ -118,4 +118,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "71852b8f-cdfd-4dca-8fb5-412f2da53072")
 	)
+	(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
