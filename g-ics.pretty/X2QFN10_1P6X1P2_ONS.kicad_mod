@@ -821,6 +821,7 @@
 		(effects
 			(font
 				(size 0.4 0.4)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -883,5 +884,16 @@
 		(size 0.1532 0.604799)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "fbd3b81e-2263-4a89-a3d0-a9b86cb03e93")
+	)
+	(model "${GITPLM_3DMODELS}/X2QFN10_1P6X1P2_ONS.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

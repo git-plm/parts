@@ -1421,4 +1421,15 @@
 			)
 		)
 	)
+	(model "${GITPLM_3DMODELS}/DX07S024JJ2R1300.step"
+		(offset
+			(xyz 0 -1.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )

@@ -379,4 +379,15 @@
 			(xyz 0 0 0)
 		)
 	)
+	(model "${GITPLM_3DMODELS}/PICOSTAR-YJG_TEX.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

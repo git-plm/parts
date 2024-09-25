@@ -251,4 +251,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "01fb905a-1ea2-4fae-ad4e-da46c1ab8729")
 	)
+	(model "${GITPLM_3DMODELS}/DLP11SA900HL2L.step"
+		(offset
+			(xyz -0.05 0 0.9)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
 )

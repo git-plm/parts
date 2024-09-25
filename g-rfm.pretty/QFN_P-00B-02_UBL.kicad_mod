@@ -4507,4 +4507,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "331522c8-e540-41a9-b513-29cba144f48e")
 	)
+	(model "${GITPLM_3DMODELS}/ZED-F9P-04B.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
 )

@@ -12372,7 +12372,7 @@
 			)
 		)
 	)
-	(model "/home/jeffs/Workspace/Cliff/3d-models/2034560003.stp"
+	(model "${GITPLM_3DMODELS}/2034560003.stp"
 		(offset
 			(xyz 24.05 -46.25 25.2)
 		)
@@ -12381,6 +12381,17 @@
 		)
 		(rotate
 			(xyz 0 0 -90)
+		)
+	)
+	(model "${GITPLM_3DMODELS}/p3701-sku0-simplified.stp"
+		(offset
+			(xyz -41 -66.5 8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
 		)
 	)
 )
