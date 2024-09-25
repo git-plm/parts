@@ -1173,4 +1173,15 @@
 		(remove_unused_layers no)
 		(uuid "df5814fb-1bf4-417e-b5c6-47c1653bbf50")
 	)
+	(model "${GITPLM_3DMODELS}/RSL0048B.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

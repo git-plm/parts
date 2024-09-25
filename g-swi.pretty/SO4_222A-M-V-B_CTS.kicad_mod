@@ -495,4 +495,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "7c9eadfd-1ebb-4e97-aac9-e9462589af93")
 	)
+	(model "${GITPLM_3DMODELS}/222AMVBAR.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
