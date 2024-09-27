@@ -256,7 +256,7 @@
 		(solder_paste_margin -0.05)
 		(uuid "56144dcf-5c29-409e-a1f9-ea6e8d005d9e")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Diodes_UDFN2020-6_Type-F.wrl"
+	(model "${GITPLM_3DMODELS}/DFN2020MD-6_SOT1220_NEX.step"
 		(offset
 			(xyz 0 0 0)
 		)
