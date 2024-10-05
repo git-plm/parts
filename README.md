@@ -58,7 +58,7 @@ Arch Linux (apt install sqlite3 unixodbc etc...)
 
 Then when you open the symbol chooser, you will see something like:
 
-![image-20240304103012907](./assets/image-20240304103012907.png)
+![image-20240304103012907](./doc/assets/image-20240304103012907.png)
 
 Notes, the #gplm entries are at the top where they are quick to get to.
 

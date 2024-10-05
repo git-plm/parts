@@ -148,7 +148,7 @@ The following CCC groups are suggested for electrical parts:
 | ---- | ---------------------------------------- |
 | ANA  | op-amps, comparators, A/D, D/A           |
 | CAP  | capacitors                               |
-| CON  | connectors                               |
+| CNN  | connectors                               |
 | CPD  | Circuit protection devices               |
 | DIO  | diodes                                   |
 | IND  | inductors, transformers                  |
@@ -242,10 +242,10 @@ the variation:
   package size)
 - 10.3K high power 0603: RES-0004-1032 (different vendor/datasheet than RES-002,
   so we bump NNN)
-- 2x10, 0.1 in header: CON-0000-0020
-- 2x12, 0.1 in header: CON-0000-0024
-- 1x10, 0.1 in header: CON-0001-0010
-- 1x20, 0.1 in header: CON-0001-0020
+- 2x10, 0.1 in header: CNN-0000-0020
+- 2x12, 0.1 in header: CNN-0000-0024
+- 1x10, 0.1 in header: CNN-0001-0010
+- 1x20, 0.1 in header: CNN-0001-0020
 
 With most ICs we simply enumerate all the variations of a particular IC in a
 sequentially incrementing variation (we don't try to encode information)
