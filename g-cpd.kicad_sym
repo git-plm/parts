@@ -877,7 +877,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 25.4 22.86 180)
 				(length 5.08)
 				(name "CC2"
@@ -895,7 +895,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 25.4 25.4 180)
 				(length 5.08)
 				(name "CC1"
@@ -913,7 +913,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 25.4 5.08 180)
 				(length 5.08)
 				(name "GND"
@@ -931,7 +931,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 25.4 30.48 180)
 				(length 5.08)
 				(name "SBU2"
@@ -949,7 +949,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 25.4 33.02 180)
 				(length 5.08)
 				(name "SBU1"
@@ -1003,7 +1003,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 25.4 2.54 180)
 				(length 5.08)
 				(name "GND"
@@ -1021,7 +1021,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 7.62 0)
 				(length 5.08)
 				(name "D2"
@@ -1039,7 +1039,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 30.48 0)
 				(length 5.08)
 				(name "C_SBU2"
@@ -1057,7 +1057,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 10.16 0)
 				(length 5.08)
 				(name "D1"
@@ -1075,7 +1075,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at 25.4 12.7 180)
 				(length 5.08)
 				(name "VBIAS"
@@ -1093,7 +1093,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 22.86 0)
 				(length 5.08)
 				(name "C_CC1"
@@ -1111,7 +1111,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 17.78 0)
 				(length 5.08)
 				(name "C_CC2"
@@ -1129,7 +1129,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 15.24 0)
 				(length 5.08)
 				(name "RPD_G2"
@@ -1147,7 +1147,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 25.4 0)
 				(length 5.08)
 				(name "RPD_G1"
@@ -1165,7 +1165,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 25.4 7.62 180)
 				(length 5.08)
 				(name "GND"
@@ -1196,7 +1196,7 @@
 					(type background)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 0 33.02 0)
 				(length 5.08)
 				(name "C_SBU1"
@@ -1214,7 +1214,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 25.4 0 180)
 				(length 5.08)
 				(name "PGND"
@@ -1232,7 +1232,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin passive line
 				(at 25.4 17.78 180)
 				(length 5.08)
 				(name "~{FLT}"

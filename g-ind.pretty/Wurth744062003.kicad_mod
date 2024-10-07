@@ -233,4 +233,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "e12f0c3d-4997-43e4-9433-a7e8c3e1f2e6")
 	)
+	(model "${GITPLM_3DMODELS}/744062001_Download_STP_WE-TPC-6823_rev1.stp"
+		(offset
+			(xyz 0 0 2.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

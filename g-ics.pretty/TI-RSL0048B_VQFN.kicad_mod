@@ -67,79 +67,6 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start 4.1 -2.03)
-		(end 4.1 -2.85)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "6549235a-d927-4e4d-a859-596941ed75c6")
-	)
-	(fp_line
-		(start 4.15 -2.9)
-		(end 4.97 -2.9)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "57476251-e6de-4de5-881a-681ee3a8f988")
-	)
-	(fp_line
-		(start 4.97 -1.98)
-		(end 4.15 -1.98)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "7f602cf0-f6e7-449b-af67-342a9544e03f")
-	)
-	(fp_line
-		(start 5.02 -2.85)
-		(end 5.02 -2.03)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "1f1a9d8b-6206-4233-abff-5d55a0f12c61")
-	)
-	(fp_arc
-		(start 4.1 -2.85)
-		(mid 4.114645 -2.885355)
-		(end 4.15 -2.9)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "ccec0e0b-40b8-4ded-bdda-eb86c4902a33")
-	)
-	(fp_arc
-		(start 4.97 -2.9)
-		(mid 5.005355 -2.885355)
-		(end 5.02 -2.85)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "5dc6f7e7-61b8-4e46-a744-45e45268c8c1")
-	)
-	(fp_arc
-		(start 5.02 -2.03)
-		(mid 5.005355 -1.994645)
-		(end 4.97 -1.98)
-		(stroke
-			(width 0.001)
-			(type default)
-		)
-		(layer "F.Paste")
-		(uuid "9690c880-59ec-4018-930a-d7c9ac7a576a")
-	)
 	(fp_poly
 		(pts
 			(arc
@@ -1245,5 +1172,16 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "df5814fb-1bf4-417e-b5c6-47c1653bbf50")
+	)
+	(model "${GITPLM_3DMODELS}/RSL0048B.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

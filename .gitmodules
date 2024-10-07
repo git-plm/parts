@@ -1,3 +1,12 @@
 [submodule "kicad-library-utils"]
 	path = kicad-library-utils
 	url = https://gitlab.com/kicad/libraries/kicad-library-utils.git
+[submodule "footprints"]
+	path = libs/kicad-footprints
+	url = https://gitlab.com/kicad/libraries/kicad-footprints.git
+[submodule "libs/kicad-symbols"]
+	path = libs/kicad-symbols
+	url = https://gitlab.com/kicad/libraries/kicad-symbols.git
+[submodule "libs/kicad-packages3D"]
+	path = libs/kicad-packages3D
+	url = https://gitlab.com/kicad/libraries/kicad-packages3D

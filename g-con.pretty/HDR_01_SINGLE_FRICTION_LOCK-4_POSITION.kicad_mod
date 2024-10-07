@@ -284,4 +284,15 @@
 		(thermal_gap 0.254)
 		(uuid "9cef3a09-be9b-423f-aaab-ac2b81674f34")
 	)
+	(model "${GITPLM_3DMODELS}/SWR25X-NRTC-S04-ST-BA.STEP"
+		(offset
+			(xyz 3.76 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )

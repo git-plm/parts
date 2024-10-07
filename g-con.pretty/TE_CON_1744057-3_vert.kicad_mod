@@ -91,7 +91,7 @@
 	)
 	(fp_line
 		(start -1.98 -2.62)
-		(end 5.94 -2.62)
+		(end 9.9 -2.62)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -160,5 +160,16 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "8af3c222-8a86-4fdd-b2e3-06452e520e20")
+	)
+	(model "${GITPLM_3DMODELS}/1744057-3.step"
+		(offset
+			(xyz 4 0 9.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
