@@ -46,11 +46,11 @@ Give it a try -- it will only take a few minutes.
 - make sure `/etc/odbcinst.ini` contains a
   [SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite)
 - In KiCad Preferences->Manage Symbol Libraries:
-  - add the `#gplm.kicad_dbl`. This filename is prefixed with `#` so that it
-    shows up at the top of the list in the schematic symbol chooser.
-  - add all `g-*.kicad_sym` libraries
+  - add all the libraries in the `symbols` directory
+  - add the `database/#gplm.kicad_dbl`. This filename is prefixed with `#` so
+    that it shows up at the top of the list in the schematic symbol chooser.
 - In KiCad Preferences->Manage Footprint Libraries:
-  - add all `g-*.pretty` directories
+  - add all `g-*.pretty` directories in the `footprints` directory
 
 (above tested on Arch Linux, so the bits about SQLite3 libs may vary slightly on
 other platforms). Also tested on Ubuntu 23.04, use the same instructions as for
@@ -214,11 +214,21 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 (this may not be work out so the approach may change)
 
+## Directories
+
+- `database` - CSV files and the sqlite database file
+- `symbols` - custom KiCad symbols
+- `footprints` - custom KiCad footprints
+- `spice` - spice models
+- `libs` - contains the KiCad standard library symbols/footprints. This is added
+  as a submodule here for convenience as a quick way to check out the KiCad
+  stdlib repos in case you want to modify them.
+
 ## Status/Support
 
 This library is currently being used successfully in several projects. We
 currently do most work in an Internal Gitea repo as the CSV diff functionality
-is so much better than Github, but occasionally push updates to this mirror.
+is so much better than Github, but periodically push updates to this mirror.
 
 For commercial support, training, or design assistance, please contact us at:
 
