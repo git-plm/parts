@@ -41,6 +41,7 @@ Give it a try -- it will only take a few minutes.
   - set `GITPLM_PARTS` to the location of the parts repo
   - set `'GITPLM_3DMODELS` to the location of the 3d-models repo
 - install the following packages: `sqlite3 unixodbc libsqliteodbc`
+  - Arch Linux has the `sqliteodbc` package in AUR
 - optionally install the following packages:
   `sqlitebrowser visidata inotify-tools`
 - make sure `/etc/odbcinst.ini` contains a
