@@ -493,6 +493,7 @@ been very valuable in clarifying the thinking on this topic.
     - Interpretation
   - This is a great article that explains the challenge of balancing all these
     factors.
+- [Pary Numbering](https://www.linkedin.com/pulse/part-numbering-sethupathy-a-b2s1c/)
 - Oleg Shilovitsky
   - [Why to use intelligent PNs in the 21st century](https://beyondplm.com/2015/09/18/why-to-use-intelligent-part-numbers-in-21st-century/)
   - [Part Numbers are hard. How to think about data first?](https://beyondplm.com/2014/07/28/part-numbers-are-hard-how-to-think-about-data-first/)
