@@ -1,5 +1,7 @@
 # Internal Part number guidelines
 
+(See also the [video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).
+
 <!-- vim-markdown-toc GFM -->
 
 - [Why have internal part numbers (IPNs)](#why-have-internal-part-numbers-ipns)
