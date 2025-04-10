@@ -1,6 +1,8 @@
 # Internal Part number guidelines
 
-(See also the [video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).
+(See also the [video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).)
+
+## TOC
 
 <!-- vim-markdown-toc GFM -->
 
