@@ -1,5 +1,9 @@
 # GitPLM Parts Project
 
+(See also our [document on partnumber formats](partnumbers.md).)
+
+## Overview
+
 **Maintaining eCAD parts libraries is a lot of work. Are you:**
 
 - tired of the tedious work of maintaining tradition KiCad libraries or manually
