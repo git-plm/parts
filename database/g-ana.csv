@@ -2,3 +2,4 @@ IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet,Sim_Library,Sim_Name
 ANA-0001-0001,TLV9001IDCKR,TI,"Single Op-amp, 1.8V to 5.5V rail-to-rail",Amplifier_Operational:TLV9001IDCK,Package_TO_SOT_SMD:SOT-353_SC-70-5,https://www.ti.com/lit/ds/symlink/tlv9004.pdf,,,,
 ANA-0002-0001,OPA990SIDBVR,TI,"Single Op-amp, 2.7V to 40V rail-to-rail, shutdown",g-ana:OPA990S,Package_TO_SOT_SMD:SOT-23-6,https://www.ti.com/lit/ds/symlink/opa990.pdf,,,,
 ANA-0002-0002,OPA990IDBVR,TI,"Single Op-amp, 2.7V to 40V rail-to-rail, shutdown",g-ana:OPA990,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa990.pdf,${GITPLM_PARTS}/spice/opa2990.lib,OPA2990,SUBCKT,1=OUT 2=VEE 3=IN+ 4=IN- 5=VCC
+ANA-0003-0003,TL071CDR,TI,"Single Op-amp, -20V to 20V Low-Noise FET-Input Operational Amplifiers",Amplifier_Operational:TL071,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/tl074m.pdf,,,,

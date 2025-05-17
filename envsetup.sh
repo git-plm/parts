@@ -4,11 +4,6 @@ GPLMLIBS=(ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art sw
 DBFILE=./database/parts.sqlite
 
 parts_db_create() {
-  printf "Will process these libs:\n"
-  for lib in "${GPLMLIBS[@]}"; do
-    echo "- $lib"
-  done
-
   for lib in "${GPLMLIBS[@]}"; do
     if [[ ! -f "$CSVFILE" ]]; then
       CSVFILE="./database/g-${lib}.csv"
