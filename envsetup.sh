@@ -1,5 +1,5 @@
 # define all of your libs here -- should be a CSV file for each lib
-GPLMLIBS=(ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art swi)
+GPLMLIBS=(ana cap con cpd dio ics ind mpu mcu mec pwr rfm res reg xtr osc opt art swi)
 
 DBFILE=./database/parts.sqlite
 
