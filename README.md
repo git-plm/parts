@@ -29,11 +29,11 @@ to:**
 7. track all database changes.
 8. scale to multiple designers.
 
-## Demo
+## Demo Video
 
-See a demonstration of this library in use at:
+Click the image below to see a demonstration of this library in use:
 
-- [![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
+[![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
 
 ## Using the GitPLM Parts Database in KiCad
 
