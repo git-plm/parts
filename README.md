@@ -33,6 +33,8 @@ to:**
 
 Click the image below to see a demonstration of this library in use:
 
+[https://youtu.be/uXw8gY1IN_A](https://youtu.be/uXw8gY1IN_A)
+
 [![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
 
 ## Using the GitPLM Parts Database in KiCad
