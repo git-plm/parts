@@ -184,7 +184,9 @@ import `csv` files, so no additional tooling is required. See the
 [`envsetup.sh`](envsetup.sh) file for how this is done.
 
 `csv` files can be easily edited in [Libreoffice](https://www.libreoffice.org/)
-or [VisiData](https://www.visidata.org/).
+or [VisiData](https://www.visidata.org/). **Note, in libreoffice make sure you
+import CSV files with character set as UTF-8 (UTF-7, which seems to be the
+default, will cause bad things to happen)**
 
 If you use VisiData on Linux, please set the following option in `~/.visidatarc`
 to make the CSV line endings compatible with LibreOffice Calc:
