@@ -293,4 +293,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "20fcb1c4-286c-4021-8476-4a76b82ba134")
 	)
+	(model "${GITPLM_3DMODELS}/LED_111-507F_DIA.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -389,4 +389,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "8a1daccb-5ee9-4616-8d52-c47470e802c0")
 	)
+	(model "${GITPLM_3DMODELS}/BU2032SM-G--3DModel-STEP-1.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )

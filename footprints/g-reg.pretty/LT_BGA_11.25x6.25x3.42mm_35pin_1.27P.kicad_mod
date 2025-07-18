@@ -378,4 +378,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "5982da19-a169-4d61-981c-72a33c658a77")
 	)
+	(model "${GITPLM_3DMODELS}/BGA-35_11P25X6P25_LIT.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

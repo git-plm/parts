@@ -124,4 +124,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "f8260056-cdd7-414d-b366-5c379bb256e5")
 	)
+	(model "${GITPLM_3DMODELS}/ABS07L-32.768KHZ-T.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )

@@ -7,3 +7,4 @@ OSC-0005-0323,ABS07L-32.768KHZ-T,Abracon LLC,"32.768 kHz ±20ppm Crystal 12.5pF 
 OSC-0006-0256,ABM8W-25.0000MHZ-6-B1U-T3,Abracon LLC,"25 MHz ±10ppm Crystal 6pF 50 Ohms 4-SMD, No Lead",Device:Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,25MHz,10ppm,6pF,https://abracon.com/datasheets/ABM8W.pdf
 OSC-0007-0256,FW2500042Z,Diodes Incorporated,"25 MHz ±30ppm Crystal 20pF 50 Ohms 4-SMD, No Lead",Device:Crystal_GND24,Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm,25MHz,30ppm,20pF,https://www.diodes.com/assets/Datasheets/FW.pdf
 OSC-0008-0256,FW2500071,Diodes Incorporated,"25 MHz ±30ppm Crystal 16pF 60 Ohms 4-SMD, No Lead",Device:Crystal_GND24,Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm,25MHz,30ppm,16pF,https://www.diodes.com/assets/Datasheets/FW.pdf
+OSC-0009-0246,ECS-240-20-33-TR,ECS Inc.,"24 MHz ±50ppm Crystal 20pF 40 Ohms 4-SMD, No Lead",Device:Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,24MHz,50ppm,20pF,https://ecsxtal.com/store/pdf/ecx-32.pdf
