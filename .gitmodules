@@ -9,4 +9,4 @@
 	url = https://gitlab.com/kicad/libraries/kicad-symbols.git
 [submodule "libs/kicad-packages3D"]
 	path = libs/kicad-packages3D
-	url = https://gitlab.com/kicad/libraries/kicad-packages3D
+	url = https://gitlab.com/kicad/libraries/kicad-packages3D.git
