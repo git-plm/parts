@@ -1,5 +1,9 @@
 # GitPLM Parts Project
 
+(See also our [document on partnumber formats](partnumbers.md).)
+
+## Overview
+
 **Maintaining eCAD parts libraries is a lot of work. Are you:**
 
 - tired of the tedious work of maintaining tradition KiCad libraries or manually
@@ -25,11 +29,13 @@ to:**
 7. track all database changes.
 8. scale to multiple designers.
 
-## Demo
+## Demo Video
 
-See a demonstration of this library in use at:
+Click the image below to see a demonstration of this library in use:
 
-- [![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
+[https://youtu.be/uXw8gY1IN_A](https://youtu.be/uXw8gY1IN_A)
+
+[![watch video](https://img.youtube.com/vi/uXw8gY1IN_A/maxresdefault.jpg)](https://youtu.be/uXw8gY1IN_A)
 
 ## Using the GitPLM Parts Database in KiCad
 
@@ -180,7 +186,9 @@ import `csv` files, so no additional tooling is required. See the
 [`envsetup.sh`](envsetup.sh) file for how this is done.
 
 `csv` files can be easily edited in [Libreoffice](https://www.libreoffice.org/)
-or [VisiData](https://www.visidata.org/).
+or [VisiData](https://www.visidata.org/). **Note, in libreoffice make sure you
+import CSV files with character set as UTF-8 (UTF-7, which seems to be the
+default, will cause bad things to happen)**
 
 If you use VisiData on Linux, please set the following option in `~/.visidatarc`
 to make the CSV line endings compatible with LibreOffice Calc:
