@@ -864,7 +864,7 @@
 		(symbol "GND_1_0"
 			(polyline
 				(pts
-					(xy -2.54 0) (xy 2.54 0)
+					(xy -1.27 0) (xy 1.27 0)
 				)
 				(stroke
 					(width 0.508)
@@ -876,7 +876,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.54) (xy -2.54 0)
+					(xy 0 -2.54) (xy -1.27 0)
 				)
 				(stroke
 					(width 0.508)
@@ -888,7 +888,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 0 -2.54)
+					(xy 1.27 0) (xy 0 -2.54)
 				)
 				(stroke
 					(width 0.508)
