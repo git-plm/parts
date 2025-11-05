@@ -13,6 +13,7 @@ SQLite3
 Seeed
 TMPDIR
 VisiData
+Yageo
 diff'd
 eCAD
 partnumber
