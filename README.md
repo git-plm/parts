@@ -158,6 +158,12 @@ The KiCad symbol `Value` field is populated with:
   the value field, so it is good to have it populated.
 - MPN for most other parts
 
+### Preferred manufacturers
+
+- Yageo is the preferred manufacturer for standard thick-film 1% `0402` `0603`
+  etc. resistor series (`RES-0000`, `RES-0001`). All `E96` values are populated
+  for these series.
+
 ## Implementation details
 
 This repo contains a parts database designed to work with
