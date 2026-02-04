@@ -157,6 +157,7 @@ The following CCC groups are suggested for electrical parts:
 | DIO  | diodes                                   |
 | IND  | inductors, transformers                  |
 | ICS  | integrated circuits                      |
+| MEM  | Memory modules, SD cards, SSD, NVME, etc.|
 | MPU  | SOC, SOM, SBC, etc.                      |
 | MCU  | Microcontrolleres, modules, etc.         |
 | OPT  | Optical, couplers, phototransistor, etc. |
