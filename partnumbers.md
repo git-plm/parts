@@ -151,12 +151,15 @@ The following CCC groups are suggested for electrical parts:
 | Code | Description                              |
 | ---- | ---------------------------------------- |
 | ANA  | op-amps, comparators, A/D, D/A           |
+| ART  | artwork (test points, fiducials, etc.)    |
 | CAP  | capacitors                               |
 | CON  | connectors                               |
 | CPD  | Circuit protection devices               |
 | DIO  | diodes                                   |
+| FAN  | fans                                     |
 | IND  | inductors, transformers                  |
 | ICS  | integrated circuits                      |
+| MEM  | Memory modules, SD cards, SSD, NVME, etc.|
 | MPU  | SOC, SOM, SBC, etc.                      |
 | MCU  | Microcontrolleres, modules, etc.         |
 | OPT  | Optical, couplers, phototransistor, etc. |
