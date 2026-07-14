@@ -7282,4 +7282,82 @@
 			)
 		)
 	)
+	(symbol "nRF9151_Feather"
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "nRF9151_Feather"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "g-con:feather-nRF9151"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.circuitdojo.com/nrf9151-feather/overview.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Circuit Dojo nRF9151 Feather. Mechanical placeholder only: no pins. Carries the board outline silkscreen and the 3D model onto the PCB via g-con:feather-nRF9151. All electrical connections are made through the mating socket headers CON-0049-0016 and CON-0049-0012."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "feather nrf9151 cellular lte-m nb-iot gnss module mechanical"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "nRF9151_Feather_0_1"
+			(rectangle
+				(start -25.4 11.43)
+				(end 25.4 -11.43)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "nRF9151 Feather\n(mechanical only — no pins)\nconnections via CON-0049 sockets"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+	)
 )
