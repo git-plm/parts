@@ -101,8 +101,8 @@ profile, or a systemd user service.
   Change detected in g-res.csv - reloaded 23 CSV files, 1697 parts
   ```
 
-- Refresh the library in KiCad to pick up the new data. There is no database to
-  regenerate, and no need to restart KiCad.
+- That is all. The next time you add a symbol in the schematic, the new data is
+  there. There is no database to regenerate and no need to restart KiCad.
 
 A new part category is simply a new `g-CCC.csv` file in the `database`
 directory. The server picks it up on the next reload and the category appears in
@@ -176,12 +176,12 @@ If the symbol and footprint already exist, adding a new part is simple as:
 1. Add a line to one of the `csv` files. The `csv` files should be sorted by
    `IPN`. This ensures the `IPN` is unique (which is the library key), and merge
    operations are simpler if the file is always sorted.
-2. Save the file. The running `gitplm http` server reloads it.
-3. Refresh the library in KiCad.
+2. Save the file. The running `gitplm http` server reloads it, and the part is
+   available the next time you add a symbol in the schematic.
 
-The GitPLM TUI (run `gitplm` with no arguments) does the first two steps for
-you: press `a` to add a part with the next available IPN, and it writes the row
-into the correct `csv` file, sorted by IPN.
+The GitPLM TUI (run `gitplm` with no arguments) does both steps for you: press
+`a` to add a part with the next available IPN, and it writes the row into the
+correct `csv` file, sorted by IPN.
 
 If you need to add a symbol or footprint, add to the matching `g-XXX.kicad_sym`,
 or `g-XXX.pretty` libraries. Standards in the
@@ -215,6 +215,34 @@ The KiCad symbol `Value` field is populated with:
 - Resistance, capacitance, and inductance for passives. Spice simulations use
   the value field, so it is good to have it populated.
 - MPN for most other parts
+
+### Adding parts with Claude Code
+
+This repo ships a [Claude Code](https://claude.com/claude-code) skill,
+[`.claude/skills/adding-parts`](.claude/skills/adding-parts/SKILL.md), that walks
+through the whole process from a manufacturer and part number: reading the
+datasheet, choosing the category, assigning the IPN, reusing or creating the
+symbol and footprint, linking the 3D model, and writing the CSV row in sorted
+position.
+
+Open this repo in Claude Code and ask for the part, for example:
+
+```
+add the Nexperia PMEG3020EP Schottky diode to the library
+```
+
+Claude picks up the skill automatically. The skill also includes
+[`scripts/check-csv.py`](.claude/skills/adding-parts/scripts/check-csv.py), which
+validates column counts, IPN sort order, duplicate IPNs, and whether the `Symbol`
+and `Footprint` references resolve on disk. It is useful on its own, whether or
+not you use Claude:
+
+```
+.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-dio.csv
+```
+
+`--new-only` diffs against `git HEAD` and reports only the issues your edit
+introduced, which keeps pre-existing ones in the older CSV files out of the way.
 
 ### Preferred manufacturers
 

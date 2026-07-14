@@ -131,10 +131,9 @@ for a comparable part and follow what it did.
 Creating one is a new-category change - see below.
 
 **BOM-only categories.** `ASY`, `CBL`, `ENC`, `FAN`, `FST` have no `Symbol` or
-`Footprint` column. They are items that never appear in a schematic, and they
-are deliberately absent from `GPLMLIBS` in `envsetup.sh` and from
-`database/#gplm.kicad_dbl`. For these, steps 4-6 do not apply: fill in
-`IPN,MPN,Manufacturer,Description,Datasheet` and go to step 7.
+`Footprint` column - they are items that never appear in a schematic. For these,
+steps 4-6 do not apply: fill in `IPN,MPN,Manufacturer,Description,Datasheet` and
+go to step 7.
 
 ### 3. Assign the IPN
 
@@ -296,9 +295,6 @@ head -1 database/g-reg.csv
 # Column count, IPN sort order, duplicate IPNs, and whether the Symbol and
 # Footprint references actually resolve on disk.
 .claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-reg.csv
-
-# Rebuild the SQLite database.
-. envsetup.sh && parts_db_create && echo "db rebuilt"
 ```
 
 `--new-only` diffs against `git HEAD` and reports just the defects your edit
@@ -310,11 +306,24 @@ Do not check columns by splitting on commas (`awk -F,`, `cut -d,`) -
 `Description` legitimately contains quoted commas, so a naive split reports
 false errors.
 
-`parts_db_create` is silent on success and is a weak validator - SQLite will
-import some malformed rows without complaint. `check-csv.py` is the real test.
+**There is no database to rebuild, and nothing for the user to do in KiCad.**
+GitPLM serves the CSV files to KiCad directly over the
+[KiCad HTTP library](https://dev-docs.kicad.org/en/apis-and-binding/http-libraries/).
+A running `gitplm http` watches `database/` and reloads whenever a CSV is saved:
 
-Then tell the user to **restart KiCad entirely**; it does not reload database
-libraries any other way.
+```
+Change detected in g-reg.csv - reloaded 23 CSV files, 1697 parts
+```
+
+The next time the user adds a symbol in the schematic, the new part is there.
+No KiCad restart, no library refresh, no `parts_db_create`.
+
+The `CSV -> SQLite3 -> ODBC -> KiCad` path that `parts_db_create` in
+`envsetup.sh` feeds is obsolete and is kept only for anyone who has not yet
+migrated. Rebuild it (`. envsetup.sh && parts_db_create`) only if the user says
+they are still on it - that path does require a full KiCad restart. It is also a
+weak validator: SQLite imports some malformed rows without complaint.
+`check-csv.py` is the real test either way.
 
 ### 9. Commit
 
@@ -330,20 +339,35 @@ A 3D model is committed to the *separate* `3d-models` repository, not this one.
 
 ## Adding a new category
 
-Only when the part genuinely fits no existing category:
+Only when the part genuinely fits no existing category. A category is just a CSV
+file - `gitplm http` discovers `database/g-XXX.csv` on its next reload and the
+category appears in KiCad.
 
 1. Create `database/g-XXX.csv` with a header, copying the column set from the
    closest existing category.
 2. Add `XXX` to the `CCC` table in `partnumbers.md` if absent.
-3. **Only if the category has symbols and footprints** (it appears in schematics):
-   - add the lowercase code to `GPLMLIBS` in `envsetup.sh`
-   - add a library block to `database/#gplm.kicad_dbl`, copying an existing block
-     and adjusting `name`, `table`, and `fields` to the new columns
-   - create `symbols/g-XXX.kicad_sym` and `footprints/g-XXX.pretty/` as needed
+3. Add a block to `http.fields` in [`gitplm.yml`](../../../gitplm.yml) **only if
+   the category needs fields the `default` block does not give it** - a `value`
+   column other than `MPN`, or columns displayed on the schematic. Every CSV
+   column is served to KiCad regardless; a block states only the exceptions:
 
-   BOM-only categories skip all of this - which is why `ENC`, `FST`, `CBL`,
-   `FAN`, and `ASY` appear in neither file.
-4. Verify the JSON still parses: `jq . 'database/#gplm.kicad_dbl'`
+   ```yaml
+   IND:
+     value: Inductance
+     visible: [Inductance, Current]
+   ```
+
+   Categories that are happy with the default (`ICS`, `MCU`, `XTR`, ...) have no
+   block at all. Nothing else needs registering: there is no library list to
+   update.
+4. **Only if the category appears in schematics**, create
+   `symbols/g-XXX.kicad_sym` and `footprints/g-XXX.pretty/` as needed. BOM-only
+   categories skip this.
+
+If the user is still on the obsolete SQLite path, that method also needs the
+lowercase code added to `GPLMLIBS` in `envsetup.sh` and a library block in
+`database/#gplm.kicad_dbl` (verify it still parses with
+`jq . 'database/#gplm.kicad_dbl'`). Neither is needed for the HTTP library.
 
 ## Checklist
 
@@ -357,7 +381,5 @@ Only when the part genuinely fits no existing category:
 - [ ] Footprint: standard library searched before authoring; alias ties broken on pad geometry
 - [ ] 3D model: confirmed present (standard footprint) or sourced and referenced (custom)
 - [ ] Row inserted in sorted position; quoting style, column count, and manufacturer spelling match the file
-- [ ] `check-csv.py --new-only` reports `ok`
-- [ ] `parts_db_create` succeeds; datasheet URL returns 200
+- [ ] `check-csv.py --new-only` reports `ok`; datasheet URL returns 200
 - [ ] Only this part's files committed
-- [ ] User told to restart KiCad

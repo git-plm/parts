@@ -48,9 +48,9 @@ Do not rename them; just do not copy the inconsistency into new work.
   output, `input`/`output`/`bidirectional` for signals, `passive` for discretes.
 
 The `Value` field is populated from the database, so leave it alone in the symbol
-itself. Per `database/#gplm.kicad_dbl`, `Value` maps to the `MPN` column for most
-categories, and to the value column (`Resistance`, `Capacitance`, `Inductance`)
-for passives - Spice reads that field.
+itself. Per the `http.fields` section of `gitplm.yml`, `Value` maps to the `MPN`
+column for most categories, and to the value column (`Resistance`, `Capacitance`,
+`Inductance`) for passives - Spice reads that field.
 
 ### Authoring
 
