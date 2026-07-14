@@ -6,8 +6,9 @@
   - [Overview](#overview)
   - [Demo Video](#demo-video)
   - [Using the GitPLM Parts Database in KiCad](#using-the-gitplm-parts-database-in-kicad)
-  - [Update/Generate the database](#updategenerate-the-database)
-  - [Debugging broken `*.kicad_dbl` files](#debugging-broken-kicaddbl-files)
+  - [Update the parts database](#update-the-parts-database)
+  - [Configuring which fields KiCad displays](#configuring-which-fields-kicad-displays)
+  - [Database libraries (obsolete)](#database-libraries-obsolete)
   - [Adding New Parts](#adding-new-parts)
   - [Implementation details](#implementation-details)
   - [Directories](#directories)
@@ -55,75 +56,132 @@ Click the image below to see a demonstration of this library in use:
 
 ## Using the GitPLM Parts Database in KiCad
 
+[GitPLM](https://github.com/git-plm/gitplm) serves this database to KiCad over
+the
+[KiCad HTTP Libraries feature](https://dev-docs.kicad.org/en/apis-and-binding/http-libraries/).
+KiCad reads the parts from a local server that GitPLM runs from the CSV files in
+this repo, so there is no database to build and no ODBC driver to install.
+
 Give it a try - it will only take a few minutes.
 
 - Clone this repo: `git clone https://github.com/git-plm/parts.git`
 - Clone the 3d models repo: `git clone https://github.com/git-plm/3d-models.git`
+- [Install GitPLM](https://github.com/git-plm/gitplm#-installation)
 - In KiCad Preferences->Configure Paths:
   - set `GITPLM_PARTS` to the location of the parts repo
-  - set `'GITPLM_3DMODELS` to the location of the 3d-models repo
-- Install the following packages: `sqlite3 unixodbc libsqliteodbc`
-  - Arch Linux has the `sqliteodbc` package in the Arch AUR
-- Optionally install the following packages:
-  `sqlitebrowser visidata inotify-tools`
-- Make sure `/etc/odbcinst.ini` contains a
-  [SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite)
+  - set `GITPLM_3DMODELS` to the location of the 3d-models repo
+- Start the parts server from the root of this repo: `gitplm http`
+  - [`gitplm.yml`](gitplm.yml) points the server at the `database` directory and
+    configures which part fields KiCad displays
 - In KiCad Preferences->Manage Symbol Libraries:
   - Add all the libraries in the `symbols` directory
-  - Add the `database/#gplm.kicad_dbl`. This filename is prefixed with `#` so
-    that it shows up at the top of the list in the schematic symbol chooser.
+  - Add the [`database/gplm.kicad_httplib`](database/gplm.kicad_httplib) file,
+    which tells KiCad where to find the running server
 - In KiCad Preferences->Manage Footprint Libraries:
   - Add all `g-*.pretty` directories in the `footprints` directory
-
-(above tested on Arch Linux, so the bits about SQLite3 libraries may vary
-slightly on other platforms). Also tested on Ubuntu 23.04, use the same
-instructions as for Arch Linux (apt install `sqlite3` `unixodbc` etc. ...)
 
 Then when you open the symbol chooser, you will see something like:
 
 ![image-20240304103012907](./assets/image-20240304103012907.png)
 
-Notes, the `#gplm` entries are at the top where they are quick to get to.
-
 Right-clicking on the column headings in the chooser allows you to specify which
 parameters are displayed.
 
-## Update/Generate the database
+The server needs to be running whenever you open a schematic that uses these
+parts, so it is worth starting it from a terminal you leave open, your shell
+profile, or a systemd user service.
 
-The following is tested on Linux but should work in any Linux-like command-line
-environment.
+## Update the parts database
 
-- Edit `csv` files
-- If you are adding a new part category, create a new `csv` file, then edit
-  `envsetup.sh` to add to the list of imports.
-- `. envsetup.sh` (notice the leading `.` - this is equivalent to the `source`
-  command)
-- Run the `parts_db_create` command
-  - this deletes `parts.sqlite` and regenerates it
-- `sqlitebrowser` can be used to view/verify the database. Don't edit the
-  database as it is overwritten on each import.
-- **Restart KiCad** (yes the entire application). This seems to be the only way
-  to get KiCad to reload the database changes. (if anyone knows of a better way,
-  please let us know!)
+- Edit the `csv` files in the `database` directory
+- Save. `gitplm http` watches the directory and reloads the CSV files whenever
+  one of them changes, printing a message like:
 
-## Debugging broken `*.kicad_dbl` files
+  ```
+  Change detected in g-res.csv - reloaded 23 CSV files, 1697 parts
+  ```
 
-Sometimes when you modify the `#gplm.kicad_dbl` file, there is a typo and KiCad
-will no longer load it and does not give you any helpful debugging messages. You
-can use the [`jq`](https://github.com/jqlang/jq) command line utility to quickly
-find errors in the file, since the `kicad_dbl` format appears to be JSON.
+- Refresh the library in KiCad to pick up the new data. There is no database to
+  regenerate, and no need to restart KiCad.
+
+A new part category is simply a new `g-CCC.csv` file in the `database`
+directory. The server picks it up on the next reload and the category appears in
+KiCad.
+
+`csv` files can be edited in a text editor, in
+[LibreOffice](https://www.libreoffice.org/), in
+[VisiData](https://www.visidata.org/), or in the GitPLM TUI (run `gitplm` with
+no arguments).
+
+## Configuring which fields KiCad displays
+
+[`gitplm.yml`](gitplm.yml) controls what KiCad receives for each part. Every CSV
+column is served hidden, so a category states only its exceptions: which column
+populates KiCad's `Value` field, which columns are displayed on the schematic,
+and any column served under a different field name. Resistors, for example,
+display their resistance, tolerance, and power rating:
+
+```yaml
+http:
+  fields:
+    default:
+      value: MPN
+      visible: [MPN]
+
+    RES:
+      value: Resistance
+      visible: [Resistance, Tolerance, Power]
+```
+
+The
+[GitPLM README](https://github.com/git-plm/gitplm#configuring-what-fields-are-visible)
+describes this section in full.
+
+## Database libraries (obsolete)
+
+This repo previously served its parts to KiCad through the
+[KiCad Database Libraries feature](https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries),
+using the flow `CSV -> SQLite3 -> ODBC -> KiCad`. The HTTP library described
+above replaces it and is what we now recommend: it removes the SQLite and ODBC
+dependencies, reloads when a CSV file is saved rather than requiring a KiCad
+restart, and has no database file to regenerate after each edit.
+
+The pieces are still in the repo for anyone who has not yet migrated:
+
+- `database/#gplm.kicad_dbl` - the database library definition, added under
+  KiCad Preferences->Manage Symbol Libraries. The `#` prefix sorts it to the top
+  of the symbol chooser.
+- `database/parts.sqlite` - the generated database, rebuilt from the CSV files
+  by the `parts_db_create` command in [`envsetup.sh`](envsetup.sh).
+
+It also requires the `sqlite3 unixodbc libsqliteodbc` packages (`sqliteodbc` in
+the AUR on Arch Linux), an `/etc/odbcinst.ini` containing a
+[SQLite3 section](https://wiki.archlinux.org/title/Open_Database_Connectivity#SQLite),
+and a full restart of KiCad after each database rebuild.
+
+If a `*.kicad_dbl` edit stops KiCad from loading the library, KiCad reports
+little about what went wrong. The format is JSON, so
+[`jq`](https://github.com/jqlang/jq) will find the error quickly:
 
 `jq . \#gplm.kicad_dbl`
+
+The field definitions in `#gplm.kicad_dbl` say the same thing as the
+`http.fields` section of `gitplm.yml`, so the two can be kept in step while
+migrating.
 
 ## Adding New Parts
 
 If the symbol and footprint already exist, adding a new part is simple as:
 
 1. Add a line to one of the `csv` files. The `csv` files should be sorted by
-   `IPN`. This ensures the `IPN` is unique (which is the lib/db key), and merge
+   `IPN`. This ensures the `IPN` is unique (which is the library key), and merge
    operations are simpler if the file is always sorted.
-2. run `parts_db_create`
-3. restart KiCad
+2. Save the file. The running `gitplm http` server reloads it.
+3. Refresh the library in KiCad.
+
+The GitPLM TUI (run `gitplm` with no arguments) does the first two steps for
+you: press `a` to add a part with the next available IPN, and it writes the row
+into the correct `csv` file, sorted by IPN.
 
 If you need to add a symbol or footprint, add to the matching `g-XXX.kicad_sym`,
 or `g-XXX.pretty` libraries. Standards in the
@@ -166,8 +224,9 @@ The KiCad symbol `Value` field is populated with:
 
 ## Implementation details
 
-This repo contains a parts database designed to work with
-[KiCad Database Libraries feature](https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries).
+This repo contains a parts database designed to work with the
+[KiCad HTTP Libraries feature](https://dev-docs.kicad.org/en/apis-and-binding/http-libraries/),
+served by [GitPLM](https://github.com/git-plm/gitplm).
 
 The IPN (Internal Part Number) format used is specified in
 [this document](partnumbers.md).
@@ -201,11 +260,12 @@ branch.
 
 So we use the following flow:
 
-`CSV -> Sqlite3 -> ODBC -> KiCad`
+`CSV -> gitplm http -> KiCad`
 
-This might seem overly complex, but it is actually pretty easy as SQLite3 can
-import `csv` files, so no additional tooling is required. See the
-[`envsetup.sh`](envsetup.sh) file for how this is done.
+GitPLM reads the `csv` files directly and serves them to KiCad, so the CSV files
+in Git are the database. Earlier versions of this repo went through
+`CSV -> SQLite3 -> ODBC -> KiCad`, which is now
+[obsolete](#database-libraries-obsolete).
 
 `csv` files can be easily edited in [LibreOffice](https://www.libreoffice.org/)
 or [VisiData](https://www.visidata.org/). **Note, in LibreOffice make sure you
@@ -226,7 +286,8 @@ A separate `csv` file is used for each
 - Each part type needs different fields, so this limits the number of columns we
   need in each `csv` file.
 - Likewise, for each part type, we typically want a different set of fields
-  displayed by default in the schematic. The `kicad_dbl` file allows us to
+  displayed by default in the schematic. The
+  [`gitplm.yml`](#configuring-which-fields-kicad-displays) file allows us to
   specify this. For example, with a resistor we want a Resistance field and with
   Capacitors we want a Capacitance field.
 - Grouping each category into a different library makes it nicer to search for
@@ -247,7 +308,11 @@ at places like [JLCPCB](https://jlcpcb.com/) and
 
 ## Directories
 
-- `database` - CSV files and the SQLite3 database file
+- `gitplm.yml` - GitPLM configuration: where the CSV files live, and which part
+  fields KiCad displays
+- `database` - CSV files, the `gplm.kicad_httplib` file KiCad reads, and the
+  SQLite3 database file used by the
+  [obsolete database library method](#database-libraries-obsolete)
 - `symbols` - custom KiCad symbols
 - `footprints` - custom KiCad footprints
 - `spice` - spice models
@@ -268,6 +333,8 @@ For commercial support, training, or design assistance, please contact us at:
 
 ## Reference
 
+- https://github.com/git-plm/gitplm
+- https://dev-docs.kicad.org/en/apis-and-binding/http-libraries/
 - https://forum.kicad.info/t/gitplm-parts-kicad-database-ideas/47358
 - https://docs.kicad.org/7.0/en/eeschema/eeschema.html#database-libraries
 - https://forum.kicad.info/t/kicad-the-case-for-database-driven-design/34621
