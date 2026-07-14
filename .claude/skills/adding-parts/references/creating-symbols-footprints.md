@@ -34,7 +34,7 @@ Do not rename them; just do not copy the inconsistency into new work.
 
 - Symbol outline stroke width **10 mil** (`0.254` mm)
 - Fill with background colour: `(fill (type background))`
-- Active-low pins get an overbar via the pin *name*: `~{RESET}`
+- Active-low pins get an overbar via the pin _name_: `~{RESET}`
 - Pin length by pin count:
   - fewer than 10 pins: **100 mil** (2.54 mm)
   - 10-99 pins: **150 mil** (3.81 mm)
@@ -43,14 +43,15 @@ Do not rename them; just do not copy the inconsistency into new work.
   This is what makes wires connect reliably in the schematic editor.
 - Place the symbol origin on the **lower-leftmost pin**. Consistent origins make
   symbols swappable and keep ERC sane.
-- Pin electrical types matter for ERC. Follow the upstream convention: `power_in`
-  for supply and ground pins, `power_out` for a switching node or regulator
-  output, `input`/`output`/`bidirectional` for signals, `passive` for discretes.
+- Pin electrical types matter for ERC. Follow the upstream convention:
+  `power_in` for supply and ground pins, `power_out` for a switching node or
+  regulator output, `input`/`output`/`bidirectional` for signals, `passive` for
+  discretes.
 
-The `Value` field is populated from the database, so leave it alone in the symbol
-itself. Per `database/#gplm.kicad_dbl`, `Value` maps to the `MPN` column for most
-categories, and to the value column (`Resistance`, `Capacitance`, `Inductance`)
-for passives - Spice reads that field.
+The `Value` field is populated from the database, so leave it alone in the
+symbol itself. Per the `http.fields` section of `gitplm.yml`, `Value` maps to
+the `MPN` column for most categories, and to the value column (`Resistance`,
+`Capacitance`, `Inductance`) for passives - Spice reads that field.
 
 ### Authoring
 
@@ -67,9 +68,9 @@ kicad-cli sym export svg --symbol <SymbolName> -o /tmp/sym symbols/g-reg.kicad_s
 
 ## Footprints
 
-Custom footprints go in `footprints/g-XXX.pretty/<Name>.kicad_mod`.
-Name them `<Manufacturer>_<Series>` (`Bourns_SRP6540`, `Coilcraft_DO1608C`) to
-match the existing files.
+Custom footprints go in `footprints/g-XXX.pretty/<Name>.kicad_mod`. Name them
+`<Manufacturer>_<Series>` (`Bourns_SRP6540`, `Coilcraft_DO1608C`) to match the
+existing files.
 
 Build the pads from the datasheet's **recommended land pattern**, not from the
 package body dimensions. Read that drawing from the PDF pages directly (see
@@ -110,10 +111,10 @@ Nothing to do. The footprint already contains a
 STEP file ships with KiCad.
 
 The version in that variable tracks the installed KiCad (currently 10). Custom
-footprints in this repo still carry `KICAD6_3DMODEL_DIR` and `KICAD8_3DMODEL_DIR`
-from when they were authored; KiCad resolves the older names, so leave them
-alone. New custom footprints should use `${GITPLM_3DMODELS}` anyway, which is
-version-independent.
+footprints in this repo still carry `KICAD6_3DMODEL_DIR` and
+`KICAD8_3DMODEL_DIR` from when they were authored; KiCad resolves the older
+names, so leave them alone. New custom footprints should use
+`${GITPLM_3DMODELS}` anyway, which is version-independent.
 
 ### Custom footprints
 
@@ -128,8 +129,8 @@ ls ../3d-models          # remote: git@git.bec-systems.com:GitPLM/3d-models.git
 ```
 
 Check for it before cloning anything - the public `github.com/git-plm/3d-models`
-is a different, upstream copy. Confirm the path `GITPLM_3DMODELS` actually points
-at:
+is a different, upstream copy. Confirm the path `GITPLM_3DMODELS` actually
+points at:
 
 ```bash
 grep -r GITPLM_3DMODELS ~/.config/kicad/*/kicad_common.json
@@ -140,11 +141,11 @@ Steps:
 1. **Find a STEP file.** In descending order of preference: the manufacturer's
    product page, then Ultra Librarian / SnapEDA / ComponentSearchEngine, then
    3DContentCentral or GrabCAD. STEP (`.step`, `.stp`) is preferred over WRL -
-   it is what the rest of the library uses and it exports to mechanical CAD.
-   A sibling variant's model is usually geometrically identical and safe to reuse
+   it is what the rest of the library uses and it exports to mechanical CAD. A
+   sibling variant's model is usually geometrically identical and safe to reuse
    when the exact MPN has none.
-2. **Commit it to the 3d-models repo**, not this one. Name the file after the MPN
-   or series (`SRP6540.step`), matching the flat naming already used there.
+2. **Commit it to the 3d-models repo**, not this one. Name the file after the
+   MPN or series (`SRP6540.step`), matching the flat naming already used there.
 3. **Reference it from the footprint** with the environment variable:
    ```
    (model "${GITPLM_3DMODELS}/SRP6540.step"
@@ -153,11 +154,12 @@ Steps:
        (rotate (xyz 0 0 0))
    )
    ```
-4. **Verify alignment in the KiCad 3D viewer.** Vendor STEP files often place the
-   origin at a corner or at the bottom of the body rather than at the footprint
-   origin, and are frequently rotated. Correct with `offset` and `rotate` rather
-   than editing the STEP. `footprints/g-ind.pretty/Wurth744062003.kicad_mod` uses
-   a Z offset for exactly this reason - read it as a worked example.
+4. **Verify alignment in the KiCad 3D viewer.** Vendor STEP files often place
+   the origin at a corner or at the bottom of the body rather than at the
+   footprint origin, and are frequently rotated. Correct with `offset` and
+   `rotate` rather than editing the STEP.
+   `footprints/g-ind.pretty/Wurth744062003.kicad_mod` uses a Z offset for
+   exactly this reason - read it as a worked example.
 
 If no 3D model can be found, the footprint is still valid without a `model`
 block. Say so explicitly rather than leaving the user to discover it.
