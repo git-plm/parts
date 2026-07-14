@@ -1,6 +1,9 @@
 ---
 name: adding-parts
-description: Use when adding a component to this parts library from a manufacturer and part number (MPN) - assigns the IPN, picks the category CSV, links the datasheet, reuses or creates the KiCad symbol and footprint, and links a 3D model.
+description:
+  Use when adding a component to this parts library from a manufacturer and part
+  number (MPN) - assigns the IPN, picks the category CSV, links the datasheet,
+  reuses or creates the KiCad symbol and footprint, and links a 3D model.
 ---
 
 # Adding Parts
@@ -8,8 +11,8 @@ description: Use when adding a component to this parts library from a manufactur
 ## Overview
 
 Turn a manufacturer + MPN into a complete library part: one row in the right
-`database/g-XXX.csv`, a verified datasheet link, a symbol, a footprint, and a
-3D model.
+`database/g-XXX.csv`, a verified datasheet link, a symbol, a footprint, and a 3D
+model.
 
 **Reuse before you create.** The KiCad standard library covers most symbols and
 footprints. A standard footprint also carries its own 3D model, so choosing one
@@ -42,7 +45,7 @@ file /tmp/part.pdf    # must say "PDF document"
 
 Manufacturer CDNs (Nexperia and others sit behind Akamai) reject curl's default
 user-agent with a 403 and return a several-hundred-byte HTML "Access Denied"
-page. `curl -o part.pdf` saves that HTML *under the .pdf name* without error. If
+page. `curl -o part.pdf` saves that HTML _under the .pdf name_ without error. If
 you skip the `file` check you will be reading an error page and inventing specs
 from nothing. Always confirm before you read.
 
@@ -50,14 +53,15 @@ Then use `Read` on `/tmp/part.pdf` with a `pages` range. Read the actual pages
 for:
 
 - **Pin functions table** - pin numbers, names, and electrical types
-- **Device comparison table** - which orderable MPN is which, and how siblings differ
+- **Device comparison table** - which orderable MPN is which, and how siblings
+  differ
 - **Package outline and recommended land pattern** - usually the last few pages
 
 Confirm the package, the pinout, and every spec that lands in a CSV column. Web
-search is fine for *finding* the datasheet and for distributor descriptions; it
+search is fine for _finding_ the datasheet and for distributor descriptions; it
 is not acceptable for numbers.
 
-The **packing suffix** (`,115`, `-T`, `TR`) is usually *not* in the datasheet -
+The **packing suffix** (`,115`, `-T`, `TR`) is usually _not_ in the datasheet -
 it comes from the distributor or product page. Carry the suffix the request
 supplies, and match the convention of sibling rows in the category.
 
@@ -65,7 +69,7 @@ supplies, and match the convention of sibling rows in the category.
 it says, and tell the user.** Requests routinely carry a spec from a
 neighbouring part in the series.
 
-But distinguish two cases. If the disagreement is a *detail* (a current rating
+But distinguish two cases. If the disagreement is a _detail_ (a current rating
 or body size that is simply wrong), write the datasheet value and note it. If
 the disagreement implies **a different part** - the MPN decodes to a 30V device
 and the user asked for 20V - then it is unclear which part they want to buy.
@@ -73,7 +77,7 @@ Stop and ask before committing.
 
 **Watch for package aliases.** Manufacturers and distributors often use
 different names for the same physical package (TI's `VSON-HR (DLC)` is sold as
-`SOT-583`). KiCad may ship *both* names as separate footprints, in different
+`SOT-583`). KiCad may ship _both_ names as separate footprints, in different
 libraries, with different pad geometry. Use the package name from the
 manufacturer's own drawing, and pick the footprint by pad geometry (step 5), not
 by name matching.
@@ -137,13 +141,14 @@ go to step 7.
 
 ### 3. Assign the IPN
 
-Format is `CCC-NNNN-VVVV`. Rationale is in `partnumbers.md`; the operative rules:
+Format is `CCC-NNNN-VVVV`. Rationale is in `partnumbers.md`; the operative
+rules:
 
 **`NNNN` - the part family.** One `NNNN` per datasheet/family. A different
 datasheet means a new `NNNN`, even at an identical value: a 4.7uH Bourns
 inductor does not share `NNNN` with a 4.7uH Panasonic inductor.
 
-One datasheet covering *several distinct devices* (different die, pin count, or
+One datasheet covering _several distinct devices_ (different die, pin count, or
 pinout) is the exception: give each device its own `NNNN`. `VVVV` is for
 variations of one device, not for different devices that happen to share a PDF.
 
@@ -156,16 +161,16 @@ grep -o '^IND-[0-9]\{4\}' database/g-ind.csv | sort -u | tail -1
 **`VVVV` - the variation within that family.** Encode the parameter that varies
 most across the family:
 
-| Category        | `VVVV` encodes                      | Example                     |
-| --------------- | ----------------------------------- | --------------------------- |
-| `RES`           | E96/E24 resistance code             | `1002` = 10k, `0R10` = 0.1R |
-| `CAP`           | 3-digit pF code                     | `104` = 0.1uF               |
-| `IND`           | inductance                          | `04R7` = 4.7uH              |
-| `CON`           | pin count                           | `0012` = 12 positions       |
-| `DIO`           | voltage **for Zeners only**         | `04V7` = 4.7V Zener         |
-| `REG`           | **fixed** output voltage            | `03V3` = 3.3V               |
-| `OSC`           | frequency                           | `0256` = 25.6MHz            |
-| everything else | sequential from `0001`              | `0001`, `0002`, ...         |
+| Category        | `VVVV` encodes              | Example                     |
+| --------------- | --------------------------- | --------------------------- |
+| `RES`           | E96/E24 resistance code     | `1002` = 10k, `0R10` = 0.1R |
+| `CAP`           | 3-digit pF code             | `104` = 0.1uF               |
+| `IND`           | inductance                  | `04R7` = 4.7uH              |
+| `CON`           | pin count                   | `0012` = 12 positions       |
+| `DIO`           | voltage **for Zeners only** | `04V7` = 4.7V Zener         |
+| `REG`           | **fixed** output voltage    | `03V3` = 3.3V               |
+| `OSC`           | frequency                   | `0256` = 25.6MHz            |
+| everything else | sequential from `0001`      | `0001`, `0002`, ...         |
 
 **When a part has no natural variation parameter, use `0001`.** That is what
 `ICS`, `MCU`, `XTR`, `CPD`, `RFM`, `PWR`, `ANA`, `OPT`, and `MPU` do for
@@ -174,8 +179,8 @@ the established convention.
 
 The voltage encodings apply **only where the voltage is the varying parameter**:
 
-- A **Schottky or rectifier** diode is not a Zener family. Every non-Zener row in
-  `g-dio.csv` uses `0001`, including a 30V part. Use `0001`.
+- A **Schottky or rectifier** diode is not a Zener family. Every non-Zener row
+  in `g-dio.csv` uses `0001`, including a 30V part. Use `0001`.
 - A **regulator with adjustable or resistor-selectable output** has no single
   fixed voltage. Use `0001`, with `ADJ` in the `Voltage` column.
 
@@ -193,15 +198,15 @@ grep -o '(symbol "[^"]*"' /usr/share/kicad/symbols/<Lib>.kicad_sym | grep -i <na
 
 Most passives and discretes need nothing custom:
 
-| Part          | Symbol                                        |
-| ------------- | --------------------------------------------- |
-| Resistor      | `Device:R_US`                                  |
-| Capacitor     | `Device:C`                                     |
-| Inductor      | `Device:L`                                     |
-| Schottky/Zener | `Device:D_Schottky`, `Device:D_Zener`         |
-| Crystal       | `Device:Crystal_GND24`                         |
-| BJT           | `Transistor_BJT:Q_NPN_BEC`, `Transistor_PNP_BEC` |
-| MOSFET        | `Transistor_FET:Q_NMOS_GSD`                    |
+| Part           | Symbol                                           |
+| -------------- | ------------------------------------------------ |
+| Resistor       | `Device:R_US`                                    |
+| Capacitor      | `Device:C`                                       |
+| Inductor       | `Device:L`                                       |
+| Schottky/Zener | `Device:D_Schottky`, `Device:D_Zener`            |
+| Crystal        | `Device:Crystal_GND24`                           |
+| BJT            | `Transistor_BJT:Q_NPN_BEC`, `Transistor_PNP_BEC` |
+| MOSFET         | `Transistor_FET:Q_NMOS_GSD`                      |
 
 **Transistors are not in `Device`.** KiCad moved them to `Transistor_BJT` and
 `Transistor_FET`. Existing `g-xtr.csv` rows still say `Device:Q_NPN_BEC` and are
@@ -255,32 +260,33 @@ file. Confirm and move on:
 grep model /usr/share/kicad/footprints/<Lib>.pretty/<Footprint>.kicad_mod
 ```
 
-**Custom footprint: you must supply the model.** 3D models live in a *separate*
+**Custom footprint: you must supply the model.** 3D models live in a _separate_
 repository (`git-plm/3d-models`), referenced through the `GITPLM_3DMODELS`
 environment variable. See `references/creating-symbols-footprints.md`.
 
 ### 7. Write the CSV row
 
 Read the header first - **columns differ per category and are not in a
-predictable order** (`g-reg.csv` puts `Voltage,Current` *before* `Symbol`):
+predictable order** (`g-reg.csv` puts `Voltage,Current` _before_ `Symbol`):
 
 ```bash
 head -1 database/g-reg.csv
 ```
 
-- **Insert in IPN-sorted position.** The IPN is the database key and sorted files
-  diff cleanly. Only the highest IPN belongs at the end - do not blindly append.
+- **Insert in IPN-sorted position.** The IPN is the database key and sorted
+  files diff cleanly. Only the highest IPN belongs at the end - do not blindly
+  append.
 - **Match the file's existing quoting style.** `g-con.csv`, `g-swi.csv`, and
-  `g-fan.csv` quote every field; the rest quote only fields containing a comma or
-  a double quote.
+  `g-fan.csv` quote every field; the rest quote only fields containing a comma
+  or a double quote.
 - **Reuse the existing spelling of the manufacturer.** `grep` the category file
   first. Where the file already contradicts itself (`g-dio.csv` has `onsemi`,
   `On Semi`, and `OnSemi`; `g-reg.csv` has both `TI` and `Texas Instruments`),
   follow the most recent row rather than adding a fourth spelling. Do not
   normalize the existing rows as a side effect of adding a part.
 - **Description**: most distinguishing specs first, short enough to read in the
-  schematic chooser, e.g. `Buck regulator, 750mA, 1.8-6.5V in, adjustable`.
-  Some older rows hold raw distributor strings truncated mid-word
+  schematic chooser, e.g. `Buck regulator, 750mA, 1.8-6.5V in, adjustable`. Some
+  older rows hold raw distributor strings truncated mid-word
   (`FIXED IND 6.8UH 8.5A 23.3MOHM SM`). Do not imitate those; write a clean
   description.
 - **One value per column.** Where a part has two legitimate ratings for a single
@@ -315,8 +321,8 @@ A running `gitplm http` watches `database/` and reloads whenever a CSV is saved:
 Change detected in g-reg.csv - reloaded 23 CSV files, 1697 parts
 ```
 
-The next time the user adds a symbol in the schematic, the new part is there.
-No KiCad restart, no library refresh, no `parts_db_create`.
+The next time the user adds a symbol in the schematic, the new part is there. No
+KiCad restart, no library refresh, no `parts_db_create`.
 
 The `CSV -> SQLite3 -> ODBC -> KiCad` path that `parts_db_create` in
 `envsetup.sh` feeds is obsolete and is kept only for anyone who has not yet
@@ -335,7 +341,7 @@ touches `database/g-XXX.csv` alone, plus `symbols/g-XXX.kicad_sym` and
 `footprints/g-XXX.pretty/*.kicad_mod` when custom CAD was authored.
 `database/parts.sqlite` is generated and is not committed.
 
-A 3D model is committed to the *separate* `3d-models` repository, not this one.
+A 3D model is committed to the _separate_ `3d-models` repository, not this one.
 
 ## Adding a new category
 
@@ -360,6 +366,7 @@ category appears in KiCad.
    Categories that are happy with the default (`ICS`, `MCU`, `XTR`, ...) have no
    block at all. Nothing else needs registering: there is no library list to
    update.
+
 4. **Only if the category appears in schematics**, create
    `symbols/g-XXX.kicad_sym` and `footprints/g-XXX.pretty/` as needed. BOM-only
    categories skip this.
@@ -376,10 +383,14 @@ lowercase code added to `GPLMLIBS` in `envsetup.sh` and a library block in
 - [ ] Discrepancies with the request reported to the user
 - [ ] MPN not already in `database/`
 - [ ] Category chosen: the most specific one that fits
-- [ ] IPN assigned: new `NNNN` for a new datasheet, correct `VVVV` encoding, `0001` if no natural variation
+- [ ] IPN assigned: new `NNNN` for a new datasheet, correct `VVVV` encoding,
+      `0001` if no natural variation
 - [ ] Symbol: standard library searched before authoring
-- [ ] Footprint: standard library searched before authoring; alias ties broken on pad geometry
-- [ ] 3D model: confirmed present (standard footprint) or sourced and referenced (custom)
-- [ ] Row inserted in sorted position; quoting style, column count, and manufacturer spelling match the file
+- [ ] Footprint: standard library searched before authoring; alias ties broken
+      on pad geometry
+- [ ] 3D model: confirmed present (standard footprint) or sourced and referenced
+      (custom)
+- [ ] Row inserted in sorted position; quoting style, column count, and
+      manufacturer spelling match the file
 - [ ] `check-csv.py --new-only` reports `ok`; datasheet URL returns 200
 - [ ] Only this part's files committed

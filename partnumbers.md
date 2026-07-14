@@ -1,6 +1,7 @@
 # Internal Part number guidelines
 
-(See also the [video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).)
+(See also the
+[video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).)
 
 ## TOC
 
@@ -148,29 +149,29 @@ difficulty of assigning new part numbers.
 
 The following CCC groups are suggested for electrical parts:
 
-| Code | Description                              |
-| ---- | ---------------------------------------- |
-| ANA  | op-amps, comparators, A/D, D/A           |
+| Code | Description                               |
+| ---- | ----------------------------------------- |
+| ANA  | op-amps, comparators, A/D, D/A            |
 | ART  | artwork (test points, fiducials, etc.)    |
-| CAP  | capacitors                               |
-| CON  | connectors                               |
-| CPD  | Circuit protection devices               |
-| DIO  | diodes                                   |
-| FAN  | fans                                     |
-| IND  | inductors, transformers                  |
-| ICS  | integrated circuits                      |
-| MEM  | Memory modules, SD cards, SSD, NVME, etc.|
-| MPU  | SOC, SOM, SBC, etc.                      |
-| MCU  | Microcontrolleres, modules, etc.         |
-| OPT  | Optical, couplers, phototransistor, etc. |
-| OSC  | oscillators, Crystals                    |
-| PWR  | relays, etc                              |
-| RFM  | RF modules, ICs, and related components  |
-| REG  | regulators                               |
-| RES  | resistors                                |
-| SEN  | sensors                                  |
-| SWI  | switch                                   |
-| XTR  | transistors, FETs                        |
+| CAP  | capacitors                                |
+| CON  | connectors                                |
+| CPD  | Circuit protection devices                |
+| DIO  | diodes                                    |
+| FAN  | fans                                      |
+| IND  | inductors, transformers                   |
+| ICS  | integrated circuits                       |
+| MEM  | Memory modules, SD cards, SSD, NVME, etc. |
+| MPU  | SOC, SOM, SBC, etc.                       |
+| MCU  | Microcontrolleres, modules, etc.          |
+| OPT  | Optical, couplers, phototransistor, etc.  |
+| OSC  | oscillators, Crystals                     |
+| PWR  | relays, etc                               |
+| RFM  | RF modules, ICs, and related components   |
+| REG  | regulators                                |
+| RES  | resistors                                 |
+| SEN  | sensors                                   |
+| SWI  | switch                                    |
+| XTR  | transistors, FETs                         |
 
 Each group of CCC parts is placed in its own schematic symbol library with the
 same name. Keeping the CCC and CAD library names the same introduces

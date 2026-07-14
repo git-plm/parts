@@ -219,8 +219,8 @@ The KiCad symbol `Value` field is populated with:
 ### Adding parts with Claude Code
 
 This repo ships a [Claude Code](https://claude.com/claude-code) skill,
-[`.claude/skills/adding-parts`](.claude/skills/adding-parts/SKILL.md), that walks
-through the whole process from a manufacturer and part number: reading the
+[`.claude/skills/adding-parts`](.claude/skills/adding-parts/SKILL.md), that
+walks through the whole process from a manufacturer and part number: reading the
 datasheet, choosing the category, assigning the IPN, reusing or creating the
 symbol and footprint, linking the 3D model, and writing the CSV row in sorted
 position.
@@ -232,10 +232,10 @@ add the Nexperia PMEG3020EP Schottky diode to the library
 ```
 
 Claude picks up the skill automatically. The skill also includes
-[`scripts/check-csv.py`](.claude/skills/adding-parts/scripts/check-csv.py), which
-validates column counts, IPN sort order, duplicate IPNs, and whether the `Symbol`
-and `Footprint` references resolve on disk. It is useful on its own, whether or
-not you use Claude:
+[`scripts/check-csv.py`](.claude/skills/adding-parts/scripts/check-csv.py),
+which validates column counts, IPN sort order, duplicate IPNs, and whether the
+`Symbol` and `Footprint` references resolve on disk. It is useful on its own,
+whether or not you use Claude:
 
 ```
 .claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-dio.csv
