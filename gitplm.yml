@@ -1,0 +1,60 @@
+# GitPLM configuration for the parts database.
+#
+# http.fields controls what KiCad receives for each part when `gitplm http`
+# serves this database as a KiCad HTTP library. Every CSV column is served to
+# KiCad hidden, so a category only states its exceptions:
+#
+#   value    the column that populates KiCad's built-in Value field
+#   visible  the columns KiCad displays on the schematic
+#   rename   columns served under a different KiCad field name
+#
+# `default` applies to every category, and a category's own settings are applied
+# on top of it. These mirror the field definitions in database/#gplm.kicad_dbl.
+
+pmDir: database
+
+http:
+  port: 7654
+  token: ""
+  fields:
+    default:
+      value: MPN
+      visible: [MPN]
+      rename:
+        Sim_Library: Sim.Library
+        Sim_Name: Sim.Name
+        Sim_Device: Sim.Device
+        Sim_Pins: Sim.Pins
+
+    ART:
+      visible: []
+
+    CAP:
+      value: Capacitance
+      visible: [Capacitance, Voltage, Material, Tolerance]
+
+    CON:
+      value: Pins
+      visible: [MPN]
+
+    DIO:
+      visible: [Current, Voltage]
+
+    IND:
+      value: Inductance
+      visible: [Inductance, Current]
+
+    OPT:
+      value: Color
+      visible: [MPN, Color, I-forward-max]
+
+    OSC:
+      value: Frequency
+      visible: [MPN, Frequency]
+
+    REG:
+      visible: [MPN, Voltage, Current]
+
+    RES:
+      value: Resistance
+      visible: [Resistance, Power, Tolerance]
