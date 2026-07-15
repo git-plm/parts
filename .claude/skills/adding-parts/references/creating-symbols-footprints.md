@@ -106,9 +106,15 @@ kicad-cli fp export svg --footprint <Name> -o /tmp/fp footprints/g-ind.pretty
 
 ### Standard footprints
 
-Nothing to do. The footprint already contains a
-`(model "${KICAD10_3DMODEL_DIR}/<Lib>.3dshapes/<Name>.step" ...)` block and the
-STEP file ships with KiCad.
+Nothing to author. The footprint already contains a
+`(model "${KICAD10_3DMODEL_DIR}/<Lib>.3dshapes/<Name>.step" ...)` block, and the
+STEP file usually ships with `kicad-library-3d`. Usually, not always - some
+footprints reference a `.step` the installed package omits (e.g.
+`TQFN-32-1EP_5x5mm_P0.5mm_EP3.4x3.4mm` in `kicad-library-3d 10.0.4`: reference
+present, file absent). That is an upstream packaging gap affecting every user of
+the footprint, not something to fix here and not a reason to reject the
+footprint - just confirm with `ls .../<Lib>.3dshapes/<Name>.step` when it
+matters and tell the user if it is missing.
 
 The version in that variable tracks the installed KiCad (currently 10). Custom
 footprints in this repo still carry `KICAD6_3DMODEL_DIR` and

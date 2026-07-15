@@ -49,6 +49,16 @@ page. `curl -o part.pdf` saves that HTML _under the .pdf name_ without error. If
 you skip the `file` check you will be reading an error page and inventing specs
 from nothing. Always confirm before you read.
 
+Analog Devices / Maxim (`analog.com/media/...`, `pdfserv.maximintegrated.com`)
+is a different failure: curl's HTTP/2 request is reset mid-stream
+(`curl: (92) HTTP/2 stream 1 reset by server`), and forcing `--http1.1` then
+stalls for minutes even with a browser user-agent. Try `--http1.1` once; if it
+still hangs, do not fight it - ask the user to download the PDF and give you the
+path (they run it in a browser, which the CDN serves normally). The same CDN
+also times out the `curl -sSI` URL check below, so a valid ADI datasheet URL can
+look broken - confirm the link in a browser rather than trusting a curl
+non-200/timeout.
+
 Then use `Read` on `/tmp/part.pdf` with a `pages` range. Read the actual pages
 for:
 
@@ -252,13 +262,27 @@ If nothing fits, create the footprint in `footprints/g-XXX.pretty/`. See
 
 ### 6. Resolve the 3D model
 
-**Standard footprint: nothing to do.** Every standard KiCad footprint already
-embeds a `(model "${KICAD10_3DMODEL_DIR}/...")` reference and ships the STEP
-file. Confirm and move on:
+**Standard footprint: almost nothing to do.** Every standard KiCad footprint
+embeds a `(model "${KICAD10_3DMODEL_DIR}/...")` reference. Confirm it:
 
 ```bash
 grep model /usr/share/kicad/footprints/<Lib>.pretty/<Footprint>.kicad_mod
 ```
+
+The STEP _usually_ ships with `kicad-library-3d`, but not always - some
+footprints reference a `.step` the installed package omits. When it matters,
+confirm the file the reference points at actually exists on disk, and tell the
+user if it does not:
+
+```bash
+ls /usr/share/kicad/3dmodels/<Lib>.3dshapes/<Name>.step
+```
+
+A missing STEP is an upstream packaging gap, not a footprint defect - it affects
+everyone using that footprint, `check-csv.py` does not test it, and it is not a
+reason to reject an otherwise-correct standard footprint. `TQFN-32-1EP_5x5mm_P0.5mm_EP3.4x3.4mm`
+is a known case in `kicad-library-3d 10.0.4`: its model reference resolves, the
+`.step` does not ship. Note it and move on.
 
 **Custom footprint: you must supply the model.** 3D models live in a _separate_
 repository (`git-plm/3d-models`), referenced through the `GITPLM_3DMODELS`
