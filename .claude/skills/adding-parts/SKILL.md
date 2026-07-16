@@ -300,19 +300,32 @@ head -1 database/g-reg.csv
 - **Insert in IPN-sorted position.** The IPN is the database key and sorted
   files diff cleanly. Only the highest IPN belongs at the end - do not blindly
   append.
+- **Never put a comma in any field.** A comma forces the field to be quoted, and
+  a quoted comma is what breaks naive readers - `awk -F,`, `cut -d,`,
+  spreadsheet imports, and any downstream script that splits on the delimiter.
+  Properly quoted commas are valid CSV and `check-csv.py` accepts them, so
+  nothing will fail loudly; the damage shows up later in whatever tool reads the
+  file next. Write the field so the question never arises. This applies to
+  `Description` most often, because that is the field with something to say - see
+  below.
 - **Match the file's existing quoting style.** `g-con.csv`, `g-swi.csv`, and
   `g-fan.csv` quote every field; the rest quote only fields containing a comma
-  or a double quote.
+  or a double quote. With no commas to escape, a row in those other files should
+  need no quoting at all.
 - **Reuse the existing spelling of the manufacturer.** `grep` the category file
   first. Where the file already contradicts itself (`g-dio.csv` has `onsemi`,
   `On Semi`, and `OnSemi`; `g-reg.csv` has both `TI` and `Texas Instruments`),
   follow the most recent row rather than adding a fourth spelling. Do not
   normalize the existing rows as a side effect of adding a part.
 - **Description**: most distinguishing specs first, short enough to read in the
-  schematic chooser, e.g. `Buck regulator, 750mA, 1.8-6.5V in, adjustable`. Some
-  older rows hold raw distributor strings truncated mid-word
-  (`FIXED IND 6.8UH 8.5A 23.3MOHM SM`). Do not imitate those; write a clean
-  description.
+  schematic chooser, and **no commas** - separate the specs with spaces, e.g.
+  `Buck regulator 750mA 1.8-6.5V in adjustable`. Spaces read cleanly here
+  because each spec already carries its own unit. Reach for a semicolon only
+  when two specs would otherwise run together ambiguously. Some older rows hold
+  raw distributor strings truncated mid-word
+  (`FIXED IND 6.8UH 8.5A 23.3MOHM SM`); others still carry commas from before
+  this rule. Do not imitate either, and do not rewrite them as a side effect of
+  adding a part.
 - **One value per column.** Where a part has two legitimate ratings for a single
   column - an inductor's I_rms and I_sat, for instance - put the conservative
   continuous rating in the column and both in the `Description`.
@@ -332,9 +345,10 @@ introduced. Several CSVs carry pre-existing defects (unsorted rows, duplicate
 IPNs, broken footprint references); without the flag you cannot tell yours from
 theirs. **It must report `ok`.**
 
-Do not check columns by splitting on commas (`awk -F,`, `cut -d,`) -
-`Description` legitimately contains quoted commas, so a naive split reports
-false errors.
+Do not check columns by splitting on commas (`awk -F,`, `cut -d,`). New rows
+carry no commas, but older `Description` fields still hold quoted ones, so a
+naive split reports false errors against the existing data. Use `check-csv.py`,
+or Python's `csv` module.
 
 **There is no database to rebuild, and nothing for the user to do in KiCad.**
 GitPLM serves the CSV files to KiCad directly over the
@@ -414,6 +428,7 @@ lowercase code added to `GPLMLIBS` in `envsetup.sh` and a library block in
       on pad geometry
 - [ ] 3D model: confirmed present (standard footprint) or sourced and referenced
       (custom)
+- [ ] **No commas in any field**, `Description` included
 - [ ] Row inserted in sorted position; quoting style, column count, and
       manufacturer spelling match the file
 - [ ] `check-csv.py --new-only` reports `ok`; datasheet URL returns 200
