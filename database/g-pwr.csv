@@ -7,3 +7,4 @@ PWR-0004-0001,AP2191AW-7,Diodes Incorporated,Power Switch/Driver 1:1 P-Channel 1
 PWR-0004-0002,AP22815AWT-7,Diodes Incorporated,Power Switch/Driver 1:1 N/P-Channel 3A TSOT-25,g-pwr:IC_AP22815AW_USB_LOAD_SW_3A,Package_TO_SOT_SMD:TSOT-23-5;TSOT-23-5_HandSoldering,https://www.diodes.com/assets/Datasheets/AP22815-615.pdf
 PWR-0005-0001,LM74704QDDFRQ1,TI,Ideal diode controller,g-pwr:LM74704,Package_TO_SOT_SMD:SOT-23-8,https://www.ti.com/lit/ds/symlink/lm74704-q1.pdf
 PWR-0006-0001,TPS22990DMLR,Texas Instruments,Power Switch/Driver 1:1 N-Channel 10A 10-WSON (3x2),g-pwr:IC_TPS22990_LOAD_SW_10A,g-pwr:WSON-10-1EP_2x3mm_P0.5mm_EP1.1x2.6mm_ThermalVias,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps22990
+PWR-0007-0012,G6RN-1-DC12,Omron,Relay SPDT 8A 250VAC 12VDC coil,Relay:Relay_SPDT,g-pwr:Relay_SPDT_Omron_G6RN-1,https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6rn.pdf

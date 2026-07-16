@@ -1,3 +1,4 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Datasheet
 RFM-0000-0001,NL-SW-LTE-TG1WWG,Airgain,Cat-M modem,g-rfm:NL-SW-LTE-TG1WWG,g-rfm:NL-SW-LTE-TG1WWG,https://www.airgain.com/products/4g-lte-m-global-telit/
 RFM-0001-0001,ZED-F9P-04B,U-blox,u-Blox high precision GPS/GLONASS module,g-rfm:MODULE_UBLOX_ZED-F9P-04B,g-rfm:QFN_P-00B-02_UBL,https://content.u-blox.com/sites/default/files/ZED-F9P-04B_DataSheet_UBX-21044850.pdf
+RFM-0002-0001,ANT-LTE-RPC-UFL,TE Connectivity Linx,LTE/LPWA/GNSS adhesive dipole antenna 617-3800MHz 6.3dBi peak U.FL plug on 100mm cable,,,https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FANT-LTE-RPC-ccc%7FA%7Fpdf%7FEnglish%7FENG_DS_ANT-LTE-RPC-ccc_A.pdf%7FANT-LTE-RPC-UFL
