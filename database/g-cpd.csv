@@ -15,3 +15,4 @@ CPD-0012-0001,RCLAMP01211ZCFT,Semtech Corporation,Clamp Ipp Tvs Diode Surface Mo
 CPD-0013-0001,PESD2V8R1BSFYL,Nexperia USA Inc.,5V Clamp 4.5A (8/20µA) Ipp Tvs Diode Surface Mount DSN0603-2,Device:D_TVS_Filled,Diode_SMD:Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm,https://assets.nexperia.com/documents/data-sheet/PESD2V8R1BSF.pdf
 CPD-0014-0001,ESDL2011PFCT5G,onsemi,6V Clamp 8A Ipp Tvs Diode Surface Mount 2-DFN (0.6x0.3),Device:D_TVS_Filled,Diode_SMD:Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm,https://www.onsemi.com/download/data-sheet/pdf/esdl2011-d.pdf
 CPD-0015-0001,TPD6S300ARUKR,Texas Instruments,USB C Circuit protector for CC and SBU lines,g-cpd:TPD6S300ARUKR,g-cpd:WQFN20_RUK_TEX-L;WQFN20_RUK_TEX;WQFN20_RUK_TEX-M,https://www.ti.com/lit/ds/symlink/tpd6s300a.pdf
+CPD-0016-0001,MF-LSMF200/33X-2,Bourns,PTC RESET FUSE 33V 2A 2920,Device:Polyfuse,Fuse:Fuse_2920_7451Metric,https://www.bourns.com/docs/product-datasheets/mf-lsmf.pdf
