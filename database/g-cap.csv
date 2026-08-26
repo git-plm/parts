@@ -12,7 +12,7 @@ CAP-0004-0107,LMK325BJ107MM-T,Taiyo Yuden,100uF 10V 1210 X5R,Device:C,Capacitor_
 CAP-0005-220F,SCCX50B227SSBLE,KYOCERA AVX,220F 2.7V CX50B227 SUPERCAP,Device:C_Polarized_US,g-cap:CX50B227,220F,2.7V,SUPERCAP,+30%/-10%,https://datasheets.kyocera-avx.com/AVX-SCC-LE.pdf,
 CAP-0005-400F,SCCY68B407SSBLE,KYOCERA AVX,400F 2.7V CY68B407 SUPERCAP,Device:C_Polarized_US,g-cap:CY68B407,400F,2.7V,SUPERCAP,+30%/-10%,https://datasheets.kyocera-avx.com/AVX-SCC-LE.pdf,
 CAP-0006-0180,06035A180JAT2A,KYOCERA AVX,18pF 50V 0603 C0G/NPO,Device:C,Capacitor_SMD:C_0603_1608Metric,18pF,50V,C0G/NPO,5%,https://datasheets.kyocera-avx.com/C0GNP0-KGM.pdf,
-CAP-0006-04R7,6035A4R7KAT2A,KYOCERA AVX,4.7pF 50V 0603 C0G/NPO,Device:C,Capacitor_SMD:C_0603_1608Metric,4.7pF,50V,C0G/NPO,10%,https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-2952720.pdf,
+CAP-0006-04R7,06035A4R7KAT2A,KYOCERA AVX,4.7pF 50V 0603 C0G/NPO,Device:C,Capacitor_SMD:C_0603_1608Metric,4.7pF,50V,C0G/NPO,10%,https://datasheets.kyocera-avx.com/C0GNP0-KGM.pdf,
 CAP-0007-0104,C0402C104K4RAC7867,Kemet,100nF 16V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,100nF,16V,X7R,10%,https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0402C104K4RACTU,
 CAP-0008-0104,CGA4J2X7R2A104K125AA,TDK,100nF 100V 0805 X7R,Device:C,Capacitor_SMD:C_0805_2012Metric,100nF,100V,X7R,10%,https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_midvoltage_en.pdf,
 CAP-0009-0106,GRM31MR61E106MA12L,Murata,10uF 25V 1206 X5R,Device:C,Capacitor_SMD:C_1206_3216Metric,10uF,25V,X5R,20%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31MR61E106MA12-01.pdf,
