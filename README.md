@@ -76,7 +76,8 @@ Give it a try - it will only take a few minutes.
 - In KiCad Preferences->Manage Symbol Libraries:
   - Add all the libraries in the `symbols` directory
   - Add the [`database/gplm.kicad_httplib`](database/gplm.kicad_httplib) file,
-    which tells KiCad where to find the running server
+    which tells KiCad where to find the running server, and give it the nickname
+    `#gplm` (see [Library nickname](#library-nickname))
 - In KiCad Preferences->Manage Footprint Libraries:
   - Add all `g-*.pretty` directories in the `footprints` directory
 
@@ -90,6 +91,26 @@ parameters are displayed.
 The server needs to be running whenever you open a schematic that uses these
 parts, so it is worth starting it from a terminal you leave open, your shell
 profile, or a systemd user service.
+
+### Library nickname
+
+Name the HTTP library `#gplm`. KiCad stores the nickname in every symbol
+reference it writes into a schematic, so `RES-0000-1005` is saved as
+`#gplm:RES-0000-1005`. The nickname is part of the design files rather than a
+local preference, so it is worth using the same one everywhere.
+
+- **Schematics move between machines.** A schematic drawn against `#gplm`
+  reports `*** symbol not found ***` for every part on a machine that gave the
+  same library a different nickname. The name is shared, so it belongs in the
+  convention.
+- **Renaming is a repo-wide edit.** Changing the nickname means rewriting the
+  `lib_id` of every symbol in every schematic that uses the library.
+- **The `#` prefix sorts the library to the top** of the symbol chooser, ahead
+  of the KiCad libraries.
+- **It matches the file name.** The library is defined by
+  `database/gplm.kicad_httplib`, and the obsolete database library it replaces
+  used the same `#gplm` name, so schematics drawn under the older ODBC path keep
+  resolving after the move to HTTP.
 
 ## Update the parts database
 
