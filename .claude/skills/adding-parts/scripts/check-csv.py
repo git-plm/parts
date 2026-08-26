@@ -6,6 +6,11 @@ Checks, per file:
   - rows are sorted by IPN
   - no duplicate IPN (the IPN is the database key)
   - every Symbol and Footprint reference actually resolves on disk
+  - no comma inside a field (the comma is the delimiter)
+  - Manufacturer and Material spellings do not vary within a file
+  - Material does not spell C0G with a letter O
+  - a 'Replaced by <IPN>' Status names a part that exists in the file
+  - for CAP files, the IPN variation code matches the Capacitance column
 
 Usage:
     check-csv.py database/g-reg.csv [...]
@@ -54,6 +59,53 @@ def footprint_exists(ref: str) -> bool:
     return False
 
 
+# --- capacitance ---------------------------------------------------------
+#
+# The IPN variation field encodes capacitance the way vendors do: MME, where MM
+# is the mantissa and E the number of zeros, in pF. The leading digit is
+# normally 0 because two significant figures is enough, and 'R' stands in for a
+# decimal point on sub-10pF values (04R7 = 4.7pF), mirroring the resistor 0R10
+# form. See partnumbers.md.
+#
+# Farad-scale parts (supercapacitors) cannot be expressed this way and are
+# skipped until partnumbers.md settles a convention for them.
+
+SI = {"p": 1e-12, "n": 1e-9, "u": 1e-6, "µ": 1e-6, "m": 1e-3, "": 1.0}
+
+
+def parse_capacitance(text: str) -> float | None:
+    """'0.1uF' / '100pF' / '220F' -> farads. None if unparseable."""
+    m = re.fullmatch(r"([\d.]+)\s*([pnuµm]?)F", text.strip(), re.I)
+    if not m:
+        return None
+    try:
+        return float(m.group(1)) * SI[m.group(2).lower()]
+    except (ValueError, KeyError):
+        return None
+
+
+def decode_variation(code: str) -> float | None:
+    """IPN variation field -> farads. None if it is not a capacitance code."""
+    if re.fullmatch(r"\d[\dR]R?\d", code) and "R" in code:
+        return float(code.replace("R", ".")) * 1e-12
+    if not re.fullmatch(r"\d{4}", code):
+        return None
+    mantissa = int(code[1:3]) if code[0] == "0" else int(code[0:3])
+    return mantissa * (10 ** int(code[3])) * 1e-12
+
+
+def show_farads(value: float) -> str:
+    for suffix, scale in (("F", 1), ("mF", 1e-3), ("uF", 1e-6), ("nF", 1e-9), ("pF", 1e-12)):
+        if value >= scale:
+            return f"{value / scale:g}{suffix}"
+    return f"{value}F"
+
+
+def normalize(text: str) -> str:
+    """Collapse spelling variants so near-duplicates group together."""
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
 def defects(rows: list[list[str]], path: str) -> list[str]:
     out: list[str] = []
     if not rows:
@@ -99,6 +151,85 @@ def defects(rows: list[list[str]], path: str) -> list[str]:
                     ref = value.split(";")[0].split(":", 1)[0] + ":" + ref
                 if not exists(ref):
                     out.append(f"{path}: {ipn}: {field} does not resolve: {ref}")
+
+    # The comma is the delimiter. A field containing one has to be quoted, and
+    # the quoting breaks awk -F, cut -d, and spreadsheet imports downstream.
+    for lineno, row in enumerate(rows[1:], start=2):
+        for i, value in enumerate(row):
+            if "," in value:
+                name = header[i] if i < ncols else f"field {i}"
+                out.append(f"{path}: line {lineno}: comma in {name}: {value!r}")
+
+    # One spelling per manufacturer, one per dielectric. Rather than police a
+    # list that would go stale, flag values that differ only in case, spacing or
+    # punctuation from another value in the same file.
+    for field in ("Manufacturer", "Material"):
+        if field not in col:
+            continue
+        variants: dict[str, set[str]] = {}
+        for row in rows[1:]:
+            if len(row) == ncols and row[col[field]].strip():
+                value = row[col[field]].strip()
+                variants.setdefault(normalize(value), set()).add(value)
+        for spellings in variants.values():
+            if len(spellings) > 1:
+                out.append(f"{path}: {field} spelled {len(spellings)} ways: {sorted(spellings)}")
+
+    # C0G is a zero, not a letter O. The two look identical in most fonts, so
+    # nothing else will catch this.
+    if "Material" in col:
+        for row in rows[1:]:
+            if len(row) == ncols and re.search(r"\bCOG\b", row[col["Material"]], re.I):
+                out.append(f"{path}: {row[0]}: Material spells C0G with a letter O: {row[col['Material']]}")
+
+    # A retired part keeps its row so the number is permanently spent: the row
+    # is the record that it must never be issued again, and the duplicate-IPN
+    # check above is what enforces that. Two things can still go wrong.
+    #
+    # The replacement has to exist, or the note sends a designer nowhere, and it
+    # must not itself be retired, or the note sends them to another dead end.
+    if "Status" in col:
+        retired = {
+            row[0]
+            for row in rows[1:]
+            if len(row) == ncols and re.match(r"\s*Replaced by\s", row[col["Status"]], re.I)
+        }
+        for row in rows[1:]:
+            if len(row) != ncols:
+                continue
+            m = re.match(r"\s*Replaced by\s+(\S+)", row[col["Status"]], re.I)
+            if not m:
+                continue
+            if m.group(1) in retired:
+                out.append(
+                    f"{path}: {row[0]}: Status points at {m.group(1)}, which is itself retired"
+                )
+            if m.group(1) not in seen:
+                out.append(f"{path}: {row[0]}: Status names a part that does not exist: {m.group(1)}")
+
+    # Capacitor variation codes encode the value; a code that disagrees with the
+    # Capacitance column means one of the two is wrong.
+    if "Capacitance" in col:
+        for row in rows[1:]:
+            if len(row) != ncols or not row[0].startswith("CAP-"):
+                continue
+            parts = row[0].split("-")
+            if len(parts) != 3:
+                continue
+            stated = parse_capacitance(row[col["Capacitance"]])
+            if stated is None:
+                out.append(f"{path}: {row[0]}: cannot parse Capacitance: {row[col['Capacitance']]!r}")
+                continue
+            if stated >= 1.0:
+                continue  # farad-scale supercapacitor, not encodable yet
+            coded = decode_variation(parts[2])
+            if coded is None:
+                out.append(f"{path}: {row[0]}: variation code is not a capacitance: {parts[2]!r}")
+            elif abs(coded - stated) > 0.02 * max(coded, stated):
+                out.append(
+                    f"{path}: {row[0]}: variation code says {show_farads(coded)}, "
+                    f"Capacitance says {row[col['Capacitance']]}"
+                )
 
     return out
 
