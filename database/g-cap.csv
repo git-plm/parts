@@ -1,6 +1,6 @@
 IPN,MPN,Manufacturer,Description,Symbol,Footprint,Capacitance,Voltage,Material,Tolerance,Datasheet,Status
-CAP-0000-0102,CC0603KRX7R9BB102,Yageo,1nF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf,
-CAP-0000-0103,CC0603KRX7R9BB103,Yageo,10nF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://datasheet.lcsc.com/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf,
+CAP-0000-0102,CC0603KRX7R9BB102,Yageo,1nF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,1nF,50V,X7R,10%,https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V,
+CAP-0000-0103,CC0603KRX7R9BB103,Yageo,10nF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,10nF,50V,X7R,10%,https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V,
 CAP-0000-0104,GCM188R71H104KA57D,Murata,100nF 50V 0603 X7R,Device:C,Capacitor_SMD:C_0603_1608Metric,100nF,50V,X7R,10%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01A.pdf,
 CAP-0001-0105,CL10A105KB8NNNC,Samsung,1uF 50V 0603 X5R,Device:C,Capacitor_SMD:C_0603_1608Metric,1uF,50V,X5R,10%,https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf,
 CAP-0002-0475,C1206C475K5PACTU,Kemet,4.7uF 50V 1206 X5R,Device:C,Capacitor_SMD:C_1206_3216Metric,4.7uF,50V,X5R,10%,https://media.digikey.com/pdf/Data%20Sheets/Kemet%20PDFs/C1206C475K5PAC.pdf,
@@ -39,7 +39,7 @@ CAP-0019-0104,GRM155R71H104KE14D,Murata,100nF 50V 0402 X7R,Device:C,Capacitor_SM
 CAP-0019-0222,CL05B222KB5VPNC,Samsung,2.2nF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,2.2nF,50V,X7R,10%,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2556/CL05B222KB5VPNC_Spec.pdf,
 CAP-0019-0223,GRM155R71H223KA12D,Murata,22nF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,22nF,50V,X7R,10%,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf,
 CAP-0019-0333,GCM155R71H333KE02D,Murata,33nF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,33nF,50V,X7R,10%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H333KE02-01A.pdf,
-CAP-0019-0682,CC0402KRX7R9BB682,Yageo,6.8nF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,6.8nF,50V,X7R,10%,https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-250V_23.pdf,
+CAP-0019-0682,CC0402KRX7R9BB682,Yageo,6.8nF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,6.8nF,50V,X7R,10%,https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V,
 CAP-0019-0821,GCM155R71H821KA37D,Murata,820pF 50V 0402 X7R,Device:C,Capacitor_SMD:C_0402_1005Metric,820pF,50V,X7R,10%,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H821KA37-01A.pdf,
 CAP-0020-0226,GRM188R60J226MEA0D,Murata,22uF 6.3V 0603 X5R,Device:C,Capacitor_SMD:C_0603_1608Metric,22uF,6.3V,X5R,20%,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf,
 CAP-0020-0476,GRM188R60J476ME15J,Murata,47uF 6.3V 0603 X5R,Device:C,Capacitor_SMD:C_0603_1608Metric,47uF,6.3V,X5R,20%,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf,
