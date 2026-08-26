@@ -73,11 +73,22 @@ Only markdown is formatted — CSV files are hand-maintained.
 - **Never put a comma in a CSV field.** The comma is the delimiter. A comma in a
   field forces the field to be quoted, and quoted commas break `awk -F,`,
   `cut -d,`, spreadsheet imports, and any downstream reader that splits on the
-  delimiter. `check-csv.py` accepts them, so nothing fails loudly; the damage
-  surfaces later in whatever tool reads the file next. `Description` is where
-  this comes up most, because it is the field with something to say. Write the
-  field so the question never arises: separate specs with spaces, since each
-  spec already carries its own unit.
+  delimiter. `Description` is where this comes up most, because it is the field
+  with something to say. Write the field so the question never arises: separate
+  specs with spaces, since each spec already carries its own unit.
+  `check-csv.py` reports commas, along with manufacturer and dielectric
+  spellings that vary within a file.
+- **Extend a series before allocating a new one.** A part number's `NNNN` groups
+  parts sharing a package, voltage and dielectric, and `VVVV` sweeps the value
+  within it. Adding a new `NNNN` for a part that belongs in an existing series
+  is what leaves a category with no default part for any common value. When a
+  new series really is needed, take the next number above the highest in use
+  rather than filling a gap.
+- **A part number is never reused.** A part that is superseded keeps its row and
+  names its replacement in `Status` as `Replaced by <IPN>`, so the number stays
+  spent and an existing BOM still resolves. Correcting a number that was simply
+  wrong, such as a variation code encoding a value the part does not have, is a
+  different case: it never identified anything, so edit it in place.
 - **Do not normalize existing rows as a side effect of adding a part.** Older
   rows carry inconsistent manufacturer spellings, commas, and truncated
   distributor strings. Match the file's most recent convention for new rows and

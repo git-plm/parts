@@ -162,7 +162,20 @@ One datasheet covering _several distinct devices_ (different die, pin count, or
 pinout) is the exception: give each device its own `NNNN`. `VVVV` is for
 variations of one device, not for different devices that happen to share a PDF.
 
-Next free number in the category:
+**`CAP` is the other exception.** A capacitor `NNNN` is a spec shelf rather than
+a datasheet: it groups one **package, rated voltage and dielectric**, and the
+manufacturer is a column. A 0603 50V X7R part belongs in the 0603 50V X7R series
+whoever makes it, so two sources for one spec share a series. Ceramic capacitors
+are commodity-interchangeable in a way that inductors and ICs are not, and a
+series per datasheet is what leaves the category with no default part for any
+common value.
+
+**Extend an existing series before allocating a new one.** Check whether the
+package, voltage and dielectric you need is already a series, and add a `VVVV`
+row to it if so.
+
+Next free number in the category - take the next one above the highest in use,
+never a gap, since a number missing from the file is not evidence it is free:
 
 ```bash
 grep -o '^IND-[0-9]\{4\}' database/g-ind.csv | sort -u | tail -1
@@ -171,16 +184,16 @@ grep -o '^IND-[0-9]\{4\}' database/g-ind.csv | sort -u | tail -1
 **`VVVV` - the variation within that family.** Encode the parameter that varies
 most across the family:
 
-| Category        | `VVVV` encodes              | Example                     |
-| --------------- | --------------------------- | --------------------------- |
-| `RES`           | E96/E24 resistance code     | `1002` = 10k, `0R10` = 0.1R |
-| `CAP`           | 3-digit pF code             | `104` = 0.1uF               |
-| `IND`           | inductance                  | `04R7` = 4.7uH              |
-| `CON`           | pin count                   | `0012` = 12 positions       |
-| `DIO`           | voltage **for Zeners only** | `04V7` = 4.7V Zener         |
-| `REG`           | **fixed** output voltage    | `03V3` = 3.3V               |
-| `OSC`           | frequency                   | `0256` = 25.6MHz            |
-| everything else | sequential from `0001`      | `0001`, `0002`, ...         |
+| Category        | `VVVV` encodes              | Example                                       |
+| --------------- | --------------------------- | --------------------------------------------- |
+| `RES`           | E96/E24 resistance code     | `1002` = 10k, `0R10` = 0.1R                   |
+| `CAP`           | 3-digit pF code             | `0104` = 100nF, `04R7` = 4.7pF, `220F` = 220F |
+| `IND`           | inductance                  | `04R7` = 4.7uH                                |
+| `CON`           | pin count                   | `0012` = 12 positions                         |
+| `DIO`           | voltage **for Zeners only** | `04V7` = 4.7V Zener                           |
+| `REG`           | **fixed** output voltage    | `03V3` = 3.3V                                 |
+| `OSC`           | frequency                   | `0256` = 25.6MHz                              |
+| everything else | sequential from `0001`      | `0001`, `0002`, ...                           |
 
 **When a part has no natural variation parameter, use `0001`.** That is what
 `ICS`, `MCU`, `XTR`, `CPD`, `RFM`, `PWR`, `ANA`, `OPT`, and `MPU` do for
@@ -280,9 +293,10 @@ ls /usr/share/kicad/3dmodels/<Lib>.3dshapes/<Name>.step
 
 A missing STEP is an upstream packaging gap, not a footprint defect - it affects
 everyone using that footprint, `check-csv.py` does not test it, and it is not a
-reason to reject an otherwise-correct standard footprint. `TQFN-32-1EP_5x5mm_P0.5mm_EP3.4x3.4mm`
-is a known case in `kicad-library-3d 10.0.4`: its model reference resolves, the
-`.step` does not ship. Note it and move on.
+reason to reject an otherwise-correct standard footprint.
+`TQFN-32-1EP_5x5mm_P0.5mm_EP3.4x3.4mm` is a known case in
+`kicad-library-3d 10.0.4`: its model reference resolves, the `.step` does not
+ship. Note it and move on.
 
 **Custom footprint: you must supply the model.** 3D models live in a _separate_
 repository (`git-plm/3d-models`), referenced through the `GITPLM_3DMODELS`
@@ -306,8 +320,8 @@ head -1 database/g-reg.csv
   Properly quoted commas are valid CSV and `check-csv.py` accepts them, so
   nothing will fail loudly; the damage shows up later in whatever tool reads the
   file next. Write the field so the question never arises. This applies to
-  `Description` most often, because that is the field with something to say - see
-  below.
+  `Description` most often, because that is the field with something to say -
+  see below.
 - **Match the file's existing quoting style.** `g-con.csv`, `g-swi.csv`, and
   `g-fan.csv` quote every field; the rest quote only fields containing a comma
   or a double quote. With no commas to escape, a row in those other files should

@@ -329,6 +329,42 @@ So the extension would be `223`
 
 To work backwards, we would have `1000 * 22 = 22,000pF/1e-6 = 0.022uF`.
 
+Two forms fall outside this encoding.
+
+**Below 10pF**, there are not enough digits to place the decimal point, so `R`
+marks it, the same way it does for sub-ohm resistors:
+
+- `04R7` = 4.7pF
+- `06R8` = 6.8pF
+
+**Farad-scale parts** (supercapacitors and lithium-ion capacitors) cannot be
+expressed in the picofarad encoding at all: 220F would need an exponent of 14.
+These use `F` in the same position `R` takes for resistors, as the terminator
+for whole values and the decimal point for fractional ones:
+
+- `220F` = 220F
+- `120F` = 120F
+- `01F5` = 1.5F
+- `4F70` = 4.7F
+
+An `F` anywhere in the variation field means the value is in farads, so the two
+encodings cannot be confused.
+
+#### One series per package, voltage and dielectric
+
+A capacitor's `NNNN` groups parts that share a **package, rated voltage and
+dielectric**, and `VVVV` sweeps capacitance within that group. A 0603 50V X7R
+part belongs in the 0603 50V X7R series whoever makes it; the manufacturer is a
+column, not a series.
+
+Prefer extending an existing series to allocating a new one. A library where
+every part has its own `NNNN` has no default part for any common value, which is
+the state a designer feels as "there is no 100nF in here, I will add one", and
+that is how the drift compounds.
+
+Allocate a new `NNNN` above the highest in use rather than filling a gap. A
+number missing from the file is not evidence that it is free.
+
 ## Implementation
 
 Defining a part number structure is only part of the story -- implementation is
