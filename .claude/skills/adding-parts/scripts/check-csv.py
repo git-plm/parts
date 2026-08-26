@@ -67,8 +67,10 @@ def footprint_exists(ref: str) -> bool:
 # decimal point on sub-10pF values (04R7 = 4.7pF), mirroring the resistor 0R10
 # form. See partnumbers.md.
 #
-# Farad-scale parts (supercapacitors) cannot be expressed this way and are
-# skipped until partnumbers.md settles a convention for them.
+# Farad-scale parts (supercapacitors, lithium-ion capacitors) need far more
+# range than the exponent digit allows, so they use 'F' the same way: as a
+# terminator on whole values (220F) and a decimal point on fractional ones
+# (01F5 = 1.5F). An 'F' anywhere in the field means the value is in farads.
 
 SI = {"p": 1e-12, "n": 1e-9, "u": 1e-6, "µ": 1e-6, "m": 1e-3, "": 1.0}
 
@@ -86,6 +88,12 @@ def parse_capacitance(text: str) -> float | None:
 
 def decode_variation(code: str) -> float | None:
     """IPN variation field -> farads. None if it is not a capacitance code."""
+    if "F" in code:
+        digits = code[:-1] if code.endswith("F") else code.replace("F", ".")
+        try:
+            return float(digits)
+        except ValueError:
+            return None
     if re.fullmatch(r"\d[\dR]R?\d", code) and "R" in code:
         return float(code.replace("R", ".")) * 1e-12
     if not re.fullmatch(r"\d{4}", code):
@@ -220,8 +228,6 @@ def defects(rows: list[list[str]], path: str) -> list[str]:
             if stated is None:
                 out.append(f"{path}: {row[0]}: cannot parse Capacitance: {row[col['Capacitance']]!r}")
                 continue
-            if stated >= 1.0:
-                continue  # farad-scale supercapacitor, not encodable yet
             coded = decode_variation(parts[2])
             if coded is None:
                 out.append(f"{path}: {row[0]}: variation code is not a capacitance: {parts[2]!r}")
