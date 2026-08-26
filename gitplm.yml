@@ -31,7 +31,10 @@ http:
 
     CAP:
       value: Capacitance
-      visible: [Capacitance, Voltage, Material, Tolerance]
+      # Status carries a 'Replaced by <IPN>' note on a retired part. It is
+      # visible so the note reaches a designer in the symbol chooser, at the
+      # moment they would otherwise pick the retired part.
+      visible: [Capacitance, Voltage, Material, Tolerance, Status]
 
     CON:
       value: Pins

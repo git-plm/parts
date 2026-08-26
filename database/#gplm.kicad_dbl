@@ -168,6 +168,13 @@
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
+                },
+                {
+                    "column": "Status",
+                    "name": "Status",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
                 }
             ]
         },
