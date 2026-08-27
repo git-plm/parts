@@ -270,6 +270,9 @@ introduced, which keeps pre-existing ones in the older CSV files out of the way.
 - Yageo is the preferred manufacturer for standard thick-film 1% `0402` `0603`
   etc. resistor series (`RES-0000`, `RES-0001`). All `E96` values are populated
   for these series.
+- Murata is the preferred manufacturer for ceramic capacitors (`CAP`). Source a
+  Murata MPN first and reach for another manufacturer only when Murata has no
+  suitable part.
 
 ## Implementation details
 
