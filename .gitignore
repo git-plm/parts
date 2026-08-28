@@ -1,4 +1,4 @@
 .~lock*.csv#
 *.bak
 parts.sqlite
-/.claude/skills/adding-parts/scripts/__pycache__/check-csv.cpython-314.pyc
+__pycache__/
