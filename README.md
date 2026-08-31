@@ -252,14 +252,14 @@ Open this repo in Claude Code and ask for the part, for example:
 add the Nexperia PMEG3020EP Schottky diode to the library
 ```
 
-Claude picks up the skill automatically. The skill also includes
-[`scripts/check-csv.py`](.claude/skills/adding-parts/scripts/check-csv.py),
-which validates column counts, IPN sort order, duplicate IPNs, and whether the
-`Symbol` and `Footprint` references resolve on disk. It is useful on its own,
-whether or not you use Claude:
+Claude picks up the skill automatically. The skill leans on
+[`scripts/check-csv.py`](scripts/check-csv.py), which validates column counts,
+IPN sort order, duplicate IPNs, and whether the `Symbol` and `Footprint`
+references resolve on disk. Run it directly at any time, whether or not you use
+Claude:
 
 ```
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-dio.csv
+scripts/check-csv.py --new-only database/g-dio.csv
 ```
 
 `--new-only` diffs against `git HEAD` and reports only the issues your edit

@@ -51,11 +51,11 @@ specification.
 # Symbol/Footprint references resolve against the installed KiCad libraries,
 # field padding, datasheet links, spelling drift, and whether a variation code
 # agrees with the value column. Run from the repo root.
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-reg.csv
+scripts/check-csv.py --new-only database/g-reg.csv
 
 # Pass the whole database to add the checks that need every file at once:
 # one spelling per manufacturer, and no MPN carried by two live parts.
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-*.csv
+scripts/check-csv.py --new-only database/g-*.csv
 
 # Check every resistor in a KiCad schematic against g-res.csv and repoint any
 # IPN that disagrees with the resistance the symbol carries. Reports by

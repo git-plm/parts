@@ -351,7 +351,7 @@ head -1 database/g-reg.csv
 ```bash
 # Column count, IPN sort order, duplicate IPNs, and whether the Symbol and
 # Footprint references actually resolve on disk.
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-reg.csv
+scripts/check-csv.py --new-only database/g-reg.csv
 ```
 
 `--new-only` diffs against `git HEAD` and reports just the defects your edit
