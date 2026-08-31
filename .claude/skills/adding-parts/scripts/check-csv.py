@@ -3,7 +3,7 @@
 
 Checks, per file:
   - every row has the same column count as the header
-  - every IPN is CCC-NNNN-VVVV in capitals, digits and hyphen
+  - every IPN is CCC-NNNN-VVVV, capitals and digits, bar a trailing m or n
   - the IPN category matches the file it is in
   - rows are sorted by IPN
   - no duplicate IPN (the IPN is the database key)
@@ -43,7 +43,13 @@ STD_SYMBOLS = os.environ.get("KICAD_SYMBOL_DIR", "/usr/share/kicad/symbols")
 STD_FOOTPRINTS = os.environ.get("KICAD_FOOTPRINT_DIR", "/usr/share/kicad/footprints")
 
 # CCC-NNNN-VVVV, in capitals, digits and hyphen. See partnumbers.md.
-IPN_RE = re.compile(r"^[A-Z]{3}-[0-9]{4}-[0-9A-Z]{4}$")
+#
+# The last character may also be a lowercase 'm' or 'n', which mark milliohms
+# and nanohenries. These have to stay lowercase: 'M' already means mega in the
+# same position, so RES-0008-8R3M would read as 8.3 megohms rather than 8.3
+# milliohms. The exception is deliberately narrow -- one trailing unit letter,
+# nowhere else in the field.
+IPN_RE = re.compile(r"^[A-Z]{3}-[0-9]{4}-[0-9A-Z]{3}[0-9A-Zmn]$")
 
 # Columns that carry a measured value with a unit. These drift the same way
 # manufacturer names do -- 25V beside 25v, 4.75K beside 4.75k -- and the drift

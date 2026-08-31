@@ -224,7 +224,11 @@ Some additional guidelines:
 
 - Every part number has the same number of characters in it (3-4-4). This makes
   sorting/comparison/entry simpler with less chance of error.
-- Character set is restricted to capital letters, digits, and hyphen.
+- Character set is restricted to capital letters, digits, and hyphen. The one
+  exception is a trailing lowercase `m` or `n` marking milliohms or nanohenries
+  (`RES-0002-010m`, `IND-0005-047n`). These stay lowercase because `M` already
+  means mega in the same position, so `8R3M` would read as 8.3 megohms rather
+  than 8.3 milliohms.
 - Avoid punctuation characters such as %, !, (, ., etc.
 
 ### Why use the same format for IPN and external model number?
