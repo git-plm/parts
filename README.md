@@ -95,8 +95,8 @@ profile, or a systemd user service.
 ### Library nickname
 
 Name the HTTP library `#gplm`. KiCad stores the nickname in every symbol
-reference it writes into a schematic, so `RES-0000-1005` is saved as
-`#gplm:RES-0000-1005`. The nickname is part of the design files rather than a
+reference it writes into a schematic, so `RES-0000-1002` is saved as
+`#gplm:RES-0000-1002`. The nickname is part of the design files rather than a
 local preference, so it is worth using the same one everywhere.
 
 - **Schematics move between machines.** A schematic drawn against `#gplm`

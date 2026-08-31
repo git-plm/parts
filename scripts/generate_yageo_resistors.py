@@ -28,56 +28,46 @@ DECADES = [0, 1, 2, 3, 4, 5, 6]  # 1Ω to 10MΩ
 
 def resistance_to_e96_code(resistance_ohms: float) -> str:
     """
-    Convert resistance in ohms to E96 4-digit code (MMME format).
+    Convert resistance in ohms to the EIA 4-digit code (MMME format).
 
-    The format is: MMM E where MMM is the mantissa (100-999) and E is the exponent (0-6).
-    Examples:
+    MMM is the mantissa (100-999) and E the number of zeros that follow it, so
+    the value is MMM x 10^E ohms:
       - 100Ω = 100 × 10^0 = 1000
       - 1kΩ = 100 × 10^1 = 1001
       - 10kΩ = 100 × 10^2 = 1002
       - 4.75kΩ = 475 × 10^1 = 4751
 
+    Below 100Ω the exponent would have to go negative, so R takes the decimal
+    point instead, the way partnumbers.md documents for 0R10 and 25R5:
+      - 97.6Ω = 97R6
+      - 10Ω   = 10R0
+      - 1.02Ω = 1R02
+
     Args:
         resistance_ohms: Resistance value in ohms
 
     Returns:
-        E96 code string (e.g., "1001" for 1kΩ)
+        EIA code string (e.g., "1001" for 1kΩ)
     """
     if resistance_ohms == 0:
         return "0000"
 
-    # Handle sub-ohm resistances with special encoding
-    if resistance_ohms < 1:
-        # For values < 1Ω, use special format like "R100" for 0.1Ω
-        # This is used for miliohm resistors
-        if resistance_ohms >= 0.1:
-            code = f"R{int(resistance_ohms * 10):02d}0"[:4]
-        else:
-            code = f"0{int(resistance_ohms * 100):02d}m"[:4]
-        return code
-
-    # Find the exponent (how many decades above 1Ω)
     import math
     exponent = int(math.floor(math.log10(resistance_ohms)))
 
-    # Calculate mantissa
-    mantissa = resistance_ohms / (10 ** exponent)
-
-    # Scale mantissa to be between 100-999
-    mantissa = round(mantissa * 100)
-
-    # Adjust if mantissa rounds to 1000
+    # Mantissa scaled to three significant digits, 100-999.
+    mantissa = round(resistance_ohms / (10 ** exponent) * 100)
     if mantissa >= 1000:
         mantissa = 100
         exponent += 1
 
-    # Ensure mantissa is in valid range
-    if mantissa < 100:
-        mantissa = 100
+    # Scaling the mantissa up by 100 costs two decades of the exponent.
+    power = exponent - 2
+    if power >= 0:
+        return f"{mantissa:03d}{power}"
 
-    # Create 4-digit code
-    code = f"{mantissa:03d}{exponent}"
-    return code
+    whole, _, frac = f"{resistance_ohms:g}".partition(".")
+    return (whole + "R" + frac).ljust(4, "0")[:4]
 
 
 def format_resistance_value(resistance_ohms: float) -> str:

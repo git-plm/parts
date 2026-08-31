@@ -306,6 +306,12 @@ industry standard. Examples:
 - 0R10 = 0.1 x 100 = 0.1 x 1 = 0.1 Ω (4-digit SMD resistors (E24 series)
 - 25R5 = 25.5Ω (4-digit SMD resistors (E96 series))
 
+Below 100 Ω the `R` form is not optional. Three significant digits and an
+exponent need five characters once the value drops under 100 Ω, so `R` takes the
+decimal point and the exponent disappears: 97.6 Ω is `97R6`, 10 Ω is `10R0`,
+1.02 Ω is `1R02`. The swept series `RES-0000` and `RES-0001` use this form for
+every value in their two lowest decades.
+
 #### Capacitor part numbers
 
 Most capacitors values are encoded in a 3-digit number where the 1st two digits

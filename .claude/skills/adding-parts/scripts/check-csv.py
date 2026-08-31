@@ -132,27 +132,15 @@ def show_farads(value: float) -> str:
 
 # --- resistance ----------------------------------------------------------
 #
-# Two encodings are in use, and both are self-consistent.
+# The EIA 4-digit code: three significant digits followed by the number of
+# zeros, in ohms, with a leading 0 marking a two-digit mantissa. 1002 = 10k,
+# 4751 = 4.75k, 0220 = 22R.
 #
-# partnumbers.md documents the EIA 4-digit industry code: three significant
-# digits followed by the number of zeros, in ohms, with a leading 0 marking a
-# two-digit mantissa. 1002 = 10k, 4751 = 4.75k, 0220 = 22R. The one-off series
-# RES-0003 through RES-0013 follow it.
-#
-# The generated value sweeps in RES-0000 and RES-0001 read the same digits two
-# decades lower: 1000 = 1R, 1003 = 1k, 4751 = 47.5R. That is 1,346 of the 1,359
-# resistors in the library.
-#
-# A part number is never reused, so neither encoding can be renumbered away.
-# This check therefore accepts either and reports only the rows that decode to
-# the stated resistance under neither, which is where a real transcription
-# error shows up. It reports the split itself once per file, because a code
-# that means two things in one file is worth seeing even though resolving it
-# is a documentation decision rather than an edit.
-#
-# 'R' is the decimal point on sub-ohm and fractional values (0R10, 25R5), and a
-# trailing 'm' marks milliohms (010m = 10 mOhm, 8R3m = 8.3 mOhm), mirroring the
-# way 'F' terminates the farad-scale capacitor codes.
+# Below 100 ohm three significant digits need more room than the exponent digit
+# can give, so 'R' takes the decimal point instead: 97R6, 10R0, 1R02. It plays
+# the same part on sub-ohm values (0R10) and a trailing 'm' marks milliohms
+# (010m, 8R3m), mirroring the way 'F' terminates the farad-scale capacitor
+# codes.
 
 RESISTANCE_SI = {"": 1.0, "R": 1.0, "K": 1e3, "M": 1e6, "G": 1e9}
 
@@ -172,33 +160,23 @@ def parse_resistance(text: str) -> float | None:
         return None
 
 
-def decode_resistance(code: str) -> tuple[float | None, float | None]:
-    """IPN variation field -> (industry ohms, sweep ohms).
-
-    Both elements are None together when the code is not a resistance at all.
-    The milliohm and R forms read the same under either encoding, so they come
-    back as a matched pair, which is how the caller recognizes a code that is
-    no evidence either way.
-    """
+def decode_resistance(code: str) -> float | None:
+    """IPN variation field -> ohms. None if it is not a resistance code."""
     c = code.strip()
     if c.endswith("m"):
-        body = c[:-1].replace("R", ".")
         try:
-            value = float(body) * 1e-3
+            return float(c[:-1].replace("R", ".")) * 1e-3
         except ValueError:
-            return None, None
-        return value, value
+            return None
     if "R" in c:
         try:
-            value = float(c.replace("R", "."))
+            return float(c.replace("R", "."))
         except ValueError:
-            return None, None
-        return value, value
+            return None
     if not re.fullmatch(r"\d{4}", c):
-        return None, None
+        return None
     mantissa = int(c[1:3]) if c[0] == "0" else int(c[0:3])
-    industry = mantissa * (10 ** int(c[3]))
-    return industry, industry * 0.01
+    return mantissa * (10 ** int(c[3]))
 
 
 def show_ohms(value: float) -> str:
@@ -397,11 +375,9 @@ def defects(rows: list[list[str]], path: str) -> list[str]:
                     f"Capacitance says {row[col['Capacitance']]}"
                 )
 
-    # Resistor variation codes encode the value too, under either of the two
-    # encodings described above. A row that matches neither has a code and a
-    # Resistance column that disagree however you read them.
+    # Resistor variation codes encode the value too; a code that disagrees with
+    # the Resistance column means one of the two is wrong.
     if "Resistance" in col:
-        readings: set[str] = set()
         for row in rows[1:]:
             if len(row) != ncols or not row[0].startswith("RES-"):
                 continue
@@ -412,24 +388,14 @@ def defects(rows: list[list[str]], path: str) -> list[str]:
             if stated is None:
                 out.append(f"{path}: {row[0]}: cannot parse Resistance: {row[col['Resistance']]!r}")
                 continue
-            industry, sweep = decode_resistance(parts[2])
-            if industry is None:
+            coded = decode_resistance(parts[2])
+            if coded is None:
                 out.append(f"{path}: {row[0]}: variation code is not a resistance: {parts[2]!r}")
-            elif close(industry, stated):
-                if not close(industry, sweep):
-                    readings.add("industry")
-            elif close(sweep, stated):
-                readings.add("sweep")
-            else:
+            elif not close(coded, stated):
                 out.append(
-                    f"{path}: {row[0]}: variation code says {show_ohms(industry)} "
-                    f"(or {show_ohms(sweep)} scaled), Resistance says {row[col['Resistance']]}"
+                    f"{path}: {row[0]}: variation code says {show_ohms(coded)}, "
+                    f"Resistance says {row[col['Resistance']]}"
                 )
-        if len(readings) > 1:
-            out.append(
-                f"{path}: two resistance encodings in use: the EIA code partnumbers.md "
-                f"documents and the value sweeps' form two decades below it"
-            )
 
     return out
 

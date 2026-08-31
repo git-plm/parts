@@ -57,6 +57,11 @@ specification.
 # one spelling per manufacturer, and no MPN carried by two live parts.
 .claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-*.csv
 
+# Check every resistor in a KiCad schematic against g-res.csv and repoint any
+# IPN that disagrees with the resistance the symbol carries. Reports by
+# default; --write applies. Accepts files or directories.
+scripts/update-design-ipns.py path/to/design.kicad_sch
+
 # Serve the database to KiCad; watches database/ and reloads on save.
 gitplm http
 
