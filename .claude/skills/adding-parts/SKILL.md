@@ -221,19 +221,19 @@ grep -o '(symbol "[^"]*"' /usr/share/kicad/symbols/<Lib>.kicad_sym | grep -i <na
 
 Most passives and discretes need nothing custom:
 
-| Part           | Symbol                                           |
-| -------------- | ------------------------------------------------ |
-| Resistor       | `Device:R_US`                                    |
-| Capacitor      | `Device:C`                                       |
-| Inductor       | `Device:L`                                       |
-| Schottky/Zener | `Device:D_Schottky`, `Device:D_Zener`            |
-| Crystal        | `Device:Crystal_GND24`                           |
-| BJT            | `Transistor_BJT:Q_NPN_BEC`, `Transistor_PNP_BEC` |
-| MOSFET         | `Transistor_FET:Q_NMOS_GSD`                      |
+| Part           | Symbol                                  |
+| -------------- | --------------------------------------- |
+| Resistor       | `Device:R_US`                           |
+| Capacitor      | `Device:C`                              |
+| Inductor       | `Device:L`                              |
+| Schottky/Zener | `Device:D_Schottky`, `Device:D_Zener`   |
+| Crystal        | `Device:Crystal_GND24`                  |
+| BJT            | `Transistor_BJT:Q_NPN_BEC`, `Q_PNP_BEC` |
+| MOSFET         | `Transistor_FET:Q_NMOS_GSD`             |
 
 **Transistors are not in `Device`.** KiCad moved them to `Transistor_BJT` and
-`Transistor_FET`. Existing `g-xtr.csv` rows still say `Device:Q_NPN_BEC` and are
-broken against KiCad 10 - do not copy them. `check-csv.py` catches this.
+`Transistor_FET`. A `Device:Q_NPN_BEC` written from memory does not resolve
+against KiCad 10; `check-csv.py` catches it.
 
 Write the reference as `Library:Symbol` for a standard symbol, or `g-XXX:Name`
 for one in this repo. **Confirm it resolves before writing the row** - a
@@ -351,7 +351,7 @@ head -1 database/g-reg.csv
 ```bash
 # Column count, IPN sort order, duplicate IPNs, and whether the Symbol and
 # Footprint references actually resolve on disk.
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-reg.csv
+scripts/check-csv.py --new-only database/g-reg.csv
 ```
 
 `--new-only` diffs against `git HEAD` and reports just the defects your edit

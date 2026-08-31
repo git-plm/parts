@@ -47,9 +47,20 @@ specification.
 ## Commands
 
 ```bash
-# Validate a CSV: column counts, IPN sort order, duplicate IPNs, and whether
-# Symbol/Footprint references resolve on disk. Run from the repo root.
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-reg.csv
+# Validate a CSV: IPN format and sort order, duplicate IPNs, whether
+# Symbol/Footprint references resolve against the installed KiCad libraries,
+# field padding, datasheet links, spelling drift, and whether a variation code
+# agrees with the value column. Run from the repo root.
+scripts/check-csv.py --new-only database/g-reg.csv
+
+# Pass the whole database to add the checks that need every file at once:
+# one spelling per manufacturer, and no MPN carried by two live parts.
+scripts/check-csv.py --new-only database/g-*.csv
+
+# Check every resistor in a KiCad schematic against g-res.csv and repoint any
+# IPN that disagrees with the resistance the symbol carries. Reports by
+# default; --write applies. Accepts files or directories.
+scripts/update-design-ipns.py path/to/design.kicad_sch
 
 # Serve the database to KiCad; watches database/ and reloads on save.
 gitplm http
@@ -76,8 +87,13 @@ Only markdown is formatted — CSV files are hand-maintained.
   delimiter. `Description` is where this comes up most, because it is the field
   with something to say. Write the field so the question never arises: separate
   specs with spaces, since each spec already carries its own unit.
-  `check-csv.py` reports commas, along with manufacturer and dielectric
-  spellings that vary within a file.
+  `check-csv.py` reports commas, along with manufacturer, dielectric and unit
+  spellings that vary within a file, and manufacturer spellings that vary across
+  the library when you pass it every file. `MPN` and `Footprint` are exempt,
+  because their text is transcribed rather than written: Nexperia and NXP put
+  the packing code after a comma, so `PMEG3050BEP,115` is the number you order,
+  and KiCad ships a footprint named
+  `PhoenixContact_MC_1,5_12-G-3.5_1x12_P3.50mm_Horizontal`.
 - **Extend a series before allocating a new one.** A part number's `NNNN` groups
   parts sharing a package, voltage and dielectric, and `VVVV` sweeps the value
   within it. Adding a new `NNNN` for a part that belongs in an existing series

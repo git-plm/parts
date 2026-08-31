@@ -6962,7 +6962,7 @@
 		(symbol "LMR36015RNX_1_1"
 			(rectangle
 				(start 3.81 15.24)
-				(end 19.05 -8.89)
+				(end 19.05 -19.05)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -6972,7 +6972,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 -12.7 90)
+				(at 0 0 0)
 				(length 3.81)
 				(name "PGND"
 					(effects
@@ -7007,9 +7007,9 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at 22.86 -7.62 180)
-				(length 3.81) hide
+				(length 3.81)
 				(name "NC"
 					(effects
 						(font
@@ -7026,7 +7026,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 10.16 180)
+				(at 22.86 12.7 180)
 				(length 3.81)
 				(name "BOOT"
 					(effects
@@ -7044,7 +7044,7 @@
 				)
 			)
 			(pin power_out line
-				(at 22.86 5.08 180)
+				(at 0 -10.16 0)
 				(length 3.81)
 				(name "VCC"
 					(effects
@@ -7062,7 +7062,7 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 -12.7 90)
+				(at 11.43 -22.86 90)
 				(length 3.81)
 				(name "AGND"
 					(effects
@@ -7080,7 +7080,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 0 180)
+				(at 22.86 -16.51 180)
 				(length 3.81)
 				(name "FB"
 					(effects
@@ -7098,7 +7098,7 @@
 				)
 			)
 			(pin open_collector line
-				(at 22.86 2.54 180)
+				(at 22.86 -12.7 180)
 				(length 3.81)
 				(name "PG"
 					(effects
@@ -7152,7 +7152,7 @@
 				)
 			)
 			(pin power_in line
-				(at 17.78 -12.7 90)
+				(at 0 -2.54 0)
 				(length 3.81)
 				(name "PGND"
 					(effects
@@ -7170,7 +7170,7 @@
 				)
 			)
 			(pin power_out line
-				(at 22.86 12.7 180)
+				(at 22.86 2.54 180)
 				(length 3.81)
 				(name "SW"
 					(effects

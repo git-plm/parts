@@ -224,7 +224,11 @@ Some additional guidelines:
 
 - Every part number has the same number of characters in it (3-4-4). This makes
   sorting/comparison/entry simpler with less chance of error.
-- Character set is restricted to capital letters, digits, and hyphen.
+- Character set is restricted to capital letters, digits, and hyphen. The one
+  exception is a trailing lowercase `m` or `n` marking milliohms or nanohenries
+  (`RES-0002-010m`, `IND-0005-047n`). These stay lowercase because `M` already
+  means mega in the same position, so `8R3M` would read as 8.3 megohms rather
+  than 8.3 milliohms.
 - Avoid punctuation characters such as %, !, (, ., etc.
 
 ### Why use the same format for IPN and external model number?
@@ -305,6 +309,12 @@ industry standard. Examples:
 - R102 = 0.102 Ω (4-digit SMD resistors (E96 series)
 - 0R10 = 0.1 x 100 = 0.1 x 1 = 0.1 Ω (4-digit SMD resistors (E24 series)
 - 25R5 = 25.5Ω (4-digit SMD resistors (E96 series))
+
+Below 100 Ω the `R` form is not optional. Three significant digits and an
+exponent need five characters once the value drops under 100 Ω, so `R` takes the
+decimal point and the exponent disappears: 97.6 Ω is `97R6`, 10 Ω is `10R0`,
+1.02 Ω is `1R02`. The swept series `RES-0000` and `RES-0001` use this form for
+every value in their two lowest decades.
 
 #### Capacitor part numbers
 

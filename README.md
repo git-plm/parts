@@ -95,8 +95,8 @@ profile, or a systemd user service.
 ### Library nickname
 
 Name the HTTP library `#gplm`. KiCad stores the nickname in every symbol
-reference it writes into a schematic, so `RES-0000-1005` is saved as
-`#gplm:RES-0000-1005`. The nickname is part of the design files rather than a
+reference it writes into a schematic, so `RES-0000-1002` is saved as
+`#gplm:RES-0000-1002`. The nickname is part of the design files rather than a
 local preference, so it is worth using the same one everywhere.
 
 - **Schematics move between machines.** A schematic drawn against `#gplm`
@@ -252,14 +252,14 @@ Open this repo in Claude Code and ask for the part, for example:
 add the Nexperia PMEG3020EP Schottky diode to the library
 ```
 
-Claude picks up the skill automatically. The skill also includes
-[`scripts/check-csv.py`](.claude/skills/adding-parts/scripts/check-csv.py),
-which validates column counts, IPN sort order, duplicate IPNs, and whether the
-`Symbol` and `Footprint` references resolve on disk. It is useful on its own,
-whether or not you use Claude:
+Claude picks up the skill automatically. The skill leans on
+[`scripts/check-csv.py`](scripts/check-csv.py), which validates column counts,
+IPN sort order, duplicate IPNs, and whether the `Symbol` and `Footprint`
+references resolve on disk. Run it directly at any time, whether or not you use
+Claude:
 
 ```
-.claude/skills/adding-parts/scripts/check-csv.py --new-only database/g-dio.csv
+scripts/check-csv.py --new-only database/g-dio.csv
 ```
 
 `--new-only` diffs against `git HEAD` and reports only the issues your edit
