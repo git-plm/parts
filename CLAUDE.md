@@ -89,7 +89,11 @@ Only markdown is formatted — CSV files are hand-maintained.
   specs with spaces, since each spec already carries its own unit.
   `check-csv.py` reports commas, along with manufacturer, dielectric and unit
   spellings that vary within a file, and manufacturer spellings that vary across
-  the library when you pass it every file.
+  the library when you pass it every file. `MPN` and `Footprint` are exempt,
+  because their text is transcribed rather than written: Nexperia and NXP put
+  the packing code after a comma, so `PMEG3050BEP,115` is the number you order,
+  and KiCad ships a footprint named
+  `PhoenixContact_MC_1,5_12-G-3.5_1x12_P3.50mm_Horizontal`.
 - **Extend a series before allocating a new one.** A part number's `NNNN` groups
   parts sharing a package, voltage and dielectric, and `VVVV` sweeps the value
   within it. Adding a new `NNNN` for a part that belongs in an existing series

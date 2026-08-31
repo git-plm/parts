@@ -8,7 +8,7 @@ Checks, per file:
   - rows are sorted by IPN
   - no duplicate IPN (the IPN is the database key)
   - every Symbol and Footprint reference actually resolves on disk
-  - no comma inside a field (the comma is the delimiter)
+  - no comma inside a field we author (MPN and Footprint are transcribed)
   - no field padded with a leading or trailing space
   - Datasheet is an https URL
   - Manufacturer, Material and the spec columns do not vary in spelling
@@ -270,10 +270,18 @@ def defects(rows: list[list[str]], path: str) -> list[str]:
 
     # The comma is the delimiter. A field containing one has to be quoted, and
     # the quoting breaks awk -F, cut -d, and spreadsheet imports downstream.
+    #
+    # MPN and Footprint are exempt because their contents are not ours to
+    # rewrite. Nexperia and NXP put the packing code after a comma, so
+    # 'PMEG3050BEP,115' is the number you order, and KiCad ships a footprint
+    # named 'PhoenixContact_MC_1,5_12-G-3.5_1x12_P3.50mm_Horizontal'. Dropping
+    # the comma in either would mean naming something that does not exist. The
+    # rule holds everywhere we author the text, which is where it matters.
+    TRANSCRIBED = ("MPN", "Footprint")
     for lineno, row in enumerate(rows[1:], start=2):
         for i, value in enumerate(row):
-            if "," in value:
-                name = header[i] if i < ncols else f"field {i}"
+            name = header[i] if i < ncols else f"field {i}"
+            if "," in value and name not in TRANSCRIBED:
                 out.append(f"{path}: line {lineno}: comma in {name}: {value!r}")
 
     # A padded field looks identical in a spreadsheet and sorts and groups as a
