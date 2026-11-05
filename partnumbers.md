@@ -1,6 +1,7 @@
 # Internal Part number guidelines
 
-(See also the [video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).)
+(See also the
+[video on semi-structured part numbers](https://youtu.be/tlsl01uxUfE).)
 
 ## TOC
 
@@ -148,26 +149,29 @@ difficulty of assigning new part numbers.
 
 The following CCC groups are suggested for electrical parts:
 
-| Code | Description                              |
-| ---- | ---------------------------------------- |
-| ANA  | op-amps, comparators, A/D, D/A           |
-| CAP  | capacitors                               |
-| CON  | connectors                               |
-| CPD  | Circuit protection devices               |
-| DIO  | diodes                                   |
-| IND  | inductors, transformers                  |
-| ICS  | integrated circuits                      |
-| MPU  | SOC, SOM, SBC, etc.                      |
-| MCU  | Microcontrolleres, modules, etc.         |
-| OPT  | Optical, couplers, phototransistor, etc. |
-| OSC  | oscillators, Crystals                    |
-| PWR  | relays, etc                              |
-| RFM  | RF modules, ICs, and related components  |
-| REG  | regulators                               |
-| RES  | resistors                                |
-| SEN  | sensors                                  |
-| SWI  | switch                                   |
-| XTR  | transistors, FETs                        |
+| Code | Description                               |
+| ---- | ----------------------------------------- |
+| ANA  | op-amps, comparators, A/D, D/A            |
+| ART  | artwork (test points, fiducials, etc.)    |
+| CAP  | capacitors                                |
+| CON  | connectors                                |
+| CPD  | Circuit protection devices                |
+| DIO  | diodes                                    |
+| FAN  | fans                                      |
+| IND  | inductors, transformers                   |
+| ICS  | integrated circuits                       |
+| MEM  | Memory modules, SD cards, SSD, NVME, etc. |
+| MPU  | SOC, SOM, SBC, etc.                       |
+| MCU  | Microcontrolleres, modules, etc.          |
+| OPT  | Optical, couplers, phototransistor, etc.  |
+| OSC  | oscillators, Crystals                     |
+| PWR  | relays, etc                               |
+| RFM  | RF modules, ICs, and related components   |
+| REG  | regulators                                |
+| RES  | resistors                                 |
+| SEN  | sensors                                   |
+| SWI  | switch                                    |
+| XTR  | transistors, FETs                         |
 
 Each group of CCC parts is placed in its own schematic symbol library with the
 same name. Keeping the CCC and CAD library names the same introduces
@@ -220,7 +224,11 @@ Some additional guidelines:
 
 - Every part number has the same number of characters in it (3-4-4). This makes
   sorting/comparison/entry simpler with less chance of error.
-- Character set is restricted to capital letters, digits, and hyphen.
+- Character set is restricted to capital letters, digits, and hyphen. The one
+  exception is a trailing lowercase `m` or `n` marking milliohms or nanohenries
+  (`RES-0002-010m`, `IND-0005-047n`). These stay lowercase because `M` already
+  means mega in the same position, so `8R3M` would read as 8.3 megohms rather
+  than 8.3 milliohms.
 - Avoid punctuation characters such as %, !, (, ., etc.
 
 ### Why use the same format for IPN and external model number?
@@ -302,6 +310,12 @@ industry standard. Examples:
 - 0R10 = 0.1 x 100 = 0.1 x 1 = 0.1 Ω (4-digit SMD resistors (E24 series)
 - 25R5 = 25.5Ω (4-digit SMD resistors (E96 series))
 
+Below 100 Ω the `R` form is not optional. Three significant digits and an
+exponent need five characters once the value drops under 100 Ω, so `R` takes the
+decimal point and the exponent disappears: 97.6 Ω is `97R6`, 10 Ω is `10R0`,
+1.02 Ω is `1R02`. The swept series `RES-0000` and `RES-0001` use this form for
+every value in their two lowest decades.
+
 #### Capacitor part numbers
 
 Most capacitors values are encoded in a 3-digit number where the 1st two digits
@@ -324,6 +338,42 @@ Example:
 So the extension would be `223`
 
 To work backwards, we would have `1000 * 22 = 22,000pF/1e-6 = 0.022uF`.
+
+Two forms fall outside this encoding.
+
+**Below 10pF**, there are not enough digits to place the decimal point, so `R`
+marks it, the same way it does for sub-ohm resistors:
+
+- `04R7` = 4.7pF
+- `06R8` = 6.8pF
+
+**Farad-scale parts** (supercapacitors and lithium-ion capacitors) cannot be
+expressed in the picofarad encoding at all: 220F would need an exponent of 14.
+These use `F` in the same position `R` takes for resistors, as the terminator
+for whole values and the decimal point for fractional ones:
+
+- `220F` = 220F
+- `120F` = 120F
+- `01F5` = 1.5F
+- `4F70` = 4.7F
+
+An `F` anywhere in the variation field means the value is in farads, so the two
+encodings cannot be confused.
+
+#### One series per package, voltage and dielectric
+
+A capacitor's `NNNN` groups parts that share a **package, rated voltage and
+dielectric**, and `VVVV` sweeps capacitance within that group. A 0603 50V X7R
+part belongs in the 0603 50V X7R series whoever makes it; the manufacturer is a
+column, not a series.
+
+Prefer extending an existing series to allocating a new one. A library where
+every part has its own `NNNN` has no default part for any common value, which is
+the state a designer feels as "there is no 100nF in here, I will add one", and
+that is how the drift compounds.
+
+Allocate a new `NNNN` above the highest in use rather than filling a gap. A
+number missing from the file is not evidence that it is free.
 
 ## Implementation
 

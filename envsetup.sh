@@ -1,3 +1,7 @@
+# this file should be sourced (.), not run as a script
+
+PARTS_BASE=$(readlink -f "$(dirname "${BASH_SOURCE[0]:-$0}")")
+
 # define all of your libs here -- should be a CSV file for each lib
 GPLMLIBS="ana cap con cpd dio ics ind mpu mcu pwr rfm res reg xtr osc opt art swi"
 
@@ -30,4 +34,21 @@ parts_db_watch() {
 
 parts_db_edit() {
 	sqlitebrowser ${DBFILE}
+}
+
+# Run the version of prettier pinned in .prettier-version, so formatting
+# locally reaches the same verdict everywhere. A prettier release can add a rule
+# and start failing a file that was passing.
+parts_prettier() {
+	local version
+	version=$(cat "${PARTS_BASE}/.prettier-version") || return 1
+	(cd "${PARTS_BASE}" && npx --yes "prettier@${version}" "$@") || return 1
+}
+
+parts_format() {
+	parts_prettier --write "**/*.md" || return 1
+}
+
+parts_format_check() {
+	parts_prettier --check "**/*.md" || return 1
 }

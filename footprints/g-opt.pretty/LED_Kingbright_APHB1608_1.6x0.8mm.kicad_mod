@@ -1,0 +1,203 @@
+(footprint "LED_Kingbright_APHB1608_1.6x0.8mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Kingbright APHB1608 bi-color SMD LED, 1.6x0.8x0.5mm, 4 pads (two independent dies). Land pattern per datasheet recommended soldering pattern. http://www.kingbrightusa.com/images/catalog/SPEC/APHB1608LZGKSURKC.pdf")
+	(tags "LED bicolor bi-color Kingbright APHB1608 0603")
+	(property "Reference" "REF**"
+		(at 0 -1.4 0)
+		(layer "F.SilkS")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000001")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_Kingbright_APHB1608_1.6x0.8mm"
+		(at 0 1.4 0)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000002")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000003")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000004")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000005")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8 -0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000010")
+	)
+	(fp_line
+		(start 0.8 -0.4)
+		(end 0.8 0.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000011")
+	)
+	(fp_line
+		(start 0.8 0.1)
+		(end 0.5 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000012")
+	)
+	(fp_line
+		(start 0.5 0.4)
+		(end -0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000013")
+	)
+	(fp_line
+		(start -0.8 0.4)
+		(end -0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000014")
+	)
+	(fp_circle
+		(center 0.6 0.85)
+		(end 0.7 0.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000020")
+	)
+	(fp_line
+		(start -1 -1)
+		(end 1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000030")
+	)
+	(fp_line
+		(start 1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000031")
+	)
+	(fp_line
+		(start 1 1)
+		(end -1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000032")
+	)
+	(fp_line
+		(start -1 1)
+		(end -1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000033")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.4 0)
+		(layer "F.Fab")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000040")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.6 0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000051")
+	)
+	(pad "2" smd rect
+		(at -0.6 0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000052")
+	)
+	(pad "3" smd rect
+		(at 0.6 -0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000053")
+	)
+	(pad "4" smd rect
+		(at -0.6 -0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b1a4d0e2-1c00-4a11-9f01-000000000054")
+	)
+)
